@@ -1,0 +1,462 @@
+{
+ "schema_version": "1.0",
+ "page": 11,
+ "sheet": {
+  "drawing_number": "P-202",
+  "title": "PRE-AERATION BASIN",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "DESIGN/BUILD DOCUMENTS (prepared for EPA submission July 2021; not intended to reflect design requirements)",
+  "legend_notes": [
+   "Instrument bands: SCADA HMI (top), REMOTE I/O CABINET 2 (AI cards), MCC (nothing drawn in the MCC band).",
+   "pH and DO/TEMP probes hang in the basin (lines end in small squares).",
+   "Items drawn with thin lines throughout; process air line is a long-dash thin line."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "TNK-050100",
+   "tag": "TNK-050100",
+   "kind": "tank",
+   "name": "PA-01 PRE-AERATION BASIN",
+   "bbox": [
+    0.2857,
+    0.6453,
+    0.6492,
+    0.7961
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "FBD-050111",
+   "tag": "FBD-050111",
+   "kind": "other",
+   "name": "Diffuser grid in basin bottom (FBD-050111; fine bubble diffuser inferred from tag)",
+   "part_of": "TNK-050100",
+   "bbox": [
+    0.4439,
+    0.7635,
+    0.4898,
+    0.7882
+   ],
+   "confidence": 0.8
+  }
+ ],
+ "components": [
+  {
+   "id": "TP-01",
+   "tag": "TP-01",
+   "kind": "other",
+   "name": "TP 01 scope break (BO / EQ) on process air line",
+   "bbox": [
+    0.4401,
+    0.5172,
+    0.4624,
+    0.5517
+   ],
+   "confidence": 0.6,
+   "notes": "Hexagon TP 01 over a break symbol with arrows labelled BO and EQ; meaning not defined on this sheet."
+  },
+  {
+   "id": "WE-050121",
+   "tag": "WE-050121",
+   "kind": "other",
+   "name": "Overflow weir / adjustable weir gate on basin wall (WE-050121)",
+   "bbox": [
+    0.6409,
+    0.6453,
+    0.676,
+    0.6897
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "V-120122",
+   "tag": "V-120122",
+   "kind": "other",
+   "name": "V-120122 filled diamond valve symbol on thin line from basin bottom",
+   "bbox": [
+    0.7334,
+    0.6975,
+    0.75,
+    0.7172
+   ],
+   "confidence": 0.7,
+   "notes": "Number prefix 12 differs from the sheet's 05 area."
+  }
+ ],
+ "instruments": [
+  {
+   "id": "AE-050101",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "AE-050101",
+   "measures": {
+    "item": "TNK-050100"
+   },
+   "bbox": [
+    0.5198,
+    0.6099,
+    0.5364,
+    0.6355
+   ],
+   "loop": "A-050101",
+   "name": "pH element"
+  },
+  {
+   "id": "AIT-050101",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "AIT-050101",
+   "bbox": [
+    0.5198,
+    0.5764,
+    0.5364,
+    0.602
+   ],
+   "loop": "A-050101",
+   "name": "pH transmitter"
+  },
+  {
+   "id": "AI-PH",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "AI",
+   "bbox": [
+    0.5185,
+    0.2453,
+    0.5376,
+    0.2749
+   ],
+   "loop": "A-050101",
+   "name": "Analog input card, Remote I/O Cabinet 2 (pH)"
+  },
+  {
+   "id": "AIR-050101",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "AIR-050101",
+   "bbox": [
+    0.5198,
+    0.1921,
+    0.5364,
+    0.2177
+   ],
+   "loop": "A-050101",
+   "name": "pH indicating recorder, SCADA HMI"
+  },
+  {
+   "id": "AE-050102",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "AE-050102",
+   "measures": {
+    "item": "TNK-050100"
+   },
+   "bbox": [
+    0.5829,
+    0.6099,
+    0.5995,
+    0.6355
+   ],
+   "loop": "A-050102",
+   "name": "DO/TEMP element"
+  },
+  {
+   "id": "TIT-050102",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "TIT-050102",
+   "bbox": [
+    0.5829,
+    0.5764,
+    0.5995,
+    0.602
+   ],
+   "loop": "T-050102",
+   "name": "Temperature transmitter"
+  },
+  {
+   "id": "AIT-050102",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "AIT-050102",
+   "bbox": [
+    0.5982,
+    0.5773,
+    0.6135,
+    0.601
+   ],
+   "loop": "A-050102",
+   "name": "DO transmitter"
+  },
+  {
+   "id": "AI-TEMP",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "AI",
+   "bbox": [
+    0.5816,
+    0.2453,
+    0.6008,
+    0.2749
+   ],
+   "loop": "T-050102",
+   "name": "Analog input card (temperature)"
+  },
+  {
+   "id": "AI-DO",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "AI",
+   "bbox": [
+    0.6027,
+    0.2453,
+    0.6218,
+    0.2749
+   ],
+   "loop": "A-050102",
+   "name": "Analog input card (DO)"
+  },
+  {
+   "id": "TIR-050102",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "TIR-050102",
+   "bbox": [
+    0.5829,
+    0.1921,
+    0.5995,
+    0.2177
+   ],
+   "loop": "T-050102",
+   "name": "TEMP indicating recorder"
+  },
+  {
+   "id": "AIR-050102",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "AIR-050102",
+   "bbox": [
+    0.604,
+    0.1921,
+    0.6205,
+    0.2177
+   ],
+   "loop": "A-050102",
+   "name": "DO indicating recorder"
+  },
+  {
+   "id": "TAL-050102",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "TAL-050102",
+   "bbox": [
+    0.5619,
+    0.1498,
+    0.5784,
+    0.1754
+   ],
+   "loop": "T-050102",
+   "name": "LOW TEMP alarm"
+  },
+  {
+   "id": "AAL-050102",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "AAL-050102",
+   "bbox": [
+    0.6256,
+    0.1498,
+    0.6422,
+    0.1754
+   ],
+   "loop": "A-050102",
+   "name": "LOW DO alarm"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L-AIR",
+   "service": "process air",
+   "from": "OPC-A",
+   "to": "FBD-050111",
+   "path": [
+    "TP-01"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.8,
+   "notes": "Thin dashed line from the P205 flag, through the TP 01 break, then down into the basin diffuser."
+  },
+  {
+   "id": "L-REC",
+   "service": "recycle",
+   "from": "OPC-B",
+   "to": "TNK-050100",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L-OVF",
+   "service": "overflow",
+   "from": "TNK-050100",
+   "to": "OPC-a",
+   "path": [
+    "WE-050121"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L-DRN",
+   "service": "unlabelled thin line",
+   "from": "TNK-050100",
+   "to": "V-120122",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.5,
+   "notes": "Thin line from a stub at the basin bottom right to V-120122; ends there, destination not drawn."
+  }
+ ],
+ "signals": [
+  {
+   "from": "AE-050101",
+   "to": "AIT-050101",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "AIT-050101",
+   "to": "AI-PH",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "AI-PH",
+   "to": "AIR-050101",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "AE-050102",
+   "to": "TIT-050102",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "AE-050102",
+   "to": "AIT-050102",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.6
+  },
+  {
+   "from": "TIT-050102",
+   "to": "AI-TEMP",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "AIT-050102",
+   "to": "AI-DO",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "AI-TEMP",
+   "to": "TIR-050102",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "AI-DO",
+   "to": "AIR-050102",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "TIR-050102",
+   "to": "TAL-050102",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8
+  },
+  {
+   "from": "AIR-050102",
+   "to": "AAL-050102",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-A",
+   "direction": "in",
+   "name": "PROCESS AIR FROM BLOWERS REF SHT P205",
+   "other_drawing": "P205",
+   "notes": "Flag marker 'A' in box",
+   "bbox": [
+    0.0574,
+    0.534,
+    0.1212,
+    0.5596
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC-B",
+   "direction": "in",
+   "name": "RECYCLE FROM AX-01 REF SHT P201",
+   "other_drawing": "P201",
+   "other_item": "AX-01",
+   "notes": "Flag marker 'B' in box",
+   "bbox": [
+    0.0574,
+    0.5665,
+    0.1212,
+    0.5911
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC-a",
+   "direction": "out",
+   "name": "OVERFLOW TO MBR BASIN REF SHT P203",
+   "other_drawing": "P203",
+   "notes": "Flag marker 'a' in box",
+   "bbox": [
+    0.8119,
+    0.6601,
+    0.8756,
+    0.6857
+   ],
+   "confidence": 0.95
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": []
+}

@@ -1,0 +1,592 @@
+{
+ "schema_version": "1.0",
+ "page": 10,
+ "sheet": {
+  "drawing_number": "P-201",
+  "title": "Anoxic Basin",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "Design/Build documents (EPA submission July 2021)"
+ },
+ "equipment": [
+  {
+   "id": "TNK-040100",
+   "tag": "TNK-040100",
+   "kind": "tank",
+   "name": "ANOXIC BASIN AX-01",
+   "bbox": [
+    0.29,
+    0.65,
+    0.66,
+    0.8
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "MXR-040111",
+   "tag": "MXR-040111",
+   "kind": "mixer",
+   "name": "Anoxic basin mixer",
+   "part_of": "TNK-040100",
+   "bbox": [
+    0.31,
+    0.71,
+    0.35,
+    0.77
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PMPA",
+   "kind": "centrifugal_pump",
+   "name": "Recycle pump (tag not printed, typical for 2 pumps, left)",
+   "part_of": "TNK-040100",
+   "bbox": [
+    0.48,
+    0.76,
+    0.52,
+    0.8
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "PMPB",
+   "kind": "centrifugal_pump",
+   "name": "Recycle pump (tag not printed, typical for 2 pumps, right)",
+   "part_of": "TNK-040100",
+   "bbox": [
+    0.54,
+    0.76,
+    0.58,
+    0.8
+   ],
+   "confidence": 0.7
+  }
+ ],
+ "components": [
+  {
+   "id": "VA1",
+   "kind": "check_valve",
+   "bbox": [
+    0.49,
+    0.58,
+    0.51,
+    0.61
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VB1",
+   "kind": "check_valve",
+   "bbox": [
+    0.55,
+    0.54,
+    0.57,
+    0.57
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "R1",
+   "kind": "reducer",
+   "name": "12x10",
+   "bbox": [
+    0.64,
+    0.53,
+    0.67,
+    0.55
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "R2",
+   "kind": "reducer",
+   "name": "10x12",
+   "bbox": [
+    0.71,
+    0.53,
+    0.74,
+    0.55
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VX",
+   "kind": "gate_valve",
+   "bbox": [
+    0.78,
+    0.53,
+    0.8,
+    0.55
+   ],
+   "confidence": 0.6
+  }
+ ],
+ "instruments": [
+  {
+   "id": "LE-040101",
+   "tag": "LE-040101",
+   "location": "field",
+   "measures": {
+    "item": "TNK-040100"
+   },
+   "bbox": [
+    0.45,
+    0.75,
+    0.47,
+    0.79
+   ],
+   "confidence": 0.9,
+   "loop": "L-040101"
+  },
+  {
+   "id": "LT-040101",
+   "tag": "LT-040101",
+   "location": "field",
+   "measures": {
+    "item": "TNK-040100"
+   },
+   "bbox": [
+    0.45,
+    0.6,
+    0.48,
+    0.64
+   ],
+   "confidence": 0.85,
+   "loop": "L-040101"
+  },
+  {
+   "id": "LSL-040102",
+   "tag": "LSL-040102",
+   "location": "field",
+   "measures": {
+    "item": "TNK-040100"
+   },
+   "bbox": [
+    0.41,
+    0.6,
+    0.44,
+    0.64
+   ],
+   "confidence": 0.85,
+   "loop": "L-040102"
+  },
+  {
+   "id": "LSH-040103",
+   "tag": "LSH-040103",
+   "location": "field",
+   "measures": {
+    "item": "TNK-040100"
+   },
+   "bbox": [
+    0.43,
+    0.6,
+    0.46,
+    0.64
+   ],
+   "confidence": 0.85,
+   "loop": "L-040103"
+  },
+  {
+   "id": "TSH-040121",
+   "tag": "TSH-040121",
+   "location": "field",
+   "measures": {
+    "item": "PMPA"
+   },
+   "bbox": [
+    0.5,
+    0.6,
+    0.52,
+    0.64
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "ME-040121",
+   "tag": "ME-040121",
+   "location": "field",
+   "measures": {
+    "item": "PMPA"
+   },
+   "bbox": [
+    0.52,
+    0.6,
+    0.54,
+    0.64
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "TSH-040122",
+   "tag": "TSH-040122",
+   "location": "field",
+   "measures": {
+    "item": "PMPB"
+   },
+   "bbox": [
+    0.56,
+    0.6,
+    0.58,
+    0.64
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "ME-040122",
+   "tag": "ME-040122",
+   "location": "field",
+   "measures": {
+    "item": "PMPB"
+   },
+   "bbox": [
+    0.58,
+    0.6,
+    0.6,
+    0.64
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "TSH-040111",
+   "tag": "TSH-040111",
+   "location": "field",
+   "measures": {
+    "item": "MXR-040111"
+   },
+   "bbox": [
+    0.33,
+    0.6,
+    0.35,
+    0.64
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "ME-040111",
+   "tag": "ME-040111",
+   "location": "field",
+   "measures": {
+    "item": "MXR-040111"
+   },
+   "bbox": [
+    0.34,
+    0.6,
+    0.36,
+    0.64
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "FE-040141",
+   "tag": "FE-040141",
+   "location": "field",
+   "bbox": [
+    0.66,
+    0.52,
+    0.68,
+    0.55
+   ],
+   "confidence": 0.9,
+   "loop": "F-040141"
+  },
+  {
+   "id": "FIT-040141",
+   "tag": "FIT-040141",
+   "location": "field",
+   "bbox": [
+    0.66,
+    0.46,
+    0.68,
+    0.49
+   ],
+   "confidence": 0.9,
+   "loop": "F-040141"
+  },
+  {
+   "id": "FIR-040141",
+   "tag": "FIR-040141",
+   "location": "scada",
+   "bbox": [
+    0.66,
+    0.18,
+    0.68,
+    0.21
+   ],
+   "confidence": 0.8,
+   "loop": "F-040141"
+  },
+  {
+   "id": "FAL-040141",
+   "tag": "FAL-040141",
+   "location": "scada",
+   "bbox": [
+    0.69,
+    0.13,
+    0.71,
+    0.16
+   ],
+   "confidence": 0.8,
+   "loop": "F-040141"
+  },
+  {
+   "id": "LIR-040101",
+   "tag": "LIR-040101",
+   "location": "scada",
+   "bbox": [
+    0.46,
+    0.18,
+    0.48,
+    0.21
+   ],
+   "confidence": 0.8,
+   "loop": "L-040101"
+  },
+  {
+   "id": "LAL-040102",
+   "tag": "LAL-040102",
+   "location": "scada",
+   "bbox": [
+    0.42,
+    0.18,
+    0.44,
+    0.21
+   ],
+   "confidence": 0.8,
+   "loop": "L-040102"
+  },
+  {
+   "id": "LAH-040103",
+   "tag": "LAH-040103",
+   "location": "scada",
+   "bbox": [
+    0.44,
+    0.18,
+    0.46,
+    0.21
+   ],
+   "confidence": 0.8,
+   "loop": "L-040103"
+  },
+  {
+   "id": "FIC-040121",
+   "tag": "FIC-040121",
+   "location": "scada",
+   "bbox": [
+    0.53,
+    0.18,
+    0.55,
+    0.21
+   ],
+   "confidence": 0.6,
+   "notes": "label reads SPEED; first letter partly unclear",
+   "loop": "F-040121"
+  },
+  {
+   "id": "VFD-040121",
+   "tag": "VFD-040121",
+   "location": "mcc",
+   "bbox": [
+    0.55,
+    0.3,
+    0.57,
+    0.33
+   ],
+   "confidence": 0.6,
+   "loop": "F-040121"
+  }
+ ],
+ "lines": [
+  {
+   "id": "LA",
+   "from": "PMPA",
+   "to": {
+    "line": "LH"
+   },
+   "path": [
+    "VA1"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  },
+  {
+   "id": "LB",
+   "from": "PMPB",
+   "to": {
+    "line": "LH"
+   },
+   "path": [
+    "VB1"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.5
+  },
+  {
+   "id": "LH",
+   "from": "PMPA",
+   "to": "OPC-b",
+   "path": [
+    "R1",
+    "FE-040141",
+    "R2",
+    "VX"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.7
+  },
+  {
+   "id": "LIN1",
+   "from": "OPC-A1",
+   "to": "TNK-040100",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "LIN2",
+   "from": "OPC-A2",
+   "to": "TNK-040100",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "LIN3",
+   "from": "OPC-A3",
+   "to": "TNK-040100",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "LSA",
+   "from": "TNK-040100",
+   "to": "PMPA",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  },
+  {
+   "id": "LSB",
+   "from": "TNK-040100",
+   "to": "PMPB",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  }
+ ],
+ "signals": [
+  {
+   "from": "FE-040141",
+   "to": "FIT-040141",
+   "type": "unknown",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIT-040141",
+   "to": "FIR-040141",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "FIR-040141",
+   "to": "FAL-040141",
+   "type": "software",
+   "purpose": "alarm"
+  },
+  {
+   "from": "LE-040101",
+   "to": "LT-040101",
+   "type": "unknown",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LT-040101",
+   "to": "LIR-040101",
+   "type": "electrical",
+   "purpose": "measurement"
+  },
+  {
+   "from": "LSL-040102",
+   "to": "LAL-040102",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "LSH-040103",
+   "to": "LAH-040103",
+   "type": "electrical",
+   "purpose": "alarm"
+  },
+  {
+   "from": "VFD-040121",
+   "to": "PMPA",
+   "type": "electrical",
+   "purpose": "control"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-A1",
+   "direction": "in",
+   "name": "EQUIPMENT CAL PS INFLUENT",
+   "other_drawing": "P208",
+   "bbox": [
+    0.06,
+    0.57,
+    0.12,
+    0.6
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-A2",
+   "direction": "in",
+   "name": "SCREENED INFLT FROM HEADWORKS",
+   "other_drawing": "P101",
+   "bbox": [
+    0.06,
+    0.6,
+    0.12,
+    0.63
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-A3",
+   "direction": "in",
+   "name": "pH ADJUSTMENT",
+   "other_drawing": "P207",
+   "bbox": [
+    0.06,
+    0.63,
+    0.12,
+    0.66
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-b",
+   "direction": "out",
+   "name": "RECYCLE TO PA-01",
+   "other_drawing": "P202",
+   "bbox": [
+    0.81,
+    0.51,
+    0.88,
+    0.55
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r2c4",
+  "r3c3"
+ ],
+ "unreadable": [
+  "Pump tags are not printed on this sheet; the pump discharge valve/cone symbols were not zoomed",
+  "MCC/PLC/SCADA signal chains for mixer and pump status (YI/YC/TAH/MAH/ZA) not modelled in this pilot",
+  "Tank drain valve at far right of basin not modelled"
+ ]
+}

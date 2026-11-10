@@ -1,0 +1,226 @@
+{
+ "schema_version": "1.0",
+ "page": 20,
+ "sheet": {
+  "drawing_number": "P-211",
+  "title": "WAS PUMP",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "Design/Build documents (EPA submission July 2021)",
+  "legend_notes": [
+   "Bands: SCADA HMI, MBR PLC, MDP-2 (power)",
+   "PNL-190300 LOCAL CONTROL PANEL drawn as a dash-dot outline",
+   "Drawings prepared for EPA submission July 2021 to give a general understanding of the project concept; not intended to reflect design requirements."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "PMP-WAS",
+   "kind": "pump",
+   "name": "WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end",
+   "bbox": [
+    0.3533,
+    0.5626,
+    0.3865,
+    0.5941
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "PNL-190300",
+   "tag": "PNL-190300",
+   "kind": "package_unit",
+   "name": "LOCAL CONTROL PANEL",
+   "bbox": [
+    0.3227,
+    0.4305,
+    0.5421,
+    0.5232
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "CB1",
+   "kind": "other",
+   "name": "CB 480V (circuit breaker, power feed from MDP-2 to local control panel)",
+   "bbox": [
+    0.3393,
+    0.3143,
+    0.3546,
+    0.3379
+   ],
+   "confidence": 0.7
+  }
+ ],
+ "components": [
+  {
+   "id": "RIN",
+   "kind": "reducer",
+   "name": "suction reducer",
+   "bbox": [
+    0.3374,
+    0.5695,
+    0.3489,
+    0.5872
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "ROUT",
+   "kind": "reducer",
+   "name": "discharge reducer",
+   "bbox": [
+    0.396,
+    0.5507,
+    0.4075,
+    0.5685
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "CV1",
+   "kind": "check_valve",
+   "bbox": [
+    0.4145,
+    0.5507,
+    0.426,
+    0.5685
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "GV1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4445,
+    0.5507,
+    0.456,
+    0.5685
+   ],
+   "confidence": 0.8
+  }
+ ],
+ "instruments": [
+  {
+   "id": "TSH-190301",
+   "location": "field",
+   "bbox": [
+    0.3718,
+    0.5232,
+    0.3897,
+    0.5507
+   ],
+   "confidence": 0.9,
+   "tag": "TSH-190301",
+   "measures": {
+    "item": "PMP-WAS"
+   },
+   "loop": "T-190301",
+   "name": "Pump temperature switch high"
+  },
+  {
+   "id": "HMI1",
+   "location": "local_panel",
+   "bbox": [
+    0.3259,
+    0.4759,
+    0.3438,
+    0.5034
+   ],
+   "confidence": 0.8,
+   "function": "HMI",
+   "name": "HMI in PNL-190300"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "service": "WAS",
+   "from": "OPC-C",
+   "to": "PMP-WAS",
+   "path": [
+    "RIN"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "L2",
+   "service": "WAS",
+   "from": "PMP-WAS",
+   "to": "B-TRUCK",
+   "path": [
+    "ROUT",
+    "CV1",
+    "GV1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8
+  }
+ ],
+ "signals": [
+  {
+   "from": "TSH-190301",
+   "to": "PMP-WAS",
+   "type": "electrical",
+   "purpose": "trip",
+   "confidence": 0.6
+  },
+  {
+   "from": "PNL-190300",
+   "to": "PMP-WAS",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-C",
+   "direction": "in",
+   "name": "WAS FROM WAS-01 REF SHT P210",
+   "other_drawing": "P210",
+   "other_item": "WAS-01",
+   "bbox": [
+    0.1952,
+    0.5645,
+    0.2589,
+    0.5921
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B-TRUCK",
+   "name": "WAS TRUCK (flag 'a', REF SHT number blank)",
+   "direction": "sink",
+   "bbox": [
+    0.8112,
+    0.5458,
+    0.875,
+    0.5734
+   ],
+   "confidence": 0.85
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Pump tag printed only as 'PMP-' (no number); id PMP-WAS is a local placeholder, not a printed tag.",
+  "Outgoing flag 'a' WAS TRUCK has 'REF SHT' with no sheet number, so it is recorded as a boundary.",
+  "Pump type (centrifugal / PC) not stated."
+ ]
+}

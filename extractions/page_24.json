@@ -1,0 +1,1133 @@
+{
+ "schema_version": "1.0",
+ "page": 24,
+ "sheet": {
+  "drawing_number": "P-602",
+  "title": "GENERATOR DAY TANK P&ID",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "DESIGN/BUILD DOCUMENTS (prepared for EPA submission July 2021, general understanding of project concept)",
+  "legend_notes": [
+   "Filter, transfer pumps, day tank, instruments and the day tank panel are inside a dashed 'VENDOR PACKAGE' boundary; ES 120VAC supplies the day tank panel.",
+   "Tag numbers printed as 'AREA,LOOP' e.g. 600,204A. Bubbles below the SCADA line are PLC-level (rectangle) and above it SCADA (hexagon), linked by software signals.",
+   "Off-page flags are two-part boxes: sub-tag (blank here) then drawing number."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "T 600,204",
+   "tag": "T 600,204",
+   "kind": "tank",
+   "name": "GENERATOR DAY TANK (double-walled)",
+   "bbox": [
+    0.43,
+    0.716,
+    0.577,
+    0.808
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FLT 600,202",
+   "tag": "FLT 600,202",
+   "kind": "filter",
+   "name": "GENERATOR FUEL FILTER",
+   "bbox": [
+    0.18,
+    0.665,
+    0.2,
+    0.695
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "P 600,203",
+   "tag": "P 600,203",
+   "kind": "positive_displacement_pump",
+   "name": "GENERATOR FUEL TRANSFER PUMP 1 (gear-type symbol)",
+   "bbox": [
+    0.261,
+    0.662,
+    0.286,
+    0.702
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "P 600,205",
+   "tag": "P 600,205",
+   "kind": "positive_displacement_pump",
+   "name": "GENERATOR FUEL TRANSFER PUMP 2 (gear-type symbol)",
+   "bbox": [
+    0.667,
+    0.662,
+    0.692,
+    0.702
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "VCP 600,206",
+   "tag": "VCP 600,206",
+   "kind": "other",
+   "name": "GENERATOR DAY TANK PANEL (control panel, vendor package)",
+   "bbox": [
+    0.265,
+    0.415,
+    0.74,
+    0.5
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "MCP 600,101",
+   "tag": "MCP 600,101",
+   "kind": "other",
+   "name": "Master control panel (PLC layer between SCADA band and field)",
+   "bbox": [
+    0.049,
+    0.205,
+    0.088,
+    0.217
+   ],
+   "confidence": 0.8
+  }
+ ],
+ "components": [
+  {
+   "id": "DF1",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol (unlabelled, type uncertain)",
+   "bbox": [
+    0.131,
+    0.57,
+    0.151,
+    0.6
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "FVF",
+   "kind": "manual_valve",
+   "name": "valve with wavy stem symbol (possibly fusible-link or emergency shutoff)",
+   "bbox": [
+    0.16,
+    0.57,
+    0.18,
+    0.6
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "DA1",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol (unlabelled, type uncertain)",
+   "bbox": [
+    0.131,
+    0.667,
+    0.151,
+    0.697
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "FVA",
+   "kind": "manual_valve",
+   "name": "valve with wavy stem symbol (possibly fusible-link or emergency shutoff)",
+   "bbox": [
+    0.16,
+    0.667,
+    0.18,
+    0.697
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "DA2",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol (unlabelled, type uncertain)",
+   "bbox": [
+    0.195,
+    0.667,
+    0.215,
+    0.697
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "CHK1",
+   "kind": "check_valve",
+   "name": "check-valve-like symbol after filter",
+   "bbox": [
+    0.212,
+    0.667,
+    0.232,
+    0.697
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "RV1",
+   "kind": "relief_valve",
+   "name": "pump 1 discharge relief valve (outlet arrow not connected on sheet)",
+   "bbox": [
+    0.29,
+    0.653,
+    0.31,
+    0.683
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "UV1",
+   "kind": "other",
+   "name": "inline valve symbol with stem tick (type uncertain)",
+   "bbox": [
+    0.325,
+    0.667,
+    0.345,
+    0.697
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "DA3",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol (unlabelled, type uncertain)",
+   "bbox": [
+    0.347,
+    0.667,
+    0.367,
+    0.697
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "RV3",
+   "kind": "relief_valve",
+   "name": "day tank relief/vent valve venting to atmosphere",
+   "bbox": [
+    0.395,
+    0.675,
+    0.415,
+    0.705
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VENT1",
+   "kind": "vent",
+   "name": "day tank vent with hatched filter and hooked outlet",
+   "bbox": [
+    0.448,
+    0.675,
+    0.468,
+    0.705
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "DRN1",
+   "kind": "drain",
+   "name": "drain valve (diamond with filled dot) from tank outer wall to open end",
+   "bbox": [
+    0.63,
+    0.765,
+    0.65,
+    0.795
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "STRA",
+   "kind": "strainer",
+   "name": "suction tube with mesh strainer (FOS-to-generator draw-off)",
+   "bbox": [
+    0.545,
+    0.715,
+    0.565,
+    0.745
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "BOX1",
+   "kind": "other",
+   "name": "inline device with bracket tab (unlabelled, type uncertain)",
+   "bbox": [
+    0.558,
+    0.57,
+    0.578,
+    0.6
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "FVG",
+   "kind": "manual_valve",
+   "name": "valve with wavy stem symbol (possibly fusible-link or emergency shutoff)",
+   "bbox": [
+    0.81,
+    0.57,
+    0.83,
+    0.6
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "DG",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol (unlabelled, type uncertain)",
+   "bbox": [
+    0.85,
+    0.57,
+    0.87,
+    0.6
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "STRB",
+   "kind": "strainer",
+   "name": "suction tube with mesh strainer (pump 2 suction)",
+   "bbox": [
+    0.548,
+    0.715,
+    0.568,
+    0.745
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "BOX2",
+   "kind": "other",
+   "name": "inline device with bracket tab (unlabelled, type uncertain)",
+   "bbox": [
+    0.595,
+    0.665,
+    0.615,
+    0.695
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "DB",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol (unlabelled, type uncertain)",
+   "bbox": [
+    0.613,
+    0.667,
+    0.633,
+    0.697
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "CHK2",
+   "kind": "check_valve",
+   "name": "check-valve-like symbol before pump 2",
+   "bbox": [
+    0.63,
+    0.667,
+    0.65,
+    0.697
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "RV2",
+   "kind": "relief_valve",
+   "name": "pump 2 discharge relief valve (outlet arrow not connected on sheet)",
+   "bbox": [
+    0.693,
+    0.653,
+    0.713,
+    0.683
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "UV2",
+   "kind": "other",
+   "name": "inline valve symbol with stem tick (type uncertain)",
+   "bbox": [
+    0.72,
+    0.667,
+    0.74,
+    0.697
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "FVR",
+   "kind": "manual_valve",
+   "name": "valve with wavy stem symbol (possibly fusible-link or emergency shutoff)",
+   "bbox": [
+    0.78,
+    0.667,
+    0.8,
+    0.697
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "DR",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol (unlabelled, type uncertain)",
+   "bbox": [
+    0.81,
+    0.667,
+    0.83,
+    0.697
+   ],
+   "confidence": 0.5
+  }
+ ],
+ "instruments": [
+  {
+   "id": "PI-600,203A",
+   "tag": "PI-600,203A",
+   "location": "field",
+   "loop": "P-600203A",
+   "bbox": [
+    0.238,
+    0.615,
+    0.258,
+    0.645
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "L2B",
+    "after": "CHK1"
+   },
+   "name": "pressure indicator with diamond isolator, pump 1 suction"
+  },
+  {
+   "id": "PI-600,203B",
+   "tag": "PI-600,203B",
+   "location": "field",
+   "loop": "P-600203B",
+   "bbox": [
+    0.355,
+    0.615,
+    0.375,
+    0.645
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "L3",
+    "after": "UV1"
+   },
+   "name": "pressure indicator with diamond isolator, pump 1 discharge"
+  },
+  {
+   "id": "PI-600,205A",
+   "tag": "PI-600,205A",
+   "location": "field",
+   "loop": "P-600205A",
+   "bbox": [
+    0.645,
+    0.61,
+    0.665,
+    0.64
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "L9",
+    "after": "CHK2"
+   },
+   "name": "pressure indicator with diamond isolator, pump 2 suction"
+  },
+  {
+   "id": "PI-600,205B",
+   "tag": "PI-600,205B",
+   "location": "field",
+   "loop": "P-600205B",
+   "bbox": [
+    0.722,
+    0.61,
+    0.742,
+    0.64
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "L10",
+    "after": "UV2"
+   },
+   "name": "pressure indicator with diamond isolator, pump 2 discharge"
+  },
+  {
+   "id": "LSH-600,204A",
+   "tag": "LSH-600,204A",
+   "location": "field",
+   "loop": "L-600204A",
+   "bbox": [
+    0.466,
+    0.615,
+    0.486,
+    0.645
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "T 600,204"
+   },
+   "name": "day tank high level switch"
+  },
+  {
+   "id": "LSL-600,204B",
+   "tag": "LSL-600,204B",
+   "location": "field",
+   "loop": "L-600204B",
+   "bbox": [
+    0.48,
+    0.64,
+    0.5,
+    0.67
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "T 600,204"
+   },
+   "name": "day tank low level switch"
+  },
+  {
+   "id": "LIT-600,204C",
+   "tag": "LIT-600,204C",
+   "location": "field",
+   "loop": "L-600204C",
+   "bbox": [
+    0.535,
+    0.665,
+    0.555,
+    0.695
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "T 600,204"
+   },
+   "name": "day tank level transmitter (probe)"
+  },
+  {
+   "id": "LSH-600,204D",
+   "tag": "LSH-600,204D",
+   "location": "field",
+   "loop": "L-600204D",
+   "bbox": [
+    0.588,
+    0.74,
+    0.608,
+    0.77
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "T 600,204"
+   },
+   "name": "interstitial space leak switch (LEAK)"
+  },
+  {
+   "id": "LAL-600,204B-PLC",
+   "tag": "LAL-600,204B",
+   "location": "plc",
+   "loop": "L-600204B",
+   "bbox": [
+    0.438,
+    0.159,
+    0.462,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Low fuel level"
+  },
+  {
+   "id": "LAL-600,204B-SCADA",
+   "tag": "LAL-600,204B",
+   "location": "scada",
+   "loop": "L-600204B",
+   "bbox": [
+    0.438,
+    0.077,
+    0.462,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Low fuel level"
+  },
+  {
+   "id": "LAH-600,204D-PLC",
+   "tag": "LAH-600,204D",
+   "location": "plc",
+   "loop": "L-600204D",
+   "bbox": [
+    0.468,
+    0.159,
+    0.492,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Fuel tank leak (as labelled)"
+  },
+  {
+   "id": "LAH-600,204D-SCADA",
+   "tag": "LAH-600,204D",
+   "location": "scada",
+   "loop": "L-600204D",
+   "bbox": [
+    0.468,
+    0.077,
+    0.492,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Fuel tank leak (as labelled)"
+  },
+  {
+   "id": "LAH-600,204A-PLC",
+   "tag": "LAH-600,204A",
+   "location": "plc",
+   "loop": "L-600204A",
+   "bbox": [
+    0.497,
+    0.159,
+    0.521,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "High fuel level"
+  },
+  {
+   "id": "LAH-600,204A-SCADA",
+   "tag": "LAH-600,204A",
+   "location": "scada",
+   "loop": "L-600204A",
+   "bbox": [
+    0.497,
+    0.077,
+    0.521,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "High fuel level"
+  },
+  {
+   "id": "YA-600,204E-PLC",
+   "tag": "YA-600,204E",
+   "location": "plc",
+   "loop": "Y-600204E",
+   "bbox": [
+    0.526,
+    0.159,
+    0.55,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Leak detected"
+  },
+  {
+   "id": "YA-600,204E-SCADA",
+   "tag": "YA-600,204E",
+   "location": "scada",
+   "loop": "Y-600204E",
+   "bbox": [
+    0.526,
+    0.077,
+    0.55,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Leak detected"
+  },
+  {
+   "id": "YA-600,203-PLC",
+   "tag": "YA-600,203",
+   "location": "plc",
+   "loop": "Y-600203",
+   "bbox": [
+    0.555,
+    0.159,
+    0.579,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Transfer pump 1 fail"
+  },
+  {
+   "id": "YA-600,203-SCADA",
+   "tag": "YA-600,203",
+   "location": "scada",
+   "loop": "Y-600203",
+   "bbox": [
+    0.555,
+    0.077,
+    0.579,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Transfer pump 1 fail"
+  },
+  {
+   "id": "YA-600,205-PLC",
+   "tag": "YA-600,205",
+   "location": "plc",
+   "loop": "Y-600205",
+   "bbox": [
+    0.585,
+    0.159,
+    0.609,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Transfer pump 2 fail"
+  },
+  {
+   "id": "YA-600,205-SCADA",
+   "tag": "YA-600,205",
+   "location": "scada",
+   "loop": "Y-600205",
+   "bbox": [
+    0.585,
+    0.077,
+    0.609,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Transfer pump 2 fail"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "service": "fuel oil return",
+   "from": "OPC1",
+   "to": "T 600,204",
+   "path": [
+    "DF1",
+    "FVF"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.8,
+   "line_number": "1\"-FOR"
+  },
+  {
+   "id": "L2",
+   "service": "fuel oil supply",
+   "from": "OPC2",
+   "to": "FLT 600,202",
+   "path": [
+    "DA1",
+    "FVA"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1\"-FOS"
+  },
+  {
+   "id": "L2B",
+   "service": "fuel oil supply",
+   "from": "FLT 600,202",
+   "to": "P 600,203",
+   "path": [
+    "DA2",
+    "CHK1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1\"-FOS"
+  },
+  {
+   "id": "L3",
+   "service": "fuel oil supply",
+   "from": "P 600,203",
+   "to": "T 600,204",
+   "path": [
+    "UV1",
+    "DA3"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1\"-FOS"
+  },
+  {
+   "id": "L4",
+   "service": "relief discharge",
+   "from": {
+    "line": "L3"
+   },
+   "to": "B1",
+   "path": [
+    "RV1"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.5
+  },
+  {
+   "id": "L5",
+   "service": "tank vent",
+   "from": "T 600,204",
+   "to": "B2",
+   "path": [
+    "RV3"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.55
+  },
+  {
+   "id": "L6",
+   "service": "tank vent",
+   "from": "T 600,204",
+   "to": "B2",
+   "path": [
+    "VENT1"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.55
+  },
+  {
+   "id": "L7",
+   "service": "tank drain",
+   "from": "T 600,204",
+   "to": "B3",
+   "path": [
+    "DRN1"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.5
+  },
+  {
+   "id": "L8",
+   "service": "fuel oil supply to generator",
+   "from": "T 600,204",
+   "to": "OPC3",
+   "path": [
+    "STRA",
+    "BOX1",
+    "FVG",
+    "DG"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1\"-FOS"
+  },
+  {
+   "id": "L9",
+   "service": "fuel oil transfer (return)",
+   "from": "T 600,204",
+   "to": "P 600,205",
+   "path": [
+    "STRB",
+    "BOX2",
+    "DB",
+    "CHK2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1\"-FOS"
+  },
+  {
+   "id": "L10",
+   "service": "fuel oil return",
+   "from": "P 600,205",
+   "to": "OPC4",
+   "path": [
+    "UV2",
+    "FVR",
+    "DR"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1\"-FOR"
+  },
+  {
+   "id": "L11",
+   "service": "relief discharge",
+   "from": {
+    "line": "L10"
+   },
+   "to": "B1",
+   "path": [
+    "RV2"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.5
+  }
+ ],
+ "signals": [
+  {
+   "from": "LSH-600,204A",
+   "to": "VCP 600,206",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "LSL-600,204B",
+   "to": "VCP 600,206",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "LIT-600,204C",
+   "to": "VCP 600,206",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "LSH-600,204D",
+   "to": "VCP 600,206",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "P 600,203",
+   "to": "VCP 600,206",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.5
+  },
+  {
+   "from": "P 600,205",
+   "to": "VCP 600,206",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.5
+  },
+  {
+   "from": "VCP 600,206",
+   "to": "P 600,203",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "VCP 600,206",
+   "to": "P 600,205",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "OPC5",
+   "to": "VCP 600,206",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,206",
+   "to": "OPC6",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,206",
+   "to": "LAL-600,204B-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "LAL-600,204B-PLC",
+   "to": "LAL-600,204B-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,206",
+   "to": "LAH-600,204D-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "LAH-600,204D-PLC",
+   "to": "LAH-600,204D-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,206",
+   "to": "LAH-600,204A-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "LAH-600,204A-PLC",
+   "to": "LAH-600,204A-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,206",
+   "to": "YA-600,204E-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "YA-600,204E-PLC",
+   "to": "YA-600,204E-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,206",
+   "to": "YA-600,203-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "YA-600,203-PLC",
+   "to": "YA-600,203-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,206",
+   "to": "YA-600,205-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "YA-600,205-PLC",
+   "to": "YA-600,205-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "FOR GENERATOR",
+   "other_drawing": "P-603",
+   "line_number": "1\"-FOR",
+   "bbox": [
+    0.045,
+    0.575,
+    0.095,
+    0.6
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "FOS BULK FUEL STORAGE TANK",
+   "other_drawing": "P-601",
+   "line_number": "1\"-FOS",
+   "bbox": [
+    0.045,
+    0.675,
+    0.095,
+    0.7
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC3",
+   "direction": "out",
+   "name": "FOS GENERATOR",
+   "other_drawing": "P-603",
+   "line_number": "1\"-FOS",
+   "bbox": [
+    0.838,
+    0.58,
+    0.888,
+    0.605
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC4",
+   "direction": "out",
+   "name": "FOR BULK FUEL STORAGE TANK",
+   "other_drawing": "P-601",
+   "line_number": "1\"-FOR",
+   "bbox": [
+    0.838,
+    0.675,
+    0.888,
+    0.7
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC5",
+   "direction": "in",
+   "name": "HIGH LEVEL LOW LEVEL BULK TANK PANEL",
+   "other_drawing": "P-601",
+   "bbox": [
+    0.045,
+    0.315,
+    0.095,
+    0.34
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "OPC6",
+   "direction": "out",
+   "name": "LOW LEVEL GEN CONTROL PANEL",
+   "other_drawing": "P-603",
+   "bbox": [
+    0.838,
+    0.255,
+    0.888,
+    0.28
+   ],
+   "confidence": 0.85
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "RELIEF VALVE OUTLET (destination not drawn)",
+   "direction": "sink",
+   "confidence": 0.4
+  },
+  {
+   "id": "B2",
+   "name": "ATMOSPHERE (tank vents)",
+   "direction": "sink",
+   "confidence": 0.5
+  },
+  {
+   "id": "B3",
+   "name": "DRAIN (open end)",
+   "direction": "sink",
+   "confidence": 0.5
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Symbol types for diamond/bow-tie items, wavy-stem valves, bracketed inline devices and the stem-tick inline valves are not defined by a legend here; kinds are best guesses.",
+  "Destination of the pump relief valve outlets is not drawn.",
+  "Grey flow arrow beside the FOR GENERATOR flag points toward the flag, opposite to the tank inlet arrow; flow modelled as generator to day tank (matches P-603).",
+  "Direction of dashed lines between the day tank panel and the transfer pumps is not marked."
+ ]
+}

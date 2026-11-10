@@ -1,0 +1,670 @@
+{
+ "schema_version": "1.0",
+ "page": 23,
+ "sheet": {
+  "drawing_number": "P-601",
+  "title": "GENERATOR BULK FUEL STORAGE P&ID",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "DESIGN/BUILD DOCUMENTS (prepared for EPA submission July 2021, general understanding of project concept)",
+  "legend_notes": [
+   "Tank, valves, vents, level sensors and monitoring panel are inside a dashed 'VENDOR PACKAGE' boundary; ES 120VAC is the electrical supply to the monitoring system.",
+   "Tag numbers are printed as 'AREA,LOOP' e.g. 600,201B (loop 201B). Bubbles below the SCADA line are PLC-level (rectangle) and above it SCADA (hexagon), linked by software signals.",
+   "Off-page flags are two-part boxes: sub-tag then drawing number (P-602)."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "T 600,201",
+   "tag": "T 600,201",
+   "kind": "tank",
+   "name": "BULK FUEL STORAGE TANK (double-walled, within vendor package)",
+   "bbox": [
+    0.355,
+    0.585,
+    0.58,
+    0.69
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "VCP 600,201",
+   "tag": "VCP 600,201",
+   "kind": "other",
+   "name": "FUEL TANK MONITORING SYSTEM (control panel)",
+   "bbox": [
+    0.42,
+    0.43,
+    0.56,
+    0.47
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "MCP 600,101",
+   "tag": "MCP 600,101",
+   "kind": "other",
+   "name": "Master control panel (PLC layer between SCADA band and field)",
+   "bbox": [
+    0.049,
+    0.205,
+    0.088,
+    0.217
+   ],
+   "confidence": 0.8
+  }
+ ],
+ "components": [
+  {
+   "id": "DIAM1",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol on FOR line (unlabelled, type uncertain)",
+   "bbox": [
+    0.295,
+    0.57,
+    0.31,
+    0.59
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "FSV1",
+   "kind": "manual_valve",
+   "name": "valve with wavy stem symbol on FOR line (possibly fusible-link or emergency shutoff)",
+   "bbox": [
+    0.325,
+    0.565,
+    0.345,
+    0.59
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "RV1",
+   "kind": "relief_valve",
+   "name": "tank emergency vent / relief (spring valve venting to atmosphere)",
+   "bbox": [
+    0.385,
+    0.555,
+    0.415,
+    0.59
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VENT1",
+   "kind": "vent",
+   "name": "tank vent with hatched filter/flame arrestor and hooked outlet",
+   "bbox": [
+    0.418,
+    0.54,
+    0.438,
+    0.59
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VENT2",
+   "kind": "vent",
+   "name": "tank vent with hatched filter/flame arrestor and hooked outlet (second)",
+   "bbox": [
+    0.447,
+    0.54,
+    0.467,
+    0.59
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "OV1",
+   "kind": "other",
+   "name": "overfill prevention valve with float on tank top",
+   "bbox": [
+    0.468,
+    0.555,
+    0.505,
+    0.62
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "STR1",
+   "kind": "strainer",
+   "name": "suction tube with mesh strainer inside tank",
+   "bbox": [
+    0.557,
+    0.57,
+    0.567,
+    0.665
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "DEV1",
+   "kind": "other",
+   "name": "unlabelled inline device with bracket tab on FOS line (type uncertain)",
+   "bbox": [
+    0.568,
+    0.54,
+    0.582,
+    0.568
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "FSV2",
+   "kind": "manual_valve",
+   "name": "valve with wavy stem symbol on FOS line (possibly fusible-link or emergency shutoff)",
+   "bbox": [
+    0.612,
+    0.565,
+    0.632,
+    0.59
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "DIAM2",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol on FOS line (unlabelled, type uncertain)",
+   "bbox": [
+    0.655,
+    0.57,
+    0.67,
+    0.59
+   ],
+   "confidence": 0.5
+  }
+ ],
+ "instruments": [
+  {
+   "id": "LIT-600,201A",
+   "tag": "LIT-600,201A",
+   "location": "field",
+   "loop": "L-600201A",
+   "bbox": [
+    0.37,
+    0.575,
+    0.39,
+    0.595
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "T 600,201"
+   },
+   "name": "tank level transmitter (probe tube)"
+  },
+  {
+   "id": "LSH-600,201B",
+   "tag": "LSH-600,201B",
+   "location": "field",
+   "loop": "L-600201B",
+   "bbox": [
+    0.51,
+    0.585,
+    0.535,
+    0.605
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "T 600,201"
+   },
+   "name": "level switch high"
+  },
+  {
+   "id": "LSL-600,201C",
+   "tag": "LSL-600,201C",
+   "location": "field",
+   "loop": "L-600201C",
+   "bbox": [
+    0.538,
+    0.585,
+    0.56,
+    0.605
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "T 600,201"
+   },
+   "name": "level switch low"
+  },
+  {
+   "id": "LSH-600,201D",
+   "tag": "LSH-600,201D",
+   "location": "field",
+   "loop": "L-600201D",
+   "bbox": [
+    0.6,
+    0.685,
+    0.62,
+    0.7
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "T 600,201"
+   },
+   "name": "interstitial space leak switch (LEAK)"
+  },
+  {
+   "id": "YI-600,201E",
+   "tag": "YI-600,201E",
+   "location": "field",
+   "loop": "Y-600201E",
+   "bbox": [
+    0.343,
+    0.425,
+    0.362,
+    0.445
+   ],
+   "confidence": 0.85,
+   "name": "status indicator, connected to monitoring system"
+  },
+  {
+   "id": "HS-600,201F",
+   "tag": "HS-600,201F",
+   "location": "field",
+   "loop": "H-600201F",
+   "bbox": [
+    0.343,
+    0.445,
+    0.362,
+    0.465
+   ],
+   "confidence": 0.85,
+   "name": "hand switch, connected to monitoring system"
+  },
+  {
+   "id": "LI-600,201B-PLC",
+   "tag": "LI-600,201B",
+   "location": "plc",
+   "loop": "L-600201B",
+   "bbox": [
+    0.418,
+    0.175,
+    0.442,
+    0.2
+   ],
+   "confidence": 0.85,
+   "name": "Tank level"
+  },
+  {
+   "id": "LI-600,201B-SCADA",
+   "tag": "LI-600,201B",
+   "location": "scada",
+   "loop": "L-600201B",
+   "bbox": [
+    0.418,
+    0.085,
+    0.442,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Tank level"
+  },
+  {
+   "id": "LAL-600,201A-PLC",
+   "tag": "LAL-600,201A",
+   "location": "plc",
+   "loop": "L-600201A",
+   "bbox": [
+    0.448,
+    0.175,
+    0.47200000000000003,
+    0.2
+   ],
+   "confidence": 0.85,
+   "name": "Low fuel level"
+  },
+  {
+   "id": "LAL-600,201A-SCADA",
+   "tag": "LAL-600,201A",
+   "location": "scada",
+   "loop": "L-600201A",
+   "bbox": [
+    0.448,
+    0.085,
+    0.47200000000000003,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Low fuel level"
+  },
+  {
+   "id": "LAH-600,201B-PLC",
+   "tag": "LAH-600,201B",
+   "location": "plc",
+   "loop": "L-600201B",
+   "bbox": [
+    0.478,
+    0.175,
+    0.502,
+    0.2
+   ],
+   "confidence": 0.85,
+   "name": "Fuel tank leak (as labelled)"
+  },
+  {
+   "id": "LAH-600,201B-SCADA",
+   "tag": "LAH-600,201B",
+   "location": "scada",
+   "loop": "L-600201B",
+   "bbox": [
+    0.478,
+    0.085,
+    0.502,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Fuel tank leak (as labelled)"
+  },
+  {
+   "id": "LAH-600,201C-PLC",
+   "tag": "LAH-600,201C",
+   "location": "plc",
+   "loop": "L-600201C",
+   "bbox": [
+    0.508,
+    0.175,
+    0.532,
+    0.2
+   ],
+   "confidence": 0.85,
+   "name": "High fuel level"
+  },
+  {
+   "id": "LAH-600,201C-SCADA",
+   "tag": "LAH-600,201C",
+   "location": "scada",
+   "loop": "L-600201C",
+   "bbox": [
+    0.508,
+    0.085,
+    0.532,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "High fuel level"
+  },
+  {
+   "id": "YA-600,201D-PLC",
+   "tag": "YA-600,201D",
+   "location": "plc",
+   "loop": "Y-600201D",
+   "bbox": [
+    0.538,
+    0.175,
+    0.562,
+    0.2
+   ],
+   "confidence": 0.85,
+   "name": "Leak detected"
+  },
+  {
+   "id": "YA-600,201D-SCADA",
+   "tag": "YA-600,201D",
+   "location": "scada",
+   "loop": "Y-600201D",
+   "bbox": [
+    0.538,
+    0.085,
+    0.562,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Leak detected"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "line_number": "1\"-FOR",
+   "service": "fuel oil return",
+   "from": "OPC1",
+   "to": "T 600,201",
+   "path": [
+    "DIAM1",
+    "FSV1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8
+  },
+  {
+   "id": "L2",
+   "line_number": "1\"-FOS",
+   "service": "fuel oil supply",
+   "from": "T 600,201",
+   "to": "OPC2",
+   "path": [
+    "STR1",
+    "DEV1",
+    "FSV2",
+    "DIAM2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8
+  },
+  {
+   "id": "L3",
+   "service": "tank vent",
+   "from": "T 600,201",
+   "to": "B1",
+   "path": [
+    "RV1"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.55
+  },
+  {
+   "id": "L4",
+   "service": "tank vent",
+   "from": "T 600,201",
+   "to": "B1",
+   "path": [
+    "VENT1"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.55
+  },
+  {
+   "id": "L5",
+   "service": "tank vent",
+   "from": "T 600,201",
+   "to": "B1",
+   "path": [
+    "VENT2"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.55
+  }
+ ],
+ "signals": [
+  {
+   "from": "LIT-600,201A",
+   "to": "VCP 600,201",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "LSH-600,201B",
+   "to": "VCP 600,201",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "LSL-600,201C",
+   "to": "VCP 600,201",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "LSH-600,201D",
+   "to": "VCP 600,201",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "HS-600,201F",
+   "to": "VCP 600,201",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.55
+  },
+  {
+   "from": "VCP 600,201",
+   "to": "YI-600,201E",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.5
+  },
+  {
+   "from": "VCP 600,201",
+   "to": "LI-600,201B-PLC",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.6
+  },
+  {
+   "from": "LI-600,201B-PLC",
+   "to": "LI-600,201B-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,201",
+   "to": "LAL-600,201A-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "LAL-600,201A-PLC",
+   "to": "LAL-600,201A-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,201",
+   "to": "LAH-600,201B-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "LAH-600,201B-PLC",
+   "to": "LAH-600,201B-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,201",
+   "to": "LAH-600,201C-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "LAH-600,201C-PLC",
+   "to": "LAH-600,201C-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,201",
+   "to": "YA-600,201D-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "YA-600,201D-PLC",
+   "to": "YA-600,201D-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,201",
+   "to": "OPC3",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.7
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "FOR DAY TANK",
+   "other_drawing": "P-602",
+   "line_number": "1\"-FOR",
+   "bbox": [
+    0.045,
+    0.538,
+    0.095,
+    0.556
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC2",
+   "direction": "out",
+   "name": "FOS A DAY TANK",
+   "other_drawing": "P-602",
+   "line_number": "1\"-FOS",
+   "bbox": [
+    0.838,
+    0.538,
+    0.888,
+    0.556
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC3",
+   "direction": "out",
+   "name": "HIGH LEVEL LOW LEVEL DAY TANK PANEL",
+   "other_drawing": "P-602",
+   "bbox": [
+    0.838,
+    0.288,
+    0.888,
+    0.31
+   ],
+   "confidence": 0.85
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "ATMOSPHERE (tank vents)",
+   "direction": "sink",
+   "confidence": 0.5
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Symbol types for the diamond/bow-tie items, the wavy-stem valves and the bracketed inline device on the FOS line are not identified by a legend; kinds are best guesses.",
+  "The signal-line direction between the monitoring system and YI-600,201E/HS-600,201F is not marked."
+ ]
+}

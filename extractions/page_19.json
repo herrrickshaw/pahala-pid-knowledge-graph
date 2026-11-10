@@ -1,0 +1,581 @@
+{
+ "schema_version": "1.0",
+ "page": 19,
+ "sheet": {
+  "drawing_number": "P-210",
+  "title": "WAS STORAGE BASIN",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "Design/Build documents (EPA submission July 2021)",
+  "legend_notes": [
+   "Horizontal bands: SCADA HMI, MBR PLC, MCC, REMOTE I/O CABINET 2 (items sit above the band line they belong to)",
+   "Flag letters A, E, C inside boxes are the printed connector identifiers",
+   "Drawings prepared for EPA submission July 2021 to give a general understanding of the project concept; not intended to reflect design requirements."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "TNK-190100",
+   "tag": "TNK-190100",
+   "kind": "tank",
+   "name": "WAS STORAGE BASIN",
+   "bbox": [
+    0.2851,
+    0.6453,
+    0.6486,
+    0.7931
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "MXR-190111",
+   "tag": "MXR-190111",
+   "kind": "mixer",
+   "name": "WAS basin mixer (submersible, motor and propeller)",
+   "part_of": "TNK-190100",
+   "bbox": [
+    0.574,
+    0.7064,
+    0.6059,
+    0.7557
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "FBD-190103",
+   "tag": "FBD-190103",
+   "kind": "other",
+   "name": "Fine bubble diffuser grid",
+   "part_of": "TNK-190100",
+   "bbox": [
+    0.4413,
+    0.7635,
+    0.4923,
+    0.7833
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "components": [
+  {
+   "id": "VIN",
+   "kind": "other",
+   "name": "valve in WAS inlet line to basin (diamond/bar symbol, type unclear)",
+   "bbox": [
+    0.294,
+    0.6276,
+    0.3055,
+    0.6453
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VAIR",
+   "kind": "butterfly_valve",
+   "name": "valve symbol with lever/dot on process air drop (type unclear)",
+   "bbox": [
+    0.4611,
+    0.5626,
+    0.4726,
+    0.5803
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VOUT",
+   "kind": "other",
+   "name": "valve in WAS outlet line (bow-tie/bar symbol, type unclear)",
+   "bbox": [
+    0.6862,
+    0.7744,
+    0.6977,
+    0.7921
+   ],
+   "confidence": 0.5
+  }
+ ],
+ "instruments": [
+  {
+   "id": "LE-190102",
+   "location": "field",
+   "bbox": [
+    0.3489,
+    0.7714,
+    0.3667,
+    0.799
+   ],
+   "confidence": 0.95,
+   "tag": "LE-190102",
+   "measures": {
+    "item": "TNK-190100"
+   },
+   "loop": "L-190102",
+   "name": "Submersible level element"
+  },
+  {
+   "id": "LT-190102",
+   "location": "field",
+   "bbox": [
+    0.3495,
+    0.6227,
+    0.3673,
+    0.6502
+   ],
+   "confidence": 0.95,
+   "tag": "LT-190102",
+   "measures": {
+    "item": "TNK-190100"
+   },
+   "loop": "L-190102"
+  },
+  {
+   "id": "LIR-190102",
+   "location": "scada",
+   "bbox": [
+    0.3495,
+    0.1911,
+    0.3673,
+    0.2187
+   ],
+   "confidence": 0.9,
+   "tag": "LIR-190102",
+   "loop": "L-190102",
+   "name": "LEVEL"
+  },
+  {
+   "id": "LAH-190102",
+   "location": "scada",
+   "bbox": [
+    0.3705,
+    0.1488,
+    0.3884,
+    0.1764
+   ],
+   "confidence": 0.9,
+   "tag": "LAH-190102",
+   "loop": "L-190102",
+   "name": "HIGH LEVEL"
+  },
+  {
+   "id": "LAL-190102",
+   "location": "scada",
+   "bbox": [
+    0.3916,
+    0.1488,
+    0.4094,
+    0.1764
+   ],
+   "confidence": 0.9,
+   "tag": "LAL-190102",
+   "loop": "L-190102",
+   "name": "LOW LEVEL"
+  },
+  {
+   "id": "TSH-190111",
+   "location": "field",
+   "bbox": [
+    0.5823,
+    0.6227,
+    0.6001,
+    0.6502
+   ],
+   "confidence": 0.9,
+   "tag": "TSH-190111",
+   "measures": {
+    "item": "MXR-190111"
+   },
+   "loop": "T-190111",
+   "name": "Mixer motor temperature switch high"
+  },
+  {
+   "id": "ME-190111",
+   "location": "field",
+   "bbox": [
+    0.5963,
+    0.6227,
+    0.6142,
+    0.6502
+   ],
+   "confidence": 0.85,
+   "tag": "ME-190111",
+   "measures": {
+    "item": "MXR-190111"
+   },
+   "loop": "M-190111",
+   "name": "Mixer motor moisture element"
+  },
+  {
+   "id": "YI-190111A",
+   "location": "scada",
+   "bbox": [
+    0.5185,
+    0.1911,
+    0.5364,
+    0.2187
+   ],
+   "confidence": 0.9,
+   "tag": "YI-190111A",
+   "loop": "Y-190111",
+   "name": "RUNNING"
+  },
+  {
+   "id": "YC-190111",
+   "location": "scada",
+   "bbox": [
+    0.5395,
+    0.1911,
+    0.5574,
+    0.2187
+   ],
+   "confidence": 0.9,
+   "tag": "YC-190111",
+   "loop": "Y-190111",
+   "name": "RUN"
+  },
+  {
+   "id": "YI-190111B",
+   "location": "scada",
+   "bbox": [
+    0.5606,
+    0.1911,
+    0.5784,
+    0.2187
+   ],
+   "confidence": 0.9,
+   "tag": "YI-190111B",
+   "loop": "Y-190111",
+   "name": "REMOTE"
+  },
+  {
+   "id": "TAH-190111",
+   "location": "scada",
+   "bbox": [
+    0.5823,
+    0.1911,
+    0.6001,
+    0.2187
+   ],
+   "confidence": 0.9,
+   "tag": "TAH-190111",
+   "loop": "T-190111",
+   "name": "HIGH TEMP"
+  },
+  {
+   "id": "MAH-190111",
+   "location": "scada",
+   "bbox": [
+    0.6033,
+    0.1911,
+    0.6212,
+    0.2187
+   ],
+   "confidence": 0.9,
+   "tag": "MAH-190111",
+   "loop": "M-190111",
+   "name": "HIGH MOIST"
+  },
+  {
+   "id": "ZA-190111",
+   "location": "scada",
+   "bbox": [
+    0.5612,
+    0.1488,
+    0.5791,
+    0.1764
+   ],
+   "confidence": 0.85,
+   "tag": "ZA-190111",
+   "loop": "Z-190111",
+   "name": "FAIL"
+  },
+  {
+   "id": "JS-190111",
+   "location": "local_panel",
+   "bbox": [
+    0.5185,
+    0.3025,
+    0.5364,
+    0.33
+   ],
+   "confidence": 0.85,
+   "tag": "JS-190111",
+   "loop": "J-190111",
+   "name": "Mixer power/status switch at MCC"
+  },
+  {
+   "id": "HS-190111",
+   "location": "local_panel",
+   "bbox": [
+    0.5395,
+    0.3025,
+    0.5574,
+    0.33
+   ],
+   "confidence": 0.85,
+   "tag": "HS-190111",
+   "loop": "H-190111",
+   "name": "Hand-off-remote switch (HOR) at MCC"
+  },
+  {
+   "id": "TY-190111",
+   "location": "local_panel",
+   "bbox": [
+    0.5823,
+    0.3025,
+    0.6001,
+    0.33
+   ],
+   "confidence": 0.85,
+   "tag": "TY-190111",
+   "loop": "T-190111",
+   "name": "Temperature relay at MCC"
+  },
+  {
+   "id": "MY-190111",
+   "location": "local_panel",
+   "bbox": [
+    0.6033,
+    0.3695,
+    0.6212,
+    0.397
+   ],
+   "confidence": 0.85,
+   "tag": "MY-190111",
+   "loop": "M-190111",
+   "name": "Moisture relay in remote I/O cabinet 2"
+  },
+  {
+   "id": "MS-190111",
+   "location": "local_panel",
+   "bbox": [
+    0.6244,
+    0.3695,
+    0.6422,
+    0.397
+   ],
+   "confidence": 0.85,
+   "tag": "MS-190111",
+   "loop": "M-190111",
+   "name": "Moisture switch in remote I/O cabinet 2"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "service": "WAS",
+   "from": "OPC-E",
+   "to": "TNK-190100",
+   "path": [
+    "VIN"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "L2",
+   "service": "process air (dashed line)",
+   "from": "OPC-A",
+   "to": "FBD-190103",
+   "path": [
+    "VAIR"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.8
+  },
+  {
+   "id": "L3",
+   "service": "WAS",
+   "from": "TNK-190100",
+   "to": "OPC-C",
+   "path": [
+    "VOUT"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85
+  }
+ ],
+ "signals": [
+  {
+   "from": "LE-190102",
+   "to": "LT-190102",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "LT-190102",
+   "to": "LIR-190102",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9
+  },
+  {
+   "from": "LIR-190102",
+   "to": "LAH-190102",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "LIR-190102",
+   "to": "LAL-190102",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "TSH-190111",
+   "to": "TY-190111",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "TY-190111",
+   "to": "TAH-190111",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "TY-190111",
+   "to": "HS-190111",
+   "type": "electrical",
+   "purpose": "trip",
+   "confidence": 0.45
+  },
+  {
+   "from": "ME-190111",
+   "to": "MS-190111",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "MS-190111",
+   "to": "MY-190111",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "MY-190111",
+   "to": "MAH-190111",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "MXR-190111",
+   "to": "JS-190111",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "JS-190111",
+   "to": "YI-190111A",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.85
+  },
+  {
+   "from": "YC-190111",
+   "to": "HS-190111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "HS-190111",
+   "to": "MXR-190111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "HS-190111",
+   "to": "YI-190111B",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "YC-190111",
+   "to": "ZA-190111",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.55
+  },
+  {
+   "from": "YI-190111A",
+   "to": "ZA-190111",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.55
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-A",
+   "direction": "in",
+   "name": "PROCESS AIR FROM BLOWERS REF SHT P205",
+   "other_drawing": "P205",
+   "bbox": [
+    0.0574,
+    0.533,
+    0.1212,
+    0.5606
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-E",
+   "direction": "in",
+   "name": "WAS FROM MB-01 REF SHT P203",
+   "other_drawing": "P203",
+   "other_item": "MB-01",
+   "bbox": [
+    0.0574,
+    0.5823,
+    0.1212,
+    0.6099
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-C",
+   "direction": "out",
+   "name": "WAS TO WAS PUMPS REF SHT P211",
+   "other_drawing": "P211",
+   "bbox": [
+    0.8112,
+    0.7695,
+    0.875,
+    0.797
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Valve symbols on the WAS inlet, WAS outlet and process-air drop are not legend-identified; kinds are guesses.",
+  "PLC cards (AI/DI/DO) are untagged and not modelled.",
+  "Dashed bus linking JS/HS/TY at MCC and the ZA FAIL logic path are interpreted with low confidence.",
+  "Process-air OPC A label reads FROM BLOWERS REF SHT P205 while sheet P-209 sends it to WAS-01 REF SHT P210 (printed as is)."
+ ]
+}

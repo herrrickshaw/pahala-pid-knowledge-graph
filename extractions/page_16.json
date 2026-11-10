@@ -1,0 +1,155 @@
+{
+ "schema_version": "1.0",
+ "page": 16,
+ "sheet": {
+  "drawing_number": "P-207",
+  "title": "PH ADJUSTMENT",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "Design/Build documents (prepared for EPA submission July 2021; not intended to reflect design requirements)",
+  "legend_notes": [
+   "Sheet 16 of 25. Sodium hydroxide drum is inside a CONTAINMENT AREA (dashed box).",
+   "Horizontal bands SCADA HMI, MBR PLC, MCC and PANEL 2A are system zones; diamond-in-square DO is an untagged MBR PLC I/O card.",
+   "PMP-160101 is drawn with a plug and cord to a LOCAL 120V OUTLET fed from a CB."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "TNK-160100",
+   "tag": "TNK-160100",
+   "kind": "tank",
+   "name": "SODIUM HYDROXIDE 55 GAL. DRUM",
+   "bbox": [
+    0.337,
+    0.51,
+    0.384,
+    0.605
+   ],
+   "confidence": 0.95,
+   "attributes": {
+    "capacity": "55 gal drum",
+    "area": "containment area"
+   }
+  },
+  {
+   "id": "PMP-160101",
+   "tag": "PMP-160101",
+   "kind": "metering_pump",
+   "name": "Sodium hydroxide dosing pump (plug-in)",
+   "bbox": [
+    0.562,
+    0.572,
+    0.586,
+    0.612
+   ],
+   "confidence": 0.85
+  }
+ ],
+ "components": [
+  {
+   "id": "PRV1",
+   "kind": "relief_valve",
+   "name": "Relief/back-pressure symbol on pump discharge with return line to drum",
+   "bbox": [
+    0.593,
+    0.546,
+    0.609,
+    0.581
+   ],
+   "confidence": 0.6
+  }
+ ],
+ "instruments": [
+  {
+   "id": "YC-160101",
+   "tag": "YC-160101",
+   "location": "scada",
+   "name": "RUN",
+   "bbox": [
+    0.562,
+    0.19,
+    0.578,
+    0.22
+   ],
+   "confidence": 0.9,
+   "loop": "Y-160101"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "TNK-160100",
+   "to": "PMP-160101",
+   "path": [],
+   "flow_direction": "shown",
+   "service": "sodium hydroxide",
+   "confidence": 0.85
+  },
+  {
+   "id": "L2",
+   "from": "PMP-160101",
+   "to": "OPC-a",
+   "path": [],
+   "flow_direction": "shown",
+   "service": "sodium hydroxide",
+   "confidence": 0.85
+  },
+  {
+   "id": "L3",
+   "from": {
+    "line": "L2"
+   },
+   "to": "TNK-160100",
+   "path": [
+    "PRV1"
+   ],
+   "flow_direction": "shown",
+   "service": "relief/recycle to drum",
+   "confidence": 0.65
+  }
+ ],
+ "signals": [
+  {
+   "from": "YC-160101",
+   "to": "PMP-160101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-a",
+   "direction": "out",
+   "name": "pH ADJUSTMENT TO AX-01",
+   "other_drawing": "P201",
+   "bbox": [
+    0.815,
+    0.57,
+    0.875,
+    0.605
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c3",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r1c1",
+  "r1c2",
+  "r1c4",
+  "r2c1",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Local 120V outlet and CB (feeding the outlet) are drawn as electrical symbols and not modelled as equipment",
+  "Relief/back-pressure device type at PRV1 not identified with certainty",
+  "YC-160101 DO signal reaches the pump only via the local outlet; routing drawn dashed"
+ ]
+}

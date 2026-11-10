@@ -1,0 +1,850 @@
+{
+ "schema_version": "1.0",
+ "page": 14,
+ "sheet": {
+  "drawing_number": "P-205",
+  "title": "PRE-AERATION AND MEMBRANE BIOREACTOR TOWERS",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "Design/Build documents (prepared for EPA submission July 2021; not intended to reflect design requirements)",
+  "legend_notes": [
+   "Sheet 14 of 25. SCADA instrument/I-O row is marked TYPICAL FOR 2 BLOWERS.",
+   "Each blower is inside a SOUND ENCLOSURE; text: ADDITIONAL SIGNALS AVAILABLE FOR MONITORING: REMOTE, WAIT, OUTLET PRESSURE, INLET TEMPERATURE, OUTLET TEMPERATURE, MOTOR CURRENT, POWER, ERROR CODE AND RUNTIME.",
+   "Horizontal bands SCADA HMI, MBR PLC and MDP-2 are system/panel zones, not process equipment. Diamond-in-square DI/DO/AI/AO symbols are untagged MBR PLC I/O cards.",
+   "CB 480V circuit breaker (dashed, from MDP-2 zone) feeds VFD-100101; not modelled as equipment.",
+   "Process air lines are drawn as long-dash lines."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "BLR-100101",
+   "tag": "BLR-100101",
+   "kind": "blower",
+   "name": "PRE-AERATION BLOWER 1",
+   "bbox": [
+    0.082,
+    0.407,
+    0.122,
+    0.457
+   ],
+   "confidence": 0.9,
+   "attributes": {
+    "enclosure": "SOUND ENCLOSURE"
+   }
+  },
+  {
+   "id": "VFD-100101",
+   "tag": "VFD-100101",
+   "kind": "other",
+   "name": "Variable frequency drive",
+   "part_of": "BLR-100101",
+   "bbox": [
+    0.094,
+    0.376,
+    0.114,
+    0.408
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "OIT1",
+   "kind": "other",
+   "name": "OIT (operator interface terminal) in blower package panel",
+   "part_of": "BLR-100101",
+   "bbox": [
+    0.115,
+    0.376,
+    0.135,
+    0.408
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "INL1",
+   "kind": "filter",
+   "name": "Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet)",
+   "part_of": "BLR-100101",
+   "bbox": [
+    0.086,
+    0.382,
+    0.106,
+    0.422
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "BLR-090101",
+   "tag": "BLR-090101",
+   "kind": "blower",
+   "name": "MEMBRANE BIOREACTOR BLOWER 1",
+   "bbox": [
+    0.082,
+    0.62,
+    0.122,
+    0.67
+   ],
+   "confidence": 0.9,
+   "attributes": {
+    "enclosure": "SOUND ENCLOSURE"
+   }
+  },
+  {
+   "id": "VFD-090101",
+   "tag": "VFD-090101",
+   "kind": "other",
+   "name": "Variable frequency drive",
+   "part_of": "BLR-090101",
+   "bbox": [
+    0.094,
+    0.59,
+    0.114,
+    0.622
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "OIT2",
+   "kind": "other",
+   "name": "OIT (operator interface terminal) in blower package panel",
+   "part_of": "BLR-090101",
+   "bbox": [
+    0.115,
+    0.59,
+    0.135,
+    0.622
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "INL2",
+   "kind": "filter",
+   "name": "Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet)",
+   "part_of": "BLR-090101",
+   "bbox": [
+    0.086,
+    0.596,
+    0.106,
+    0.636
+   ],
+   "confidence": 0.5
+  }
+ ],
+ "components": [
+  {
+   "id": "BO1",
+   "kind": "vent",
+   "bbox": [
+    0.37,
+    0.376,
+    0.384,
+    0.401
+   ],
+   "confidence": 0.5,
+   "name": "Blow-off/vent branch with silencer symbol (hatched stack, triangle, arrow) off the blower discharge"
+  },
+  {
+   "id": "CV1",
+   "kind": "check_valve",
+   "bbox": [
+    0.395,
+    0.405,
+    0.409,
+    0.43
+   ],
+   "confidence": 0.8,
+   "name": "check valve, arrow toward outlet"
+  },
+  {
+   "id": "V1",
+   "kind": "manual_valve",
+   "bbox": [
+    0.422,
+    0.405,
+    0.436,
+    0.43
+   ],
+   "confidence": 0.5,
+   "name": "valve symbol with diagonal stem and dot (type not confirmed)"
+  },
+  {
+   "id": "BO2",
+   "kind": "vent",
+   "bbox": [
+    0.37,
+    0.589,
+    0.384,
+    0.614
+   ],
+   "confidence": 0.5,
+   "name": "Blow-off/vent branch with silencer symbol (hatched stack, triangle, arrow) off the blower discharge"
+  },
+  {
+   "id": "CV2",
+   "kind": "check_valve",
+   "bbox": [
+    0.395,
+    0.619,
+    0.409,
+    0.644
+   ],
+   "confidence": 0.8,
+   "name": "check valve, arrow toward outlet"
+  },
+  {
+   "id": "V2",
+   "kind": "manual_valve",
+   "bbox": [
+    0.422,
+    0.619,
+    0.436,
+    0.644
+   ],
+   "confidence": 0.5,
+   "name": "valve symbol with diagonal stem and dot (type not confirmed)"
+  },
+  {
+   "id": "R1",
+   "kind": "reducer",
+   "bbox": [
+    0.443,
+    0.405,
+    0.457,
+    0.43
+   ],
+   "confidence": 0.5,
+   "name": "cone symbol"
+  },
+  {
+   "id": "R2",
+   "kind": "reducer",
+   "bbox": [
+    0.505,
+    0.619,
+    0.519,
+    0.644
+   ],
+   "confidence": 0.5,
+   "name": "cone symbol"
+  },
+  {
+   "id": "SV1",
+   "kind": "manual_valve",
+   "bbox": [
+    0.481,
+    0.436,
+    0.495,
+    0.461
+   ],
+   "confidence": 0.5,
+   "name": "standby header isolation valve to pre-aeration line (diagonal stem with dot)"
+  },
+  {
+   "id": "SV2",
+   "kind": "manual_valve",
+   "bbox": [
+    0.481,
+    0.65,
+    0.495,
+    0.675
+   ],
+   "confidence": 0.5,
+   "name": "standby header isolation valve to MBR line (diagonal stem with dot)"
+  }
+ ],
+ "instruments": [
+  {
+   "id": "YI-100101A",
+   "tag": "YI-100101A",
+   "location": "field",
+   "name": "READY",
+   "bbox": [
+    0.136,
+    0.376,
+    0.156,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "Y-100101",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "YI-100101B",
+   "tag": "YI-100101B",
+   "location": "field",
+   "name": "RUNNING",
+   "bbox": [
+    0.157,
+    0.376,
+    0.177,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "Y-100101",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "YI-100101C",
+   "tag": "YI-100101C",
+   "location": "field",
+   "name": "LOADED",
+   "bbox": [
+    0.178,
+    0.376,
+    0.198,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "Y-100101",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "YI-100101D",
+   "tag": "YI-100101D",
+   "location": "field",
+   "name": "POWER",
+   "bbox": [
+    0.199,
+    0.376,
+    0.219,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "Y-100101",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "YA-100101A",
+   "tag": "YA-100101A",
+   "location": "field",
+   "name": "ALARM",
+   "bbox": [
+    0.22,
+    0.376,
+    0.24,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "Y-100101",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "YA-100101B",
+   "tag": "YA-100101B",
+   "location": "field",
+   "name": "ERROR",
+   "bbox": [
+    0.241,
+    0.376,
+    0.261,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "Y-100101",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "XC-100101A",
+   "tag": "XC-100101A",
+   "location": "field",
+   "name": "START",
+   "bbox": [
+    0.263,
+    0.376,
+    0.283,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "X-100101",
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "XC-100101B",
+   "tag": "XC-100101B",
+   "location": "field",
+   "name": "STOP",
+   "bbox": [
+    0.284,
+    0.376,
+    0.304,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "X-100101",
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "XC-100101C",
+   "tag": "XC-100101C",
+   "location": "field",
+   "name": "LOAD",
+   "bbox": [
+    0.305,
+    0.376,
+    0.325,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "X-100101",
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "SC-100101",
+   "tag": "SC-100101",
+   "location": "field",
+   "name": "CURRENT",
+   "bbox": [
+    0.326,
+    0.376,
+    0.346,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "S-100101",
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "FI-100101",
+   "tag": "FI-100101",
+   "location": "field",
+   "name": "FLOW",
+   "bbox": [
+    0.348,
+    0.376,
+    0.368,
+    0.408
+   ],
+   "confidence": 0.9,
+   "loop": "F-100101",
+   "measures": {
+    "line": "L1",
+    "after": "CV1"
+   },
+   "notes": "Same tag also drawn as a SCADA HMI point (square bubble) via an MBR PLC I/O card; typical for 2 blowers"
+  },
+  {
+   "id": "YI-090101A",
+   "tag": "YI-090101A",
+   "location": "field",
+   "name": "READY",
+   "bbox": [
+    0.136,
+    0.59,
+    0.156,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "Y-090101",
+   "measures": {
+    "item": "BLR-090101"
+   }
+  },
+  {
+   "id": "YI-090101B",
+   "tag": "YI-090101B",
+   "location": "field",
+   "name": "RUNNING",
+   "bbox": [
+    0.157,
+    0.59,
+    0.177,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "Y-090101",
+   "measures": {
+    "item": "BLR-090101"
+   }
+  },
+  {
+   "id": "YI-090101C",
+   "tag": "YI-090101C",
+   "location": "field",
+   "name": "LOADED",
+   "bbox": [
+    0.178,
+    0.59,
+    0.198,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "Y-090101",
+   "measures": {
+    "item": "BLR-090101"
+   }
+  },
+  {
+   "id": "YI-090101D",
+   "tag": "YI-090101D",
+   "location": "field",
+   "name": "POWER",
+   "bbox": [
+    0.199,
+    0.59,
+    0.219,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "Y-090101",
+   "measures": {
+    "item": "BLR-090101"
+   }
+  },
+  {
+   "id": "YA-090101A",
+   "tag": "YA-090101A",
+   "location": "field",
+   "name": "ALARM",
+   "bbox": [
+    0.22,
+    0.59,
+    0.24,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "Y-090101",
+   "measures": {
+    "item": "BLR-090101"
+   }
+  },
+  {
+   "id": "YA-090101B",
+   "tag": "YA-090101B",
+   "location": "field",
+   "name": "ERROR",
+   "bbox": [
+    0.241,
+    0.59,
+    0.261,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "Y-090101",
+   "measures": {
+    "item": "BLR-090101"
+   }
+  },
+  {
+   "id": "XC-090101A",
+   "tag": "XC-090101A",
+   "location": "field",
+   "name": "START",
+   "bbox": [
+    0.263,
+    0.59,
+    0.283,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "X-090101"
+  },
+  {
+   "id": "XC-090101B",
+   "tag": "XC-090101B",
+   "location": "field",
+   "name": "STOP",
+   "bbox": [
+    0.284,
+    0.59,
+    0.304,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "X-090101"
+  },
+  {
+   "id": "XC-090101C",
+   "tag": "XC-090101C",
+   "location": "field",
+   "name": "LOAD",
+   "bbox": [
+    0.305,
+    0.59,
+    0.325,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "X-090101"
+  },
+  {
+   "id": "SC-090101",
+   "tag": "SC-090101",
+   "location": "field",
+   "name": "CURRENT",
+   "bbox": [
+    0.326,
+    0.59,
+    0.346,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "S-090101"
+  },
+  {
+   "id": "FI-090101",
+   "tag": "FI-090101",
+   "location": "field",
+   "name": "FLOW",
+   "bbox": [
+    0.348,
+    0.59,
+    0.368,
+    0.622
+   ],
+   "confidence": 0.9,
+   "loop": "F-090101",
+   "measures": {
+    "line": "L2",
+    "after": "CV2"
+   }
+  }
+ ],
+ "lines": [
+  {
+   "id": "LIN1",
+   "from": "INL1",
+   "to": "BLR-100101",
+   "path": [],
+   "flow_direction": "inferred",
+   "service": "process air inlet",
+   "confidence": 0.5
+  },
+  {
+   "id": "LIN2",
+   "from": "INL2",
+   "to": "BLR-090101",
+   "path": [],
+   "flow_direction": "inferred",
+   "service": "process air inlet",
+   "confidence": 0.5
+  },
+  {
+   "id": "L1",
+   "from": "BLR-100101",
+   "to": "OPC-a",
+   "path": [
+    "CV1",
+    "V1",
+    "R1"
+   ],
+   "service": "process air",
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "L2",
+   "from": "BLR-090101",
+   "to": "OPC-C",
+   "path": [
+    "CV2",
+    "V2",
+    "R2"
+   ],
+   "service": "process air",
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "L3",
+   "from": "OPC-B",
+   "to": {
+    "line": "L1",
+    "after": "R1"
+   },
+   "path": [
+    "SV1"
+   ],
+   "service": "process air (standby blower header)",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "L4",
+   "from": {
+    "line": "L3"
+   },
+   "to": {
+    "line": "L2",
+    "after": "V2"
+   },
+   "path": [
+    "SV2"
+   ],
+   "service": "process air (standby blower branch to MBR line)",
+   "flow_direction": "inferred",
+   "confidence": 0.65
+  },
+  {
+   "id": "L5",
+   "from": {
+    "line": "L1"
+   },
+   "to": "BO1",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.5
+  },
+  {
+   "id": "L6",
+   "from": {
+    "line": "L2"
+   },
+   "to": "BO2",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.5
+  }
+ ],
+ "signals": [
+  {
+   "from": "VFD-100101",
+   "to": "BLR-100101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "XC-100101A",
+   "to": "BLR-100101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-100101B",
+   "to": "BLR-100101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-100101C",
+   "to": "BLR-100101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "SC-100101",
+   "to": "VFD-100101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "VFD-090101",
+   "to": "BLR-090101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "XC-090101A",
+   "to": "BLR-090101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-090101B",
+   "to": "BLR-090101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-090101C",
+   "to": "BLR-090101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "SC-090101",
+   "to": "VFD-090101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-a",
+   "direction": "out",
+   "name": "PROCESS AIR TO PA-01",
+   "other_drawing": "P-202",
+   "bbox": [
+    0.815,
+    0.39,
+    0.875,
+    0.43
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-C",
+   "direction": "out",
+   "name": "PROCESS AIR TO MB-01",
+   "other_drawing": "P-203",
+   "bbox": [
+    0.815,
+    0.605,
+    0.875,
+    0.65
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-B",
+   "direction": "in",
+   "name": "PROCESS AIR FROM STD-BY BLR.",
+   "other_drawing": "P-209",
+   "bbox": [
+    0.058,
+    0.795,
+    0.12,
+    0.835
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r2c1",
+  "r2c2",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r1c3",
+  "r1c4",
+  "r2c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Cone symbols (reducer vs flow marker) and the diagonal-stem valve symbols were not identified with certainty",
+  "Top row YI/YA/XC/SC/FI bubbles are typical for both blowers; only the 100101 set was drawn at the SCADA level, the 090101 PLC links are not drawn on this sheet",
+  "Dashed lines with break marks above VFD-090101 and OIT (blower 090101) go off the top without a label",
+  "Dead-end cap above the standby header stub (top of vertical header) not modelled",
+  "Pre-aeration/MBR blower inlet line sources not labelled"
+ ]
+}

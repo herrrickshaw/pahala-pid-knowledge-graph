@@ -1,0 +1,468 @@
+{
+ "schema_version": "1.0",
+ "page": 17,
+ "sheet": {
+  "drawing_number": "P-208",
+  "title": "EQUIPMENT GALLERY PUMP STATION",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "Design/Build documents (prepared for EPA submission July 2021; not intended to reflect design requirements)",
+  "legend_notes": [
+   "Sheet 17 of 25. Wet well WW-01 (TNK-120100), pumps and panel PNL-120100 are inside dash-dot outline VENDOR PACKAGE 3.",
+   "Horizontal bands SCADA HMI, MBR PLC and MDP-2 are system zones; the DI card is an untagged MBR PLC I/O card.",
+   "CB 480V feeds the control panel."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "PKG-3",
+   "kind": "package_unit",
+   "name": "VENDOR PACKAGE 3",
+   "bbox": [
+    0.36,
+    0.45,
+    0.68,
+    0.825
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "TNK-120100",
+   "tag": "TNK-120100",
+   "kind": "sump",
+   "name": "WW-01 EQUIPMENT GALLERY PUMP STATION wet well",
+   "part_of": "PKG-3",
+   "bbox": [
+    0.287,
+    0.645,
+    0.646,
+    0.795
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PMP-120111",
+   "tag": "PMP-120111",
+   "kind": "sump_pump",
+   "name": "Submersible pump",
+   "part_of": "PKG-3",
+   "bbox": [
+    0.532,
+    0.74,
+    0.565,
+    0.8
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PMP-120112",
+   "tag": "PMP-120112",
+   "kind": "sump_pump",
+   "name": "Submersible pump",
+   "part_of": "PKG-3",
+   "bbox": [
+    0.588,
+    0.74,
+    0.625,
+    0.8
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PNL-120100",
+   "tag": "PNL-120100",
+   "kind": "other",
+   "name": "EQUIPMENT GALLERY PUMP STATION LOCAL CONTROL PANEL",
+   "part_of": "PKG-3",
+   "bbox": [
+    0.389,
+    0.456,
+    0.66,
+    0.55
+   ],
+   "confidence": 0.95
+  }
+ ],
+ "components": [
+  {
+   "id": "DA",
+   "kind": "other",
+   "name": "diamond symbol on pump A riser (coupling/union type not identified)",
+   "bbox": [
+    0.547,
+    0.595,
+    0.561,
+    0.62
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "CVA",
+   "kind": "check_valve",
+   "bbox": [
+    0.547,
+    0.636,
+    0.561,
+    0.661
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "DB",
+   "kind": "other",
+   "name": "diamond symbol on pump B riser (coupling/union type not identified)",
+   "bbox": [
+    0.603,
+    0.595,
+    0.617,
+    0.62
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "CVB",
+   "kind": "check_valve",
+   "bbox": [
+    0.603,
+    0.636,
+    0.617,
+    0.661
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "HV1",
+   "kind": "manual_valve",
+   "name": "in-line valve on header (symbol with diagonal stem)",
+   "bbox": [
+    0.658,
+    0.582,
+    0.672,
+    0.607
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "R1",
+   "kind": "reducer",
+   "name": "cone symbol",
+   "bbox": [
+    0.69,
+    0.579,
+    0.704,
+    0.604
+   ],
+   "confidence": 0.5
+  }
+ ],
+ "instruments": [
+  {
+   "id": "LSL-120102",
+   "tag": "LSL-120102",
+   "location": "field",
+   "bbox": [
+    0.393,
+    0.607,
+    0.409,
+    0.637
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "TNK-120100"
+   },
+   "loop": "L-120102"
+  },
+  {
+   "id": "LSH-120103",
+   "tag": "LSH-120103",
+   "location": "field",
+   "bbox": [
+    0.414,
+    0.607,
+    0.43,
+    0.637
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "TNK-120100"
+   },
+   "loop": "L-120103"
+  },
+  {
+   "id": "LT-120101",
+   "tag": "LT-120101",
+   "location": "field",
+   "bbox": [
+    0.435,
+    0.607,
+    0.451,
+    0.637
+   ],
+   "confidence": 0.9,
+   "loop": "L-120101"
+  },
+  {
+   "id": "LE-120101",
+   "tag": "LE-120101",
+   "location": "field",
+   "bbox": [
+    0.435,
+    0.77,
+    0.451,
+    0.8
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "item": "TNK-120100"
+   },
+   "loop": "L-120101",
+   "notes": "Submerged level element at tank bottom"
+  },
+  {
+   "id": "TSH-120111",
+   "tag": "TSH-120111",
+   "location": "field",
+   "bbox": [
+    0.562,
+    0.607,
+    0.578,
+    0.637
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "PMP-120111"
+   },
+   "loop": "T-120111"
+  },
+  {
+   "id": "ME-120111",
+   "tag": "ME-120111",
+   "location": "field",
+   "bbox": [
+    0.576,
+    0.607,
+    0.592,
+    0.637
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "item": "PMP-120111"
+   },
+   "loop": "M-120111"
+  },
+  {
+   "id": "TSH-120112",
+   "tag": "TSH-120112",
+   "location": "field",
+   "bbox": [
+    0.618,
+    0.607,
+    0.634,
+    0.637
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "PMP-120112"
+   },
+   "loop": "T-120112"
+  },
+  {
+   "id": "ME-120112",
+   "tag": "ME-120112",
+   "location": "field",
+   "bbox": [
+    0.633,
+    0.607,
+    0.649,
+    0.637
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "item": "PMP-120112"
+   },
+   "loop": "M-120112"
+  },
+  {
+   "id": "UA-120100",
+   "tag": "UA-120100",
+   "location": "scada",
+   "bbox": [
+    0.414,
+    0.19,
+    0.43,
+    0.22
+   ],
+   "confidence": 0.9,
+   "name": "TBL (trouble)",
+   "loop": "U-120100"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "BND-DRAIN",
+   "to": "TNK-120100",
+   "path": [],
+   "flow_direction": "shown",
+   "service": "drain",
+   "confidence": 0.85
+  },
+  {
+   "id": "LH",
+   "from": "PMP-120111",
+   "to": "OPC-a",
+   "path": [
+    "DA",
+    "CVA",
+    "HV1",
+    "R1"
+   ],
+   "flow_direction": "inferred",
+   "service": "pump station discharge",
+   "confidence": 0.8
+  },
+  {
+   "id": "LB",
+   "from": "PMP-120112",
+   "to": {
+    "line": "LH",
+    "after": "CVA"
+   },
+   "path": [
+    "DB",
+    "CVB"
+   ],
+   "flow_direction": "inferred",
+   "service": "pump station discharge",
+   "confidence": 0.8
+  }
+ ],
+ "signals": [
+  {
+   "from": "LE-120101",
+   "to": "LT-120101",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "LSL-120102",
+   "to": "PNL-120100",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "LSH-120103",
+   "to": "PNL-120100",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "LT-120101",
+   "to": "PNL-120100",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "TSH-120111",
+   "to": "PNL-120100",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "ME-120111",
+   "to": "PNL-120100",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.75
+  },
+  {
+   "from": "TSH-120112",
+   "to": "PNL-120100",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "ME-120112",
+   "to": "PNL-120100",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.75
+  },
+  {
+   "from": "PNL-120100",
+   "to": "PMP-120111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "PNL-120100",
+   "to": "PMP-120112",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "PNL-120100",
+   "to": "UA-120100",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.8
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-a",
+   "direction": "out",
+   "name": "EQUIP. GALLERY PS TO AX-01",
+   "other_drawing": "P201",
+   "bbox": [
+    0.81,
+    0.57,
+    0.875,
+    0.61
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "BND-DRAIN",
+   "direction": "source",
+   "name": "DRAIN FROM EQUIPMENT BLDG",
+   "bbox": [
+    0.072,
+    0.405,
+    0.122,
+    0.435
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c2",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c2",
+  "r3c3",
+  "r1c1",
+  "r1c3",
+  "r1c4",
+  "r3c1",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Meaning of ME-120111/ME-120112 (function letters ME) not stated on the sheet",
+  "Diamond symbols on the pump risers and the cone/in-line valve symbols near the outlet flag not identified with certainty",
+  "Dashed lines from the panel to each pump (x ~ pump centre) read as motor power/control",
+  "CB 480V feeding the panel not modelled as equipment"
+ ]
+}

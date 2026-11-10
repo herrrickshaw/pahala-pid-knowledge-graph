@@ -1,0 +1,624 @@
+{
+ "schema_version": "1.0",
+ "page": 25,
+ "sheet": {
+  "drawing_number": "P-603",
+  "title": "STANDBY GENERATOR P&ID",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "DESIGN/BUILD DOCUMENTS (prepared for EPA submission July 2021, general understanding of project concept)",
+  "legend_notes": [
+   "Generator, fuel pump, block heater, control panel and silencer are within a dashed 'VENDOR PACKAGE' boundary; ES 120VAC / 208V ES are electrical supplies.",
+   "Tag numbers printed as 'AREA,LOOP'. Bubbles below the SCADA line are PLC-level (rectangle) and above it SCADA (hexagon).",
+   "Hexagon note marker '1' beside the GEN TROUBLE SCADA bubble; note text not present on the sheet."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "P 600,207",
+   "tag": "P 600,207",
+   "kind": "positive_displacement_pump",
+   "name": "GENERATOR ONBOARD FUEL PUMP (gear-type symbol)",
+   "bbox": [
+    0.261,
+    0.685,
+    0.286,
+    0.725
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "GEN 600,209",
+   "tag": "GEN 600,209",
+   "kind": "other",
+   "name": "STANDBY GENERATOR (diesel engine box with generator symbol)",
+   "bbox": [
+    0.44,
+    0.69,
+    0.5,
+    0.725
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "HTR 600,208",
+   "tag": "HTR 600,208",
+   "kind": "heater",
+   "name": "GENERATOR ENGINE BLOCK HEATER (208V)",
+   "part_of": "GEN 600,209",
+   "bbox": [
+    0.435,
+    0.74,
+    0.485,
+    0.78
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "S 600,210",
+   "tag": "S 600,210",
+   "kind": "other",
+   "name": "GENERATOR EXHAUST SILENCER",
+   "bbox": [
+    0.61,
+    0.485,
+    0.65,
+    0.51
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "CHGR 600,211",
+   "tag": "CHGR 600,211",
+   "kind": "other",
+   "name": "GENERATOR STARTING BATTERY CHARGER",
+   "bbox": [
+    0.59,
+    0.34,
+    0.66,
+    0.4
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VCP 600,209",
+   "tag": "VCP 600,209",
+   "kind": "other",
+   "name": "GENERATOR CONTROL PANEL (vendor package)",
+   "bbox": [
+    0.289,
+    0.35,
+    0.41,
+    0.41
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "MCP 600,101",
+   "tag": "MCP 600,101",
+   "kind": "other",
+   "name": "Master control panel (PLC layer between SCADA band and field)",
+   "bbox": [
+    0.049,
+    0.205,
+    0.088,
+    0.217
+   ],
+   "confidence": 0.8
+  }
+ ],
+ "components": [
+  {
+   "id": "DFS",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol (unlabelled, type uncertain)",
+   "bbox": [
+    0.13,
+    0.69,
+    0.15,
+    0.72
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "FH1",
+   "kind": "flexible_hose",
+   "name": "wavy flexible connector on FOS line",
+   "bbox": [
+    0.16,
+    0.69,
+    0.18,
+    0.72
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "FH2",
+   "kind": "flexible_hose",
+   "name": "wavy flexible connector on exhaust line",
+   "bbox": [
+    0.51,
+    0.475,
+    0.53,
+    0.505
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "DRV",
+   "kind": "drain",
+   "name": "drain valve (diamond with filled dot) on silencer drain 1/2\"-D",
+   "bbox": [
+    0.72,
+    0.605,
+    0.74,
+    0.635
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "FH3",
+   "kind": "flexible_hose",
+   "name": "wavy flexible connector on FOR line",
+   "bbox": [
+    0.68,
+    0.715,
+    0.7,
+    0.745
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "DRR",
+   "kind": "other",
+   "name": "diamond/bow-tie symbol (unlabelled, type uncertain)",
+   "bbox": [
+    0.74,
+    0.715,
+    0.76,
+    0.745
+   ],
+   "confidence": 0.5
+  }
+ ],
+ "instruments": [
+  {
+   "id": "PI-600,205",
+   "tag": "PI-600,205",
+   "location": "local_panel",
+   "loop": "P-600205",
+   "bbox": [
+    0.38,
+    0.38,
+    0.398,
+    0.407
+   ],
+   "confidence": 0.7,
+   "name": "pressure indicator inside generator control panel, label ESP"
+  },
+  {
+   "id": "YI-600,009C-PLC0",
+   "tag": "YI-600,009C",
+   "location": "plc",
+   "loop": "Y-600009C",
+   "bbox": [
+    0.235,
+    0.159,
+    0.259,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Test mode"
+  },
+  {
+   "id": "YI-600,009C-SCADA0",
+   "tag": "YI-600,009C",
+   "location": "scada",
+   "loop": "Y-600009C",
+   "bbox": [
+    0.235,
+    0.077,
+    0.259,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Test mode"
+  },
+  {
+   "id": "YA-600,009C-PLC1",
+   "tag": "YA-600,009C",
+   "location": "plc",
+   "loop": "Y-600009C",
+   "bbox": [
+    0.264,
+    0.159,
+    0.288,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Battery charger fault"
+  },
+  {
+   "id": "YA-600,009C-SCADA1",
+   "tag": "YA-600,009C",
+   "location": "scada",
+   "loop": "Y-600009C",
+   "bbox": [
+    0.264,
+    0.077,
+    0.288,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Battery charger fault"
+  },
+  {
+   "id": "YI-600,204B-PLC2",
+   "tag": "YI-600,204B",
+   "location": "plc",
+   "loop": "Y-600204B",
+   "bbox": [
+    0.294,
+    0.159,
+    0.318,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Gen in auto"
+  },
+  {
+   "id": "YI-600,204B-SCADA2",
+   "tag": "YI-600,204B",
+   "location": "scada",
+   "loop": "Y-600204B",
+   "bbox": [
+    0.294,
+    0.077,
+    0.318,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Gen in auto"
+  },
+  {
+   "id": "YI-600,204A-PLC3",
+   "tag": "YI-600,204A",
+   "location": "plc",
+   "loop": "Y-600204A",
+   "bbox": [
+    0.323,
+    0.159,
+    0.347,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Gen running"
+  },
+  {
+   "id": "YI-600,204A-SCADA3",
+   "tag": "YI-600,204A",
+   "location": "scada",
+   "loop": "Y-600204A",
+   "bbox": [
+    0.323,
+    0.077,
+    0.347,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Gen running"
+  },
+  {
+   "id": "YA-600,204A-PLC4",
+   "tag": "YA-600,204A",
+   "location": "plc",
+   "loop": "Y-600204A",
+   "bbox": [
+    0.352,
+    0.159,
+    0.376,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Gen fault"
+  },
+  {
+   "id": "YA-600,204A-SCADA4",
+   "tag": "YA-600,204A",
+   "location": "scada",
+   "loop": "Y-600204A",
+   "bbox": [
+    0.352,
+    0.077,
+    0.376,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Gen fault"
+  },
+  {
+   "id": "YA-600,204A-PLC5",
+   "tag": "YA-600,204A",
+   "location": "plc",
+   "loop": "Y-600204A",
+   "bbox": [
+    0.382,
+    0.159,
+    0.406,
+    0.184
+   ],
+   "confidence": 0.85,
+   "name": "Gen trouble (note 1)"
+  },
+  {
+   "id": "YA-600,204A-SCADA5",
+   "tag": "YA-600,204A",
+   "location": "scada",
+   "loop": "Y-600204A",
+   "bbox": [
+    0.382,
+    0.077,
+    0.406,
+    0.102
+   ],
+   "confidence": 0.85,
+   "name": "Gen trouble (note 1)"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "service": "fuel oil supply",
+   "from": "OPC1",
+   "to": "P 600,207",
+   "path": [
+    "DFS",
+    "FH1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1\"-FOS"
+  },
+  {
+   "id": "L2",
+   "service": "fuel oil supply to engine",
+   "from": "P 600,207",
+   "to": "GEN 600,209",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1\"-FOS"
+  },
+  {
+   "id": "L3",
+   "service": "engine exhaust",
+   "from": "GEN 600,209",
+   "to": "S 600,210",
+   "path": [
+    "FH2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "12\"-EE"
+  },
+  {
+   "id": "L4",
+   "service": "engine exhaust",
+   "from": "S 600,210",
+   "to": "B1",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "12\"-EE"
+  },
+  {
+   "id": "L5",
+   "service": "silencer drain",
+   "from": "S 600,210",
+   "to": "B2",
+   "path": [
+    "DRV"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1/2\"-D"
+  },
+  {
+   "id": "L6",
+   "service": "fuel oil return",
+   "from": "GEN 600,209",
+   "to": "OPC2",
+   "path": [
+    "FH3",
+    "DRR"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "line_number": "1\"-FOR"
+  }
+ ],
+ "signals": [
+  {
+   "from": "VCP 600,209",
+   "to": "YI-600,009C-PLC0",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "YI-600,009C-PLC0",
+   "to": "YI-600,009C-SCADA0",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,209",
+   "to": "YA-600,009C-PLC1",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "YA-600,009C-PLC1",
+   "to": "YA-600,009C-SCADA1",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,209",
+   "to": "YI-600,204B-PLC2",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "YI-600,204B-PLC2",
+   "to": "YI-600,204B-SCADA2",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,209",
+   "to": "YI-600,204A-PLC3",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "YI-600,204A-PLC3",
+   "to": "YI-600,204A-SCADA3",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,209",
+   "to": "YA-600,204A-PLC4",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "YA-600,204A-PLC4",
+   "to": "YA-600,204A-SCADA4",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,209",
+   "to": "YA-600,204A-PLC5",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "YA-600,204A-PLC5",
+   "to": "YA-600,204A-SCADA5",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "OPC3",
+   "to": "VCP 600,209",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.75
+  },
+  {
+   "from": "VCP 600,209",
+   "to": "CHGR 600,211",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "VCP 600,209",
+   "to": "GEN 600,209",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.55
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "FOS DAY TANK",
+   "other_drawing": "P-602",
+   "line_number": "1\"-FOS",
+   "bbox": [
+    0.045,
+    0.69,
+    0.095,
+    0.715
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC2",
+   "direction": "out",
+   "name": "FOR DAY TANK",
+   "other_drawing": "P-602",
+   "line_number": "1\"-FOR",
+   "bbox": [
+    0.838,
+    0.72,
+    0.888,
+    0.745
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC3",
+   "direction": "in",
+   "name": "LOW LEVEL C DAY TANK CONTROL PANEL",
+   "other_drawing": "P-602",
+   "bbox": [
+    0.045,
+    0.335,
+    0.095,
+    0.36
+   ],
+   "confidence": 0.85
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "EXHAUST (to atmosphere)",
+   "direction": "sink",
+   "confidence": 0.8
+  },
+  {
+   "id": "B2",
+   "name": "DRAIN (D)",
+   "direction": "sink",
+   "confidence": 0.8
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Text of note 1 (hexagon beside GEN TROUBLE) is not on this sheet.",
+  "Diamond/bow-tie symbols are not defined by a legend; kind is a best guess.",
+  "Meaning of ESP label beside PI 600,205 and what that gauge measures is not shown.",
+  "Engine/generator internals and heater connection are modelled as the standby generator package; flow direction of dashed command lines not marked."
+ ]
+}

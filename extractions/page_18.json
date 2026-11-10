@@ -1,0 +1,979 @@
+{
+ "schema_version": "1.0",
+ "page": 18,
+ "sheet": {
+  "drawing_number": "P-209",
+  "title": "WAS STORAGE AND STAND-BY BLOWERS",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "Design/Build documents (EPA submission July 2021)",
+  "legend_notes": [
+   "TYPICAL FOR 2 BLOWERS (SCADA HMI / MBR PLC I/O signal set drawn once above blower 110101, applies to blower 110111 as well)",
+   "ADDITIONAL SIGNALS AVAILABLE FOR MONITORING: REMOTE, WAIT, OUTLET PRESSURE, INLET TEMPERATURE, OUTLET TEMPERATURE, MOTOR CURRENT, POWER, ERROR CODE AND RUNTIME",
+   "Horizontal bands: SCADA HMI, MBR PLC (DI/DO/AI/AO cards), MDP-2 (power); each blower sits in a SOUND ENCLOSURE",
+   "Drawings prepared for EPA submission July 2021 to give a general understanding of the project concept; not intended to reflect design requirements."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "BLR-110101",
+   "tag": "BLR-110101",
+   "kind": "blower",
+   "name": "WAS STORAGE BLOWER",
+   "bbox": [
+    0.088,
+    0.3961,
+    0.1161,
+    0.4512
+   ],
+   "confidence": 0.95,
+   "attributes": {
+    "enclosure": "SOUND ENCLOSURE"
+   }
+  },
+  {
+   "id": "VFD-110101",
+   "tag": "VFD-110101",
+   "kind": "other",
+   "name": "Variable frequency drive",
+   "part_of": "BLR-110101",
+   "bbox": [
+    0.095,
+    0.3773,
+    0.1129,
+    0.4049
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "OIT-110101",
+   "kind": "other",
+   "name": "OIT (operator interface terminal, tag not printed)",
+   "part_of": "BLR-110101",
+   "bbox": [
+    0.1161,
+    0.3773,
+    0.1327,
+    0.4049
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "BLR-110111",
+   "tag": "BLR-110111",
+   "kind": "blower",
+   "name": "STAND-BY BLOWER",
+   "bbox": [
+    0.088,
+    0.5025,
+    0.1161,
+    0.5576
+   ],
+   "confidence": 0.95,
+   "attributes": {
+    "enclosure": "SOUND ENCLOSURE"
+   }
+  },
+  {
+   "id": "VFD-110111",
+   "tag": "VFD-110111",
+   "kind": "other",
+   "name": "Variable frequency drive",
+   "part_of": "BLR-110111",
+   "bbox": [
+    0.095,
+    0.3773,
+    0.1129,
+    0.4049
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "OIT-110111",
+   "kind": "other",
+   "name": "OIT (operator interface terminal, tag not printed)",
+   "part_of": "BLR-110111",
+   "bbox": [
+    0.1161,
+    0.4867,
+    0.1327,
+    0.5143
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "CB1",
+   "kind": "other",
+   "name": "CB 480V (circuit breaker, power feed from MDP-2 to blower 110101 VFD)",
+   "bbox": [
+    0.0976,
+    0.3172,
+    0.1103,
+    0.3369
+   ],
+   "confidence": 0.7
+  }
+ ],
+ "components": [
+  {
+   "id": "SIL1",
+   "kind": "other",
+   "name": "vent/silencer-type symbol on blower 110101 discharge (unclear)",
+   "bbox": [
+    0.3699,
+    0.3882,
+    0.3852,
+    0.4197
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "CV1",
+   "kind": "check_valve",
+   "bbox": [
+    0.396,
+    0.4079,
+    0.4088,
+    0.4276
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "BV1",
+   "kind": "butterfly_valve",
+   "name": "valve symbol with lever/dot (type unclear)",
+   "bbox": [
+    0.4222,
+    0.4079,
+    0.4349,
+    0.4276
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "RED1",
+   "kind": "reducer",
+   "bbox": [
+    0.4426,
+    0.4079,
+    0.4554,
+    0.4276
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "SIL2",
+   "kind": "other",
+   "name": "vent/silencer-type symbol on blower 110111 discharge (unclear)",
+   "bbox": [
+    0.3699,
+    0.4946,
+    0.3852,
+    0.5261
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "CV2",
+   "kind": "check_valve",
+   "bbox": [
+    0.396,
+    0.5143,
+    0.4088,
+    0.534
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "XV1",
+   "kind": "butterfly_valve",
+   "name": "cross-tie valve symbol (type unclear)",
+   "bbox": [
+    0.4809,
+    0.4404,
+    0.4936,
+    0.4601
+   ],
+   "confidence": 0.5
+  }
+ ],
+ "instruments": [
+  {
+   "id": "YI-110101A",
+   "location": "local_panel",
+   "bbox": [
+    0.1378,
+    0.3773,
+    0.1556,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "YI-110101A",
+   "loop": "Y-110101",
+   "name": "READY"
+  },
+  {
+   "id": "YI-110101B",
+   "location": "local_panel",
+   "bbox": [
+    0.1588,
+    0.3773,
+    0.1767,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "YI-110101B",
+   "loop": "Y-110101",
+   "name": "RUNNING"
+  },
+  {
+   "id": "YI-110101C",
+   "location": "local_panel",
+   "bbox": [
+    0.1798,
+    0.3773,
+    0.1977,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "YI-110101C",
+   "loop": "Y-110101",
+   "name": "LOADED"
+  },
+  {
+   "id": "YI-110101D",
+   "location": "local_panel",
+   "bbox": [
+    0.2009,
+    0.3773,
+    0.2188,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "YI-110101D",
+   "loop": "Y-110101",
+   "name": "POWER"
+  },
+  {
+   "id": "YA-110101A",
+   "location": "local_panel",
+   "bbox": [
+    0.2226,
+    0.3773,
+    0.2404,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "YA-110101A",
+   "loop": "Y-110101",
+   "name": "ALARM"
+  },
+  {
+   "id": "YA-110101B",
+   "location": "local_panel",
+   "bbox": [
+    0.2436,
+    0.3773,
+    0.2615,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "YA-110101B",
+   "loop": "Y-110101",
+   "name": "ERROR"
+  },
+  {
+   "id": "XC-110101A",
+   "location": "local_panel",
+   "bbox": [
+    0.2647,
+    0.3773,
+    0.2825,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "XC-110101A",
+   "loop": "X-110101",
+   "name": "START"
+  },
+  {
+   "id": "XC-110101B",
+   "location": "local_panel",
+   "bbox": [
+    0.2857,
+    0.3773,
+    0.3036,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "XC-110101B",
+   "loop": "X-110101",
+   "name": "STOP"
+  },
+  {
+   "id": "XC-110101C",
+   "location": "local_panel",
+   "bbox": [
+    0.3068,
+    0.3773,
+    0.3246,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "XC-110101C",
+   "loop": "X-110101",
+   "name": "LOAD"
+  },
+  {
+   "id": "SC-110101",
+   "location": "local_panel",
+   "bbox": [
+    0.3278,
+    0.3773,
+    0.3457,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "SC-110101",
+   "loop": "S-110101"
+  },
+  {
+   "id": "FI-110101",
+   "location": "local_panel",
+   "bbox": [
+    0.3495,
+    0.3773,
+    0.3673,
+    0.4049
+   ],
+   "confidence": 0.9,
+   "tag": "FI-110101",
+   "measures": {
+    "line": "L1"
+   },
+   "loop": "F-110101"
+  },
+  {
+   "id": "YI-110111A",
+   "location": "local_panel",
+   "bbox": [
+    0.1378,
+    0.4867,
+    0.1556,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "YI-110111A",
+   "loop": "Y-110111",
+   "name": "READY"
+  },
+  {
+   "id": "YI-110111B",
+   "location": "local_panel",
+   "bbox": [
+    0.1588,
+    0.4867,
+    0.1767,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "YI-110111B",
+   "loop": "Y-110111",
+   "name": "RUNNING"
+  },
+  {
+   "id": "YI-110111C",
+   "location": "local_panel",
+   "bbox": [
+    0.1798,
+    0.4867,
+    0.1977,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "YI-110111C",
+   "loop": "Y-110111",
+   "name": "LOADED"
+  },
+  {
+   "id": "YI-110111D",
+   "location": "local_panel",
+   "bbox": [
+    0.2009,
+    0.4867,
+    0.2188,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "YI-110111D",
+   "loop": "Y-110111",
+   "name": "POWER"
+  },
+  {
+   "id": "YA-110111A",
+   "location": "local_panel",
+   "bbox": [
+    0.2226,
+    0.4867,
+    0.2404,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "YA-110111A",
+   "loop": "Y-110111",
+   "name": "ALARM"
+  },
+  {
+   "id": "YA-110111B",
+   "location": "local_panel",
+   "bbox": [
+    0.2436,
+    0.4867,
+    0.2615,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "YA-110111B",
+   "loop": "Y-110111",
+   "name": "ERROR"
+  },
+  {
+   "id": "XC-110111A",
+   "location": "local_panel",
+   "bbox": [
+    0.2647,
+    0.4867,
+    0.2825,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "XC-110111A",
+   "loop": "X-110111",
+   "name": "START"
+  },
+  {
+   "id": "XC-110111B",
+   "location": "local_panel",
+   "bbox": [
+    0.2857,
+    0.4867,
+    0.3036,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "XC-110111B",
+   "loop": "X-110111",
+   "name": "STOP"
+  },
+  {
+   "id": "XC-110111C",
+   "location": "local_panel",
+   "bbox": [
+    0.3068,
+    0.4867,
+    0.3246,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "XC-110111C",
+   "loop": "X-110111",
+   "name": "LOAD"
+  },
+  {
+   "id": "SC-110111",
+   "location": "local_panel",
+   "bbox": [
+    0.3278,
+    0.4867,
+    0.3457,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "SC-110111",
+   "loop": "S-110111"
+  },
+  {
+   "id": "FI-110111",
+   "location": "local_panel",
+   "bbox": [
+    0.3495,
+    0.4867,
+    0.3673,
+    0.5143
+   ],
+   "confidence": 0.9,
+   "tag": "FI-110111",
+   "measures": {
+    "line": "L2"
+   },
+   "loop": "F-110111"
+  },
+  {
+   "id": "YI-110101A-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.1378,
+    0.1911,
+    0.1556,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "YI-110101A",
+   "loop": "Y-110101",
+   "name": "READY (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "YI-110101B-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.1588,
+    0.1911,
+    0.1767,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "YI-110101B",
+   "loop": "Y-110101",
+   "name": "RUNNING (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "YI-110101C-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.1798,
+    0.1911,
+    0.1977,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "YI-110101C",
+   "loop": "Y-110101",
+   "name": "LOADED (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "YI-110101D-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.2009,
+    0.1911,
+    0.2188,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "YI-110101D",
+   "loop": "Y-110101",
+   "name": "POWER (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "YA-110101A-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.2226,
+    0.1911,
+    0.2404,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "YA-110101A",
+   "loop": "Y-110101",
+   "name": "ALARM (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "YA-110101B-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.2436,
+    0.1911,
+    0.2615,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "YA-110101B",
+   "loop": "Y-110101",
+   "name": "ERROR (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "XC-110101A-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.2647,
+    0.1911,
+    0.2825,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "XC-110101A",
+   "loop": "X-110101",
+   "name": "START (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "XC-110101B-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.2857,
+    0.1911,
+    0.3036,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "XC-110101B",
+   "loop": "X-110101",
+   "name": "STOP (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "XC-110101C-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.3068,
+    0.1911,
+    0.3246,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "XC-110101C",
+   "loop": "X-110101",
+   "name": "LOAD (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "SC-110101-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.3278,
+    0.1911,
+    0.3457,
+    0.2187
+   ],
+   "confidence": 0.8,
+   "tag": "SC-110101",
+   "loop": "S-110101",
+   "name": "CURRENT (SCADA HMI, typical for 2 blowers)"
+  },
+  {
+   "id": "FI-110101-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.3495,
+    0.1911,
+    0.3673,
+    0.2187
+   ],
+   "confidence": 0.85,
+   "tag": "FI-110101",
+   "loop": "F-110101",
+   "name": "FLOW (SCADA HMI, typical for 2 blowers)"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "service": "process air",
+   "from": "BLR-110101",
+   "to": "OPC-a",
+   "path": [
+    "SIL1",
+    "CV1",
+    "BV1",
+    "RED1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8
+  },
+  {
+   "id": "L2",
+   "service": "process air",
+   "from": "BLR-110111",
+   "to": "OPC-b",
+   "path": [
+    "SIL2",
+    "CV2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8
+  },
+  {
+   "id": "L3",
+   "service": "process air cross-tie",
+   "from": {
+    "line": "L1",
+    "after": "RED1"
+   },
+   "to": {
+    "line": "L2",
+    "after": "CV2"
+   },
+   "path": [
+    "XV1"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  }
+ ],
+ "signals": [
+  {
+   "from": "BLR-110101",
+   "to": "YI-110101A",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110101",
+   "to": "YI-110101B",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110101",
+   "to": "YI-110101C",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110101",
+   "to": "YI-110101D",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110101",
+   "to": "YA-110101A",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110101",
+   "to": "YA-110101B",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-110101A",
+   "to": "BLR-110101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-110101B",
+   "to": "BLR-110101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-110101C",
+   "to": "BLR-110101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "SC-110101",
+   "to": "VFD-110101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "BLR-110111",
+   "to": "YI-110111A",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110111",
+   "to": "YI-110111B",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110111",
+   "to": "YI-110111C",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110111",
+   "to": "YI-110111D",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110111",
+   "to": "YA-110111A",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "BLR-110111",
+   "to": "YA-110111B",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-110111A",
+   "to": "BLR-110111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-110111B",
+   "to": "BLR-110111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "XC-110111C",
+   "to": "BLR-110111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "SC-110111",
+   "to": "VFD-110111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "YI-110101A",
+   "to": "YI-110101A-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "YI-110101B",
+   "to": "YI-110101B-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "YI-110101C",
+   "to": "YI-110101C-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "YI-110101D",
+   "to": "YI-110101D-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "YA-110101A",
+   "to": "YA-110101A-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "YA-110101B",
+   "to": "YA-110101B-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "XC-110101A-SCADA",
+   "to": "XC-110101A",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "XC-110101B-SCADA",
+   "to": "XC-110101B",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "XC-110101C-SCADA",
+   "to": "XC-110101C",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "SC-110101",
+   "to": "SC-110101-SCADA",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.5
+  },
+  {
+   "from": "FI-110101",
+   "to": "FI-110101-SCADA",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.7
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-a",
+   "direction": "out",
+   "name": "PROCESS AIR WAS-01 REF SHT P210",
+   "other_drawing": "P210",
+   "other_item": "WAS-01",
+   "bbox": [
+    0.8099,
+    0.4049,
+    0.8737,
+    0.4325
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-b",
+   "direction": "out",
+   "name": "PROCESS AIR TO PA&MB BLRs REF SHT P205",
+   "other_drawing": "P205",
+   "bbox": [
+    0.8099,
+    0.5113,
+    0.8737,
+    0.5389
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Symbol types on blower discharge lines (silencer/vent symbol, lever valve, cross-tie valve) are not identified by a legend on this sheet; kinds are best guesses.",
+  "PLC I/O cards (DI/DO/AI/AO) carry no tag and are not modelled; signals are drawn instrument to instrument.",
+  "SC-110101 is labelled CURRENT but wired to an AO card; signal direction/meaning uncertain.",
+  "OIT boxes carry no printed tag."
+ ]
+}

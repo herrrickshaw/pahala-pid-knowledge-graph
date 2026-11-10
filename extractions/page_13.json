@@ -1,0 +1,1267 @@
+{
+ "schema_version": "1.0",
+ "page": 13,
+ "sheet": {
+  "drawing_number": "P-204",
+  "title": "PERMEATE COLLECTION",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "DESIGN/BUILD DOCUMENTS (prepared for EPA submission July 2021; not intended to reflect design requirements)",
+  "legend_notes": [
+   "Bands: SCADA HMI (top), MBR PLC (DI/DO/AI/AO cards), MCC (HS/JS circles for the pump).",
+   "HS tags carry OCR (open/close/remote) or HOR (hand/off/remote) notes.",
+   "'VENT TO ATMOSPHERE (TYP)' applies to both vent valves XV-080111 and XV-080112."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "PMP-080101",
+   "tag": "PMP-080101",
+   "kind": "centrifugal_pump",
+   "name": "Permeate pump (boxed marker '4' inside symbol)",
+   "bbox": [
+    0.4324,
+    0.4764,
+    0.4532,
+    0.5086
+   ],
+   "confidence": 0.9,
+   "notes": "Number 4 in a small square is drawn inside the pump symbol; meaning not stated."
+  }
+ ],
+ "components": [
+  {
+   "id": "XV-080111",
+   "kind": "solenoid_valve",
+   "bbox": [
+    0.2013,
+    0.4141,
+    0.2134,
+    0.4329
+   ],
+   "confidence": 0.85,
+   "tag": "XV-080111",
+   "actuator": "solenoid",
+   "loop": "X-080111",
+   "name": "Vent valve (ball body, S actuator), bubble XV 080111"
+  },
+  {
+   "id": "XV-080112",
+   "kind": "solenoid_valve",
+   "bbox": [
+    0.5714,
+    0.4141,
+    0.5836,
+    0.4329
+   ],
+   "confidence": 0.85,
+   "tag": "XV-080112",
+   "actuator": "solenoid",
+   "loop": "X-080112",
+   "name": "Vent valve (ball body, S actuator), tag printed rotated beside valve and in bubble XV 080112"
+  },
+  {
+   "id": "CK-H",
+   "kind": "check_valve",
+   "bbox": [
+    0.5103,
+    0.4401,
+    0.5224,
+    0.4589
+   ],
+   "confidence": 0.7,
+   "name": "Check valve on permeate header (bypasses pump)"
+  },
+  {
+   "id": "BFV-S",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.3672,
+    0.4863,
+    0.3794,
+    0.5051
+   ],
+   "confidence": 0.7,
+   "name": "Pump suction valve"
+  },
+  {
+   "id": "EJ-S",
+   "kind": "expansion_joint",
+   "bbox": [
+    0.3933,
+    0.4863,
+    0.4055,
+    0.5051
+   ],
+   "confidence": 0.6,
+   "name": "Flexible joint at pump suction"
+  },
+  {
+   "id": "RD-S",
+   "kind": "reducer",
+   "bbox": [
+    0.4141,
+    0.4863,
+    0.4263,
+    0.5051
+   ],
+   "confidence": 0.7,
+   "name": "Suction reducer"
+  },
+  {
+   "id": "RD-D",
+   "kind": "reducer",
+   "bbox": [
+    0.4572,
+    0.4753,
+    0.4694,
+    0.4941
+   ],
+   "confidence": 0.7,
+   "name": "Discharge reducer"
+  },
+  {
+   "id": "EJ-D",
+   "kind": "expansion_joint",
+   "bbox": [
+    0.4802,
+    0.4753,
+    0.4924,
+    0.4941
+   ],
+   "confidence": 0.6,
+   "name": "Flexible joint at pump discharge"
+  },
+  {
+   "id": "CK-D",
+   "kind": "check_valve",
+   "bbox": [
+    0.5103,
+    0.4753,
+    0.5224,
+    0.4941
+   ],
+   "confidence": 0.7,
+   "name": "Pump discharge check valve"
+  },
+  {
+   "id": "BFV-D",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.5398,
+    0.4753,
+    0.552,
+    0.4941
+   ],
+   "confidence": 0.7,
+   "name": "Pump discharge valve"
+  },
+  {
+   "id": "RD5",
+   "kind": "reducer",
+   "bbox": [
+    0.6912,
+    0.4401,
+    0.7033,
+    0.4589
+   ],
+   "confidence": 0.6,
+   "name": "Reducer upstream of FCV-080132"
+  },
+  {
+   "id": "FCV-080132",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.7119,
+    0.4377,
+    0.724,
+    0.4565
+   ],
+   "confidence": 0.85,
+   "tag": "FCV-080132",
+   "actuator": "electric",
+   "loop": "F-080132",
+   "name": "Flow control valve, butterfly body with M actuator"
+  },
+  {
+   "id": "RD6",
+   "kind": "reducer",
+   "bbox": [
+    0.7346,
+    0.4377,
+    0.7468,
+    0.4565
+   ],
+   "confidence": 0.6,
+   "name": "Reducer downstream of FCV-080132"
+  },
+  {
+   "id": "RD7",
+   "kind": "reducer",
+   "bbox": [
+    0.7515,
+    0.5559,
+    0.7636,
+    0.5747
+   ],
+   "confidence": 0.6,
+   "name": "Reducer on vertical run"
+  },
+  {
+   "id": "RD8",
+   "kind": "reducer",
+   "bbox": [
+    0.6628,
+    0.6415,
+    0.675,
+    0.6603
+   ],
+   "confidence": 0.6,
+   "name": "Reducer on vertical run"
+  },
+  {
+   "id": "VS",
+   "kind": "other",
+   "bbox": [
+    0.6463,
+    0.4731,
+    0.6585,
+    0.4919
+   ],
+   "confidence": 0.5,
+   "name": "Valve with solid wedge on sample/drain loop (symbol type unclear)"
+  }
+ ],
+ "instruments": [
+  {
+   "id": "XC-080111",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "XC-080111",
+   "bbox": [
+    0.1818,
+    0.1955,
+    0.1957,
+    0.217
+   ],
+   "loop": "X-080111",
+   "name": "OPEN/CLOSE"
+  },
+  {
+   "id": "DO-XC111",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "DO",
+   "bbox": [
+    0.1818,
+    0.2497,
+    0.1957,
+    0.2712
+   ],
+   "loop": "X-080111",
+   "name": "DO card"
+  },
+  {
+   "id": "HS-080111",
+   "location": "field",
+   "confidence": 0.8,
+   "tag": "HS-080111",
+   "bbox": [
+    0.203,
+    0.2497,
+    0.2169,
+    0.2712
+   ],
+   "loop": "H-080111",
+   "name": "Hand switch (OCR), drawn in MBR PLC band"
+  },
+  {
+   "id": "DI-YI111",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "DI",
+   "bbox": [
+    0.2242,
+    0.2497,
+    0.2381,
+    0.2712
+   ],
+   "loop": "Y-080111",
+   "name": "DI card (remote status)"
+  },
+  {
+   "id": "YI-080111",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "YI-080111",
+   "bbox": [
+    0.2242,
+    0.1955,
+    0.2381,
+    0.217
+   ],
+   "loop": "Y-080111",
+   "name": "REMOTE"
+  },
+  {
+   "id": "XC-080112",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "XC-080112",
+   "bbox": [
+    0.5419,
+    0.1955,
+    0.5558,
+    0.217
+   ],
+   "loop": "X-080112",
+   "name": "OPEN/CLOSE"
+  },
+  {
+   "id": "DO-XC112",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "DO",
+   "bbox": [
+    0.5419,
+    0.2497,
+    0.5558,
+    0.2712
+   ],
+   "loop": "X-080112",
+   "name": "DO card"
+  },
+  {
+   "id": "HS-080112",
+   "location": "field",
+   "confidence": 0.8,
+   "tag": "HS-080112",
+   "bbox": [
+    0.5629,
+    0.2497,
+    0.5768,
+    0.2712
+   ],
+   "loop": "H-080112",
+   "name": "Hand switch (OCR), drawn in MBR PLC band"
+  },
+  {
+   "id": "DI-YI112",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "DI",
+   "bbox": [
+    0.5841,
+    0.2497,
+    0.598,
+    0.2712
+   ],
+   "loop": "Y-080112",
+   "name": "DI card (remote status)"
+  },
+  {
+   "id": "YI-080112",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "YI-080112",
+   "bbox": [
+    0.5841,
+    0.1955,
+    0.598,
+    0.217
+   ],
+   "loop": "Y-080112",
+   "name": "REMOTE"
+  },
+  {
+   "id": "YI-080101A",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "YI-080101A",
+   "bbox": [
+    0.3935,
+    0.1955,
+    0.4074,
+    0.217
+   ],
+   "loop": "Y-080101",
+   "name": "REMOTE"
+  },
+  {
+   "id": "YC-080101",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "YC-080101",
+   "bbox": [
+    0.4147,
+    0.1955,
+    0.4286,
+    0.217
+   ],
+   "loop": "Y-080101",
+   "name": "RUN"
+  },
+  {
+   "id": "YI-080101B",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "YI-080101B",
+   "bbox": [
+    0.4359,
+    0.1955,
+    0.4498,
+    0.217
+   ],
+   "loop": "Y-080101",
+   "name": "RUNNING"
+  },
+  {
+   "id": "ZA-080101",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "ZA-080101",
+   "bbox": [
+    0.4571,
+    0.152,
+    0.471,
+    0.1735
+   ],
+   "loop": "Z-080101",
+   "name": "FAIL"
+  },
+  {
+   "id": "DI-YIA",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "DI",
+   "bbox": [
+    0.3935,
+    0.2497,
+    0.4074,
+    0.2712
+   ],
+   "loop": "Y-080101",
+   "name": "DI card (remote status)"
+  },
+  {
+   "id": "DO-RUN",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "DO",
+   "bbox": [
+    0.4147,
+    0.2497,
+    0.4286,
+    0.2712
+   ],
+   "loop": "Y-080101",
+   "name": "DO card (run command)"
+  },
+  {
+   "id": "DI-YIB",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "DI",
+   "bbox": [
+    0.4359,
+    0.2497,
+    0.4498,
+    0.2712
+   ],
+   "loop": "Y-080101",
+   "name": "DI card (running status)"
+  },
+  {
+   "id": "HS-080101",
+   "location": "field",
+   "confidence": 0.85,
+   "tag": "HS-080101",
+   "bbox": [
+    0.4147,
+    0.3048,
+    0.4286,
+    0.3263
+   ],
+   "loop": "H-080101",
+   "name": "Hand switch (HOR), drawn in MCC band"
+  },
+  {
+   "id": "JS-080101",
+   "location": "field",
+   "confidence": 0.7,
+   "tag": "JS-080101",
+   "bbox": [
+    0.4359,
+    0.3048,
+    0.4498,
+    0.3263
+   ],
+   "loop": "J-080101",
+   "name": "JS 080101 in MCC band (motor starter/power signal, meaning not stated)"
+  },
+  {
+   "id": "PG-080101A",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "PG-080101A",
+   "measures": {
+    "line": "LP-S",
+    "after": "BFV-S"
+   },
+   "bbox": [
+    0.3796,
+    0.457,
+    0.3935,
+    0.4785
+   ],
+   "loop": "P-080101",
+   "name": "Pressure gauge, pump suction"
+  },
+  {
+   "id": "PG-080101B",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "PG-080101B",
+   "measures": {
+    "line": "LP-D",
+    "after": "EJ-D"
+   },
+   "bbox": [
+    0.4859,
+    0.4544,
+    0.4998,
+    0.4758
+   ],
+   "loop": "P-080101",
+   "name": "Pressure gauge, pump discharge"
+  },
+  {
+   "id": "PT-080121",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "PT-080121",
+   "measures": {
+    "line": "LH"
+   },
+   "bbox": [
+    0.2666,
+    0.406,
+    0.2805,
+    0.4275
+   ],
+   "loop": "P-080121",
+   "name": "Pressure transmitter on permeate header"
+  },
+  {
+   "id": "AI-PIR",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "AI",
+   "bbox": [
+    0.2666,
+    0.2497,
+    0.2805,
+    0.2712
+   ],
+   "loop": "P-080121",
+   "name": "AI card"
+  },
+  {
+   "id": "PIR-080121",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "PIR-080121",
+   "bbox": [
+    0.2666,
+    0.1955,
+    0.2805,
+    0.217
+   ],
+   "loop": "P-080121",
+   "name": "PRESSURE"
+  },
+  {
+   "id": "PAH-080121",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "PAH-080121",
+   "bbox": [
+    0.2878,
+    0.152,
+    0.3017,
+    0.1735
+   ],
+   "loop": "P-080121",
+   "name": "HIGH PRESS"
+  },
+  {
+   "id": "FIT-080141",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "FIT-080141",
+   "bbox": [
+    0.6053,
+    0.3894,
+    0.6192,
+    0.4108
+   ],
+   "loop": "F-080141",
+   "name": "Flow indicating transmitter"
+  },
+  {
+   "id": "FE-080141",
+   "location": "field",
+   "confidence": 0.85,
+   "tag": "FE-080141",
+   "bbox": [
+    0.6053,
+    0.4388,
+    0.6192,
+    0.4603
+   ],
+   "loop": "F-080141",
+   "name": "Flow element: boxed M (magnetic) symbol in the header line, also drawn as bubble FE 080141"
+  },
+  {
+   "id": "AI-FQIR",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "AI",
+   "bbox": [
+    0.6053,
+    0.2497,
+    0.6192,
+    0.2712
+   ],
+   "loop": "F-080141",
+   "name": "AI card"
+  },
+  {
+   "id": "FQIR-080141",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "FQIR-080141",
+   "bbox": [
+    0.6053,
+    0.1955,
+    0.6192,
+    0.217
+   ],
+   "loop": "F-080141",
+   "name": "FLOW"
+  },
+  {
+   "id": "AE-080001",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "AE-080001",
+   "measures": {
+    "line": "LS1",
+    "after": "VS"
+   },
+   "bbox": [
+    0.6526,
+    0.4114,
+    0.6665,
+    0.4329
+   ],
+   "loop": "A-080001",
+   "name": "Analyser element (turbidity)"
+  },
+  {
+   "id": "AIT-080001",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "AIT-080001",
+   "bbox": [
+    0.6526,
+    0.3894,
+    0.6665,
+    0.4108
+   ],
+   "loop": "A-080001",
+   "name": "Analyser transmitter (turbidity)"
+  },
+  {
+   "id": "AI-AIR",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "AI",
+   "bbox": [
+    0.6526,
+    0.2497,
+    0.6665,
+    0.2712
+   ],
+   "loop": "A-080001",
+   "name": "AI card"
+  },
+  {
+   "id": "AIR-080001",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "AIR-080001",
+   "bbox": [
+    0.6526,
+    0.1955,
+    0.6665,
+    0.217
+   ],
+   "loop": "A-080001",
+   "name": "TURBIDITY"
+  },
+  {
+   "id": "AAH-080001",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "AAH-080001",
+   "bbox": [
+    0.6331,
+    0.152,
+    0.647,
+    0.1735
+   ],
+   "loop": "A-080001",
+   "name": "HIGH TURB"
+  },
+  {
+   "id": "ZSC-080132",
+   "location": "field",
+   "confidence": 0.9,
+   "tag": "ZSC-080132",
+   "measures": {
+    "item": "FCV-080132"
+   },
+   "bbox": [
+    0.711,
+    0.381,
+    0.7249,
+    0.4025
+   ],
+   "loop": "Z-080132",
+   "name": "Position switch closed"
+  },
+  {
+   "id": "FC-080132",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "FC-080132",
+   "bbox": [
+    0.69,
+    0.1955,
+    0.7039,
+    0.217
+   ],
+   "loop": "F-080132",
+   "name": "POSITION"
+  },
+  {
+   "id": "AO-FC",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "AO",
+   "bbox": [
+    0.69,
+    0.2497,
+    0.7039,
+    0.2712
+   ],
+   "loop": "F-080132",
+   "name": "AO card"
+  },
+  {
+   "id": "ZIC-080132",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "ZIC-080132",
+   "bbox": [
+    0.7112,
+    0.1955,
+    0.7251,
+    0.217
+   ],
+   "loop": "Z-080132",
+   "name": "CLOSED"
+  },
+  {
+   "id": "DI-ZIC",
+   "location": "plc",
+   "confidence": 0.8,
+   "function": "DI",
+   "bbox": [
+    0.7112,
+    0.2497,
+    0.7251,
+    0.2712
+   ],
+   "loop": "Z-080132",
+   "name": "DI card"
+  },
+  {
+   "id": "ZA-080132",
+   "location": "scada",
+   "confidence": 0.9,
+   "tag": "ZA-080132",
+   "bbox": [
+    0.6688,
+    0.152,
+    0.6827,
+    0.1735
+   ],
+   "loop": "Z-080132",
+   "name": "FAIL"
+  }
+ ],
+ "lines": [
+  {
+   "id": "LH",
+   "from": "OPC-B",
+   "to": "B-DISINF",
+   "path": [
+    "CK-H",
+    "FE-080141",
+    "RD5",
+    "FCV-080132",
+    "RD6",
+    "RD7",
+    "RD8"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "service": "permeate",
+   "notes": "Permeate header from the upper permeate flag, through the flow element and flow control valve, around the vertical run to the disinfection flag."
+  },
+  {
+   "id": "L-C",
+   "from": "OPC-C",
+   "to": {
+    "line": "LH"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "service": "lower permeate",
+   "notes": "Joins the header with the upper permeate line at the left."
+  },
+  {
+   "id": "LP-S",
+   "from": {
+    "line": "LH"
+   },
+   "to": "PMP-080101",
+   "path": [
+    "BFV-S",
+    "EJ-S",
+    "RD-S"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "service": "permeate",
+   "notes": "Pump suction branch off the header (upstream of the header check valve)."
+  },
+  {
+   "id": "LP-D",
+   "from": "PMP-080101",
+   "to": {
+    "line": "LH",
+    "after": "CK-H"
+   },
+   "path": [
+    "RD-D",
+    "EJ-D",
+    "CK-D",
+    "BFV-D"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "service": "permeate"
+  },
+  {
+   "id": "LV1",
+   "from": {
+    "line": "LH"
+   },
+   "to": "B-ATM",
+   "path": [
+    "XV-080111"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "service": "vent"
+  },
+  {
+   "id": "LV2",
+   "from": {
+    "line": "LH",
+    "after": "CK-H"
+   },
+   "to": "B-ATM",
+   "path": [
+    "XV-080112"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "service": "vent"
+  },
+  {
+   "id": "LS1",
+   "from": {
+    "line": "LH",
+    "after": "FE-080141"
+   },
+   "to": "B-DRAIN",
+   "path": [
+    "VS"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.65,
+   "service": "turbidity sample to drain",
+   "notes": "Loop down, right and up through a valve, then to a DRAIN arrow; AE-080001 senses the upper run."
+  }
+ ],
+ "signals": [
+  {
+   "from": "XC-080111",
+   "to": "DO-XC111",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "DO-XC111",
+   "to": "HS-080111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "HS-080111",
+   "to": "XV-080111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "HS-080111",
+   "to": "DI-YI111",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "DI-YI111",
+   "to": "YI-080111",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "XC-080112",
+   "to": "DO-XC112",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "DO-XC112",
+   "to": "HS-080112",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "HS-080112",
+   "to": "XV-080112",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "HS-080112",
+   "to": "DI-YI112",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "DI-YI112",
+   "to": "YI-080112",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "YC-080101",
+   "to": "DO-RUN",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "DO-RUN",
+   "to": "HS-080101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "HS-080101",
+   "to": "JS-080101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "JS-080101",
+   "to": "PMP-080101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.75
+  },
+  {
+   "from": "HS-080101",
+   "to": "DI-YIA",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "DI-YIA",
+   "to": "YI-080101A",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "JS-080101",
+   "to": "DI-YIB",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "DI-YIB",
+   "to": "YI-080101B",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "YC-080101",
+   "to": "ZA-080101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "YI-080101B",
+   "to": "ZA-080101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "PT-080121",
+   "to": "AI-PIR",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "AI-PIR",
+   "to": "PIR-080121",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "PIR-080121",
+   "to": "PAH-080121",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8
+  },
+  {
+   "from": "FE-080141",
+   "to": "FIT-080141",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "FIT-080141",
+   "to": "AI-FQIR",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "AI-FQIR",
+   "to": "FQIR-080141",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "AE-080001",
+   "to": "AIT-080001",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "AIT-080001",
+   "to": "AI-AIR",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "AI-AIR",
+   "to": "AIR-080001",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "AIR-080001",
+   "to": "AAH-080001",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8
+  },
+  {
+   "from": "FC-080132",
+   "to": "AO-FC",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "AO-FC",
+   "to": "FCV-080132",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8
+  },
+  {
+   "from": "ZSC-080132",
+   "to": "DI-ZIC",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "DI-ZIC",
+   "to": "ZIC-080132",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "FC-080132",
+   "to": "ZA-080132",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "ZIC-080132",
+   "to": "ZA-080132",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.6
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-B",
+   "direction": "in",
+   "name": "UPPER PERMEATE FROM MB-01 REF SHT P203",
+   "other_drawing": "P203",
+   "bbox": [
+    0.0582,
+    0.4221,
+    0.1217,
+    0.4441
+   ],
+   "confidence": 0.95,
+   "other_item": "MB-01",
+   "notes": "Flag marker 'B'"
+  },
+  {
+   "id": "OPC-C",
+   "direction": "in",
+   "name": "LOWER PERMEATE FROM MB-01 REF SHT P203",
+   "other_drawing": "P203",
+   "bbox": [
+    0.0582,
+    0.4549,
+    0.1217,
+    0.4769
+   ],
+   "confidence": 0.95,
+   "other_item": "MB-01",
+   "notes": "Flag marker 'C'"
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B-DISINF",
+   "direction": "sink",
+   "name": "PERMEATE TO DISINFECTION (flag 'a', no drawing number printed)",
+   "confidence": 0.9,
+   "bbox": [
+    0.812,
+    0.6498,
+    0.8754,
+    0.6719
+   ]
+  },
+  {
+   "id": "B-ATM",
+   "direction": "sink",
+   "name": "VENT TO ATMOSPHERE (TYP)",
+   "confidence": 0.9,
+   "bbox": [
+    0.1934,
+    0.3711,
+    0.2212,
+    0.4141
+   ]
+  },
+  {
+   "id": "B-DRAIN",
+   "direction": "sink",
+   "name": "DRAIN",
+   "confidence": 0.9,
+   "bbox": [
+    0.658,
+    0.4678,
+    0.6754,
+    0.4946
+   ]
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r1c5",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r2c5",
+  "r3c4",
+  "r3c5",
+  "r3c1",
+  "r3c2",
+  "r3c3"
+ ],
+ "unreadable": [
+  "Type of the wedge-filled valve on the turbidity sample loop is unclear",
+  "Meaning of 'JS' and of the boxed '4' in the pump symbol is not given"
+ ]
+}

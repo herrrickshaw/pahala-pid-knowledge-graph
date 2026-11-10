@@ -1,0 +1,586 @@
+{
+ "schema_version": "1.0",
+ "page": 22,
+ "sheet": {
+  "drawing_number": "P-501",
+  "title": "SUBSURFACE DRIP EFFLUENT DISPOSAL P&ID",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "DESIGN/BUILD DOCUMENTS (prepared for EPA submission July 2021, general understanding of project concept)",
+  "legend_notes": [
+   "ES 120 V flags show the 120 V electrical supply to each valve motor actuator (not process lines).",
+   "ZSO/ZSC at zone 4 are printed 500,201 (same as zone 2) in the drawing.",
+   "Signals: dashed = electrical, small circles = software link between PLC bubbles and SCADA bubbles above the SCADA line."
+  ]
+ },
+ "equipment": [],
+ "components": [
+  {
+   "id": "MOV1",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "name": "Drip zone 1 supply valve (120 V electric actuator, unnumbered)",
+   "bbox": [
+    0.35,
+    0.515,
+    0.38,
+    0.55
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "MOV2",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "name": "Drip zone 2 supply valve (120 V electric actuator, unnumbered)",
+   "bbox": [
+    0.4,
+    0.6,
+    0.43000000000000005,
+    0.635
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "MOV3",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "name": "Drip zone 3 supply valve (120 V electric actuator, unnumbered)",
+   "bbox": [
+    0.45,
+    0.6799999999999999,
+    0.48,
+    0.715
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "MOV4",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "name": "Drip zone 4 supply valve (120 V electric actuator, unnumbered)",
+   "bbox": [
+    0.51,
+    0.77,
+    0.54,
+    0.805
+   ],
+   "confidence": 0.85
+  }
+ ],
+ "instruments": [
+  {
+   "id": "ZIO-PLC",
+   "tag": "ZIO-500,101",
+   "location": "plc",
+   "loop": "Z-500101",
+   "bbox": [
+    0.22899999999999998,
+    0.2,
+    0.251,
+    0.225
+   ],
+   "confidence": 0.85,
+   "name": "Valve opened"
+  },
+  {
+   "id": "ZIC-PLC",
+   "tag": "ZIC-500,101",
+   "location": "plc",
+   "loop": "Z-500101",
+   "bbox": [
+    0.252,
+    0.2,
+    0.274,
+    0.225
+   ],
+   "confidence": 0.85,
+   "name": "Valve closed"
+  },
+  {
+   "id": "YA-PLC",
+   "tag": "YA-500,101",
+   "location": "plc",
+   "loop": "Y-500101",
+   "bbox": [
+    0.27399999999999997,
+    0.2,
+    0.296,
+    0.225
+   ],
+   "confidence": 0.85,
+   "name": "Valve fault"
+  },
+  {
+   "id": "YI-PLC",
+   "tag": "YI-500,101",
+   "location": "plc",
+   "loop": "Y-500101",
+   "bbox": [
+    0.357,
+    0.2,
+    0.379,
+    0.225
+   ],
+   "confidence": 0.85,
+   "name": "Valve in auto"
+  },
+  {
+   "id": "ZCO-PLC",
+   "tag": "ZCO-500,101",
+   "location": "plc",
+   "loop": "Z-500101",
+   "bbox": [
+    0.386,
+    0.2,
+    0.40800000000000003,
+    0.225
+   ],
+   "confidence": 0.85,
+   "name": "Valve open command/setpoint"
+  },
+  {
+   "id": "ZCC-PLC",
+   "tag": "ZCC-500,101",
+   "location": "plc",
+   "loop": "Z-500101",
+   "bbox": [
+    0.416,
+    0.2,
+    0.438,
+    0.225
+   ],
+   "confidence": 0.85,
+   "name": "Valve close command/setpoint"
+  },
+  {
+   "id": "ZIO-SCADA",
+   "tag": "ZIO-500,101",
+   "location": "scada",
+   "loop": "Z-500101",
+   "bbox": [
+    0.22899999999999998,
+    0.09,
+    0.251,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Valve opened"
+  },
+  {
+   "id": "ZIC-SCADA",
+   "tag": "ZIC-500,101",
+   "location": "scada",
+   "loop": "Z-500101",
+   "bbox": [
+    0.252,
+    0.09,
+    0.274,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Valve closed"
+  },
+  {
+   "id": "YA-SCADA",
+   "tag": "YA-500,101",
+   "location": "scada",
+   "loop": "Y-500101",
+   "bbox": [
+    0.27399999999999997,
+    0.09,
+    0.296,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Valve fault"
+  },
+  {
+   "id": "YI-AUTO-SCADA",
+   "tag": "YI-500,101",
+   "location": "scada",
+   "loop": "Y-500101",
+   "bbox": [
+    0.357,
+    0.09,
+    0.379,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Valve in auto"
+  },
+  {
+   "id": "YI-OPENSP-SCADA",
+   "tag": "YI-500,101",
+   "location": "scada",
+   "loop": "Y-500101",
+   "bbox": [
+    0.386,
+    0.09,
+    0.40800000000000003,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Valve open setpoint"
+  },
+  {
+   "id": "YI-CLOSESP-SCADA",
+   "tag": "YI-500,101",
+   "location": "scada",
+   "loop": "Y-500101",
+   "bbox": [
+    0.416,
+    0.09,
+    0.438,
+    0.115
+   ],
+   "confidence": 0.85,
+   "name": "Valve close setpoint"
+  },
+  {
+   "id": "HS-500,101",
+   "tag": "HS-500,101",
+   "location": "field",
+   "loop": "H-500101",
+   "bbox": [
+    0.358,
+    0.365,
+    0.377,
+    0.395
+   ],
+   "confidence": 0.85,
+   "name": "Valve OAC (open/auto/close) selector"
+  },
+  {
+   "id": "ZSO-Z1",
+   "tag": "ZSO-500,101",
+   "location": "field",
+   "loop": "Z-500101",
+   "bbox": [
+    0.33,
+    0.515,
+    0.35000000000000003,
+    0.545
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "MOV1"
+   },
+   "name": "Zone 1 valve open limit"
+  },
+  {
+   "id": "ZSC-Z1",
+   "tag": "ZSC-500,101",
+   "location": "field",
+   "loop": "Z-500101",
+   "bbox": [
+    0.36000000000000004,
+    0.515,
+    0.38,
+    0.545
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "MOV1"
+   },
+   "name": "Zone 1 valve closed limit"
+  },
+  {
+   "id": "ZSO-Z2",
+   "tag": "ZSO-500,201",
+   "location": "field",
+   "loop": "Z-500201",
+   "bbox": [
+    0.365,
+    0.6,
+    0.385,
+    0.63
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "MOV2"
+   },
+   "name": "Zone 2 valve open limit"
+  },
+  {
+   "id": "ZSC-Z2",
+   "tag": "ZSC-500,201",
+   "location": "field",
+   "loop": "Z-500201",
+   "bbox": [
+    0.395,
+    0.6,
+    0.415,
+    0.63
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "MOV2"
+   },
+   "name": "Zone 2 valve closed limit"
+  },
+  {
+   "id": "ZSO-Z3",
+   "tag": "ZSO-500,301",
+   "location": "field",
+   "loop": "Z-500301",
+   "bbox": [
+    0.415,
+    0.6799999999999999,
+    0.435,
+    0.71
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "MOV3"
+   },
+   "name": "Zone 3 valve open limit"
+  },
+  {
+   "id": "ZSC-Z3",
+   "tag": "ZSC-500,301",
+   "location": "field",
+   "loop": "Z-500301",
+   "bbox": [
+    0.445,
+    0.6799999999999999,
+    0.46499999999999997,
+    0.71
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "MOV3"
+   },
+   "name": "Zone 3 valve closed limit"
+  },
+  {
+   "id": "ZSO-Z4",
+   "tag": "ZSO-500,201",
+   "location": "field",
+   "loop": "Z-500201",
+   "bbox": [
+    0.48,
+    0.77,
+    0.5,
+    0.8
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "MOV4"
+   },
+   "name": "Zone 4 valve open limit"
+  },
+  {
+   "id": "ZSC-Z4",
+   "tag": "ZSC-500,201",
+   "location": "field",
+   "loop": "Z-500201",
+   "bbox": [
+    0.51,
+    0.77,
+    0.53,
+    0.8
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "item": "MOV4"
+   },
+   "name": "Zone 4 valve closed limit"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "B1",
+   "to": "B2",
+   "path": [
+    "MOV1"
+   ],
+   "flow_direction": "inferred",
+   "service": "irrigation effluent",
+   "confidence": 0.85
+  },
+  {
+   "id": "L2",
+   "from": {
+    "line": "L1"
+   },
+   "to": "B3",
+   "path": [
+    "MOV2"
+   ],
+   "flow_direction": "inferred",
+   "service": "irrigation effluent",
+   "confidence": 0.85
+  },
+  {
+   "id": "L3",
+   "from": {
+    "line": "L1"
+   },
+   "to": "B4",
+   "path": [
+    "MOV3"
+   ],
+   "flow_direction": "inferred",
+   "service": "irrigation effluent",
+   "confidence": 0.85
+  },
+  {
+   "id": "L4",
+   "from": {
+    "line": "L1"
+   },
+   "to": "B5",
+   "path": [
+    "MOV4"
+   ],
+   "flow_direction": "inferred",
+   "service": "irrigation effluent",
+   "confidence": 0.85
+  }
+ ],
+ "signals": [
+  {
+   "from": "ZSO-Z1",
+   "to": "ZIO-PLC",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.6
+  },
+  {
+   "from": "ZSC-Z1",
+   "to": "ZIC-PLC",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.6
+  },
+  {
+   "from": "MOV1",
+   "to": "YA-PLC",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "HS-500,101",
+   "to": "YI-PLC",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.5
+  },
+  {
+   "from": "HS-500,101",
+   "to": "MOV1",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "ZCO-PLC",
+   "to": "HS-500,101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.45
+  },
+  {
+   "from": "ZCC-PLC",
+   "to": "HS-500,101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.45
+  },
+  {
+   "from": "ZIO-PLC",
+   "to": "ZIO-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "ZIC-PLC",
+   "to": "ZIC-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "YA-PLC",
+   "to": "YA-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "YI-PLC",
+   "to": "YI-AUTO-SCADA",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.8
+  },
+  {
+   "from": "YI-OPENSP-SCADA",
+   "to": "ZCO-PLC",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "YI-CLOSESP-SCADA",
+   "to": "ZCC-PLC",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.5
+  }
+ ],
+ "off_page_connectors": [],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "IRRIGATION EQUALIZATION TANK",
+   "direction": "source",
+   "confidence": 0.9
+  },
+  {
+   "id": "B2",
+   "name": "DRIP ZONE 1",
+   "direction": "sink",
+   "confidence": 0.9
+  },
+  {
+   "id": "B3",
+   "name": "DRIP ZONE 2",
+   "direction": "sink",
+   "confidence": 0.9
+  },
+  {
+   "id": "B4",
+   "name": "DRIP ZONE 3",
+   "direction": "sink",
+   "confidence": 0.9
+  },
+  {
+   "id": "B5",
+   "name": "DRIP ZONE 4",
+   "direction": "sink",
+   "confidence": 0.9
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r1c4",
+  "r2c4",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Direction of the ZCO/ZCC/HS dashed command signals and the arrow semantics of the YI (valve in auto) PLC bubble are ambiguous; modelled with low confidence.",
+  "Blank tile r1c3 taken from the overview only."
+ ]
+}

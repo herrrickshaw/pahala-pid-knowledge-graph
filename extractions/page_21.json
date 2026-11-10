@@ -1,0 +1,513 @@
+{
+ "schema_version": "1.0",
+ "page": 21,
+ "sheet": {
+  "drawing_number": "P-401",
+  "title": "IRRIGATION EQUALIZATION TANK P&ID",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "Design/Build documents (EPA submission July 2021)",
+  "legend_notes": [
+   "Different drafting style from P-200 series (file P-401.DWG, BC project 152964): trapezoid bubbles = SCADA functions, circle-in-square = DCS, dash-dot bands separate SCADA / panel zones",
+   "Filled arrowheads on SCADA bubbles = write/setpoint (into the data link), hollow = read/alarm",
+   "Drawings prepared for EPA submission July 2021 to give a general understanding of the project concept; not intended to reflect design requirements."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "CONTACT-BASIN",
+   "kind": "other",
+   "name": "CONTACT BASIN",
+   "bbox": [
+    0.2219,
+    0.7557,
+    0.2679,
+    0.7773
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "EQ-TANK",
+   "kind": "tank",
+   "name": "IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label)",
+   "bbox": [
+    0.3265,
+    0.6305,
+    0.5179,
+    0.8473
+   ],
+   "confidence": 0.85
+  }
+ ],
+ "components": [],
+ "instruments": [
+  {
+   "id": "LE-401",
+   "location": "field",
+   "bbox": [
+    0.3642,
+    0.7704,
+    0.382,
+    0.798
+   ],
+   "confidence": 0.9,
+   "tag": "LE-401",
+   "measures": {
+    "item": "EQ-TANK"
+   },
+   "loop": "L-401",
+   "name": "Submersible level element"
+  },
+  {
+   "id": "LI-402",
+   "location": "local_panel",
+   "bbox": [
+    0.3514,
+    0.2798,
+    0.3693,
+    0.3074
+   ],
+   "confidence": 0.6,
+   "tag": "LI-402",
+   "loop": "L-402",
+   "name": "Level indicator between SCADA and lower band"
+  },
+  {
+   "id": "LI-401",
+   "location": "dcs",
+   "bbox": [
+    0.3514,
+    0.199,
+    0.3693,
+    0.2266
+   ],
+   "confidence": 0.75,
+   "tag": "LI-401",
+   "loop": "L-401",
+   "name": "Level indicator (DCS bubble)"
+  },
+  {
+   "id": "LSH-402",
+   "location": "field",
+   "bbox": [
+    0.4534,
+    0.5783,
+    0.4713,
+    0.6059
+   ],
+   "confidence": 0.9,
+   "tag": "LSH-402",
+   "measures": {
+    "item": "EQ-TANK"
+   },
+   "loop": "L-402",
+   "name": "Level switch high (float)"
+  },
+  {
+   "id": "LAH-402",
+   "location": "dcs",
+   "bbox": [
+    0.4541,
+    0.199,
+    0.4719,
+    0.2266
+   ],
+   "confidence": 0.8,
+   "tag": "LAH-402",
+   "loop": "L-402",
+   "name": "EQUALIZATION TANK HI LEVEL (DCS bubble)"
+  },
+  {
+   "id": "LAH-402-SCADA",
+   "location": "scada",
+   "bbox": [
+    0.4541,
+    0.0828,
+    0.4719,
+    0.1103
+   ],
+   "confidence": 0.85,
+   "tag": "LAH-402",
+   "loop": "L-402",
+   "name": "EQUALIZATION TANK HI LEVEL (SCADA)"
+  },
+  {
+   "id": "FE-403",
+   "location": "field",
+   "bbox": [
+    0.6422,
+    0.7005,
+    0.6601,
+    0.7281
+   ],
+   "confidence": 0.9,
+   "tag": "FE-403",
+   "loop": "F-403",
+   "name": "Magnetic flow element (in-line symbol printed 'FE-')"
+  },
+  {
+   "id": "FIT-403",
+   "location": "field",
+   "bbox": [
+    0.6422,
+    0.6788,
+    0.6601,
+    0.7064
+   ],
+   "confidence": 0.9,
+   "tag": "FIT-403",
+   "loop": "F-403"
+  },
+  {
+   "id": "FIR-403",
+   "location": "scada",
+   "bbox": [
+    0.6422,
+    0.0828,
+    0.6601,
+    0.1103
+   ],
+   "confidence": 0.85,
+   "tag": "FIR-403",
+   "loop": "F-403",
+   "name": "FLOW"
+  },
+  {
+   "id": "LCH-001-HI",
+   "location": "scada",
+   "bbox": [
+    0.2411,
+    0.0828,
+    0.2589,
+    0.1103
+   ],
+   "confidence": 0.9,
+   "tag": "LCH-001",
+   "loop": "L-001",
+   "name": "HI LEVEL SP"
+  },
+  {
+   "id": "LAH-001",
+   "location": "scada",
+   "bbox": [
+    0.2634,
+    0.0828,
+    0.2812,
+    0.1103
+   ],
+   "confidence": 0.9,
+   "tag": "LAH-001",
+   "loop": "L-001",
+   "name": "TANK LEVEL HI"
+  },
+  {
+   "id": "LCL-001-LO",
+   "location": "scada",
+   "bbox": [
+    0.2851,
+    0.0828,
+    0.3029,
+    0.1103
+   ],
+   "confidence": 0.9,
+   "tag": "LCL-001",
+   "loop": "L-001",
+   "name": "LO LEVEL SP"
+  },
+  {
+   "id": "LAL-001",
+   "location": "scada",
+   "bbox": [
+    0.3074,
+    0.0828,
+    0.3253,
+    0.1103
+   ],
+   "confidence": 0.9,
+   "tag": "LAL-001",
+   "loop": "L-001",
+   "name": "TANK LEVEL LOW"
+  },
+  {
+   "id": "YA-001",
+   "location": "scada",
+   "bbox": [
+    0.3291,
+    0.0828,
+    0.3469,
+    0.1103
+   ],
+   "confidence": 0.9,
+   "tag": "YA-001",
+   "loop": "Y-001",
+   "name": "XMTR FAULT"
+  },
+  {
+   "id": "LI-001",
+   "location": "scada",
+   "bbox": [
+    0.3514,
+    0.0828,
+    0.3693,
+    0.1103
+   ],
+   "confidence": 0.9,
+   "tag": "LI-001",
+   "loop": "L-001",
+   "name": "TANK LEVEL"
+  },
+  {
+   "id": "LCH-001-LEAD",
+   "location": "scada",
+   "bbox": [
+    0.3737,
+    0.0828,
+    0.3916,
+    0.1103
+   ],
+   "confidence": 0.9,
+   "tag": "LCH-001",
+   "loop": "L-001",
+   "name": "LEAD START SP"
+  },
+  {
+   "id": "LCL-001-LAG",
+   "location": "scada",
+   "bbox": [
+    0.3954,
+    0.0828,
+    0.4133,
+    0.1103
+   ],
+   "confidence": 0.9,
+   "tag": "LCL-001",
+   "loop": "L-001",
+   "name": "LAG START SP"
+  },
+  {
+   "id": "LCL-001-STOP",
+   "location": "scada",
+   "bbox": [
+    0.4177,
+    0.0828,
+    0.4356,
+    0.1103
+   ],
+   "confidence": 0.9,
+   "tag": "LCL-001",
+   "loop": "L-001",
+   "name": "ALL STOP SP"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "service": "permeate",
+   "from": "OPC-1",
+   "to": "CONTACT-BASIN",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L2",
+   "service": "hypochlorite solution",
+   "from": "B-HYPO",
+   "to": {
+    "line": "L1"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "L3",
+   "service": "disinfected permeate",
+   "from": "CONTACT-BASIN",
+   "to": "EQ-TANK",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L4",
+   "service": "irrigation water",
+   "from": "EQ-TANK",
+   "to": "OPC-2",
+   "path": [
+    "FE-403"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  }
+ ],
+ "signals": [
+  {
+   "from": "LE-401",
+   "to": "LI-402",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "LI-402",
+   "to": "LI-401",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.8
+  },
+  {
+   "from": "LI-401",
+   "to": "LI-001",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.75
+  },
+  {
+   "from": "LI-401",
+   "to": "LAH-001",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.7
+  },
+  {
+   "from": "LI-401",
+   "to": "LAL-001",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.7
+  },
+  {
+   "from": "LI-401",
+   "to": "YA-001",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.6
+  },
+  {
+   "from": "LCH-001-HI",
+   "to": "LI-401",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "LCL-001-LO",
+   "to": "LI-401",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "LCH-001-LEAD",
+   "to": "LI-401",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "LCL-001-LAG",
+   "to": "LI-401",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "LCL-001-STOP",
+   "to": "LI-401",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "LSH-402",
+   "to": "LAH-402",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.8
+  },
+  {
+   "from": "LAH-402",
+   "to": "LAH-402-SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8
+  },
+  {
+   "from": "FE-403",
+   "to": "FIT-403",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "FIT-403",
+   "to": "FIR-403",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-1",
+   "direction": "in",
+   "name": "FROM PERMEATE COLLECTION REF SHT P-204",
+   "other_drawing": "P-204",
+   "bbox": [
+    0.1078,
+    0.7527,
+    0.1409,
+    0.7685
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-2",
+   "direction": "out",
+   "name": "TO EFFLUENT DISPOSAL REF SHT P-501",
+   "other_drawing": "P-501",
+   "bbox": [
+    0.7455,
+    0.7557,
+    0.7787,
+    0.7714
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B-HYPO",
+   "name": "HYPOCHLORITE SOLUTION",
+   "direction": "source",
+   "bbox": [
+    0.1078,
+    0.8158,
+    0.1409,
+    0.8315
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Diamond 'I' on the SCADA data bus (interlock/logic function) not modelled; setpoint-to-LI-401 signals are inferred.",
+  "Five SCADA bubbles reuse tags LCH-001 (x2) and LCL-001 (x3) with different captions; kept as separate items with the same tag.",
+  "Tank has no printed tag; contact basin has no printed tag.",
+  "Location of LI-402 (plain circle between the two dash-dot bands) is uncertain."
+ ]
+}

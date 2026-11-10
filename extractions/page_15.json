@@ -1,0 +1,558 @@
+{
+ "schema_version": "1.0",
+ "page": 15,
+ "sheet": {
+  "drawing_number": "P-206",
+  "title": "ACID CLEANING",
+  "revision": "",
+  "drawing_type": "pid",
+  "issue_status": "Design/Build documents (prepared for EPA submission July 2021; not intended to reflect design requirements)",
+  "legend_notes": [
+   "Sheet 15 of 25. Oxalic acid chemical feed is inside a CONTAINMENT AREA (dashed box).",
+   "Horizontal bands SCADA HMI, MBR PLC and MCC are system zones; diamond-in-square DI/DO/AI symbols are untagged MBR PLC I/O cards.",
+   "Text beside FI-170121 bubble: FE-170121."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "TNK-170100",
+   "tag": "TNK-170100",
+   "kind": "tank",
+   "name": "OXALIC ACID 55 GAL. DRUM",
+   "bbox": [
+    0.357,
+    0.6,
+    0.4,
+    0.7
+   ],
+   "confidence": 0.95,
+   "attributes": {
+    "capacity": "55 gal drum",
+    "area": "containment area"
+   }
+  },
+  {
+   "id": "INJ1",
+   "kind": "other",
+   "name": "Chemical injector/eductor symbol on utility water line (acid injection point)",
+   "bbox": [
+    0.434,
+    0.497,
+    0.448,
+    0.522
+   ],
+   "confidence": 0.6
+  }
+ ],
+ "components": [
+  {
+   "id": "V1",
+   "kind": "ball_valve",
+   "bbox": [
+    0.291,
+    0.497,
+    0.305,
+    0.522
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "PRV1",
+   "kind": "pressure_regulator",
+   "bbox": [
+    0.32,
+    0.493,
+    0.334,
+    0.518
+   ],
+   "confidence": 0.6,
+   "name": "self-acting regulator/valve with dome actuator symbol"
+  },
+  {
+   "id": "XV-170103",
+   "kind": "on_off_valve",
+   "bbox": [
+    0.352,
+    0.5,
+    0.364,
+    0.52
+   ],
+   "confidence": 0.85,
+   "tag": "XV-170103",
+   "actuator": "electric",
+   "notes": "M box on valve",
+   "name": "motorized valve",
+   "loop": "X-170103"
+  },
+  {
+   "id": "CK1",
+   "kind": "check_valve",
+   "bbox": [
+    0.477,
+    0.497,
+    0.491,
+    0.522
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "V2",
+   "kind": "ball_valve",
+   "bbox": [
+    0.511,
+    0.497,
+    0.525,
+    0.522
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "DV1",
+   "kind": "ball_valve",
+   "bbox": [
+    0.496,
+    0.549,
+    0.51,
+    0.574
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "QC1",
+   "kind": "quick_connect",
+   "bbox": [
+    0.399,
+    0.669,
+    0.413,
+    0.694
+   ],
+   "confidence": 0.6,
+   "name": "coupling at drum outlet"
+  },
+  {
+   "id": "HOSE1",
+   "kind": "flexible_hose",
+   "bbox": [
+    0.414,
+    0.669,
+    0.428,
+    0.694
+   ],
+   "confidence": 0.8,
+   "name": "hose with flow arrow"
+  },
+  {
+   "id": "QC2",
+   "kind": "quick_connect",
+   "bbox": [
+    0.432,
+    0.655,
+    0.446,
+    0.68
+   ],
+   "confidence": 0.6,
+   "name": "coupling on chemical feed line"
+  },
+  {
+   "id": "V3",
+   "kind": "ball_valve",
+   "bbox": [
+    0.432,
+    0.64,
+    0.446,
+    0.665
+   ],
+   "confidence": 0.85
+  }
+ ],
+ "instruments": [
+  {
+   "id": "ZSO-170103",
+   "tag": "ZSO-170103",
+   "location": "field",
+   "bbox": [
+    0.35,
+    0.408,
+    0.366,
+    0.436
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "XV-170103"
+   },
+   "name": "open limit",
+   "loop": "Z-170103"
+  },
+  {
+   "id": "ZSC-170103",
+   "tag": "ZSC-170103",
+   "location": "field",
+   "bbox": [
+    0.35,
+    0.428,
+    0.366,
+    0.456
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "XV-170103"
+   },
+   "name": "closed limit",
+   "loop": "Z-170103"
+  },
+  {
+   "id": "PG-170111",
+   "tag": "PG-170111",
+   "location": "field",
+   "bbox": [
+    0.412,
+    0.436,
+    0.428,
+    0.464
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "L1a",
+    "after": "XV-170103"
+   },
+   "loop": "P-170111"
+  },
+  {
+   "id": "PG-170112",
+   "tag": "PG-170112",
+   "location": "field",
+   "bbox": [
+    0.446,
+    0.436,
+    0.462,
+    0.464
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "L1b"
+   },
+   "loop": "P-170112"
+  },
+  {
+   "id": "FI-170121",
+   "tag": "FI-170121",
+   "location": "field",
+   "bbox": [
+    0.431,
+    0.61,
+    0.447,
+    0.638
+   ],
+   "confidence": 0.8,
+   "name": "FI bubble with teardrop (rotameter-type) symbol; FE-170121 printed beside it",
+   "loop": "F-170121",
+   "notes": "Text FE-170121 printed next to the symbol"
+  },
+  {
+   "id": "FE-170122",
+   "tag": "FE-170122",
+   "location": "field",
+   "bbox": [
+    0.54,
+    0.472,
+    0.556,
+    0.5
+   ],
+   "confidence": 0.9,
+   "loop": "F-170122"
+  },
+  {
+   "id": "FIT-170122",
+   "tag": "FIT-170122",
+   "location": "field",
+   "bbox": [
+    0.54,
+    0.447,
+    0.556,
+    0.475
+   ],
+   "confidence": 0.9,
+   "loop": "F-170122"
+  },
+  {
+   "id": "HS-170103",
+   "tag": "HS-170103",
+   "location": "field",
+   "bbox": [
+    0.392,
+    0.245,
+    0.408,
+    0.273
+   ],
+   "confidence": 0.75,
+   "name": "hand switch, OCR (open/close/remote)",
+   "loop": "H-170103"
+  },
+  {
+   "id": "ZIC-170103",
+   "tag": "ZIC-170103",
+   "location": "scada",
+   "bbox": [
+    0.329,
+    0.191,
+    0.345,
+    0.219
+   ],
+   "confidence": 0.9,
+   "name": "CLOSED",
+   "loop": "Z-170103"
+  },
+  {
+   "id": "ZIO-170103",
+   "tag": "ZIO-170103",
+   "location": "scada",
+   "bbox": [
+    0.35,
+    0.191,
+    0.366,
+    0.219
+   ],
+   "confidence": 0.9,
+   "name": "OPENED",
+   "loop": "Z-170103"
+  },
+  {
+   "id": "YC-170103",
+   "tag": "YC-170103",
+   "location": "scada",
+   "bbox": [
+    0.371,
+    0.191,
+    0.387,
+    0.219
+   ],
+   "confidence": 0.9,
+   "name": "OPEN/CLOSE",
+   "loop": "Y-170103"
+  },
+  {
+   "id": "YI-170103",
+   "tag": "YI-170103",
+   "location": "scada",
+   "bbox": [
+    0.414,
+    0.191,
+    0.43,
+    0.219
+   ],
+   "confidence": 0.9,
+   "name": "REMOTE",
+   "loop": "Y-170103"
+  },
+  {
+   "id": "ZA-170103",
+   "tag": "ZA-170103",
+   "location": "scada",
+   "bbox": [
+    0.308,
+    0.149,
+    0.324,
+    0.177
+   ],
+   "confidence": 0.9,
+   "name": "FAIL",
+   "loop": "Z-170103"
+  },
+  {
+   "id": "FQIR-170122",
+   "tag": "FQIR-170122",
+   "location": "scada",
+   "bbox": [
+    0.54,
+    0.191,
+    0.556,
+    0.219
+   ],
+   "confidence": 0.9,
+   "name": "FLOW",
+   "loop": "F-170122"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1a",
+   "from": "BND-UW",
+   "to": "INJ1",
+   "path": [
+    "V1",
+    "PRV1",
+    "XV-170103"
+   ],
+   "service": "utility water",
+   "flow_direction": "inferred",
+   "confidence": 0.85
+  },
+  {
+   "id": "L1b",
+   "from": "INJ1",
+   "to": "OPC-a",
+   "path": [
+    "CK1",
+    "V2",
+    "FE-170122"
+   ],
+   "service": "utility water with oxalic acid (acid wash)",
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "L2",
+   "from": {
+    "line": "L1b",
+    "after": "CK1"
+   },
+   "to": "BND-DRAIN",
+   "path": [
+    "DV1"
+   ],
+   "service": "drain",
+   "flow_direction": "inferred",
+   "confidence": 0.8
+  },
+  {
+   "id": "L3",
+   "from": "TNK-170100",
+   "to": "INJ1",
+   "path": [
+    "QC1",
+    "HOSE1",
+    "QC2",
+    "V3",
+    "FI-170121"
+   ],
+   "service": "oxalic acid",
+   "flow_direction": "shown",
+   "confidence": 0.8
+  }
+ ],
+ "signals": [
+  {
+   "from": "ZSC-170103",
+   "to": "ZIC-170103",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85
+  },
+  {
+   "from": "ZSO-170103",
+   "to": "ZIO-170103",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85
+  },
+  {
+   "from": "YC-170103",
+   "to": "HS-170103",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "HS-170103",
+   "to": "XV-170103",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "HS-170103",
+   "to": "YI-170103",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.5
+  },
+  {
+   "from": "ZIC-170103",
+   "to": "ZA-170103",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.5
+  },
+  {
+   "from": "ZIO-170103",
+   "to": "ZA-170103",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.5
+  },
+  {
+   "from": "FE-170122",
+   "to": "FIT-170122",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.9
+  },
+  {
+   "from": "FIT-170122",
+   "to": "FQIR-170122",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-a",
+   "direction": "out",
+   "name": "ACID WASH TO MB-01",
+   "other_drawing": "P203",
+   "bbox": [
+    0.81,
+    0.495,
+    0.875,
+    0.53
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "BND-UW",
+   "direction": "source",
+   "name": "UTILITY WATER",
+   "bbox": [
+    0.072,
+    0.5,
+    0.122,
+    0.525
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "BND-DRAIN",
+   "direction": "sink",
+   "name": "TO DRAIN",
+   "bbox": [
+    0.495,
+    0.6,
+    0.52,
+    0.63
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c2",
+  "r1c3",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c2",
+  "r1c1",
+  "r1c4",
+  "r3c1",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "YC-170103 -> HS-170103 -> XV-170103 and the ZA-170103 FAIL data link routing are read from dashed/data lines with some ambiguity",
+  "Whether FE-170121 is a separate tag from the FI-170121 bubble is unclear (printed beside the symbol)",
+  "Injector/eductor symbol type not identified with certainty"
+ ]
+}
