@@ -1,8 +1,8 @@
 # QA report: Pahala WWTP
 
-Generated 2026-11-10T23:24:18+00:00 by pid-to-kg 0.1.0.
+Generated 2026-11-10T23:38:15+00:00 by pid-to-kg 0.1.0.
 
-**0 errors, 85 warnings, 353 info.**
+**0 errors, 75 warnings, 366 info.**
 
 Errors must be fixed in the page extraction files before the graph is trusted. Warnings are things to re-check on the drawing (the *Re-check* column names the tiles). Info items are for the record.
 
@@ -11,38 +11,31 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | warning | `component_not_connected` | 1 |
 | warning | `duplicate_tag` | 44 |
 | warning | `equipment_not_connected` | 10 |
-| warning | `loop_no_final_element` | 3 |
-| warning | `name_conflict` | 6 |
+| warning | `loop_no_final_element` | 4 |
 | warning | `possible_missed_tags` | 15 |
 | warning | `tiles_not_reviewed` | 1 |
-| warning | `unmatched_off_page` | 5 |
 | info | `inferred_flow_direction` | 1 |
 | info | `isolated_instrument` | 2 |
-| info | `loop_no_sensor` | 3 |
+| info | `loop_no_sensor` | 4 |
 | info | `low_confidence` | 92 |
 | info | `non_isa_tag` | 255 |
+| info | `tag_reused` | 12 |
 
 ## Details
 
 | Severity | Page | Code | Item | Message | Re-check |
 |---|---|---|---|---|---|
-| warning |  | `loop_no_final_element` | LOOP:F-100002 | control loop F-100002 has a controller but no final element |  |
-| warning |  | `loop_no_final_element` | LOOP:L-001#2 | control loop L-001#2 has a controller but no final element |  |
-| warning |  | `loop_no_final_element` | LOOP:L-001#3 | control loop L-001#3 has a controller but no final element |  |
+| warning |  | `loop_no_final_element` | LOOP:L-001@P-101 | control loop L-001@P-101 has a controller but no final element |  |
+| warning |  | `loop_no_final_element` | LOOP:L-001@P-401 | control loop L-001@P-401 has a controller but no final element |  |
+| warning |  | `loop_no_final_element` | LOOP:L-001@P-401#2 | control loop L-001@P-401#2 has a controller but no final element |  |
+| warning |  | `loop_no_final_element` | LOOP:L-001@P-401#3 | control loop L-001@P-401#3 has a controller but no final element |  |
 | warning | 9 | `duplicate_tag` | LAH-100.125#2 | tag 'LAH-100.125' is used by more than one item on this sheet; the copy 'LAH-100.125-M' was kept separate as 'LAH-100.125#2' | r1c2 |
 | warning | 9 | `duplicate_tag` | LDAH-100.124#2 | tag 'LDAH-100.124' is used by more than one item on this sheet; the copy 'LDAH-100.124-M' was kept separate as 'LDAH-100.124#2' | r1c2 |
 | warning | 9 | `duplicate_tag` | LDAH-100.115#2 | tag 'LDAH-100.115' is used by more than one item on this sheet; the copy 'LDAH-100.115-M' was kept separate as 'LDAH-100.115#2' | r1c2 |
 | warning | 9 | `equipment_not_connected` | VCP-100 | equipment VCP-100 has no process connections | r1c2, r2c2 |
-| warning | 9 | `name_conflict` | LCH-001 | 'LCH-001' is described as 'FLOW METER VAULT (open arrow)' on SHEET:P-101 and as 'HI LEVEL SP' on SHEET:P-401 | r1c1 |
-| warning | 9 | `name_conflict` | LAH-001 | 'LAH-001' is described as 'HIGH INFLUENT FLOW' on SHEET:P-101 and as 'TANK LEVEL HI' on SHEET:P-401 | r1c1, r1c2 |
-| warning | 9 | `name_conflict` | LCL-001 | 'LCL-001' is described as 'INFLUENT FLOW TOTAL YSTDAY' on SHEET:P-101 and as 'LO LEVEL SP' on SHEET:P-401 | r1c2 |
-| warning | 9 | `name_conflict` | LAL-001 | 'LAL-001' is described as 'INFLUENT TOTAL TODAY' on SHEET:P-101 and as 'TANK LEVEL LOW' on SHEET:P-401 | r1c2 |
-| warning | 9 | `name_conflict` | YA-001 | 'YA-001' is described as 'INFLUENT FLOW TOTAL' on SHEET:P-101 and as 'XMTR FAULT' on SHEET:P-401 | r1c2, r1c3 |
-| warning | 9 | `name_conflict` | LI-001 | 'LI-001' is described as 'INFLUENT FLOW RATE' on SHEET:P-101 and as 'TANK LEVEL' on SHEET:P-401 | r1c3 |
 | warning | 9 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: FIT-120V |  |
 | warning | 10 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
 | warning | 10 | `tiles_not_reviewed` |  | 13 non-blank tiles not listed in tiles_reviewed: r1c1, r1c2, r1c3, r1c4, r1c5, r2c1, r2c2, r2c3, r2c5, r3c1, r3c2, r3c4, r3c5 |  |
-| warning | 10 | `unmatched_off_page` | P10.OPC-A2 | off-page connector 'SCREENED INFLT FROM HEADWORKS' (from P101) has no matching connector or item | r2c1 |
 | warning | 11 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
 | warning | 12 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
 | warning | 13 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
@@ -64,18 +57,14 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | warning | 18 | `duplicate_tag` | FI-110101#2 | tag 'FI-110101' is used by more than one item on this sheet; the copy 'FI-110101-SCADA' was kept separate as 'FI-110101#2' | r1c2 |
 | warning | 18 | `equipment_not_connected` | P18.CB1 | equipment CB 480V (circuit breaker, power feed from MDP-2 to blower 110101 VFD) has no process connections | r1c1, r2c1 |
 | warning | 18 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 18 | `unmatched_off_page` | P18.OPC-a | off-page connector 'PROCESS AIR WAS-01 REF SHT P210' (to P210) has no matching connector or item | r1c4, r2c4 |
 | warning | 19 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 19 | `unmatched_off_page` | P19.OPC-A | off-page connector 'PROCESS AIR FROM BLOWERS REF SHT P205' (from P205) has no matching connector or item | r2c1 |
 | warning | 20 | `equipment_not_connected` | PNL-190300 | equipment PNL-190300 has no process connections | r1c2, r2c2 |
 | warning | 20 | `equipment_not_connected` | P20.CB1 | equipment CB 480V (circuit breaker, power feed from MDP-2 to local control panel) has no process connections | r1c2, r2c2 |
 | warning | 20 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
 | warning | 21 | `duplicate_tag` | LAH-402#2 | tag 'LAH-402' is used by more than one item on this sheet; the copy 'LAH-402-SCADA' was kept separate as 'LAH-402#2' | r1c2, r1c3 |
-| warning | 21 | `duplicate_tag` | LCH-001#2 | tag 'LCH-001' is used by more than one item on this sheet; the copy 'LCH-001-LEAD' was kept separate as 'LCH-001#2' | r1c2 |
-| warning | 21 | `duplicate_tag` | LCL-001#2 | tag 'LCL-001' is used by more than one item on this sheet; the copy 'LCL-001-LAG' was kept separate as 'LCL-001#2' | r1c2 |
-| warning | 21 | `duplicate_tag` | LCL-001#3 | tag 'LCL-001' is used by more than one item on this sheet; the copy 'LCL-001-STOP' was kept separate as 'LCL-001#3' | r1c2 |
-| warning | 21 | `unmatched_off_page` | P21.OPC-2 | off-page connector 'TO EFFLUENT DISPOSAL REF SHT P-501' (to P-501) has no matching connector or item | r3c3, r3c4 |
-| warning | 21 | `unmatched_off_page` | P21.OPC-1 | off-page connector 'FROM PERMEATE COLLECTION REF SHT P-204' (from P-204) has no matching connector or item | r3c1 |
+| warning | 21 | `duplicate_tag` | LCH-001@P-401#2 | tag 'LCH-001@P-401' is used by more than one item on this sheet; the copy 'LCH-001-LEAD' was kept separate as 'LCH-001@P-401#2' | r1c2 |
+| warning | 21 | `duplicate_tag` | LCL-001@P-401#2 | tag 'LCL-001@P-401' is used by more than one item on this sheet; the copy 'LCL-001-LAG' was kept separate as 'LCL-001@P-401#2' | r1c2 |
+| warning | 21 | `duplicate_tag` | LCL-001@P-401#3 | tag 'LCL-001@P-401' is used by more than one item on this sheet; the copy 'LCL-001-STOP' was kept separate as 'LCL-001@P-401#3' | r1c2 |
 | warning | 22 | `duplicate_tag` | ZIO-500,101#2 | tag 'ZIO-500,101' is used by more than one item on this sheet; the copy 'ZIO-SCADA' was kept separate as 'ZIO-500,101#2' | r1c1, r1c2 |
 | warning | 22 | `duplicate_tag` | ZIC-500,101#2 | tag 'ZIC-500,101' is used by more than one item on this sheet; the copy 'ZIC-SCADA' was kept separate as 'ZIC-500,101#2' | r1c1, r1c2 |
 | warning | 22 | `duplicate_tag` | YA-500,101#2 | tag 'YA-500,101' is used by more than one item on this sheet; the copy 'YA-SCADA' was kept separate as 'YA-500,101#2' | r1c1, r1c2 |
@@ -111,10 +100,11 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | warning | 25 | `equipment_not_connected` | CHGR-600,211 | equipment CHGR-600,211 has no process connections | r1c3, r2c3 |
 | warning | 25 | `equipment_not_connected` | VCP-600,209 | equipment VCP-600,209 has no process connections | r1c2, r2c2 |
 | warning | 25 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| info |  | `inferred_flow_direction` |  | 160 flow edges have inferred (not drawn) direction |  |
-| info |  | `loop_no_sensor` | LOOP:F-100002 | control loop F-100002 has a controller but no sensor |  |
-| info |  | `loop_no_sensor` | LOOP:L-001#2 | control loop L-001#2 has a controller but no sensor |  |
-| info |  | `loop_no_sensor` | LOOP:L-001#3 | control loop L-001#3 has a controller but no sensor |  |
+| info |  | `inferred_flow_direction` |  | 164 flow edges have inferred (not drawn) direction |  |
+| info |  | `loop_no_sensor` | LOOP:L-001@P-101 | control loop L-001@P-101 has a controller but no sensor |  |
+| info |  | `loop_no_sensor` | LOOP:L-001@P-401 | control loop L-001@P-401 has a controller but no sensor |  |
+| info |  | `loop_no_sensor` | LOOP:L-001@P-401#2 | control loop L-001@P-401#2 has a controller but no sensor |  |
+| info |  | `loop_no_sensor` | LOOP:L-001@P-401#3 | control loop L-001@P-401#3 has a controller but no sensor |  |
 | info | 9 | `non_isa_tag` | FIT-100.002 | instrument tag 'FIT-100.002' does not parse as ISA-5.1 | r2c1 |
 | info | 9 | `non_isa_tag` | FI-100.002 | instrument tag 'FI-100.002' does not parse as ISA-5.1 | r1c1 |
 | info | 9 | `non_isa_tag` | LAH-100.125 | instrument tag 'LAH-100.125' does not parse as ISA-5.1 | r1c2 |
@@ -129,6 +119,12 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | info | 9 | `non_isa_tag` | LSH-100.115 | instrument tag 'LSH-100.115' does not parse as ISA-5.1 | r2c2, r3c2 |
 | info | 9 | `non_isa_tag` | LIT-100.114A | instrument tag 'LIT-100.114A' does not parse as ISA-5.1 | r2c2 |
 | info | 9 | `non_isa_tag` | LIT-100.114B | instrument tag 'LIT-100.114B' does not parse as ISA-5.1 | r2c2, r2c3 |
+| info | 9 | `tag_reused` | LAH-001@P-101 | 'LAH-001' identifies different items on different sheets; kept as 'LAH-001@P-101' | r1c1, r1c2 |
+| info | 9 | `tag_reused` | LAL-001@P-101 | 'LAL-001' identifies different items on different sheets; kept as 'LAL-001@P-101' | r1c2 |
+| info | 9 | `tag_reused` | LCH-001@P-101 | 'LCH-001' identifies different items on different sheets; kept as 'LCH-001@P-101' | r1c1 |
+| info | 9 | `tag_reused` | LCL-001@P-101 | 'LCL-001' identifies different items on different sheets; kept as 'LCL-001@P-101' | r1c2 |
+| info | 9 | `tag_reused` | LI-001@P-101 | 'LI-001' identifies different items on different sheets; kept as 'LI-001@P-101' | r1c3 |
+| info | 9 | `tag_reused` | YA-001@P-101 | 'YA-001' identifies different items on different sheets; kept as 'YA-001@P-101' | r1c2, r1c3 |
 | info | 10 | `low_confidence` | P10.VB1 | check valve was read with confidence 0.50 | r2c3 |
 | info | 10 | `low_confidence` | P10.LB.1 | LB [1/2] was read with confidence 0.50 |  |
 | info | 10 | `low_confidence` | P10.LB.2 | LB [2/2] was read with confidence 0.50 |  |
@@ -345,6 +341,12 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | info | 19 | `non_isa_tag` | MS-190111 | instrument tag 'MS-190111' does not parse as ISA-5.1 | r1c3, r2c3 |
 | info | 20 | `isolated_instrument` | P20.HMI1 | HMI (untagged) has no connections at all | r2c2 |
 | info | 20 | `non_isa_tag` | TSH-190301 | instrument tag 'TSH-190301' does not parse as ISA-5.1 | r2c2, r3c2 |
+| info | 21 | `tag_reused` | LAH-001@P-401 | 'LAH-001' identifies different items on different sheets; kept as 'LAH-001@P-401' | r1c1, r1c2 |
+| info | 21 | `tag_reused` | LAL-001@P-401 | 'LAL-001' identifies different items on different sheets; kept as 'LAL-001@P-401' | r1c2 |
+| info | 21 | `tag_reused` | LCH-001@P-401 | 'LCH-001' identifies different items on different sheets; kept as 'LCH-001@P-401' | r1c1, r1c2 |
+| info | 21 | `tag_reused` | LCL-001@P-401 | 'LCL-001' identifies different items on different sheets; kept as 'LCL-001@P-401' | r1c1, r1c2 |
+| info | 21 | `tag_reused` | LI-001@P-401 | 'LI-001' identifies different items on different sheets; kept as 'LI-001@P-401' | r1c2 |
+| info | 21 | `tag_reused` | YA-001@P-401 | 'YA-001' identifies different items on different sheets; kept as 'YA-001@P-401' | r1c2 |
 | info | 22 | `non_isa_tag` | ZIO-500,101 | instrument tag 'ZIO-500,101' does not parse as ISA-5.1 | r1c1, r1c2 |
 | info | 22 | `non_isa_tag` | ZIC-500,101 | instrument tag 'ZIC-500,101' does not parse as ISA-5.1 | r1c1, r1c2 |
 | info | 22 | `non_isa_tag` | YA-500,101 | instrument tag 'YA-500,101' does not parse as ISA-5.1 | r1c1, r1c2 |

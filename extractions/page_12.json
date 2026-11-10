@@ -979,6 +979,24 @@
    "flow_direction": "inferred",
    "confidence": 0.5,
    "service": "thin line to valve (drain, inferred)"
+  },
+  {
+   "id": "L-MLSS-070111",
+   "service": "mixed liquor drawn through membranes (not drawn; modelled so permeate can be traced back to the basin)",
+   "from": "TNK-070100",
+   "to": "SMU-070111",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  },
+  {
+   "id": "L-MLSS-070121",
+   "service": "mixed liquor drawn through membranes (not drawn; modelled so permeate can be traced back to the basin)",
+   "from": "TNK-070100",
+   "to": "SMU-070121",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6
   }
  ],
  "signals": [

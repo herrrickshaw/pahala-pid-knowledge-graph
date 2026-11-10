@@ -204,8 +204,9 @@
     0.2404,
     0.1153
    ],
-   "loop": "F-100002",
-   "name": "FLOW METER VAULT (open arrow)"
+   "loop": "L-001",
+   "name": "FLOW METER VAULT (open arrow)",
+   "notes": " Tag number 001 restarts on P-401; loop id set to L-001 and measures given so the builder keeps the two sheets' -001 tags apart."
   },
   {
    "id": "LAH-001",
@@ -218,8 +219,9 @@
     0.3042,
     0.1153
    ],
-   "loop": "F-100002",
-   "name": "HIGH INFLUENT FLOW"
+   "loop": "L-001",
+   "name": "HIGH INFLUENT FLOW",
+   "notes": " Tag number 001 restarts on P-401; loop id set to L-001 and measures given so the builder keeps the two sheets' -001 tags apart."
   },
   {
    "id": "LCL-001",
@@ -232,8 +234,9 @@
     0.368,
     0.1153
    ],
-   "loop": "F-100002",
-   "name": "INFLUENT FLOW TOTAL YSTDAY"
+   "loop": "L-001",
+   "name": "INFLUENT FLOW TOTAL YSTDAY",
+   "notes": " Tag number 001 restarts on P-401; loop id set to L-001 and measures given so the builder keeps the two sheets' -001 tags apart."
   },
   {
    "id": "LAL-001",
@@ -246,8 +249,9 @@
     0.4318,
     0.1153
    ],
-   "loop": "F-100002",
-   "name": "INFLUENT TOTAL TODAY"
+   "loop": "L-001",
+   "name": "INFLUENT TOTAL TODAY",
+   "notes": " Tag number 001 restarts on P-401; loop id set to L-001 and measures given so the builder keeps the two sheets' -001 tags apart."
   },
   {
    "id": "YA-001",
@@ -260,8 +264,9 @@
     0.4955,
     0.1153
    ],
-   "loop": "F-100002",
-   "name": "INFLUENT FLOW TOTAL"
+   "loop": "L-001",
+   "name": "INFLUENT FLOW TOTAL",
+   "notes": " Tag number 001 restarts on P-401; loop id set to L-001 and measures given so the builder keeps the two sheets' -001 tags apart."
   },
   {
    "id": "LI-001",
@@ -274,8 +279,12 @@
     0.5593,
     0.1153
    ],
-   "loop": "F-100002",
-   "name": "INFLUENT FLOW RATE"
+   "loop": "L-001",
+   "name": "INFLUENT FLOW RATE",
+   "measures": {
+    "item": "FM1"
+   },
+   "notes": " Tag number 001 restarts on P-401; loop id set to L-001 and measures given so the builder keeps the two sheets' -001 tags apart."
   },
   {
    "id": "LAH-100.125-S",
@@ -588,7 +597,7 @@
    "id": "L6",
    "service": "TREATED/GRIT OUT",
    "from": "GRIT",
-   "to": "B-MBR",
+   "to": "OPC-MBR",
    "path": [],
    "flow_direction": "shown",
    "confidence": 0.9
@@ -844,7 +853,21 @@
    "confidence": 0.8
   }
  ],
- "off_page_connectors": [],
+ "off_page_connectors": [
+  {
+   "id": "OPC-MBR",
+   "direction": "out",
+   "name": "TO MBR",
+   "confidence": 0.7,
+   "notes": "Flag prints no sheet number. Treated as the off-page link to P-201 (Anoxic Basin), whose inlet flag 'SCREENED INFLT FROM HEADWORKS' cites P101. Inference.",
+   "bbox": [
+    0.852,
+    0.5084,
+    0.8865,
+    0.536
+   ]
+  }
+ ],
  "boundaries": [
   {
    "id": "B-RS",
@@ -880,18 +903,6 @@
     0.8552,
     0.8852,
     0.8709
-   ]
-  },
-  {
-   "id": "B-MBR",
-   "direction": "sink",
-   "name": "TO MBR",
-   "confidence": 0.9,
-   "bbox": [
-    0.852,
-    0.5084,
-    0.8865,
-    0.536
    ]
   }
  ],

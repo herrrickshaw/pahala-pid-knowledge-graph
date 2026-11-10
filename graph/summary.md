@@ -1,10 +1,10 @@
 # Pahala WWTP: process knowledge graph summary
 
-Built from `pahala.pdf` (17 sheets) by pid-to-kg 0.1.0 on 2026-11-10. The graph has 923 nodes and 1330 edges; this summary covers equipment-level flow, instruments and control loops. Query `graph.duckdb` or `graph.json` for pipe-segment and valve detail.
+Built from `pahala.pdf` (17 sheets) by pid-to-kg 0.1.0 on 2026-11-10. The graph has 933 nodes and 1349 edges; this summary covers equipment-level flow, instruments and control loops. Query `graph.duckdb` or `graph.json` for pipe-segment and valve detail.
 
 | Equipment | Instruments | Valves & fittings | Pipe segments | Control loops | Off-page links |
 |---|---|---|---|---|---|
-| 64 | 301 | 138 | 244 | 94 | 41 |
+| 64 | 307 | 138 | 246 | 96 | 44 |
 
 ## Sheets
 
@@ -40,28 +40,35 @@ Each line reads *upstream → downstream*, with the pipe lines and in-line items
 - **Manual bar rack channel (HWWL, inclined rack symbol)** → **GRIT REMOVAL TANK**
 - **Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE** → **GRIT REMOVAL TANK**
 - **Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE** → **Manual bar rack channel (HWWL, inclined rack symbol)**: through OVERFLOW WEIR
-- **GRIT REMOVAL TANK** → **TO MBR**
+- **GRIT REMOVAL TANK** → **TNK-040100** (ANOXIC BASIN AX-01): crosses sheets
+- **TNK-040100** (ANOXIC BASIN AX-01) → **Recycle pump (tag not printed, typical for 2 pumps, right)**
+- **TNK-040100** (ANOXIC BASIN AX-01) → **Recycle pump (tag not printed, typical for 2 pumps, left)**
+- **Recycle pump (tag not printed, typical for 2 pumps, right)** → **TNK-050100** (PA-01 PRE-AERATION BASIN): through check valve, reducer, FE-040141, reducer, gate valve; crosses sheets
+- **Recycle pump (tag not printed, typical for 2 pumps, left)** → **TNK-050100** (PA-01 PRE-AERATION BASIN): through reducer, FE-040141, reducer, gate valve; crosses sheets
+- **TNK-050100** (PA-01 PRE-AERATION BASIN) → **TNK-070100** (MB-01 MEMBRANE BIOREACTOR BASIN): through WE-050121; crosses sheets
+- **TNK-070100** (MB-01 MEMBRANE BIOREACTOR BASIN) → **SMU-070121** (Submerged membrane unit, two stacked tiers)
+- **TNK-070100** (MB-01 MEMBRANE BIOREACTOR BASIN) → **SMU-070111** (Submerged membrane unit, two stacked tiers)
+- **SMU-070121** (Submerged membrane unit, two stacked tiers) → **PMP-080101** (Permeate pump (boxed marker '4' inside symbol)): through ball valve, butterfly valve, butterfly valve, expansion joint, reducer; crosses sheets
+- **SMU-070121** (Submerged membrane unit, two stacked tiers) → **CONTACT BASIN**: through ball valve, butterfly valve, check valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer; crosses sheets
+- **SMU-070111** (Submerged membrane unit, two stacked tiers) → **PMP-080101** (Permeate pump (boxed marker '4' inside symbol)): through ball valve, butterfly valve, butterfly valve, expansion joint, reducer; crosses sheets
+- **SMU-070111** (Submerged membrane unit, two stacked tiers) → **CONTACT BASIN**: through ball valve, butterfly valve, check valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer; crosses sheets
+- **PMP-080101** (Permeate pump (boxed marker '4' inside symbol)) → **CONTACT BASIN**: through reducer, expansion joint, check valve, butterfly valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer; crosses sheets
+- **CONTACT BASIN** → **IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label)**
+- **IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label)** → **DRIP ZONE 4**: through FE-403, motor operated valve; crosses sheets
+- **IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label)** → **DRIP ZONE 3**: through FE-403, motor operated valve; crosses sheets
+- **IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label)** → **DRIP ZONE 2**: through FE-403, motor operated valve; crosses sheets
+- **IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label)** → **DRIP ZONE 1**: through FE-403, motor operated valve; crosses sheets
 - **Source of bold dashed line at XV-070181 (not drawn)** → **SMU- (FUTURE MEMBRANES)**: lines 3"-A; through XV-070181, manual valve
 - **Source of bold dashed line at XV-070181 (not drawn)** → **SMU-070121** (Submerged membrane unit, two stacked tiers): through XV-070181, manual valve
 - **Source of bold dashed line at XV-070181 (not drawn)** → **SMU-070111** (Submerged membrane unit, two stacked tiers): through XV-070181, manual valve
 - **Source of bold dashed line at XV-070181 (not drawn)** → **TNK-070100** (MB-01 MEMBRANE BIOREACTOR BASIN): through XV-070181
 - **SMU- (FUTURE MEMBRANES)** → **PMP-080101** (Permeate pump (boxed marker '4' inside symbol)): through ball valve, butterfly valve, butterfly valve, expansion joint, reducer; crosses sheets
-- **SMU- (FUTURE MEMBRANES)** → **PERMEATE TO DISINFECTION (flag 'a', no drawing number printed)**: through ball valve, butterfly valve, check valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer; crosses sheets
-- **SMU-070121** (Submerged membrane unit, two stacked tiers) → **PMP-080101** (Permeate pump (boxed marker '4' inside symbol)): through ball valve, butterfly valve, butterfly valve, expansion joint, reducer; crosses sheets
-- **SMU-070121** (Submerged membrane unit, two stacked tiers) → **PERMEATE TO DISINFECTION (flag 'a', no drawing number printed)**: through ball valve, butterfly valve, check valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer; crosses sheets
-- **SMU-070111** (Submerged membrane unit, two stacked tiers) → **PMP-080101** (Permeate pump (boxed marker '4' inside symbol)): through ball valve, butterfly valve, butterfly valve, expansion joint, reducer; crosses sheets
-- **SMU-070111** (Submerged membrane unit, two stacked tiers) → **PERMEATE TO DISINFECTION (flag 'a', no drawing number printed)**: through ball valve, butterfly valve, check valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer; crosses sheets
-- **PMP-080101** (Permeate pump (boxed marker '4' inside symbol)) → **PERMEATE TO DISINFECTION (flag 'a', no drawing number printed)**: through reducer, expansion joint, check valve, butterfly valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer
+- **SMU- (FUTURE MEMBRANES)** → **CONTACT BASIN**: through ball valve, butterfly valve, check valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer; crosses sheets
 - **UTILITY WATER** → **Chemical injector/eductor symbol on utility water line (acid injection point)**: through ball valve, pressure regulator, XV-170103
 - **Chemical injector/eductor symbol on utility water line (acid injection point)** → **PMP-080101** (Permeate pump (boxed marker '4' inside symbol)): through check valve, ball valve, FE-170122, ball valve, butterfly valve, butterfly valve, expansion joint, reducer; crosses sheets
-- **Chemical injector/eductor symbol on utility water line (acid injection point)** → **PERMEATE TO DISINFECTION (flag 'a', no drawing number printed)**: through check valve, ball valve, FE-170122, ball valve, butterfly valve, check valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer; crosses sheets
+- **Chemical injector/eductor symbol on utility water line (acid injection point)** → **CONTACT BASIN**: through check valve, ball valve, FE-170122, ball valve, butterfly valve, check valve, FE-080141, reducer, FCV-080132, reducer, reducer, reducer; crosses sheets
 - **DRAIN FROM EQUIPMENT BLDG** → **TNK-120100** (WW-01 EQUIPMENT GALLERY PUMP STATION wet well)
 - **HYPOCHLORITE SOLUTION** → **CONTACT BASIN**
-- **CONTACT BASIN** → **IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label)**
-- **IRRIGATION EQUALIZATION TANK** → **DRIP ZONE 4**: through motor operated valve
-- **IRRIGATION EQUALIZATION TANK** → **DRIP ZONE 3**: through motor operated valve
-- **IRRIGATION EQUALIZATION TANK** → **DRIP ZONE 2**: through motor operated valve
-- **IRRIGATION EQUALIZATION TANK** → **DRIP ZONE 1**: through motor operated valve
 - **TV-070182** (TV-070182 outlet box with telescoping/slide valve stem on basin right wall (text rotated)) → **TNK-190100** (WAS STORAGE BASIN): lines 3"-WAS; through motor operated valve, control valve, FE-070186, motor operated valve, valve in WAS inlet line to basin (diamond/bar symbol, type unclear); crosses sheets
 - **TNK-190100** (WAS STORAGE BASIN) → **WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end**: through valve in WAS outlet line (bow-tie/bar symbol, type unclear), reducer; crosses sheets
 - **WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end** → **WAS TRUCK (flag 'a', REF SHT number blank)**: through reducer, check valve, gate valve
@@ -73,16 +80,12 @@ Each line reads *upstream → downstream*, with the pipe lines and in-line items
 - **BLR-090101** (MEMBRANE BIOREACTOR BLOWER 1) → **SMU- (FUTURE MEMBRANES)**: lines 3"-A; through check valve, manual valve, reducer, butterfly valve, expansion joint; crosses sheets
 - **TNK-170100** (OXALIC ACID 55 GAL. DRUM) → **Chemical injector/eductor symbol on utility water line (acid injection point)**: through quick connect, flexible hose, quick connect, ball valve, FI-170121
 - **PMP-120111** (Submersible pump) → **TNK-040100** (ANOXIC BASIN AX-01): through diamond symbol on pump A riser (coupling/union type not identified), check valve, manual valve, reducer; crosses sheets
-- **TNK-040100** (ANOXIC BASIN AX-01) → **Recycle pump (tag not printed, typical for 2 pumps, right)**
-- **TNK-040100** (ANOXIC BASIN AX-01) → **Recycle pump (tag not printed, typical for 2 pumps, left)**
-- **Recycle pump (tag not printed, typical for 2 pumps, right)** → **TNK-050100** (PA-01 PRE-AERATION BASIN): through check valve, reducer, FE-040141, reducer, gate valve; crosses sheets
-- **Recycle pump (tag not printed, typical for 2 pumps, left)** → **TNK-050100** (PA-01 PRE-AERATION BASIN): through reducer, FE-040141, reducer, gate valve; crosses sheets
-- **TNK-050100** (PA-01 PRE-AERATION BASIN) → **TNK-070100** (MB-01 MEMBRANE BIOREACTOR BASIN): through WE-050121; crosses sheets
 - **PMP-120112** (Submersible pump) → **TNK-040100** (ANOXIC BASIN AX-01): through diamond symbol on pump B riser (coupling/union type not identified), check valve, manual valve, reducer; crosses sheets
 - **BLR-110101** (WAS STORAGE BLOWER) → **SMU-070121** (Submerged membrane unit, two stacked tiers): lines 3"-A; through vent/silencer-type symbol on blower 110101 discharge (unclear), check valve, butterfly valve, reducer, butterfly valve, manual valve, reducer, butterfly valve, expansion joint; crosses sheets
 - **BLR-110101** (WAS STORAGE BLOWER) → **SMU-070111** (Submerged membrane unit, two stacked tiers): lines 3"-A; through vent/silencer-type symbol on blower 110101 discharge (unclear), check valve, butterfly valve, reducer, butterfly valve, manual valve, reducer, butterfly valve, expansion joint; crosses sheets
 - **BLR-110101** (WAS STORAGE BLOWER) → **SMU- (FUTURE MEMBRANES)**: lines 3"-A; through vent/silencer-type symbol on blower 110101 discharge (unclear), check valve, butterfly valve, reducer, butterfly valve, manual valve, reducer, butterfly valve, expansion joint; crosses sheets
 - **BLR-110101** (WAS STORAGE BLOWER) → **FBD-050111** (Diffuser grid in basin bottom (FBD-050111; fine bubble diffuser inferred from tag)): through vent/silencer-type symbol on blower 110101 discharge (unclear), check valve, butterfly valve, reducer, butterfly valve, manual valve, TP-01; crosses sheets
+- **BLR-110101** (WAS STORAGE BLOWER) → **FBD-190103** (Fine bubble diffuser grid): through vent/silencer-type symbol on blower 110101 discharge (unclear), check valve, butterfly valve, reducer, butterfly valve; crosses sheets
 - **BLR-110111** (STAND-BY BLOWER) → **SMU-070121** (Submerged membrane unit, two stacked tiers): lines 3"-A; through vent/silencer-type symbol on blower 110111 discharge (unclear), check valve, manual valve, reducer, butterfly valve, expansion joint; crosses sheets
 - **BLR-110111** (STAND-BY BLOWER) → **SMU-070111** (Submerged membrane unit, two stacked tiers): lines 3"-A; through vent/silencer-type symbol on blower 110111 discharge (unclear), check valve, manual valve, reducer, butterfly valve, expansion joint; crosses sheets
 - **BLR-110111** (STAND-BY BLOWER) → **SMU- (FUTURE MEMBRANES)**: lines 3"-A; through vent/silencer-type symbol on blower 110111 discharge (unclear), check valve, manual valve, reducer, butterfly valve, expansion joint; crosses sheets
@@ -118,21 +121,21 @@ Drains, vents and overflows (not process flow):
 | BAG OR CONTAINER (screenings) | bin | BAG OR CONTAINER (screenings) | FINE SCREEN (SCREEN 2): inclined screw/auger screen with M drive and spray wash |  |  | P-101 |
 | BLR-090101 | blower | MEMBRANE BIOREACTOR BLOWER 1 | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) | SMU- (FUTURE MEMBRANES), SMU-070111, SMU-070121 |  | P-205 |
 | BLR-100101 | blower | PRE-AERATION BLOWER 1 | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) | FBD-050111 |  | P-205 |
-| BLR-110101 | blower | WAS STORAGE BLOWER |  | FBD-050111, SMU- (FUTURE MEMBRANES), SMU-070111, SMU-070121 |  | P-209 |
+| BLR-110101 | blower | WAS STORAGE BLOWER |  | FBD-050111, FBD-190103, SMU- (FUTURE MEMBRANES), SMU-070111, SMU-070121 |  | P-209 |
 | BLR-110111 | blower | STAND-BY BLOWER |  | FBD-050111, SMU- (FUTURE MEMBRANES), SMU-070111, SMU-070121 |  | P-209 |
 | CB 480V (circuit breaker, power feed from MDP-2 to blower 110101 VFD) | other | CB 480V (circuit breaker, power feed from MDP-2 to blower 110101 VFD) |  |  |  | P-209 |
 | CB 480V (circuit breaker, power feed from MDP-2 to local control panel) | other | CB 480V (circuit breaker, power feed from MDP-2 to local control panel) |  |  |  | P-211 |
 | CHGR-600,211 | other | GENERATOR STARTING BATTERY CHARGER |  |  |  | P-603 |
-| CONTACT BASIN | other | CONTACT BASIN | HYPOCHLORITE SOLUTION | IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) |  | P-401 |
-| Chemical injector/eductor symbol on utility water line (acid injection point) | other | Chemical injector/eductor symbol on utility water line (acid injection point) | TNK-170100, UTILITY WATER | DRAIN, PERMEATE TO DISINFECTION (flag 'a', no drawing number printed), PMP-080101, TO DRAIN, VENT TO ATMOSPHERE (TYP) |  | P-206 |
+| CONTACT BASIN | other | CONTACT BASIN | Chemical injector/eductor symbol on utility water line (acid injection point), HYPOCHLORITE SOLUTION, PMP-080101, SMU- (FUTURE MEMBRANES), SMU-070111, SMU-070121 | IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) |  | P-401 |
+| Chemical injector/eductor symbol on utility water line (acid injection point) | other | Chemical injector/eductor symbol on utility water line (acid injection point) | TNK-170100, UTILITY WATER | CONTACT BASIN, DRAIN, PMP-080101, TO DRAIN, VENT TO ATMOSPHERE (TYP) |  | P-206 |
 | FBD-050111 | other | Diffuser grid in basin bottom (FBD-050111; fine bubble diffuser inferred from tag) | BLR-100101, BLR-110101, BLR-110111 |  |  | P-202 |
-| FBD-190103 | other | Fine bubble diffuser grid |  |  |  | P-210 |
+| FBD-190103 | other | Fine bubble diffuser grid | BLR-110101 |  |  | P-210 |
 | FINE SCREEN (SCREEN 2): inclined screw/auger screen with M drive and spray wash | screen | FINE SCREEN (SCREEN 2): inclined screw/auger screen with M drive and spray wash | 3W UTILITY WATER | BAG OR CONTAINER (screenings) |  | P-101 |
 | FLT-600,202 | filter | GENERATOR FUEL FILTER | T-600,201 | P-600,203 |  | P-602 |
 | GEN-600,209 | other | STANDBY GENERATOR (diesel engine box with generator symbol) | P-600,207 | S-600,210, T-600,204 |  | P-603 |
-| GRIT REMOVAL TANK | tank | GRIT REMOVAL TANK | Manual bar rack channel (HWWL, inclined rack symbol), Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE | TO MBR |  | P-101 |
+| GRIT REMOVAL TANK | tank | GRIT REMOVAL TANK | Manual bar rack channel (HWWL, inclined rack symbol), Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE | TNK-040100 |  | P-101 |
 | HTR-600,208 | heater | GENERATOR ENGINE BLOCK HEATER (208V) |  |  |  | P-603 |
-| IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) | tank | IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) | CONTACT BASIN |  |  | P-401 |
+| IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) | tank | IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) | CONTACT BASIN | DRIP ZONE 1, DRIP ZONE 2, DRIP ZONE 3, DRIP ZONE 4 |  | P-401 |
 | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) | filter | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) |  | BLR-100101 |  | P-205 |
 | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) | filter | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) |  | BLR-090101 |  | P-205 |
 | MCP-600,101 | other | Master control panel (PLC layer between SCADA band and field) |  |  |  | P-601, P-602, P-603 |
@@ -146,7 +149,7 @@ Drains, vents and overflows (not process flow):
 | P-600,203 | positive_displacement_pump | GENERATOR FUEL TRANSFER PUMP 1 (gear-type symbol) | FLT-600,202 | RELIEF VALVE OUTLET (destination not drawn), T-600,204 |  | P-602 |
 | P-600,205 | positive_displacement_pump | GENERATOR FUEL TRANSFER PUMP 2 (gear-type symbol) | T-600,204 | RELIEF VALVE OUTLET (destination not drawn), T-600,201 |  | P-602 |
 | P-600,207 | positive_displacement_pump | GENERATOR ONBOARD FUEL PUMP (gear-type symbol) | T-600,204 | GEN-600,209 |  | P-603 |
-| PMP-080101 | centrifugal_pump | Permeate pump (boxed marker '4' inside symbol) | Chemical injector/eductor symbol on utility water line (acid injection point), SMU- (FUTURE MEMBRANES), SMU-070111, SMU-070121 | DRAIN, PERMEATE TO DISINFECTION (flag 'a', no drawing number printed), VENT TO ATMOSPHERE (TYP) |  | P-204 |
+| PMP-080101 | centrifugal_pump | Permeate pump (boxed marker '4' inside symbol) | Chemical injector/eductor symbol on utility water line (acid injection point), SMU- (FUTURE MEMBRANES), SMU-070111, SMU-070121 | CONTACT BASIN, DRAIN, VENT TO ATMOSPHERE (TYP) |  | P-204 |
 | PMP-120111 | sump_pump | Submersible pump |  | TNK-040100 |  | P-208 |
 | PMP-120112 | sump_pump | Submersible pump |  | TNK-040100 |  | P-208 |
 | PMP-160101 | metering_pump | Sodium hydroxide dosing pump (plug-in) | TNK-160100 | TNK-040100, TNK-160100 |  | P-207 |
@@ -155,15 +158,15 @@ Drains, vents and overflows (not process flow):
 | Recycle pump (tag not printed, typical for 2 pumps, left) | centrifugal_pump | Recycle pump (tag not printed, typical for 2 pumps, left) | TNK-040100 | TNK-050100 |  | P-201 |
 | Recycle pump (tag not printed, typical for 2 pumps, right) | centrifugal_pump | Recycle pump (tag not printed, typical for 2 pumps, right) | TNK-040100 | TNK-050100 |  | P-201 |
 | S-600,210 | other | GENERATOR EXHAUST SILENCER | GEN-600,209 | DRAIN (D), EXHAUST (to atmosphere) |  | P-603 |
-| SMU- (FUTURE MEMBRANES) | membrane_filter | SMU- (FUTURE MEMBRANES) | BLR-090101, BLR-110101, BLR-110111, Source of bold dashed line at XV-070181 (not drawn) | DRAIN, PERMEATE TO DISINFECTION (flag 'a', no drawing number printed), PMP-080101, VENT TO ATMOSPHERE (TYP) | future | P-203 |
-| SMU-070111 | membrane_filter | Submerged membrane unit, two stacked tiers | BLR-090101, BLR-110101, BLR-110111, Source of bold dashed line at XV-070181 (not drawn) | DRAIN, PERMEATE TO DISINFECTION (flag 'a', no drawing number printed), PMP-080101, VENT TO ATMOSPHERE (TYP) |  | P-203 |
-| SMU-070121 | membrane_filter | Submerged membrane unit, two stacked tiers | BLR-090101, BLR-110101, BLR-110111, Source of bold dashed line at XV-070181 (not drawn) | DRAIN, PERMEATE TO DISINFECTION (flag 'a', no drawing number printed), PMP-080101, VENT TO ATMOSPHERE (TYP) |  | P-203 |
+| SMU- (FUTURE MEMBRANES) | membrane_filter | SMU- (FUTURE MEMBRANES) | BLR-090101, BLR-110101, BLR-110111, Source of bold dashed line at XV-070181 (not drawn) | CONTACT BASIN, DRAIN, PMP-080101, VENT TO ATMOSPHERE (TYP) | future | P-203 |
+| SMU-070111 | membrane_filter | Submerged membrane unit, two stacked tiers | BLR-090101, BLR-110101, BLR-110111, Source of bold dashed line at XV-070181 (not drawn), TNK-070100 | CONTACT BASIN, DRAIN, PMP-080101, VENT TO ATMOSPHERE (TYP) |  | P-203 |
+| SMU-070121 | membrane_filter | Submerged membrane unit, two stacked tiers | BLR-090101, BLR-110101, BLR-110111, Source of bold dashed line at XV-070181 (not drawn), TNK-070100 | CONTACT BASIN, DRAIN, PMP-080101, VENT TO ATMOSPHERE (TYP) |  | P-203 |
 | Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE | box | Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE | RS FROM PAHALA | GRIT REMOVAL TANK, Manual bar rack channel (HWWL, inclined rack symbol) |  | P-101 |
 | T-600,201 | tank | BULK FUEL STORAGE TANK (double-walled, within vendor package) | P-600,205 | ATMOSPHERE (tank vents), FLT-600,202 |  | P-601 |
 | T-600,204 | tank | GENERATOR DAY TANK (double-walled) | GEN-600,209, P-600,203 | ATMOSPHERE (tank vents), DRAIN (open end), P-600,205, P-600,207 |  | P-602 |
-| TNK-040100 | tank | ANOXIC BASIN AX-01 | PMP-120111, PMP-120112, PMP-160101 | Recycle pump (tag not printed, typical for 2 pumps, left), Recycle pump (tag not printed, typical for 2 pumps, right) |  | P-201 |
+| TNK-040100 | tank | ANOXIC BASIN AX-01 | GRIT REMOVAL TANK, PMP-120111, PMP-120112, PMP-160101 | Recycle pump (tag not printed, typical for 2 pumps, left), Recycle pump (tag not printed, typical for 2 pumps, right) |  | P-201 |
 | TNK-050100 | tank | PA-01 PRE-AERATION BASIN | Recycle pump (tag not printed, typical for 2 pumps, left), Recycle pump (tag not printed, typical for 2 pumps, right) | TNK-070100 |  | P-202 |
-| TNK-070100 | tank | MB-01 MEMBRANE BIOREACTOR BASIN | Source of bold dashed line at XV-070181 (not drawn), TNK-050100 |  |  | P-203 |
+| TNK-070100 | tank | MB-01 MEMBRANE BIOREACTOR BASIN | Source of bold dashed line at XV-070181 (not drawn), TNK-050100 | SMU-070111, SMU-070121 |  | P-203 |
 | TNK-120100 | sump | WW-01 EQUIPMENT GALLERY PUMP STATION wet well | DRAIN FROM EQUIPMENT BLDG |  |  | P-208 |
 | TNK-160100 | tank | SODIUM HYDROXIDE 55 GAL. DRUM | PMP-160101 | PMP-160101 |  | P-207 |
 | TNK-170100 | tank | OXALIC ACID 55 GAL. DRUM |  | Chemical injector/eductor symbol on utility water line (acid injection point) |  | P-206 |
@@ -258,7 +261,8 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | JS-080101 |  | other | field |  | J-080101 |
 | JS-190111 |  | other | local_panel |  |  |
 | LAH (untagged) | level | alarm | dcs |  |  |
-| LAH-001 | level | alarm | scada |  | F-100002 |
+| LAH-001@P-101 | level | alarm | scada |  | L-001@P-101 |
+| LAH-001@P-401 | level | alarm | scada |  | L-001@P-401 |
 | LAH-040103 |  | other | scada |  | L-040103 |
 | LAH-070102 |  | other | scada |  | L-070102 |
 | LAH-100.125 |  | other | scada |  |  |
@@ -274,7 +278,8 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | LAH-600,204A#2 |  | other | scada |  |  |
 | LAH-600,204D |  | other | plc |  | L-600204D |
 | LAH-600,204D#2 |  | other | scada |  |  |
-| LAL-001 | level | alarm | scada |  | F-100002 |
+| LAL-001@P-101 | level | alarm | scada |  | L-001@P-101 |
+| LAL-001@P-401 | level | alarm | scada |  | L-001@P-401 |
 | LAL-040102 |  | other | scada |  | L-040102 |
 | LAL-070101 |  | other | scada |  | L-070101 |
 | LAL-190102 |  | other | scada |  | L-190102 |
@@ -282,11 +287,13 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | LAL-600,201A#2 |  | other | scada |  |  |
 | LAL-600,204B |  | other | plc |  | L-600204B |
 | LAL-600,204B#2 |  | other | scada |  |  |
-| LCH-001 | level | controller | scada |  | F-100002 |
-| LCH-001#2 | level | controller | scada |  | L-001#2 |
-| LCL-001 | level | controller | scada |  | F-100002 |
-| LCL-001#2 | level | controller | scada |  | L-001#2 |
-| LCL-001#3 | level | controller | scada |  | L-001#3 |
+| LCH-001@P-101 | level | controller | scada |  | L-001@P-101 |
+| LCH-001@P-401 | level | controller | scada |  | L-001@P-401 |
+| LCH-001@P-401#2 | level | controller | scada |  | L-001@P-401#2 |
+| LCL-001@P-101 | level | controller | scada |  | L-001@P-101 |
+| LCL-001@P-401 | level | controller | scada |  | L-001@P-401 |
+| LCL-001@P-401#2 | level | controller | scada |  | L-001@P-401#2 |
+| LCL-001@P-401#3 | level | controller | scada |  | L-001@P-401#3 |
 | LDAH-100.115 |  | other | scada |  | L-100115 |
 | LDAH-100.115#2 |  | other | dcs |  |  |
 | LDAH-100.124 |  | other | scada |  | L-100124 |
@@ -296,7 +303,8 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | LE-120101 |  | other | field | TNK-120100 | L-120101 |
 | LE-190102 |  | other | field | TNK-190100 | L-190102 |
 | LE-401 | level | element | field | IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) | L-401 |
-| LI-001 | level | indicator | scada |  | F-100002 |
+| LI-001@P-101 | level | indicator | scada | Influent flow meter flume/venturi with ultrasonic sensor above it (FIT 100.002) | L-001@P-101 |
+| LI-001@P-401 | level | indicator | scada | IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) | L-001@P-401 |
 | LI-100.124A |  | other | scada |  | L-100124 |
 | LI-100.124B |  | other | scada |  | L-100124 |
 | LI-401 | level | indicator | dcs |  | L-401 |
@@ -384,7 +392,8 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | XC-110111A |  | other | local_panel |  | X-110111 |
 | XC-110111B |  | other | local_panel |  | X-110111 |
 | XC-110111C |  | other | local_panel |  | X-110111 |
-| YA-001 | event/state | alarm | scada |  | F-100002 |
+| YA-001@P-101 | event/state | alarm | scada |  | L-001@P-101 |
+| YA-001@P-401 | event/state | alarm | scada |  | L-001@P-401 |
 | YA-007 | event/state | alarm | scada |  |  |
 | YA-090101A |  | other | field | BLR-090101 | Y-090101 |
 | YA-090101B |  | other | field | BLR-090101 | Y-090101 |
@@ -500,7 +509,7 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | F-070186 | monitoring |  |  |  | Monitoring loop F-070186 (flow). |
 | F-080132 | on_off |  |  | FCV-080132 | On off loop F-080132 (flow). Acts on FCV-080132. |
 | F-080141 | monitoring |  |  |  | Monitoring loop F-080141 (flow). |
-| F-100002 | control |  | LCH-001, LCL-001 |  | Control loop F-100002 (flow). Controlled by LCH-001, LCL-001 (scada). |
+| F-100002 | monitoring |  |  |  | Monitoring loop F-100002 (flow). |
 | F-170122 | monitoring |  |  |  | Monitoring loop F-170122 (flow). |
 | F-403 | monitoring | FE-403, FIT-403 |  |  | Monitoring loop F-403 (flow). Sensed by FE-403, FIT-403 (in-line on line (IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) -> TO EFFLUENT DISPOSAL REF SHT P-501)). |
 | H-070181 | on_off |  |  | XV-070181 | On off loop H-070181 (hand). Acts on XV-070181. |
@@ -512,8 +521,10 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | H-500101 | on_off |  |  | motor operated valve | On off loop H-500101 (hand). Acts on motor operated valve. |
 | H-600201F | on_off |  |  | VCP-600,201 | On off loop H-600201F (hand). Acts on VCP-600,201. |
 | J-080101 | on_off |  |  | PMP-080101 | On off loop J-080101 (power). Acts on PMP-080101. |
-| L-001#2 | control |  | LCH-001#2, LCL-001#2 |  | Control loop L-001#2 (level). Controlled by LCH-001#2, LCL-001#2 (scada). |
-| L-001#3 | control |  | LCL-001#3 |  | Control loop L-001#3 (level). Controlled by LCL-001#3 (scada). |
+| L-001@P-101 | control |  | LCH-001@P-101, LCL-001@P-101 |  | Control loop L-001@P-101 (level). Controlled by LCH-001@P-101, LCL-001@P-101 (scada). |
+| L-001@P-401 | control |  | LCH-001@P-401, LCL-001@P-401 |  | Control loop L-001@P-401 (level). Controlled by LCH-001@P-401, LCL-001@P-401 (scada). |
+| L-001@P-401#2 | control |  | LCH-001@P-401#2, LCL-001@P-401#2 |  | Control loop L-001@P-401#2 (level). Controlled by LCH-001@P-401#2, LCL-001@P-401#2 (scada). |
+| L-001@P-401#3 | control |  | LCL-001@P-401#3 |  | Control loop L-001@P-401#3 (level). Controlled by LCL-001@P-401#3 (scada). |
 | L-040101 | monitoring |  |  |  | Monitoring loop L-040101 (level). |
 | L-040102 | monitoring |  |  |  | Monitoring loop L-040102 (level). |
 | L-040103 | monitoring |  |  |  | Monitoring loop L-040103 (level). |
@@ -591,8 +602,9 @@ Location is where the instrument senses the process. Pipe locations read `line (
 
 | Sheet | Connector | Direction | Other drawing | Linked to |
 |---|---|---|---|---|
+| P-101 | TO MBR | out |  | SCREENED INFLT FROM HEADWORKS (P-201) |
 | P-201 | EQUIPMENT CAL PS INFLUENT | in | P208 | EQUIP. GALLERY PS TO AX-01 (P-208) |
-| P-201 | SCREENED INFLT FROM HEADWORKS | in | P101 | unmatched |
+| P-201 | SCREENED INFLT FROM HEADWORKS | in | P101 | TO MBR (P-101) |
 | P-201 | pH ADJUSTMENT | in | P207 | pH ADJUSTMENT TO AX-01 (P-207) |
 | P-201 | RECYCLE TO PA-01 | out | P202 | RECYCLE FROM AX-01 REF SHT P201 (P-202) |
 | P-202 | PROCESS AIR FROM BLOWERS REF SHT P205 | in | P205 | PROCESS AIR TO PA-01 (P-205) |
@@ -606,20 +618,22 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | P-203 | WAS TO WAS-01 REF SHT P210 | out | P210 | WAS FROM MB-01 REF SHT P203 (P-210) |
 | P-204 | UPPER PERMEATE FROM MB-01 REF SHT P203 | in | P203 | UPPER PERMEATE TO COLLECTION REF SHT P204 (P-203) |
 | P-204 | LOWER PERMEATE FROM MB-01 REF SHT P203 | in | P203 | LOWER PERMEATE TO COLLECTION REF SHT P204 (P-203) |
+| P-204 | PERMEATE TO DISINFECTION | out |  | FROM PERMEATE COLLECTION REF SHT P-204 (P-401) |
 | P-205 | PROCESS AIR FROM STD-BY BLR. | in | P-209 | PROCESS AIR TO PA&MB BLRs REF SHT P205 (P-209) |
 | P-205 | PROCESS AIR TO MB-01 | out | P-203 | PROCESS AIR FROM BLOWERS REF SHT P205 (P-203) |
 | P-205 | PROCESS AIR TO PA-01 | out | P-202 | PROCESS AIR FROM BLOWERS REF SHT P205 (P-202) |
 | P-206 | ACID WASH TO MB-01 | out | P203 | ACID WASH REF SHT P206 (P-203) |
 | P-207 | pH ADJUSTMENT TO AX-01 | out | P201 | pH ADJUSTMENT (P-201) |
 | P-208 | EQUIP. GALLERY PS TO AX-01 | out | P201 | EQUIPMENT CAL PS INFLUENT (P-201) |
-| P-209 | PROCESS AIR WAS-01 REF SHT P210 | out | P210 | unmatched |
+| P-209 | PROCESS AIR WAS-01 REF SHT P210 | out | P210 | PROCESS AIR FROM BLOWERS REF SHT P205 (P-210) |
 | P-209 | PROCESS AIR TO PA&MB BLRs REF SHT P205 | out | P205 | PROCESS AIR FROM STD-BY BLR. (P-205) |
-| P-210 | PROCESS AIR FROM BLOWERS REF SHT P205 | in | P205 | unmatched |
+| P-210 | PROCESS AIR FROM BLOWERS REF SHT P205 | in | P209 | PROCESS AIR WAS-01 REF SHT P210 (P-209) |
 | P-210 | WAS TO WAS PUMPS REF SHT P211 | out | P211 | WAS FROM WAS-01 REF SHT P210 (P-211) |
 | P-210 | WAS FROM MB-01 REF SHT P203 | in | P203 | WAS TO WAS-01 REF SHT P210 (P-203) |
 | P-211 | WAS FROM WAS-01 REF SHT P210 | in | P210 | WAS TO WAS PUMPS REF SHT P211 (P-210) |
-| P-401 | FROM PERMEATE COLLECTION REF SHT P-204 | in | P-204 | unmatched |
-| P-401 | TO EFFLUENT DISPOSAL REF SHT P-501 | out | P-501 | unmatched |
+| P-401 | FROM PERMEATE COLLECTION REF SHT P-204 | in | P-204 | PERMEATE TO DISINFECTION (P-204) |
+| P-401 | TO EFFLUENT DISPOSAL REF SHT P-501 | out | P-501 | FROM IRRIGATION EQUALIZATION TANK (P-501) |
+| P-501 | FROM IRRIGATION EQUALIZATION TANK | in | P-401 | TO EFFLUENT DISPOSAL REF SHT P-501 (P-401) |
 | P-601 | FOR DAY TANK | in | P-602 | FOR BULK FUEL STORAGE TANK (P-602) |
 | P-601 | FOS A DAY TANK | out | P-602 | FOS BULK FUEL STORAGE TANK (P-602) |
 | P-601 | HIGH LEVEL LOW LEVEL DAY TANK PANEL | out | P-602 | HIGH LEVEL LOW LEVEL BULK TANK PANEL (P-602) |
@@ -635,4 +649,4 @@ Location is where the instrument senses the process. Pipe locations read `line (
 
 ## Data quality
 
-0 errors, 85 warnings and 353 informational items; see `qa_report.md`. Every node carries `confidence` and the sheet region it was read from (`provenance`). This graph was machine-extracted from drawings and must be verified by a qualified engineer before use in design, operations or safety work.
+0 errors, 75 warnings and 366 informational items; see `qa_report.md`. Every node carries `confidence` and the sheet region it was read from (`provenance`). This graph was machine-extracted from drawings and must be verified by a qualified engineer before use in design, operations or safety work.

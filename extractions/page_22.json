@@ -391,7 +391,7 @@
  "lines": [
   {
    "id": "L1",
-   "from": "B1",
+   "from": "OPC-EQ",
    "to": "B2",
    "path": [
     "MOV1"
@@ -533,14 +533,17 @@
    "confidence": 0.5
   }
  ],
- "off_page_connectors": [],
- "boundaries": [
+ "off_page_connectors": [
   {
-   "id": "B1",
-   "name": "IRRIGATION EQUALIZATION TANK",
-   "direction": "source",
-   "confidence": 0.9
-  },
+   "id": "OPC-EQ",
+   "direction": "in",
+   "name": "FROM IRRIGATION EQUALIZATION TANK",
+   "confidence": 0.7,
+   "notes": "Source labelled as the irrigation equalization tank (P-401). Treated as the off-page link from P-401's 'TO EFFLUENT DISPOSAL REF SHT P-501' flag. Inference.",
+   "other_drawing": "P-401"
+  }
+ ],
+ "boundaries": [
   {
    "id": "B2",
    "name": "DRIP ZONE 1",

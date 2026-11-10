@@ -239,7 +239,7 @@
    ],
    "confidence": 0.9,
    "tag": "YA-001",
-   "loop": "Y-001",
+   "loop": "L-001",
    "name": "XMTR FAULT"
   },
   {
@@ -254,7 +254,10 @@
    "confidence": 0.9,
    "tag": "LI-001",
    "loop": "L-001",
-   "name": "TANK LEVEL"
+   "name": "TANK LEVEL",
+   "measures": {
+    "item": "EQ-TANK"
+   }
   },
   {
    "id": "LCH-001-LEAD",

@@ -816,7 +816,7 @@
   {
    "id": "LH",
    "from": "OPC-B",
-   "to": "B-DISINF",
+   "to": "OPC-DISINF",
    "path": [
     "CK-H",
     "FE-080141",
@@ -1203,21 +1203,22 @@
    "confidence": 0.95,
    "other_item": "MB-01",
    "notes": "Flag marker 'C'"
-  }
- ],
- "boundaries": [
+  },
   {
-   "id": "B-DISINF",
-   "direction": "sink",
-   "name": "PERMEATE TO DISINFECTION (flag 'a', no drawing number printed)",
-   "confidence": 0.9,
+   "id": "OPC-DISINF",
+   "direction": "out",
+   "name": "PERMEATE TO DISINFECTION",
+   "confidence": 0.7,
+   "notes": "Flag 'a' prints no sheet number. Treated as the off-page link to P-401, whose inlet flag 'FROM PERMEATE COLLECTION' cites P-204. Inference.",
    "bbox": [
     0.812,
     0.6498,
     0.8754,
     0.6719
    ]
-  },
+  }
+ ],
+ "boundaries": [
   {
    "id": "B-ATM",
    "direction": "sink",

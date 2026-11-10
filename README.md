@@ -30,8 +30,12 @@ parallel subagents), not checked against the drawings by a person.
 - Several pumps and tanks carry no printed tag; ids such as `PMPA` or `EQ-TANK` are placeholders.
 - Pahala's 6-digit tags (e.g. `LT-040101`) do not parse as ISA-5.1, so the tool built no loops from them.
   Loop ids were set by hand on each instrument.
-- Tag numbering restarts on sheet P-401 (`LCH-001`, `LAH-001`...), so same-named tags on P-101 and P-401
-  were merged although they are different items (6 `name_conflict` warnings).
+- Tag numbering restarts on sheet P-401 (`LCH-001`, `LAH-001`...). The `-001` tags on P-101 and P-401 are kept
+  apart as `<tag>@P-101` and `<tag>@P-401` (QA info `tag_reused`). This needed hand-set loop ids and `measures`.
+- Four flags print no sheet number or a wrong one, and were linked by inference (each noted in its `notes` field):
+  P-101 "TO MBR" to P-201; P-204 "PERMEATE TO DISINFECTION" to P-401; P-501's source to P-401; and P-210's
+  "FROM BLOWERS REF SHT P205", whose printed number looks like a drafting error, read as P209.
+- The membrane units on P-203 have no drawn feed line; flow from the basin to them is modelled (confidence 0.6).
 - Page 10 (P-201) was a partial first pass; check `tiles_reviewed` in each extraction file.
 - Not suitable for design, operations, MOC, HAZOP or LOPA without engineering review.
 
@@ -40,4 +44,4 @@ parallel subagents), not checked against the drawings by a person.
 ```bash
 python skills/pid-to-kg/scripts/kg_query.py graph/ downstream TNK-040100 --equipment
 ```
-(from a clone of pid-to-kg). Example: the Anoxic Basin feeds the Pre-Aeration Basin, then the MBR basin.
+(from a clone of pid-to-kg). Example: `path "RS FROM PAHALA" "DRIP ZONE 1"` goes headworks, anoxic basin, pre-aeration, MBR basin and on to disposal.

@@ -520,14 +520,15 @@
    "id": "OPC-A",
    "direction": "in",
    "name": "PROCESS AIR FROM BLOWERS REF SHT P205",
-   "other_drawing": "P205",
+   "other_drawing": "P209",
    "bbox": [
     0.0574,
     0.533,
     0.1212,
     0.5606
    ],
-   "confidence": 0.9
+   "confidence": 0.6,
+   "notes": "Printed text cites P205 (kept in name). P-205 has no air flag to the WAS basin, while P-209 flag 'PROCESS AIR WAS-01 REF SHT P210' points here, so the printed sheet number is probably a drafting error. other_drawing set to P209 on that inference; confirm against the drawings."
   },
   {
    "id": "OPC-E",
