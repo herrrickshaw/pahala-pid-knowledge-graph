@@ -31,3 +31,15 @@ items missing from the graph. Files: `audit/claims_NN.json`, `result_NN.json`, `
 **Limits.** The verifiers are models reading the same renderings as the extractors, so shared misreadings
 (for example a symbol type with no legend) would not be caught. The 448 true claims cover about 57% of the roughly 791 facts in the extractions, capped at 10 per claim type per sheet and chosen at random; the population is (tags 307, lines 107, signals 251, measures 82, flags 44). A tag-by-tag check against the PDF text layer was possible only for pages 21 and
 23-25, where tag numbers are real text (all matched); on the other sheets the text is outlined.
+
+## Follow-up: shared signal buses (P-205 and P-209)
+
+The audit showed the blower panels on P-205 (page 14) and P-209 (page 18) were drawn as one multi-drop bus,
+with no individual line from each bubble to the blower. The graph had drawn point-to-point signals between
+the blower and each bubble, which the drawing does not show. Each panel now has a `BUS-<blower>` node
+(part of the panel's OIT). Bubbles attach to the bus, and the bus attaches to the blower at 0.5 confidence.
+The SC-to-VFD signals are kept at 0.4 because the VFD is not on the bus and no direct line was seen. The 15
+loops on those sheets still build, but the on/off loops there now read as acting on the bus rather than on the
+blower. On the other sheets (P-101, P-401, P-601 to P-603) the graph does not join peer bubbles to each other,
+so the bus-peer verdicts there were verifier leniency, not graph errors. Signal direction is still not well
+verified anywhere on the shared buses.

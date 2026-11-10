@@ -127,6 +127,22 @@
     0.636
    ],
    "confidence": 0.5
+  },
+  {
+   "id": "BUS-100101",
+   "kind": "other",
+   "name": "Shared signal bus on the blower 100101 panel",
+   "part_of": "OIT1",
+   "confidence": 0.6,
+   "notes": "The bubbles on this panel sit on one multi-drop dashed bus. The drawing shows no individual line from each bubble to the blower, so bubbles are attached to this bus node, not directly to the blower or to each other."
+  },
+  {
+   "id": "BUS-090101",
+   "kind": "other",
+   "name": "Shared signal bus on the blower 090101 panel",
+   "part_of": "OIT2",
+   "confidence": 0.6,
+   "notes": "The bubbles on this panel sit on one multi-drop dashed bus. The drawing shows no individual line from each bubble to the blower, so bubbles are attached to this bus node, not directly to the blower or to each other."
   }
  ],
  "components": [
@@ -722,21 +738,21 @@
   },
   {
    "from": "XC-100101A",
-   "to": "BLR-100101",
+   "to": "BUS-100101",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
   },
   {
    "from": "XC-100101B",
-   "to": "BLR-100101",
+   "to": "BUS-100101",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
   },
   {
    "from": "XC-100101C",
-   "to": "BLR-100101",
+   "to": "BUS-100101",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
@@ -746,7 +762,8 @@
    "to": "VFD-100101",
    "type": "electrical",
    "purpose": "control",
-   "confidence": 0.6
+   "confidence": 0.4,
+   "notes": "Audit: VFD is not on the panel bus and no direct line was seen; kept at low confidence."
   },
   {
    "from": "VFD-090101",
@@ -757,21 +774,21 @@
   },
   {
    "from": "XC-090101A",
-   "to": "BLR-090101",
+   "to": "BUS-090101",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
   },
   {
    "from": "XC-090101B",
-   "to": "BLR-090101",
+   "to": "BUS-090101",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
   },
   {
    "from": "XC-090101C",
-   "to": "BLR-090101",
+   "to": "BUS-090101",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
@@ -781,7 +798,22 @@
    "to": "VFD-090101",
    "type": "electrical",
    "purpose": "control",
-   "confidence": 0.6
+   "confidence": 0.4,
+   "notes": "Audit: VFD is not on the panel bus and no direct line was seen; kept at low confidence."
+  },
+  {
+   "from": "BUS-100101",
+   "to": "BLR-100101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "BUS-090101",
+   "to": "BLR-090101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.5
   }
  ],
  "off_page_connectors": [

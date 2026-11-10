@@ -114,6 +114,22 @@
    "confidence": 0.7,
    "part_of": "VFD-110101",
    "notes": "Non-process item; part_of set to VFD-110101 because it feeds power to that drive."
+  },
+  {
+   "id": "BUS-110101",
+   "kind": "other",
+   "name": "Shared signal bus on the blower 110101 panel",
+   "part_of": "OIT-110101",
+   "confidence": 0.6,
+   "notes": "The bubbles on this panel sit on one multi-drop dashed bus. The drawing shows no individual line from each bubble to the blower, so bubbles are attached to this bus node, not directly to the blower or to each other."
+  },
+  {
+   "id": "BUS-110111",
+   "kind": "other",
+   "name": "Shared signal bus on the blower 110111 panel",
+   "part_of": "OIT-110111",
+   "confidence": 0.6,
+   "notes": "The bubbles on this panel sit on one multi-drop dashed bus. The drawing shows no individual line from each bubble to the blower, so bubbles are attached to this bus node, not directly to the blower or to each other."
   }
  ],
  "components": [
@@ -569,42 +585,42 @@
  ],
  "signals": [
   {
-   "from": "BLR-110101",
+   "from": "BUS-110101",
    "to": "YI-110101A",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110101",
+   "from": "BUS-110101",
    "to": "YI-110101B",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110101",
+   "from": "BUS-110101",
    "to": "YI-110101C",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110101",
+   "from": "BUS-110101",
    "to": "YI-110101D",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110101",
+   "from": "BUS-110101",
    "to": "YA-110101A",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110101",
+   "from": "BUS-110101",
    "to": "YA-110101B",
    "type": "electrical",
    "purpose": "status",
@@ -612,21 +628,21 @@
   },
   {
    "from": "XC-110101A",
-   "to": "BLR-110101",
+   "to": "BUS-110101",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
   },
   {
    "from": "XC-110101B",
-   "to": "BLR-110101",
+   "to": "BUS-110101",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
   },
   {
    "from": "XC-110101C",
-   "to": "BLR-110101",
+   "to": "BUS-110101",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
@@ -636,45 +652,46 @@
    "to": "VFD-110101",
    "type": "electrical",
    "purpose": "control",
-   "confidence": 0.5
+   "confidence": 0.4,
+   "notes": "Audit: VFD is not on the panel bus and no direct line was seen; kept at low confidence."
   },
   {
-   "from": "BLR-110111",
+   "from": "BUS-110111",
    "to": "YI-110111A",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110111",
+   "from": "BUS-110111",
    "to": "YI-110111B",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110111",
+   "from": "BUS-110111",
    "to": "YI-110111C",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110111",
+   "from": "BUS-110111",
    "to": "YI-110111D",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110111",
+   "from": "BUS-110111",
    "to": "YA-110111A",
    "type": "electrical",
    "purpose": "status",
    "confidence": 0.6
   },
   {
-   "from": "BLR-110111",
+   "from": "BUS-110111",
    "to": "YA-110111B",
    "type": "electrical",
    "purpose": "status",
@@ -682,21 +699,21 @@
   },
   {
    "from": "XC-110111A",
-   "to": "BLR-110111",
+   "to": "BUS-110111",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
   },
   {
    "from": "XC-110111B",
-   "to": "BLR-110111",
+   "to": "BUS-110111",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
   },
   {
    "from": "XC-110111C",
-   "to": "BLR-110111",
+   "to": "BUS-110111",
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.6
@@ -706,6 +723,35 @@
    "to": "VFD-110111",
    "type": "electrical",
    "purpose": "control",
+   "confidence": 0.4,
+   "notes": "Audit: VFD is not on the panel bus and no direct line was seen; kept at low confidence."
+  },
+  {
+   "from": "BUS-110101",
+   "to": "BLR-110101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "BLR-110101",
+   "to": "BUS-110101",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.5
+  },
+  {
+   "from": "BUS-110111",
+   "to": "BLR-110111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.5
+  },
+  {
+   "from": "BLR-110111",
+   "to": "BUS-110111",
+   "type": "electrical",
+   "purpose": "status",
    "confidence": 0.5
   }
  ],

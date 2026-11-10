@@ -1,10 +1,10 @@
 # Pahala WWTP: process knowledge graph summary
 
-Built from `pahala.pdf` (17 sheets) by pid-to-kg 0.1.0 on 2026-11-10. The graph has 915 nodes and 1339 edges; this summary covers equipment-level flow, instruments and control loops. Query `graph.duckdb` or `graph.json` for pipe-segment and valve detail.
+Built from `pahala.pdf` (17 sheets) by pid-to-kg 0.1.0 on 2026-11-10. The graph has 919 nodes and 1349 edges; this summary covers equipment-level flow, instruments and control loops. Query `graph.duckdb` or `graph.json` for pipe-segment and valve detail.
 
 | Equipment | Instruments | Valves & fittings | Pipe segments | Control loops | Off-page links |
 |---|---|---|---|---|---|
-| 62 | 292 | 138 | 246 | 95 | 44 |
+| 66 | 292 | 138 | 246 | 95 | 44 |
 
 ## Sheets
 
@@ -161,6 +161,10 @@ Drains, vents and overflows (not process flow):
 | SMU-070111 | membrane_filter | Submerged membrane unit, two stacked tiers | BLR-090101, BLR-110101, BLR-110111, Source of bold dashed line at XV-070181 (not drawn), TNK-070100 | CONTACT BASIN, DRAIN, PMP-080101, VENT TO ATMOSPHERE (TYP) |  | P-203 |
 | SMU-070121 | membrane_filter | Submerged membrane unit, two stacked tiers | BLR-090101, BLR-110101, BLR-110111, Source of bold dashed line at XV-070181 (not drawn), TNK-070100 | CONTACT BASIN, DRAIN, PMP-080101, VENT TO ATMOSPHERE (TYP) |  | P-203 |
 | Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE | box | Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE | RS FROM PAHALA | GRIT REMOVAL TANK, Manual bar rack channel (HWWL, inclined rack symbol) |  | P-101 |
+| Shared signal bus on the blower 090101 panel | other | Shared signal bus on the blower 090101 panel |  |  |  | P-205 |
+| Shared signal bus on the blower 100101 panel | other | Shared signal bus on the blower 100101 panel |  |  |  | P-205 |
+| Shared signal bus on the blower 110101 panel | other | Shared signal bus on the blower 110101 panel |  |  |  | P-209 |
+| Shared signal bus on the blower 110111 panel | other | Shared signal bus on the blower 110111 panel |  |  |  | P-209 |
 | T-600,201 | tank | BULK FUEL STORAGE TANK (double-walled, within vendor package) | P-600,205 | ATMOSPHERE (tank vents), FLT-600,202 |  | P-601 |
 | T-600,204 | tank | GENERATOR DAY TANK (double-walled) | GEN-600,209, P-600,203 | ATMOSPHERE (tank vents), DRAIN (open end), P-600,205, P-600,207 |  | P-602 |
 | TNK-040100 | tank | ANOXIC BASIN AX-01 | GRIT REMOVAL TANK, PMP-120111, PMP-120112, PMP-160101 | Recycle pump (tag not printed, typical for 2 pumps, left), Recycle pump (tag not printed, typical for 2 pumps, right) |  | P-201 |
@@ -552,10 +556,10 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | T-190301 | interlock |  |  | WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end | Interlock loop T-190301 (temperature). Acts on WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end. |
 | X-080111 | on_off |  |  | XV-080111 | On off loop X-080111 (unclassified). Acts on XV-080111. |
 | X-080112 | on_off |  |  | XV-080112 | On off loop X-080112 (unclassified). Acts on XV-080112. |
-| X-090101 | on_off |  |  | BLR-090101 | On off loop X-090101 (unclassified). Acts on BLR-090101. |
-| X-100101 | on_off |  |  | BLR-100101 | On off loop X-100101 (unclassified). Acts on BLR-100101. |
-| X-110101 | on_off |  |  | BLR-110101 | On off loop X-110101 (unclassified). Acts on BLR-110101. |
-| X-110111 | on_off |  |  | BLR-110111 | On off loop X-110111 (unclassified). Acts on BLR-110111. |
+| X-090101 | on_off |  |  | Shared signal bus on the blower 090101 panel | On off loop X-090101 (unclassified). Acts on Shared signal bus on the blower 090101 panel. |
+| X-100101 | on_off |  |  | Shared signal bus on the blower 100101 panel | On off loop X-100101 (unclassified). Acts on Shared signal bus on the blower 100101 panel. |
+| X-110101 | on_off |  |  | Shared signal bus on the blower 110101 panel | On off loop X-110101 (unclassified). Acts on Shared signal bus on the blower 110101 panel. |
+| X-110111 | on_off |  |  | Shared signal bus on the blower 110111 panel | On off loop X-110111 (unclassified). Acts on Shared signal bus on the blower 110111 panel. |
 | Y-040111 | monitoring |  |  |  | Monitoring loop Y-040111 (event/state). |
 | Y-040121 | monitoring |  |  |  | Monitoring loop Y-040121 (event/state). |
 | Y-070181 | on_off |  |  | XV-070181 | On off loop Y-070181 (event/state). Acts on XV-070181. |
