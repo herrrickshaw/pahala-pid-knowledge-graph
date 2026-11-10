@@ -92,7 +92,8 @@
     0.464
    ],
    "confidence": 0.6,
-   "notes": "Printed 'VCP 100,' with the rest clipped."
+   "notes": "Printed 'VCP 100,' with the rest clipped. Non-process item; part_of set to CH1 because it is the vendor control panel of the screening package.",
+   "part_of": "CH1"
   }
  ],
  "components": [
@@ -177,7 +178,8 @@
     0.5251
    ],
    "loop": "F-100002",
-   "name": "Influent flow transmitter (120 V ES power note)"
+   "name": "Influent flow transmitter (120 V ES power note)",
+   "notes": " '120 V ES' beside the bubble is its electrical supply note, not a tag."
   },
   {
    "id": "FI-100.002",
@@ -287,48 +289,6 @@
    "notes": " Tag number 001 restarts on P-401; loop id set to L-001 and measures given so the builder keeps the two sheets' -001 tags apart."
   },
   {
-   "id": "LAH-100.125-S",
-   "location": "scada",
-   "confidence": 0.85,
-   "tag": "LAH-100.125",
-   "bbox": [
-    0.3214,
-    0.0818,
-    0.3431,
-    0.1153
-   ],
-   "name": "SCREEN HIGH 2 LEVEL",
-   "loop": "L-100125"
-  },
-  {
-   "id": "LDAH-100.124-S",
-   "location": "scada",
-   "confidence": 0.85,
-   "tag": "LDAH-100.124",
-   "bbox": [
-    0.3533,
-    0.0818,
-    0.375,
-    0.1153
-   ],
-   "name": "SCREEN 2 HIGH LEVEL",
-   "loop": "L-100124"
-  },
-  {
-   "id": "LDAH-100.115-S",
-   "location": "scada",
-   "confidence": 0.7,
-   "tag": "LDAH-100.115",
-   "bbox": [
-    0.3807,
-    0.0818,
-    0.4024,
-    0.1153
-   ],
-   "name": "SCREEN 2 FAULT (number printed '100.115')",
-   "loop": "L-100115"
-  },
-  {
    "id": "LI-100.124A",
    "location": "scada",
    "confidence": 0.85,
@@ -421,7 +381,8 @@
     0.2256
    ],
    "loop": "L-100125",
-   "name": "Screen high 2 level alarm (MCP)"
+   "name": "Screen high 2 level alarm (MCP)",
+   "notes": "Same tag also drawn in the scada layer (bubbles LAH-100.125-S); merged into one instrument."
   },
   {
    "id": "LDAH-100.124-M",
@@ -435,7 +396,8 @@
     0.2256
    ],
    "loop": "L-100124",
-   "name": "Screen 2 high level alarm (MCP)"
+   "name": "Screen 2 high level alarm (MCP)",
+   "notes": "Same tag also drawn in the scada layer (bubbles LDAH-100.124-S); merged into one instrument."
   },
   {
    "id": "LDAH-100.115-M",
@@ -449,7 +411,8 @@
     0.2256
    ],
    "loop": "L-100115",
-   "name": "Screen 2 fault alarm (MCP; number printed '100..')"
+   "name": "Screen 2 fault alarm (MCP; number printed '100..')",
+   "notes": "Same tag also drawn in the scada layer (bubbles LDAH-100.115-S); merged into one instrument."
   },
   {
    "id": "LAH-PS2",
@@ -711,27 +674,6 @@
    "type": "software",
    "purpose": "measurement",
    "confidence": 0.75
-  },
-  {
-   "from": "LAH-100.125-M",
-   "to": "LAH-100.125-S",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.8
-  },
-  {
-   "from": "LDAH-100.124-M",
-   "to": "LDAH-100.124-S",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.8
-  },
-  {
-   "from": "LDAH-100.115-M",
-   "to": "LDAH-100.115-S",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.8
   },
   {
    "from": "VCP-100",

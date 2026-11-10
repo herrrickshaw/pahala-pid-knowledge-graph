@@ -6,7 +6,10 @@
   "title": "Anoxic Basin",
   "revision": "",
   "drawing_type": "pid",
-  "issue_status": "Design/Build documents (EPA submission July 2021)"
+  "issue_status": "Design/Build documents (EPA submission July 2021)",
+  "legend_notes": [
+   "Tiles r1c1, r1c5, r2c5, r3c5 are margin or title block and were recorded as reviewed from the overview."
+  ]
  },
  "equipment": [
   {
@@ -394,6 +397,346 @@
    ],
    "confidence": 0.6,
    "loop": "F-040121"
+  },
+  {
+   "id": "YI-040111A",
+   "tag": "YI-040111A",
+   "location": "scada",
+   "bbox": [
+    0.258,
+    0.18,
+    0.282,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "RUNNING",
+   "loop": "Y-040111"
+  },
+  {
+   "id": "YC-040111",
+   "tag": "YC-040111",
+   "location": "scada",
+   "bbox": [
+    0.283,
+    0.18,
+    0.307,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "RUN",
+   "loop": "Y-040111"
+  },
+  {
+   "id": "YI-040111B",
+   "tag": "YI-040111B",
+   "location": "scada",
+   "bbox": [
+    0.304,
+    0.18,
+    0.328,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "REMOTE",
+   "loop": "Y-040111"
+  },
+  {
+   "id": "TAH-040111",
+   "tag": "TAH-040111",
+   "location": "scada",
+   "bbox": [
+    0.325,
+    0.18,
+    0.349,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "HIGH TEMP",
+   "loop": "T-040111"
+  },
+  {
+   "id": "MAH-040111",
+   "tag": "MAH-040111",
+   "location": "scada",
+   "bbox": [
+    0.346,
+    0.18,
+    0.37,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "HIGH MOIST",
+   "loop": "M-040111"
+  },
+  {
+   "id": "ZA-040101",
+   "tag": "ZA-040101",
+   "location": "scada",
+   "bbox": [
+    0.305,
+    0.138,
+    0.329,
+    0.178
+   ],
+   "confidence": 0.8,
+   "name": "FAIL",
+   "loop": "Z-040101"
+  },
+  {
+   "id": "JS-040111",
+   "tag": "JS-040111",
+   "location": "mcc",
+   "bbox": [
+    0.262,
+    0.295,
+    0.286,
+    0.335
+   ],
+   "confidence": 0.8,
+   "loop": "J-040111"
+  },
+  {
+   "id": "HS-040111",
+   "tag": "HS-040111",
+   "location": "mcc",
+   "bbox": [
+    0.283,
+    0.295,
+    0.307,
+    0.335
+   ],
+   "confidence": 0.8,
+   "name": "HOR",
+   "loop": "H-040111"
+  },
+  {
+   "id": "TY-040111",
+   "tag": "TY-040111",
+   "location": "mcc",
+   "bbox": [
+    0.325,
+    0.295,
+    0.349,
+    0.335
+   ],
+   "confidence": 0.8,
+   "loop": "T-040111"
+  },
+  {
+   "id": "MY-040111",
+   "tag": "MY-040111",
+   "location": "plc",
+   "bbox": [
+    0.345,
+    0.362,
+    0.369,
+    0.402
+   ],
+   "confidence": 0.8,
+   "loop": "M-040111"
+  },
+  {
+   "id": "MS-040111",
+   "tag": "MS-040111",
+   "location": "plc",
+   "bbox": [
+    0.368,
+    0.362,
+    0.392,
+    0.402
+   ],
+   "confidence": 0.8,
+   "loop": "M-040111"
+  },
+  {
+   "id": "LAH-040101",
+   "tag": "LAH-040101",
+   "location": "scada",
+   "bbox": [
+    0.473,
+    0.138,
+    0.497,
+    0.178
+   ],
+   "confidence": 0.8,
+   "name": "HIGH LEVEL",
+   "loop": "L-040101"
+  },
+  {
+   "id": "LAL-040101",
+   "tag": "LAL-040101",
+   "location": "scada",
+   "bbox": [
+    0.494,
+    0.138,
+    0.518,
+    0.178
+   ],
+   "confidence": 0.8,
+   "name": "LOW LEVEL",
+   "loop": "L-040101"
+  },
+  {
+   "id": "YI-040121A",
+   "tag": "YI-040121A",
+   "location": "scada",
+   "bbox": [
+    0.537,
+    0.18,
+    0.561,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "RUNNING",
+   "loop": "Y-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "YC-040121",
+   "tag": "YC-040121",
+   "location": "scada",
+   "bbox": [
+    0.558,
+    0.18,
+    0.582,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "RUN",
+   "loop": "Y-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "YI-040121B",
+   "tag": "YI-040121B",
+   "location": "scada",
+   "bbox": [
+    0.579,
+    0.18,
+    0.603,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "REMOTE",
+   "loop": "Y-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "TAH-040121",
+   "tag": "TAH-040121",
+   "location": "scada",
+   "bbox": [
+    0.6,
+    0.18,
+    0.624,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "HIGH TEMP",
+   "loop": "T-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "MAH-040121",
+   "tag": "MAH-040121",
+   "location": "scada",
+   "bbox": [
+    0.621,
+    0.18,
+    0.645,
+    0.22
+   ],
+   "confidence": 0.8,
+   "name": "HIGH MOIST",
+   "loop": "M-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "ZA-040121",
+   "tag": "ZA-040121",
+   "location": "scada",
+   "bbox": [
+    0.579,
+    0.138,
+    0.603,
+    0.178
+   ],
+   "confidence": 0.8,
+   "name": "FAIL",
+   "loop": "Z-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "SS-040121",
+   "tag": "SS-040121",
+   "location": "mcc",
+   "bbox": [
+    0.505,
+    0.295,
+    0.529,
+    0.335
+   ],
+   "confidence": 0.8,
+   "name": "POT/HIM",
+   "loop": "S-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "HS-040121",
+   "tag": "HS-040121",
+   "location": "mcc",
+   "bbox": [
+    0.558,
+    0.295,
+    0.582,
+    0.335
+   ],
+   "confidence": 0.8,
+   "name": "HOR",
+   "loop": "H-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "TY-040121",
+   "tag": "TY-040121",
+   "location": "mcc",
+   "bbox": [
+    0.6,
+    0.295,
+    0.624,
+    0.335
+   ],
+   "confidence": 0.8,
+   "loop": "T-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "MY-040121",
+   "tag": "MY-040121",
+   "location": "plc",
+   "bbox": [
+    0.621,
+    0.362,
+    0.645,
+    0.402
+   ],
+   "confidence": 0.8,
+   "loop": "M-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
+  },
+  {
+   "id": "MS-040121",
+   "tag": "MS-040121",
+   "location": "plc",
+   "bbox": [
+    0.643,
+    0.362,
+    0.667,
+    0.402
+   ],
+   "confidence": 0.8,
+   "loop": "M-040121",
+   "notes": "Pump stack is drawn once, 'TYPICAL FOR 2 PUMPS'; recorded for pump A (040121) only."
   }
  ],
  "lines": [
@@ -523,6 +866,181 @@
    "to": "PMPA",
    "type": "electrical",
    "purpose": "control"
+  },
+  {
+   "from": "JS-040111",
+   "to": "YI-040111A",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "YC-040111",
+   "to": "HS-040111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "HS-040111",
+   "to": "YI-040111B",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "JS-040111",
+   "to": "MXR-040111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "TSH-040111",
+   "to": "TY-040111",
+   "type": "electrical",
+   "purpose": "trip",
+   "confidence": 0.7
+  },
+  {
+   "from": "TY-040111",
+   "to": "TAH-040111",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.7
+  },
+  {
+   "from": "ME-040111",
+   "to": "MS-040111",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.7
+  },
+  {
+   "from": "MS-040111",
+   "to": "MY-040111",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.7
+  },
+  {
+   "from": "MY-040111",
+   "to": "MAH-040111",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.7
+  },
+  {
+   "from": "YI-040111A",
+   "to": "ZA-040101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.5
+  },
+  {
+   "from": "YC-040111",
+   "to": "ZA-040101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.5
+  },
+  {
+   "from": "LIR-040101",
+   "to": "LAH-040101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.7
+  },
+  {
+   "from": "LIR-040101",
+   "to": "LAL-040101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.7
+  },
+  {
+   "from": "FIC-040121",
+   "to": "VFD-040121",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "SS-040121",
+   "to": "VFD-040121",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "VFD-040121",
+   "to": "YI-040121A",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "YC-040121",
+   "to": "HS-040121",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7
+  },
+  {
+   "from": "HS-040121",
+   "to": "YI-040121B",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.7
+  },
+  {
+   "from": "TSH-040121",
+   "to": "TY-040121",
+   "type": "electrical",
+   "purpose": "trip",
+   "confidence": 0.7
+  },
+  {
+   "from": "TY-040121",
+   "to": "TAH-040121",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.7
+  },
+  {
+   "from": "ME-040121",
+   "to": "MS-040121",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.7
+  },
+  {
+   "from": "MS-040121",
+   "to": "MY-040121",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.7
+  },
+  {
+   "from": "MY-040121",
+   "to": "MAH-040121",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.7
+  },
+  {
+   "from": "YI-040121A",
+   "to": "ZA-040121",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.5
+  },
+  {
+   "from": "YC-040121",
+   "to": "ZA-040121",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.5
   }
  ],
  "off_page_connectors": [
@@ -581,12 +1099,27 @@
  ],
  "boundaries": [],
  "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r1c5",
+  "r2c1",
+  "r2c2",
+  "r2c3",
   "r2c4",
-  "r3c3"
+  "r2c5",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4",
+  "r3c5"
  ],
  "unreadable": [
-  "Pump tags are not printed on this sheet; the pump discharge valve/cone symbols were not zoomed",
-  "MCC/PLC/SCADA signal chains for mixer and pump status (YI/YC/TAH/MAH/ZA) not modelled in this pilot",
-  "Tank drain valve at far right of basin not modelled"
+  "Pump tags are not printed on this sheet.",
+  "Pump discharge cone, check-valve and plug-valve symbols are recorded at 0.5-0.6 confidence (no legend on this sheet).",
+  "Tank drain valve at the far right (filled diamond with end bars) is not modelled: it sits on an unlabelled thin line from the basin wall with no destination drawn.",
+  "PLC I/O cards (DI/DO/AI/AO) are untagged and not modelled; signals run tag to tag.",
+  "Pump B (040122) control stack is not drawn separately ('TYPICAL FOR 2 PUMPS'); only its TSH/ME field bubbles are recorded."
  ]
 }

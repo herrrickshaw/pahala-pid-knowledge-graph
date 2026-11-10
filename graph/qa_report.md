@@ -1,24 +1,21 @@
 # QA report: Pahala WWTP
 
-Generated 2026-11-10T23:38:15+00:00 by pid-to-kg 0.1.0.
+Generated 2026-11-10T23:42:20+00:00 by pid-to-kg 0.1.0.
 
-**0 errors, 75 warnings, 366 info.**
+**0 errors, 10 warnings, 352 info.**
 
 Errors must be fixed in the page extraction files before the graph is trusted. Warnings are things to re-check on the drawing (the *Re-check* column names the tiles). Info items are for the record.
 
 | Severity | Code | Count |
 |---|---|---|
 | warning | `component_not_connected` | 1 |
-| warning | `duplicate_tag` | 44 |
-| warning | `equipment_not_connected` | 10 |
+| warning | `duplicate_tag` | 5 |
 | warning | `loop_no_final_element` | 4 |
-| warning | `possible_missed_tags` | 15 |
-| warning | `tiles_not_reviewed` | 1 |
 | info | `inferred_flow_direction` | 1 |
 | info | `isolated_instrument` | 2 |
 | info | `loop_no_sensor` | 4 |
 | info | `low_confidence` | 92 |
-| info | `non_isa_tag` | 255 |
+| info | `non_isa_tag` | 241 |
 | info | `tag_reused` | 12 |
 
 ## Details
@@ -29,77 +26,12 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | warning |  | `loop_no_final_element` | LOOP:L-001@P-401 | control loop L-001@P-401 has a controller but no final element |  |
 | warning |  | `loop_no_final_element` | LOOP:L-001@P-401#2 | control loop L-001@P-401#2 has a controller but no final element |  |
 | warning |  | `loop_no_final_element` | LOOP:L-001@P-401#3 | control loop L-001@P-401#3 has a controller but no final element |  |
-| warning | 9 | `duplicate_tag` | LAH-100.125#2 | tag 'LAH-100.125' is used by more than one item on this sheet; the copy 'LAH-100.125-M' was kept separate as 'LAH-100.125#2' | r1c2 |
-| warning | 9 | `duplicate_tag` | LDAH-100.124#2 | tag 'LDAH-100.124' is used by more than one item on this sheet; the copy 'LDAH-100.124-M' was kept separate as 'LDAH-100.124#2' | r1c2 |
-| warning | 9 | `duplicate_tag` | LDAH-100.115#2 | tag 'LDAH-100.115' is used by more than one item on this sheet; the copy 'LDAH-100.115-M' was kept separate as 'LDAH-100.115#2' | r1c2 |
-| warning | 9 | `equipment_not_connected` | VCP-100 | equipment VCP-100 has no process connections | r1c2, r2c2 |
-| warning | 9 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: FIT-120V |  |
-| warning | 10 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 10 | `tiles_not_reviewed` |  | 13 non-blank tiles not listed in tiles_reviewed: r1c1, r1c2, r1c3, r1c4, r1c5, r2c1, r2c2, r2c3, r2c5, r3c1, r3c2, r3c4, r3c5 |  |
-| warning | 11 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 12 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 13 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 14 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 15 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 16 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 17 | `equipment_not_connected` | P17.PKG-3 | equipment VENDOR PACKAGE 3 has no process connections | r2c2, r2c3 |
-| warning | 17 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 18 | `duplicate_tag` | YI-110101A#2 | tag 'YI-110101A' is used by more than one item on this sheet; the copy 'YI-110101A-SCADA' was kept separate as 'YI-110101A#2' | r1c1 |
-| warning | 18 | `duplicate_tag` | YI-110101B#2 | tag 'YI-110101B' is used by more than one item on this sheet; the copy 'YI-110101B-SCADA' was kept separate as 'YI-110101B#2' | r1c1 |
-| warning | 18 | `duplicate_tag` | YI-110101C#2 | tag 'YI-110101C' is used by more than one item on this sheet; the copy 'YI-110101C-SCADA' was kept separate as 'YI-110101C#2' | r1c1 |
-| warning | 18 | `duplicate_tag` | YI-110101D#2 | tag 'YI-110101D' is used by more than one item on this sheet; the copy 'YI-110101D-SCADA' was kept separate as 'YI-110101D#2' | r1c1 |
-| warning | 18 | `duplicate_tag` | YA-110101A#2 | tag 'YA-110101A' is used by more than one item on this sheet; the copy 'YA-110101A-SCADA' was kept separate as 'YA-110101A#2' | r1c1 |
-| warning | 18 | `duplicate_tag` | YA-110101B#2 | tag 'YA-110101B' is used by more than one item on this sheet; the copy 'YA-110101B-SCADA' was kept separate as 'YA-110101B#2' | r1c1, r1c2 |
-| warning | 18 | `duplicate_tag` | XC-110101A#2 | tag 'XC-110101A' is used by more than one item on this sheet; the copy 'XC-110101A-SCADA' was kept separate as 'XC-110101A#2' | r1c1, r1c2 |
-| warning | 18 | `duplicate_tag` | XC-110101B#2 | tag 'XC-110101B' is used by more than one item on this sheet; the copy 'XC-110101B-SCADA' was kept separate as 'XC-110101B#2' | r1c2 |
-| warning | 18 | `duplicate_tag` | XC-110101C#2 | tag 'XC-110101C' is used by more than one item on this sheet; the copy 'XC-110101C-SCADA' was kept separate as 'XC-110101C#2' | r1c2 |
-| warning | 18 | `duplicate_tag` | SC-110101#2 | tag 'SC-110101' is used by more than one item on this sheet; the copy 'SC-110101-SCADA' was kept separate as 'SC-110101#2' | r1c2 |
-| warning | 18 | `duplicate_tag` | FI-110101#2 | tag 'FI-110101' is used by more than one item on this sheet; the copy 'FI-110101-SCADA' was kept separate as 'FI-110101#2' | r1c2 |
-| warning | 18 | `equipment_not_connected` | P18.CB1 | equipment CB 480V (circuit breaker, power feed from MDP-2 to blower 110101 VFD) has no process connections | r1c1, r2c1 |
-| warning | 18 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 19 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 20 | `equipment_not_connected` | PNL-190300 | equipment PNL-190300 has no process connections | r1c2, r2c2 |
-| warning | 20 | `equipment_not_connected` | P20.CB1 | equipment CB 480V (circuit breaker, power feed from MDP-2 to local control panel) has no process connections | r1c2, r2c2 |
-| warning | 20 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 21 | `duplicate_tag` | LAH-402#2 | tag 'LAH-402' is used by more than one item on this sheet; the copy 'LAH-402-SCADA' was kept separate as 'LAH-402#2' | r1c2, r1c3 |
 | warning | 21 | `duplicate_tag` | LCH-001@P-401#2 | tag 'LCH-001@P-401' is used by more than one item on this sheet; the copy 'LCH-001-LEAD' was kept separate as 'LCH-001@P-401#2' | r1c2 |
 | warning | 21 | `duplicate_tag` | LCL-001@P-401#2 | tag 'LCL-001@P-401' is used by more than one item on this sheet; the copy 'LCL-001-LAG' was kept separate as 'LCL-001@P-401#2' | r1c2 |
 | warning | 21 | `duplicate_tag` | LCL-001@P-401#3 | tag 'LCL-001@P-401' is used by more than one item on this sheet; the copy 'LCL-001-STOP' was kept separate as 'LCL-001@P-401#3' | r1c2 |
-| warning | 22 | `duplicate_tag` | ZIO-500,101#2 | tag 'ZIO-500,101' is used by more than one item on this sheet; the copy 'ZIO-SCADA' was kept separate as 'ZIO-500,101#2' | r1c1, r1c2 |
-| warning | 22 | `duplicate_tag` | ZIC-500,101#2 | tag 'ZIC-500,101' is used by more than one item on this sheet; the copy 'ZIC-SCADA' was kept separate as 'ZIC-500,101#2' | r1c1, r1c2 |
-| warning | 22 | `duplicate_tag` | YA-500,101#2 | tag 'YA-500,101' is used by more than one item on this sheet; the copy 'YA-SCADA' was kept separate as 'YA-500,101#2' | r1c1, r1c2 |
-| warning | 22 | `duplicate_tag` | YI-500,101#2 | tag 'YI-500,101' is used by more than one item on this sheet; the copy 'YI-AUTO-SCADA' was kept separate as 'YI-500,101#2' | r1c2 |
-| warning | 22 | `duplicate_tag` | YI-500,101#3 | tag 'YI-500,101' is used by more than one item on this sheet; the copy 'YI-OPENSP-SCADA' was kept separate as 'YI-500,101#3' | r1c2 |
-| warning | 22 | `duplicate_tag` | YI-500,101#4 | tag 'YI-500,101' is used by more than one item on this sheet; the copy 'YI-CLOSESP-SCADA' was kept separate as 'YI-500,101#4' | r1c2 |
 | warning | 22 | `duplicate_tag` | ZSO-500,201#2 | tag 'ZSO-500,201' is used by more than one item on this sheet; the copy 'ZSO-Z4' was kept separate as 'ZSO-500,201#2' | r3c2, r3c3 |
 | warning | 22 | `duplicate_tag` | ZSC-500,201#2 | tag 'ZSC-500,201' is used by more than one item on this sheet; the copy 'ZSC-Z4' was kept separate as 'ZSC-500,201#2' | r3c2, r3c3 |
 | warning | 23 | `component_not_connected` | P23.OV1 | component overfill prevention valve with float on tank top is not on any line (add it to a line 'path') | r2c2, r2c3 |
-| warning | 23 | `duplicate_tag` | LI-600,201B#2 | tag 'LI-600,201B' is used by more than one item on this sheet; the copy 'LI-600,201B-SCADA' was kept separate as 'LI-600,201B#2' | r1c2 |
-| warning | 23 | `duplicate_tag` | LAL-600,201A#2 | tag 'LAL-600,201A' is used by more than one item on this sheet; the copy 'LAL-600,201A-SCADA' was kept separate as 'LAL-600,201A#2' | r1c2 |
-| warning | 23 | `duplicate_tag` | LAH-600,201B#2 | tag 'LAH-600,201B' is used by more than one item on this sheet; the copy 'LAH-600,201B-SCADA' was kept separate as 'LAH-600,201B#2' | r1c2, r1c3 |
-| warning | 23 | `duplicate_tag` | LAH-600,201C#2 | tag 'LAH-600,201C' is used by more than one item on this sheet; the copy 'LAH-600,201C-SCADA' was kept separate as 'LAH-600,201C#2' | r1c2, r1c3 |
-| warning | 23 | `duplicate_tag` | YA-600,201D#2 | tag 'YA-600,201D' is used by more than one item on this sheet; the copy 'YA-600,201D-SCADA' was kept separate as 'YA-600,201D#2' | r1c3 |
-| warning | 23 | `equipment_not_connected` | VCP-600,201 | equipment VCP-600,201 has no process connections | r2c2, r2c3 |
-| warning | 23 | `equipment_not_connected` | MCP-600,101 | equipment MCP-600,101 has no process connections | r1c1 |
-| warning | 23 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 24 | `duplicate_tag` | LAL-600,204B#2 | tag 'LAL-600,204B' is used by more than one item on this sheet; the copy 'LAL-600,204B-SCADA' was kept separate as 'LAL-600,204B#2' | r1c2 |
-| warning | 24 | `duplicate_tag` | LAH-600,204D#2 | tag 'LAH-600,204D' is used by more than one item on this sheet; the copy 'LAH-600,204D-SCADA' was kept separate as 'LAH-600,204D#2' | r1c2, r1c3 |
-| warning | 24 | `duplicate_tag` | LAH-600,204A#2 | tag 'LAH-600,204A' is used by more than one item on this sheet; the copy 'LAH-600,204A-SCADA' was kept separate as 'LAH-600,204A#2' | r1c2, r1c3 |
-| warning | 24 | `duplicate_tag` | YA-600,204E#2 | tag 'YA-600,204E' is used by more than one item on this sheet; the copy 'YA-600,204E-SCADA' was kept separate as 'YA-600,204E#2' | r1c3 |
-| warning | 24 | `duplicate_tag` | YA-600,203#2 | tag 'YA-600,203' is used by more than one item on this sheet; the copy 'YA-600,203-SCADA' was kept separate as 'YA-600,203#2' | r1c3 |
-| warning | 24 | `duplicate_tag` | YA-600,205#2 | tag 'YA-600,205' is used by more than one item on this sheet; the copy 'YA-600,205-SCADA' was kept separate as 'YA-600,205#2' | r1c3 |
-| warning | 24 | `equipment_not_connected` | VCP-600,206 | equipment VCP-600,206 has no process connections | r2c2, r2c3 |
-| warning | 24 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
-| warning | 25 | `duplicate_tag` | YI-600,009C#2 | tag 'YI-600,009C' is used by more than one item on this sheet; the copy 'YI-600,009C-SCADA0' was kept separate as 'YI-600,009C#2' | r1c1, r1c2 |
-| warning | 25 | `duplicate_tag` | YA-600,009C#2 | tag 'YA-600,009C' is used by more than one item on this sheet; the copy 'YA-600,009C-SCADA1' was kept separate as 'YA-600,009C#2' | r1c1, r1c2 |
-| warning | 25 | `duplicate_tag` | YI-600,204B#2 | tag 'YI-600,204B' is used by more than one item on this sheet; the copy 'YI-600,204B-SCADA2' was kept separate as 'YI-600,204B#2' | r1c1, r1c2 |
-| warning | 25 | `duplicate_tag` | YI-600,204A#2 | tag 'YI-600,204A' is used by more than one item on this sheet; the copy 'YI-600,204A-SCADA3' was kept separate as 'YI-600,204A#2' | r1c2 |
-| warning | 25 | `duplicate_tag` | YA-600,204A#2 | tag 'YA-600,204A' is used by more than one item on this sheet; the copy 'YA-600,204A-SCADA4' was kept separate as 'YA-600,204A#2' | r1c2 |
-| warning | 25 | `duplicate_tag` | YA-600,204A#3 | tag 'YA-600,204A' is used by more than one item on this sheet; the copy 'YA-600,204A-PLC5' was kept separate as 'YA-600,204A#3' | r1c2 |
-| warning | 25 | `duplicate_tag` | YA-600,204A#4 | tag 'YA-600,204A' is used by more than one item on this sheet; the copy 'YA-600,204A-SCADA5' was kept separate as 'YA-600,204A#4' | r1c2 |
-| warning | 25 | `equipment_not_connected` | CHGR-600,211 | equipment CHGR-600,211 has no process connections | r1c3, r2c3 |
-| warning | 25 | `equipment_not_connected` | VCP-600,209 | equipment VCP-600,209 has no process connections | r1c2, r2c2 |
-| warning | 25 | `possible_missed_tags` |  | 1 tags found by text_layer are not in the graph: SUITE-201 |  |
 | info |  | `inferred_flow_direction` |  | 164 flow edges have inferred (not drawn) direction |  |
 | info |  | `loop_no_sensor` | LOOP:L-001@P-101 | control loop L-001@P-101 has a controller but no sensor |  |
 | info |  | `loop_no_sensor` | LOOP:L-001@P-401 | control loop L-001@P-401 has a controller but no sensor |  |
@@ -107,9 +39,6 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | info |  | `loop_no_sensor` | LOOP:L-001@P-401#3 | control loop L-001@P-401#3 has a controller but no sensor |  |
 | info | 9 | `non_isa_tag` | FIT-100.002 | instrument tag 'FIT-100.002' does not parse as ISA-5.1 | r2c1 |
 | info | 9 | `non_isa_tag` | FI-100.002 | instrument tag 'FI-100.002' does not parse as ISA-5.1 | r1c1 |
-| info | 9 | `non_isa_tag` | LAH-100.125 | instrument tag 'LAH-100.125' does not parse as ISA-5.1 | r1c2 |
-| info | 9 | `non_isa_tag` | LDAH-100.124 | instrument tag 'LDAH-100.124' does not parse as ISA-5.1 | r1c2 |
-| info | 9 | `non_isa_tag` | LDAH-100.115 | instrument tag 'LDAH-100.115' does not parse as ISA-5.1 | r1c2 |
 | info | 9 | `non_isa_tag` | LI-100.124A | instrument tag 'LI-100.124A' does not parse as ISA-5.1 | r1c2 |
 | info | 9 | `non_isa_tag` | LI-100.124B | instrument tag 'LI-100.124B' does not parse as ISA-5.1 | r1c2, r1c3 |
 | info | 9 | `non_isa_tag` | LDI-100.124 | instrument tag 'LDI-100.124' does not parse as ISA-5.1 | r1c2, r1c3 |
@@ -147,6 +76,30 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | info | 10 | `non_isa_tag` | LAH-040103 | instrument tag 'LAH-040103' does not parse as ISA-5.1 | r1c3 |
 | info | 10 | `non_isa_tag` | FIC-040121 | instrument tag 'FIC-040121' does not parse as ISA-5.1 | r1c3 |
 | info | 10 | `non_isa_tag` | VFD-040121 | instrument tag 'VFD-040121' does not parse as ISA-5.1 | r1c3, r2c3 |
+| info | 10 | `non_isa_tag` | YI-040111A | instrument tag 'YI-040111A' does not parse as ISA-5.1 | r1c2 |
+| info | 10 | `non_isa_tag` | YC-040111 | instrument tag 'YC-040111' does not parse as ISA-5.1 | r1c2 |
+| info | 10 | `non_isa_tag` | YI-040111B | instrument tag 'YI-040111B' does not parse as ISA-5.1 | r1c2 |
+| info | 10 | `non_isa_tag` | TAH-040111 | instrument tag 'TAH-040111' does not parse as ISA-5.1 | r1c2 |
+| info | 10 | `non_isa_tag` | MAH-040111 | instrument tag 'MAH-040111' does not parse as ISA-5.1 | r1c2 |
+| info | 10 | `non_isa_tag` | ZA-040101 | instrument tag 'ZA-040101' does not parse as ISA-5.1 | r1c2 |
+| info | 10 | `non_isa_tag` | JS-040111 | instrument tag 'JS-040111' does not parse as ISA-5.1 | r1c2, r2c2 |
+| info | 10 | `non_isa_tag` | HS-040111 | instrument tag 'HS-040111' does not parse as ISA-5.1 | r1c2, r2c2 |
+| info | 10 | `non_isa_tag` | TY-040111 | instrument tag 'TY-040111' does not parse as ISA-5.1 | r1c2, r2c2 |
+| info | 10 | `non_isa_tag` | MY-040111 | instrument tag 'MY-040111' does not parse as ISA-5.1 | r2c2 |
+| info | 10 | `non_isa_tag` | MS-040111 | instrument tag 'MS-040111' does not parse as ISA-5.1 | r2c2, r2c3 |
+| info | 10 | `non_isa_tag` | LAH-040101 | instrument tag 'LAH-040101' does not parse as ISA-5.1 | r1c3 |
+| info | 10 | `non_isa_tag` | LAL-040101 | instrument tag 'LAL-040101' does not parse as ISA-5.1 | r1c3 |
+| info | 10 | `non_isa_tag` | YI-040121A | instrument tag 'YI-040121A' does not parse as ISA-5.1 | r1c3 |
+| info | 10 | `non_isa_tag` | YC-040121 | instrument tag 'YC-040121' does not parse as ISA-5.1 | r1c3, r1c4 |
+| info | 10 | `non_isa_tag` | YI-040121B | instrument tag 'YI-040121B' does not parse as ISA-5.1 | r1c3, r1c4 |
+| info | 10 | `non_isa_tag` | TAH-040121 | instrument tag 'TAH-040121' does not parse as ISA-5.1 | r1c3, r1c4 |
+| info | 10 | `non_isa_tag` | MAH-040121 | instrument tag 'MAH-040121' does not parse as ISA-5.1 | r1c4 |
+| info | 10 | `non_isa_tag` | ZA-040121 | instrument tag 'ZA-040121' does not parse as ISA-5.1 | r1c3, r1c4 |
+| info | 10 | `non_isa_tag` | SS-040121 | instrument tag 'SS-040121' does not parse as ISA-5.1 | r1c3, r2c3 |
+| info | 10 | `non_isa_tag` | HS-040121 | instrument tag 'HS-040121' does not parse as ISA-5.1 | r1c3, r1c4 |
+| info | 10 | `non_isa_tag` | TY-040121 | instrument tag 'TY-040121' does not parse as ISA-5.1 | r1c3, r1c4 |
+| info | 10 | `non_isa_tag` | MY-040121 | instrument tag 'MY-040121' does not parse as ISA-5.1 | r2c4 |
+| info | 10 | `non_isa_tag` | MS-040121 | instrument tag 'MS-040121' does not parse as ISA-5.1 | r2c4 |
 | info | 11 | `low_confidence` | P11.L-DRN.1 | L-DRN was read with confidence 0.50 |  |
 | info | 11 | `non_isa_tag` | AE-050101 | instrument tag 'AE-050101' does not parse as ISA-5.1 | r2c3, r3c3 |
 | info | 11 | `non_isa_tag` | AIT-050101 | instrument tag 'AIT-050101' does not parse as ISA-5.1 | r2c3, r3c3 |
@@ -307,17 +260,6 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | info | 18 | `non_isa_tag` | XC-110111C | instrument tag 'XC-110111C' does not parse as ISA-5.1 | r2c2 |
 | info | 18 | `non_isa_tag` | SC-110111 | instrument tag 'SC-110111' does not parse as ISA-5.1 | r2c2 |
 | info | 18 | `non_isa_tag` | FI-110111 | instrument tag 'FI-110111' does not parse as ISA-5.1 | r2c2 |
-| info | 18 | `non_isa_tag` | YI-110101A | instrument tag 'YI-110101A' does not parse as ISA-5.1 | r1c1, r2c1 |
-| info | 18 | `non_isa_tag` | YI-110101B | instrument tag 'YI-110101B' does not parse as ISA-5.1 | r1c1, r2c1 |
-| info | 18 | `non_isa_tag` | YI-110101C | instrument tag 'YI-110101C' does not parse as ISA-5.1 | r1c1, r2c1 |
-| info | 18 | `non_isa_tag` | YI-110101D | instrument tag 'YI-110101D' does not parse as ISA-5.1 | r1c1, r2c1 |
-| info | 18 | `non_isa_tag` | YA-110101A | instrument tag 'YA-110101A' does not parse as ISA-5.1 | r1c1, r2c1 |
-| info | 18 | `non_isa_tag` | YA-110101B | instrument tag 'YA-110101B' does not parse as ISA-5.1 | r1c1, r1c2 |
-| info | 18 | `non_isa_tag` | XC-110101A | instrument tag 'XC-110101A' does not parse as ISA-5.1 | r1c1, r1c2 |
-| info | 18 | `non_isa_tag` | XC-110101B | instrument tag 'XC-110101B' does not parse as ISA-5.1 | r1c2, r2c2 |
-| info | 18 | `non_isa_tag` | XC-110101C | instrument tag 'XC-110101C' does not parse as ISA-5.1 | r1c2, r2c2 |
-| info | 18 | `non_isa_tag` | SC-110101 | instrument tag 'SC-110101' does not parse as ISA-5.1 | r1c2, r2c2 |
-| info | 18 | `non_isa_tag` | FI-110101 | instrument tag 'FI-110101' does not parse as ISA-5.1 | r1c2, r2c2 |
 | info | 19 | `low_confidence` | P19.VIN | valve in WAS inlet line to basin (diamond/bar symbol, type unclear) was read with confidence 0.50 | r2c2, r3c2 |
 | info | 19 | `low_confidence` | P19.VAIR | butterfly valve was read with confidence 0.50 | r2c2, r3c2 |
 | info | 19 | `low_confidence` | P19.VOUT | valve in WAS outlet line (bow-tie/bar symbol, type unclear) was read with confidence 0.50 | r3c3 |
@@ -353,12 +295,6 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | info | 22 | `non_isa_tag` | YI-500,101 | instrument tag 'YI-500,101' does not parse as ISA-5.1 | r1c2 |
 | info | 22 | `non_isa_tag` | ZCO-500,101 | instrument tag 'ZCO-500,101' does not parse as ISA-5.1 | r1c2 |
 | info | 22 | `non_isa_tag` | ZCC-500,101 | instrument tag 'ZCC-500,101' does not parse as ISA-5.1 | r1c2 |
-| info | 22 | `non_isa_tag` | ZIO-500,101 | instrument tag 'ZIO-500,101' does not parse as ISA-5.1 | r1c1, r1c2 |
-| info | 22 | `non_isa_tag` | ZIC-500,101 | instrument tag 'ZIC-500,101' does not parse as ISA-5.1 | r1c1, r1c2 |
-| info | 22 | `non_isa_tag` | YA-500,101 | instrument tag 'YA-500,101' does not parse as ISA-5.1 | r1c1, r1c2 |
-| info | 22 | `non_isa_tag` | YI-500,101 | instrument tag 'YI-500,101' does not parse as ISA-5.1 | r1c2 |
-| info | 22 | `non_isa_tag` | YI-500,101 | instrument tag 'YI-500,101' does not parse as ISA-5.1 | r1c2 |
-| info | 22 | `non_isa_tag` | YI-500,101 | instrument tag 'YI-500,101' does not parse as ISA-5.1 | r1c2 |
 | info | 22 | `non_isa_tag` | HS-500,101 | instrument tag 'HS-500,101' does not parse as ISA-5.1 | r1c2, r2c2 |
 | info | 22 | `non_isa_tag` | ZSO-500,101 | instrument tag 'ZSO-500,101' does not parse as ISA-5.1 | r2c2 |
 | info | 22 | `non_isa_tag` | ZSC-500,101 | instrument tag 'ZSC-500,101' does not parse as ISA-5.1 | r2c2 |
@@ -388,14 +324,9 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | info | 23 | `non_isa_tag` | YI-600,201E | instrument tag 'YI-600,201E' does not parse as ISA-5.1 | r1c2, r2c2 |
 | info | 23 | `non_isa_tag` | HS-600,201F | instrument tag 'HS-600,201F' does not parse as ISA-5.1 | r2c2 |
 | info | 23 | `non_isa_tag` | LI-600,201B | instrument tag 'LI-600,201B' does not parse as ISA-5.1 | r1c2 |
-| info | 23 | `non_isa_tag` | LI-600,201B | instrument tag 'LI-600,201B' does not parse as ISA-5.1 | r1c2 |
-| info | 23 | `non_isa_tag` | LAL-600,201A | instrument tag 'LAL-600,201A' does not parse as ISA-5.1 | r1c2 |
 | info | 23 | `non_isa_tag` | LAL-600,201A | instrument tag 'LAL-600,201A' does not parse as ISA-5.1 | r1c2 |
 | info | 23 | `non_isa_tag` | LAH-600,201B | instrument tag 'LAH-600,201B' does not parse as ISA-5.1 | r1c2, r1c3 |
-| info | 23 | `non_isa_tag` | LAH-600,201B | instrument tag 'LAH-600,201B' does not parse as ISA-5.1 | r1c2, r1c3 |
 | info | 23 | `non_isa_tag` | LAH-600,201C | instrument tag 'LAH-600,201C' does not parse as ISA-5.1 | r1c2, r1c3 |
-| info | 23 | `non_isa_tag` | LAH-600,201C | instrument tag 'LAH-600,201C' does not parse as ISA-5.1 | r1c2, r1c3 |
-| info | 23 | `non_isa_tag` | YA-600,201D | instrument tag 'YA-600,201D' does not parse as ISA-5.1 | r1c3 |
 | info | 23 | `non_isa_tag` | YA-600,201D | instrument tag 'YA-600,201D' does not parse as ISA-5.1 | r1c3 |
 | info | 24 | `low_confidence` | P24.DF1 | diamond/bow-tie symbol (unlabelled, type uncertain) was read with confidence 0.50 | r2c1, r3c1 |
 | info | 24 | `low_confidence` | P24.FVF | manual valve was read with confidence 0.50 | r2c1, r3c1 |
@@ -438,16 +369,10 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | info | 24 | `non_isa_tag` | LIT-600,204C | instrument tag 'LIT-600,204C' does not parse as ISA-5.1 | r2c3, r3c3 |
 | info | 24 | `non_isa_tag` | LSH-600,204D | instrument tag 'LSH-600,204D' does not parse as ISA-5.1 | r3c3 |
 | info | 24 | `non_isa_tag` | LAL-600,204B | instrument tag 'LAL-600,204B' does not parse as ISA-5.1 | r1c2 |
-| info | 24 | `non_isa_tag` | LAL-600,204B | instrument tag 'LAL-600,204B' does not parse as ISA-5.1 | r1c2 |
-| info | 24 | `non_isa_tag` | LAH-600,204D | instrument tag 'LAH-600,204D' does not parse as ISA-5.1 | r1c2, r1c3 |
 | info | 24 | `non_isa_tag` | LAH-600,204D | instrument tag 'LAH-600,204D' does not parse as ISA-5.1 | r1c2, r1c3 |
 | info | 24 | `non_isa_tag` | LAH-600,204A | instrument tag 'LAH-600,204A' does not parse as ISA-5.1 | r1c2, r1c3 |
-| info | 24 | `non_isa_tag` | LAH-600,204A | instrument tag 'LAH-600,204A' does not parse as ISA-5.1 | r1c2, r1c3 |
-| info | 24 | `non_isa_tag` | YA-600,204E | instrument tag 'YA-600,204E' does not parse as ISA-5.1 | r1c3 |
 | info | 24 | `non_isa_tag` | YA-600,204E | instrument tag 'YA-600,204E' does not parse as ISA-5.1 | r1c3 |
 | info | 24 | `non_isa_tag` | YA-600,203 | instrument tag 'YA-600,203' does not parse as ISA-5.1 | r1c3 |
-| info | 24 | `non_isa_tag` | YA-600,203 | instrument tag 'YA-600,203' does not parse as ISA-5.1 | r1c3 |
-| info | 24 | `non_isa_tag` | YA-600,205 | instrument tag 'YA-600,205' does not parse as ISA-5.1 | r1c3 |
 | info | 24 | `non_isa_tag` | YA-600,205 | instrument tag 'YA-600,205' does not parse as ISA-5.1 | r1c3 |
 | info | 25 | `isolated_instrument` | PI-600,205 | PI-600,205 has no connections at all | r1c2, r2c2 |
 | info | 25 | `low_confidence` | P25.DFS | diamond/bow-tie symbol (unlabelled, type uncertain) was read with confidence 0.50 | r2c1, r3c1 |
@@ -455,14 +380,7 @@ Errors must be fixed in the page extraction files before the graph is trusted. W
 | info | 25 | `low_confidence` | P25.DRR | diamond/bow-tie symbol (unlabelled, type uncertain) was read with confidence 0.50 | r2c3, r2c4 |
 | info | 25 | `non_isa_tag` | PI-600,205 | instrument tag 'PI-600,205' does not parse as ISA-5.1 | r1c2, r2c2 |
 | info | 25 | `non_isa_tag` | YI-600,009C | instrument tag 'YI-600,009C' does not parse as ISA-5.1 | r1c1, r1c2 |
-| info | 25 | `non_isa_tag` | YI-600,009C | instrument tag 'YI-600,009C' does not parse as ISA-5.1 | r1c1, r1c2 |
-| info | 25 | `non_isa_tag` | YA-600,009C | instrument tag 'YA-600,009C' does not parse as ISA-5.1 | r1c1, r1c2 |
 | info | 25 | `non_isa_tag` | YA-600,009C | instrument tag 'YA-600,009C' does not parse as ISA-5.1 | r1c1, r1c2 |
 | info | 25 | `non_isa_tag` | YI-600,204B | instrument tag 'YI-600,204B' does not parse as ISA-5.1 | r1c1, r1c2 |
-| info | 25 | `non_isa_tag` | YI-600,204B | instrument tag 'YI-600,204B' does not parse as ISA-5.1 | r1c1, r1c2 |
 | info | 25 | `non_isa_tag` | YI-600,204A | instrument tag 'YI-600,204A' does not parse as ISA-5.1 | r1c2 |
-| info | 25 | `non_isa_tag` | YI-600,204A | instrument tag 'YI-600,204A' does not parse as ISA-5.1 | r1c2 |
-| info | 25 | `non_isa_tag` | YA-600,204A | instrument tag 'YA-600,204A' does not parse as ISA-5.1 | r1c2 |
-| info | 25 | `non_isa_tag` | YA-600,204A | instrument tag 'YA-600,204A' does not parse as ISA-5.1 | r1c2 |
-| info | 25 | `non_isa_tag` | YA-600,204A | instrument tag 'YA-600,204A' does not parse as ISA-5.1 | r1c2 |
 | info | 25 | `non_isa_tag` | YA-600,204A | instrument tag 'YA-600,204A' does not parse as ISA-5.1 | r1c2 |

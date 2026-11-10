@@ -25,7 +25,10 @@ EPA: https://www.epa.gov/system/files/documents/2021-08/pahala-wwtp-design-build
 **Not reviewed by an engineer.** Sheets were read by Claude models (one by hand, the rest by four
 parallel subagents), not checked against the drawings by a person.
 
-- Built with 0 structural errors but many warnings, see `graph/qa_report.md`.
+- Built with 0 structural errors and 10 warnings (`graph/qa_report.md`). The 10 are real features of the drawings, not tool noise:
+  4 control loops with a controller but no final element (setpoint and alarm blocks on P-101 and P-401),
+  5 reused tags on one sheet (P-401 setpoint labels, and P-501 where zone 4 is printed with zone 2's numbers),
+  and 1 overfill valve on P-601 that cannot be placed on a line from the drawing.
 - Some valve and fitting symbols have no legend; their types are guesses at confidence 0.4-0.6.
 - Several pumps and tanks carry no printed tag; ids such as `PMPA` or `EQ-TANK` are placeholders.
 - Pahala's 6-digit tags (e.g. `LT-040101`) do not parse as ISA-5.1, so the tool built no loops from them.
@@ -36,7 +39,9 @@ parallel subagents), not checked against the drawings by a person.
   P-101 "TO MBR" to P-201; P-204 "PERMEATE TO DISINFECTION" to P-401; P-501's source to P-401; and P-210's
   "FROM BLOWERS REF SHT P205", whose printed number looks like a drafting error, read as P209.
 - The membrane units on P-203 have no drawn feed line; flow from the basin to them is modelled (confidence 0.6).
-- Page 10 (P-201) was a partial first pass; check `tiles_reviewed` in each extraction file.
+- Page 10 (P-201) was first a partial pass; all its non-blank tiles have now been read, but the pump B control stack is drawn once as 'TYPICAL FOR 2 PUMPS' and recorded for pump A only.
+- Same-tag bubbles drawn in different control layers (local panel / PLC / SCADA) are merged into one instrument; the PLC-to-SCADA software links between them are dropped.
+- Panels, breakers and the generator charger have no process connection, so they are recorded as `part_of` the item they serve. 'VENDOR PACKAGE 3' (P-208) and 'MCP 600,101' (P-601 to P-603) are recorded as sheet notes, not equipment.
 - Not suitable for design, operations, MOC, HAZOP or LOPA without engineering review.
 
 ## Query

@@ -37,7 +37,9 @@
     0.5421,
     0.5232
    ],
-   "confidence": 0.95
+   "confidence": 0.95,
+   "part_of": "PMP-WAS",
+   "notes": "Non-process item; part_of set to PMP-WAS because it is the local control panel of the WAS pump."
   },
   {
    "id": "CB1",
@@ -49,7 +51,9 @@
     0.3546,
     0.3379
    ],
-   "confidence": 0.7
+   "confidence": 0.7,
+   "part_of": "PNL-190300",
+   "notes": "Non-process item; part_of set to PNL-190300 because it feeds power to that panel."
   }
  ],
  "components": [
@@ -193,7 +197,7 @@
  "boundaries": [
   {
    "id": "B-TRUCK",
-   "name": "WAS TRUCK (flag 'a', REF SHT number blank)",
+   "name": "WAS TRUCK",
    "direction": "sink",
    "bbox": [
     0.8112,
@@ -201,7 +205,8 @@
     0.875,
     0.5734
    ],
-   "confidence": 0.85
+   "confidence": 0.85,
+   "notes": " Printed flag text: WAS TRUCK (flag 'a', REF SHT number blank)."
   }
  ],
  "tiles_reviewed": [

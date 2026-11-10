@@ -10,7 +10,8 @@
   "legend_notes": [
    "Filter, transfer pumps, day tank, instruments and the day tank panel are inside a dashed 'VENDOR PACKAGE' boundary; ES 120VAC supplies the day tank panel.",
    "Tag numbers printed as 'AREA,LOOP' e.g. 600,204A. Bubbles below the SCADA line are PLC-level (rectangle) and above it SCADA (hexagon), linked by software signals.",
-   "Off-page flags are two-part boxes: sub-tag (blank here) then drawing number."
+   "Off-page flags are two-part boxes: sub-tag (blank here) then drawing number.",
+   "MCP 600,101 is the label of the PLC layer (master control panel) that sits between the SCADA and field bubbles on sheets P-601, P-602 and P-603. Recorded as a note rather than as equipment because it has no process connections."
   ]
  },
  "equipment": [
@@ -77,20 +78,9 @@
     0.74,
     0.5
    ],
-   "confidence": 0.9
-  },
-  {
-   "id": "MCP 600,101",
-   "tag": "MCP 600,101",
-   "kind": "other",
-   "name": "Master control panel (PLC layer between SCADA band and field)",
-   "bbox": [
-    0.049,
-    0.205,
-    0.088,
-    0.217
-   ],
-   "confidence": 0.8
+   "confidence": 0.9,
+   "part_of": "T 600,204",
+   "notes": "Non-process item; part_of set to T 600,204 because it is the panel of the day tank."
   }
  ],
  "components": [
@@ -536,21 +526,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Low fuel level"
-  },
-  {
-   "id": "LAL-600,204B-SCADA",
-   "tag": "LAL-600,204B",
-   "location": "scada",
-   "loop": "L-600204B",
-   "bbox": [
-    0.438,
-    0.077,
-    0.462,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Low fuel level"
+   "name": "Low fuel level",
+   "notes": "Same tag also drawn in the scada layer (bubbles LAL-600,204B-SCADA); merged into one instrument."
   },
   {
    "id": "LAH-600,204D-PLC",
@@ -564,21 +541,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Fuel tank leak (as labelled)"
-  },
-  {
-   "id": "LAH-600,204D-SCADA",
-   "tag": "LAH-600,204D",
-   "location": "scada",
-   "loop": "L-600204D",
-   "bbox": [
-    0.468,
-    0.077,
-    0.492,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Fuel tank leak (as labelled)"
+   "name": "Fuel tank leak (as labelled)",
+   "notes": "Same tag also drawn in the scada layer (bubbles LAH-600,204D-SCADA); merged into one instrument."
   },
   {
    "id": "LAH-600,204A-PLC",
@@ -592,21 +556,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "High fuel level"
-  },
-  {
-   "id": "LAH-600,204A-SCADA",
-   "tag": "LAH-600,204A",
-   "location": "scada",
-   "loop": "L-600204A",
-   "bbox": [
-    0.497,
-    0.077,
-    0.521,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "High fuel level"
+   "name": "High fuel level",
+   "notes": "Same tag also drawn in the scada layer (bubbles LAH-600,204A-SCADA); merged into one instrument."
   },
   {
    "id": "YA-600,204E-PLC",
@@ -620,21 +571,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Leak detected"
-  },
-  {
-   "id": "YA-600,204E-SCADA",
-   "tag": "YA-600,204E",
-   "location": "scada",
-   "loop": "Y-600204E",
-   "bbox": [
-    0.526,
-    0.077,
-    0.55,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Leak detected"
+   "name": "Leak detected",
+   "notes": "Same tag also drawn in the scada layer (bubbles YA-600,204E-SCADA); merged into one instrument."
   },
   {
    "id": "YA-600,203-PLC",
@@ -648,21 +586,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Transfer pump 1 fail"
-  },
-  {
-   "id": "YA-600,203-SCADA",
-   "tag": "YA-600,203",
-   "location": "scada",
-   "loop": "Y-600203",
-   "bbox": [
-    0.555,
-    0.077,
-    0.579,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Transfer pump 1 fail"
+   "name": "Transfer pump 1 fail",
+   "notes": "Same tag also drawn in the scada layer (bubbles YA-600,203-SCADA); merged into one instrument."
   },
   {
    "id": "YA-600,205-PLC",
@@ -676,21 +601,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Transfer pump 2 fail"
-  },
-  {
-   "id": "YA-600,205-SCADA",
-   "tag": "YA-600,205",
-   "location": "scada",
-   "loop": "Y-600205",
-   "bbox": [
-    0.585,
-    0.077,
-    0.609,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Transfer pump 2 fail"
+   "name": "Transfer pump 2 fail",
+   "notes": "Same tag also drawn in the scada layer (bubbles YA-600,205-SCADA); merged into one instrument."
   }
  ],
  "lines": [
@@ -929,25 +841,11 @@
    "confidence": 0.6
   },
   {
-   "from": "LAL-600,204B-PLC",
-   "to": "LAL-600,204B-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
-  },
-  {
    "from": "VCP 600,206",
    "to": "LAH-600,204D-PLC",
    "type": "electrical",
    "purpose": "alarm",
    "confidence": 0.6
-  },
-  {
-   "from": "LAH-600,204D-PLC",
-   "to": "LAH-600,204D-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
   },
   {
    "from": "VCP 600,206",
@@ -957,25 +855,11 @@
    "confidence": 0.6
   },
   {
-   "from": "LAH-600,204A-PLC",
-   "to": "LAH-600,204A-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
-  },
-  {
    "from": "VCP 600,206",
    "to": "YA-600,204E-PLC",
    "type": "electrical",
    "purpose": "alarm",
    "confidence": 0.6
-  },
-  {
-   "from": "YA-600,204E-PLC",
-   "to": "YA-600,204E-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
   },
   {
    "from": "VCP 600,206",
@@ -985,25 +869,11 @@
    "confidence": 0.6
   },
   {
-   "from": "YA-600,203-PLC",
-   "to": "YA-600,203-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
-  },
-  {
    "from": "VCP 600,206",
    "to": "YA-600,205-PLC",
    "type": "electrical",
    "purpose": "alarm",
    "confidence": 0.6
-  },
-  {
-   "from": "YA-600,205-PLC",
-   "to": "YA-600,205-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
   }
  ],
  "off_page_connectors": [

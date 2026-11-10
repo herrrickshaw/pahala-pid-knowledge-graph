@@ -10,7 +10,8 @@
   "legend_notes": [
    "Generator, fuel pump, block heater, control panel and silencer are within a dashed 'VENDOR PACKAGE' boundary; ES 120VAC / 208V ES are electrical supplies.",
    "Tag numbers printed as 'AREA,LOOP'. Bubbles below the SCADA line are PLC-level (rectangle) and above it SCADA (hexagon).",
-   "Hexagon note marker '1' beside the GEN TROUBLE SCADA bubble; note text not present on the sheet."
+   "Hexagon note marker '1' beside the GEN TROUBLE SCADA bubble; note text not present on the sheet.",
+   "MCP 600,101 is the label of the PLC layer (master control panel) that sits between the SCADA and field bubbles on sheets P-601, P-602 and P-603. Recorded as a note rather than as equipment because it has no process connections."
   ]
  },
  "equipment": [
@@ -78,7 +79,9 @@
     0.66,
     0.4
    ],
-   "confidence": 0.9
+   "confidence": 0.9,
+   "part_of": "GEN 600,209",
+   "notes": "Non-process item; part_of set to GEN 600,209 because it is the generator starting battery charger."
   },
   {
    "id": "VCP 600,209",
@@ -91,20 +94,9 @@
     0.41,
     0.41
    ],
-   "confidence": 0.9
-  },
-  {
-   "id": "MCP 600,101",
-   "tag": "MCP 600,101",
-   "kind": "other",
-   "name": "Master control panel (PLC layer between SCADA band and field)",
-   "bbox": [
-    0.049,
-    0.205,
-    0.088,
-    0.217
-   ],
-   "confidence": 0.8
+   "confidence": 0.9,
+   "part_of": "GEN 600,209",
+   "notes": "Non-process item; part_of set to GEN 600,209 because it is the generator control panel."
   }
  ],
  "components": [
@@ -208,21 +200,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Test mode"
-  },
-  {
-   "id": "YI-600,009C-SCADA0",
-   "tag": "YI-600,009C",
-   "location": "scada",
-   "loop": "Y-600009C",
-   "bbox": [
-    0.235,
-    0.077,
-    0.259,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Test mode"
+   "name": "Test mode",
+   "notes": "Same tag also drawn in the scada layer (bubbles YI-600,009C-SCADA0); merged into one instrument."
   },
   {
    "id": "YA-600,009C-PLC1",
@@ -236,21 +215,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Battery charger fault"
-  },
-  {
-   "id": "YA-600,009C-SCADA1",
-   "tag": "YA-600,009C",
-   "location": "scada",
-   "loop": "Y-600009C",
-   "bbox": [
-    0.264,
-    0.077,
-    0.288,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Battery charger fault"
+   "name": "Battery charger fault",
+   "notes": "Same tag also drawn in the scada layer (bubbles YA-600,009C-SCADA1); merged into one instrument."
   },
   {
    "id": "YI-600,204B-PLC2",
@@ -264,21 +230,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Gen in auto"
-  },
-  {
-   "id": "YI-600,204B-SCADA2",
-   "tag": "YI-600,204B",
-   "location": "scada",
-   "loop": "Y-600204B",
-   "bbox": [
-    0.294,
-    0.077,
-    0.318,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Gen in auto"
+   "name": "Gen in auto",
+   "notes": "Same tag also drawn in the scada layer (bubbles YI-600,204B-SCADA2); merged into one instrument."
   },
   {
    "id": "YI-600,204A-PLC3",
@@ -292,21 +245,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Gen running"
-  },
-  {
-   "id": "YI-600,204A-SCADA3",
-   "tag": "YI-600,204A",
-   "location": "scada",
-   "loop": "Y-600204A",
-   "bbox": [
-    0.323,
-    0.077,
-    0.347,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Gen running"
+   "name": "Gen running",
+   "notes": "Same tag also drawn in the scada layer (bubbles YI-600,204A-SCADA3); merged into one instrument."
   },
   {
    "id": "YA-600,204A-PLC4",
@@ -320,49 +260,8 @@
     0.184
    ],
    "confidence": 0.85,
-   "name": "Gen fault"
-  },
-  {
-   "id": "YA-600,204A-SCADA4",
-   "tag": "YA-600,204A",
-   "location": "scada",
-   "loop": "Y-600204A",
-   "bbox": [
-    0.352,
-    0.077,
-    0.376,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Gen fault"
-  },
-  {
-   "id": "YA-600,204A-PLC5",
-   "tag": "YA-600,204A",
-   "location": "plc",
-   "loop": "Y-600204A",
-   "bbox": [
-    0.382,
-    0.159,
-    0.406,
-    0.184
-   ],
-   "confidence": 0.85,
-   "name": "Gen trouble (note 1)"
-  },
-  {
-   "id": "YA-600,204A-SCADA5",
-   "tag": "YA-600,204A",
-   "location": "scada",
-   "loop": "Y-600204A",
-   "bbox": [
-    0.382,
-    0.077,
-    0.406,
-    0.102
-   ],
-   "confidence": 0.85,
-   "name": "Gen trouble (note 1)"
+   "name": "Gen fault",
+   "notes": "Same tag also drawn in the plc, scada layer (bubbles YA-600,204A-PLC5, YA-600,204A-SCADA4, YA-600,204A-SCADA5); merged into one instrument."
   }
  ],
  "lines": [
@@ -446,25 +345,11 @@
    "confidence": 0.6
   },
   {
-   "from": "YI-600,009C-PLC0",
-   "to": "YI-600,009C-SCADA0",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.75
-  },
-  {
    "from": "VCP 600,209",
    "to": "YA-600,009C-PLC1",
    "type": "electrical",
    "purpose": "alarm",
    "confidence": 0.6
-  },
-  {
-   "from": "YA-600,009C-PLC1",
-   "to": "YA-600,009C-SCADA1",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
   },
   {
    "from": "VCP 600,209",
@@ -474,13 +359,6 @@
    "confidence": 0.6
   },
   {
-   "from": "YI-600,204B-PLC2",
-   "to": "YI-600,204B-SCADA2",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.75
-  },
-  {
    "from": "VCP 600,209",
    "to": "YI-600,204A-PLC3",
    "type": "electrical",
@@ -488,39 +366,11 @@
    "confidence": 0.6
   },
   {
-   "from": "YI-600,204A-PLC3",
-   "to": "YI-600,204A-SCADA3",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.75
-  },
-  {
    "from": "VCP 600,209",
    "to": "YA-600,204A-PLC4",
    "type": "electrical",
    "purpose": "alarm",
    "confidence": 0.6
-  },
-  {
-   "from": "YA-600,204A-PLC4",
-   "to": "YA-600,204A-SCADA4",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
-  },
-  {
-   "from": "VCP 600,209",
-   "to": "YA-600,204A-PLC5",
-   "type": "electrical",
-   "purpose": "alarm",
-   "confidence": 0.6
-  },
-  {
-   "from": "YA-600,204A-PLC5",
-   "to": "YA-600,204A-SCADA5",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
   },
   {
    "from": "OPC3",

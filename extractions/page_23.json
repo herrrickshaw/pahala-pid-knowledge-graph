@@ -10,7 +10,8 @@
   "legend_notes": [
    "Tank, valves, vents, level sensors and monitoring panel are inside a dashed 'VENDOR PACKAGE' boundary; ES 120VAC is the electrical supply to the monitoring system.",
    "Tag numbers are printed as 'AREA,LOOP' e.g. 600,201B (loop 201B). Bubbles below the SCADA line are PLC-level (rectangle) and above it SCADA (hexagon), linked by software signals.",
-   "Off-page flags are two-part boxes: sub-tag then drawing number (P-602)."
+   "Off-page flags are two-part boxes: sub-tag then drawing number (P-602).",
+   "MCP 600,101 is the label of the PLC layer (master control panel) that sits between the SCADA and field bubbles on sheets P-601, P-602 and P-603. Recorded as a note rather than as equipment because it has no process connections."
   ]
  },
  "equipment": [
@@ -38,20 +39,9 @@
     0.56,
     0.47
    ],
-   "confidence": 0.85
-  },
-  {
-   "id": "MCP 600,101",
-   "tag": "MCP 600,101",
-   "kind": "other",
-   "name": "Master control panel (PLC layer between SCADA band and field)",
-   "bbox": [
-    0.049,
-    0.205,
-    0.088,
-    0.217
-   ],
-   "confidence": 0.8
+   "confidence": 0.85,
+   "part_of": "T 600,201",
+   "notes": "Non-process item; part_of set to T 600,201 because it is the monitoring panel of the bulk tank."
   }
  ],
  "components": [
@@ -285,21 +275,8 @@
     0.2
    ],
    "confidence": 0.85,
-   "name": "Tank level"
-  },
-  {
-   "id": "LI-600,201B-SCADA",
-   "tag": "LI-600,201B",
-   "location": "scada",
-   "loop": "L-600201B",
-   "bbox": [
-    0.418,
-    0.085,
-    0.442,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Tank level"
+   "name": "Tank level",
+   "notes": "Same tag also drawn in the scada layer (bubbles LI-600,201B-SCADA); merged into one instrument."
   },
   {
    "id": "LAL-600,201A-PLC",
@@ -313,21 +290,8 @@
     0.2
    ],
    "confidence": 0.85,
-   "name": "Low fuel level"
-  },
-  {
-   "id": "LAL-600,201A-SCADA",
-   "tag": "LAL-600,201A",
-   "location": "scada",
-   "loop": "L-600201A",
-   "bbox": [
-    0.448,
-    0.085,
-    0.47200000000000003,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Low fuel level"
+   "name": "Low fuel level",
+   "notes": "Same tag also drawn in the scada layer (bubbles LAL-600,201A-SCADA); merged into one instrument."
   },
   {
    "id": "LAH-600,201B-PLC",
@@ -341,21 +305,8 @@
     0.2
    ],
    "confidence": 0.85,
-   "name": "Fuel tank leak (as labelled)"
-  },
-  {
-   "id": "LAH-600,201B-SCADA",
-   "tag": "LAH-600,201B",
-   "location": "scada",
-   "loop": "L-600201B",
-   "bbox": [
-    0.478,
-    0.085,
-    0.502,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Fuel tank leak (as labelled)"
+   "name": "Fuel tank leak (as labelled)",
+   "notes": "Same tag also drawn in the scada layer (bubbles LAH-600,201B-SCADA); merged into one instrument."
   },
   {
    "id": "LAH-600,201C-PLC",
@@ -369,21 +320,8 @@
     0.2
    ],
    "confidence": 0.85,
-   "name": "High fuel level"
-  },
-  {
-   "id": "LAH-600,201C-SCADA",
-   "tag": "LAH-600,201C",
-   "location": "scada",
-   "loop": "L-600201C",
-   "bbox": [
-    0.508,
-    0.085,
-    0.532,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "High fuel level"
+   "name": "High fuel level",
+   "notes": "Same tag also drawn in the scada layer (bubbles LAH-600,201C-SCADA); merged into one instrument."
   },
   {
    "id": "YA-600,201D-PLC",
@@ -397,21 +335,8 @@
     0.2
    ],
    "confidence": 0.85,
-   "name": "Leak detected"
-  },
-  {
-   "id": "YA-600,201D-SCADA",
-   "tag": "YA-600,201D",
-   "location": "scada",
-   "loop": "Y-600201D",
-   "bbox": [
-    0.538,
-    0.085,
-    0.562,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Leak detected"
+   "name": "Leak detected",
+   "notes": "Same tag also drawn in the scada layer (bubbles YA-600,201D-SCADA); merged into one instrument."
   }
  ],
  "lines": [
@@ -528,25 +453,11 @@
    "confidence": 0.6
   },
   {
-   "from": "LI-600,201B-PLC",
-   "to": "LI-600,201B-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.75
-  },
-  {
    "from": "VCP 600,201",
    "to": "LAL-600,201A-PLC",
    "type": "electrical",
    "purpose": "alarm",
    "confidence": 0.6
-  },
-  {
-   "from": "LAL-600,201A-PLC",
-   "to": "LAL-600,201A-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
   },
   {
    "from": "VCP 600,201",
@@ -556,13 +467,6 @@
    "confidence": 0.6
   },
   {
-   "from": "LAH-600,201B-PLC",
-   "to": "LAH-600,201B-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
-  },
-  {
    "from": "VCP 600,201",
    "to": "LAH-600,201C-PLC",
    "type": "electrical",
@@ -570,25 +474,11 @@
    "confidence": 0.6
   },
   {
-   "from": "LAH-600,201C-PLC",
-   "to": "LAH-600,201C-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
-  },
-  {
    "from": "VCP 600,201",
    "to": "YA-600,201D-PLC",
    "type": "electrical",
    "purpose": "alarm",
    "confidence": 0.6
-  },
-  {
-   "from": "YA-600,201D-PLC",
-   "to": "YA-600,201D-SCADA",
-   "type": "software",
-   "purpose": "alarm",
-   "confidence": 0.75
   },
   {
    "from": "VCP 600,201",

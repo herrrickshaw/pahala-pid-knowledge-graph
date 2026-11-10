@@ -115,21 +115,8 @@
    "confidence": 0.8,
    "tag": "LAH-402",
    "loop": "L-402",
-   "name": "EQUALIZATION TANK HI LEVEL (DCS bubble)"
-  },
-  {
-   "id": "LAH-402-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.4541,
-    0.0828,
-    0.4719,
-    0.1103
-   ],
-   "confidence": 0.85,
-   "tag": "LAH-402",
-   "loop": "L-402",
-   "name": "EQUALIZATION TANK HI LEVEL (SCADA)"
+   "name": "EQUALIZATION TANK HI LEVEL (DCS bubble)",
+   "notes": "Same tag also drawn in the scada layer (bubbles LAH-402-SCADA); merged into one instrument."
   },
   {
    "id": "FE-403",
@@ -426,13 +413,6 @@
    "from": "LSH-402",
    "to": "LAH-402",
    "type": "electrical",
-   "purpose": "alarm",
-   "confidence": 0.8
-  },
-  {
-   "from": "LAH-402",
-   "to": "LAH-402-SCADA",
-   "type": "software",
    "purpose": "alarm",
    "confidence": 0.8
   },

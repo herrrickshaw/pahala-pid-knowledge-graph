@@ -1,10 +1,10 @@
 # Pahala WWTP: process knowledge graph summary
 
-Built from `pahala.pdf` (17 sheets) by pid-to-kg 0.1.0 on 2026-11-10. The graph has 933 nodes and 1349 edges; this summary covers equipment-level flow, instruments and control loops. Query `graph.duckdb` or `graph.json` for pipe-segment and valve detail.
+Built from `pahala.pdf` (17 sheets) by pid-to-kg 0.1.0 on 2026-11-10. The graph has 915 nodes and 1343 edges; this summary covers equipment-level flow, instruments and control loops. Query `graph.duckdb` or `graph.json` for pipe-segment and valve detail.
 
 | Equipment | Instruments | Valves & fittings | Pipe segments | Control loops | Off-page links |
 |---|---|---|---|---|---|
-| 64 | 307 | 138 | 246 | 96 | 44 |
+| 62 | 292 | 138 | 246 | 95 | 44 |
 
 ## Sheets
 
@@ -71,7 +71,7 @@ Each line reads *upstream → downstream*, with the pipe lines and in-line items
 - **HYPOCHLORITE SOLUTION** → **CONTACT BASIN**
 - **TV-070182** (TV-070182 outlet box with telescoping/slide valve stem on basin right wall (text rotated)) → **TNK-190100** (WAS STORAGE BASIN): lines 3"-WAS; through motor operated valve, control valve, FE-070186, motor operated valve, valve in WAS inlet line to basin (diamond/bar symbol, type unclear); crosses sheets
 - **TNK-190100** (WAS STORAGE BASIN) → **WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end**: through valve in WAS outlet line (bow-tie/bar symbol, type unclear), reducer; crosses sheets
-- **WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end** → **WAS TRUCK (flag 'a', REF SHT number blank)**: through reducer, check valve, gate valve
+- **WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end** → **WAS TRUCK**: through reducer, check valve, gate valve
 - **Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet)** → **BLR-100101** (PRE-AERATION BLOWER 1)
 - **BLR-100101** (PRE-AERATION BLOWER 1) → **FBD-050111** (Diffuser grid in basin bottom (FBD-050111; fine bubble diffuser inferred from tag)): through check valve, manual valve, reducer, TP-01; crosses sheets
 - **Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet)** → **BLR-090101** (MEMBRANE BIOREACTOR BLOWER 1)
@@ -138,7 +138,6 @@ Drains, vents and overflows (not process flow):
 | IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) | tank | IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) | CONTACT BASIN | DRIP ZONE 1, DRIP ZONE 2, DRIP ZONE 3, DRIP ZONE 4 |  | P-401 |
 | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) | filter | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) |  | BLR-100101 |  | P-205 |
 | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) | filter | Inlet filter/silencer (two hatched boxes joined by a pipe loop at blower inlet) |  | BLR-090101 |  | P-205 |
-| MCP-600,101 | other | Master control panel (PLC layer between SCADA band and field) |  |  |  | P-601, P-602, P-603 |
 | MXR-040111 | mixer | Anoxic basin mixer |  |  |  | P-201 |
 | MXR-190111 | mixer | WAS basin mixer (submersible, motor and propeller) |  |  |  | P-210 |
 | Manual bar rack channel (HWWL, inclined rack symbol) | screen | Manual bar rack channel (HWWL, inclined rack symbol) | RS FROM PAHALA, Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE | GRIT REMOVAL TANK |  | P-101 |
@@ -176,12 +175,11 @@ Drains, vents and overflows (not process flow):
 | VCP-600,201 | other | FUEL TANK MONITORING SYSTEM (control panel) |  |  |  | P-601 |
 | VCP-600,206 | other | GENERATOR DAY TANK PANEL (control panel, vendor package) |  |  |  | P-602 |
 | VCP-600,209 | other | GENERATOR CONTROL PANEL (vendor package) |  |  |  | P-603 |
-| VENDOR PACKAGE 3 | package_unit | VENDOR PACKAGE 3 |  |  |  | P-208 |
 | VFD-090101 | other | Variable frequency drive |  |  |  | P-205 |
 | VFD-100101 | other | Variable frequency drive |  |  |  | P-205 |
 | VFD-110101 | other | Variable frequency drive |  |  |  | P-209 |
 | VFD-110111 | other | Variable frequency drive |  |  |  | P-209 |
-| WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end | pump | WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end | TNK-190100 | WAS TRUCK (flag 'a', REF SHT number blank) |  | P-211 |
+| WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end | pump | WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end | TNK-190100 | WAS TRUCK |  | P-211 |
 
 ## Instruments
 
@@ -234,7 +232,6 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | FI-100.002 |  | other | dcs |  | F-100002 |
 | FI-100101 |  | other | field | line (check valve -> manual valve) |  |
 | FI-110101 |  | other | local_panel | line (BLR-110101 -> vent/silencer-type symbol on blower 110101 discharge (unclear)) |  |
-| FI-110101#2 |  | other | scada |  |  |
 | FI-110111 |  | other | local_panel | line (BLR-110111 -> vent/silencer-type symbol on blower 110111 discharge (unclear)) |  |
 | FI-170121 |  | other | field | in-line on line (ball valve -> Chemical injector/eductor symbol on utility water line (acid injection point)) |  |
 | FIC-040121 |  | other | scada |  | F-040121 |
@@ -250,6 +247,8 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | FQIR-080141 |  | other | scada |  | F-080141 |
 | FQIR-170122 |  | other | scada |  | F-170122 |
 | HMI (untagged) | hand | hand_switch | local_panel |  |  |
+| HS-040111 |  | other | mcc |  |  |
+| HS-040121 |  | other | mcc |  |  |
 | HS-070181 |  | other | field |  | H-070181 |
 | HS-080101 |  | other | field |  | H-080101 |
 | HS-080111 |  | other | field |  | H-080111 |
@@ -258,35 +257,30 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | HS-190111 |  | other | local_panel |  | H-190111 |
 | HS-500,101 |  | other | field |  | H-500101 |
 | HS-600,201F |  | other | field |  | H-600201F |
+| JS-040111 |  | other | mcc |  | J-040111 |
 | JS-080101 |  | other | field |  | J-080101 |
 | JS-190111 |  | other | local_panel |  |  |
 | LAH (untagged) | level | alarm | dcs |  |  |
 | LAH-001@P-101 | level | alarm | scada |  | L-001@P-101 |
 | LAH-001@P-401 | level | alarm | scada |  | L-001@P-401 |
+| LAH-040101 |  | other | scada |  | L-040101 |
 | LAH-040103 |  | other | scada |  | L-040103 |
 | LAH-070102 |  | other | scada |  | L-070102 |
-| LAH-100.125 |  | other | scada |  |  |
-| LAH-100.125#2 |  | other | dcs |  |  |
+| LAH-100.125 |  | other | dcs |  |  |
 | LAH-190102 |  | other | scada |  | L-190102 |
 | LAH-402 | level | alarm | dcs |  | L-402 |
-| LAH-402#2 | level | alarm | scada |  |  |
 | LAH-600,201B |  | other | plc |  | L-600201B |
-| LAH-600,201B#2 |  | other | scada |  | L-600201B#2 |
 | LAH-600,201C |  | other | plc |  | L-600201C |
-| LAH-600,201C#2 |  | other | scada |  |  |
 | LAH-600,204A |  | other | plc |  | L-600204A |
-| LAH-600,204A#2 |  | other | scada |  |  |
 | LAH-600,204D |  | other | plc |  | L-600204D |
-| LAH-600,204D#2 |  | other | scada |  |  |
 | LAL-001@P-101 | level | alarm | scada |  | L-001@P-101 |
 | LAL-001@P-401 | level | alarm | scada |  | L-001@P-401 |
+| LAL-040101 |  | other | scada |  | L-040101 |
 | LAL-040102 |  | other | scada |  | L-040102 |
 | LAL-070101 |  | other | scada |  | L-070101 |
 | LAL-190102 |  | other | scada |  | L-190102 |
 | LAL-600,201A |  | other | plc |  | L-600201A |
-| LAL-600,201A#2 |  | other | scada |  |  |
 | LAL-600,204B |  | other | plc |  | L-600204B |
-| LAL-600,204B#2 |  | other | scada |  |  |
 | LCH-001@P-101 | level | controller | scada |  | L-001@P-101 |
 | LCH-001@P-401 | level | controller | scada |  | L-001@P-401 |
 | LCH-001@P-401#2 | level | controller | scada |  | L-001@P-401#2 |
@@ -294,10 +288,8 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | LCL-001@P-401 | level | controller | scada |  | L-001@P-401 |
 | LCL-001@P-401#2 | level | controller | scada |  | L-001@P-401#2 |
 | LCL-001@P-401#3 | level | controller | scada |  | L-001@P-401#3 |
-| LDAH-100.115 |  | other | scada |  | L-100115 |
-| LDAH-100.115#2 |  | other | dcs |  |  |
-| LDAH-100.124 |  | other | scada |  | L-100124 |
-| LDAH-100.124#2 |  | other | dcs |  |  |
+| LDAH-100.115 |  | other | dcs |  | L-100115 |
+| LDAH-100.124 |  | other | dcs |  | L-100124 |
 | LDI-100.124 |  | other | scada |  | L-100124 |
 | LE-040101 |  | other | field | TNK-040100 | L-040101 |
 | LE-120101 |  | other | field | TNK-120100 | L-120101 |
@@ -310,7 +302,6 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | LI-401 | level | indicator | dcs |  | L-401 |
 | LI-402 | level | indicator | local_panel | IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label) | L-402 |
 | LI-600,201B |  | other | plc |  | L-600201B |
-| LI-600,201B#2 |  | other | scada |  | L-600201B#2 |
 | LIR-040101 |  | other | scada |  | L-040101 |
 | LIR-190102 |  | other | scada |  | L-190102 |
 | LIT-100.114A |  | other | field | Screening channel (HWWL) with fine screen, inside VENDOR PACKAGE | L-100114 |
@@ -335,6 +326,8 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | LT-040101 |  | other | field | TNK-040100 | L-040101 |
 | LT-120101 |  | other | field |  | L-120101 |
 | LT-190102 |  | other | field | TNK-190100 | L-190102 |
+| MAH-040111 |  | other | scada |  | M-040111 |
+| MAH-040121 |  | other | scada |  | M-040121 |
 | MAH-190111 |  | other | scada |  | M-190111 |
 | ME-040111 |  | other | field | MXR-040111 |  |
 | ME-040121 |  | other | field | Recycle pump (tag not printed, typical for 2 pumps, left) |  |
@@ -342,7 +335,11 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | ME-120111 |  | other | field | PMP-120111 | M-120111 |
 | ME-120112 |  | other | field | PMP-120112 | M-120112 |
 | ME-190111 |  | other | field | MXR-190111 | M-190111 |
+| MS-040111 |  | other | plc |  | M-040111 |
+| MS-040121 |  | other | plc |  | M-040121 |
 | MS-190111 |  | other | local_panel |  | M-190111 |
+| MY-040111 |  | other | plc |  | M-040111 |
+| MY-040121 |  | other | plc |  | M-040121 |
 | MY-190111 |  | other | local_panel |  | M-190111 |
 | PAH-080121 |  | other | scada |  | P-080121 |
 | PG-080101A |  | other | field | line (butterfly valve -> expansion joint) | P-080101 |
@@ -359,8 +356,10 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | SC-090101 |  | other | field |  | S-090101 |
 | SC-100101 |  | other | field |  | S-100101 |
 | SC-110101 |  | other | local_panel |  | S-110101 |
-| SC-110101#2 |  | other | scada |  |  |
 | SC-110111 |  | other | local_panel |  | S-110111 |
+| SS-040121 |  | other | mcc |  | S-040121 |
+| TAH-040111 |  | other | scada |  | T-040111 |
+| TAH-040121 |  | other | scada |  | T-040121 |
 | TAH-190111 |  | other | scada |  | T-190111 |
 | TAL-050102 |  | other | scada |  | T-050102 |
 | TIR-050102 |  | other | scada |  | T-050102 |
@@ -372,6 +371,8 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | TSH-120112 |  | other | field | PMP-120112 | T-120112 |
 | TSH-190111 |  | other | field | MXR-190111 | T-190111 |
 | TSH-190301 |  | other | field | WAS pump (tag printed as 'PMP-' only, number missing); motor M drawn at drive end | T-190301 |
+| TY-040111 |  | other | mcc |  | T-040111 |
+| TY-040121 |  | other | mcc |  | T-040121 |
 | TY-190111 |  | other | local_panel |  | T-190111 |
 | UA-120100 |  | other | scada |  |  |
 | VFD-040121 |  | other | mcc |  | F-040121 |
@@ -384,11 +385,8 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | XC-100101B |  | other | field |  | X-100101 |
 | XC-100101C |  | other | field |  | X-100101 |
 | XC-110101A |  | other | local_panel |  | X-110101 |
-| XC-110101A#2 |  | other | scada |  | X-110101#2 |
 | XC-110101B |  | other | local_panel |  | X-110101 |
-| XC-110101B#2 |  | other | scada |  | X-110101#2 |
 | XC-110101C |  | other | local_panel |  | X-110101 |
-| XC-110101C#2 |  | other | scada |  | X-110101#2 |
 | XC-110111A |  | other | local_panel |  | X-110111 |
 | XC-110111B |  | other | local_panel |  | X-110111 |
 | XC-110111C |  | other | local_panel |  | X-110111 |
@@ -400,27 +398,18 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | YA-100101A |  | other | field | BLR-100101 | Y-100101 |
 | YA-100101B |  | other | field | BLR-100101 | Y-100101 |
 | YA-110101A |  | other | local_panel |  | Y-110101 |
-| YA-110101A#2 |  | other | scada |  | Y-110101#2 |
 | YA-110101B |  | other | local_panel |  | Y-110101 |
-| YA-110101B#2 |  | other | scada |  | Y-110101#2 |
 | YA-110111A |  | other | local_panel |  | Y-110111 |
 | YA-110111B |  | other | local_panel |  | Y-110111 |
 | YA-500,101 |  | other | plc |  | Y-500101 |
-| YA-500,101#2 |  | other | scada |  | Y-500101#2 |
 | YA-600,009C |  | other | plc |  | Y-600009C |
-| YA-600,009C#2 |  | other | scada |  | Y-600009C#2 |
 | YA-600,201D |  | other | plc |  |  |
-| YA-600,201D#2 |  | other | scada |  |  |
 | YA-600,203 |  | other | plc |  |  |
-| YA-600,203#2 |  | other | scada |  |  |
 | YA-600,204A |  | other | plc |  | Y-600204A |
-| YA-600,204A#2 |  | other | scada |  | Y-600204A#2 |
-| YA-600,204A#3 |  | other | plc |  |  |
-| YA-600,204A#4 |  | other | scada |  |  |
 | YA-600,204E |  | other | plc |  |  |
-| YA-600,204E#2 |  | other | scada |  |  |
 | YA-600,205 |  | other | plc |  |  |
-| YA-600,205#2 |  | other | scada |  |  |
+| YC-040111 |  | other | scada |  | Y-040111 |
+| YC-040121 |  | other | scada |  | Y-040121 |
 | YC-070181 |  | other | scada |  | Y-070181 |
 | YC-080101 |  | other | scada |  | Y-080101 |
 | YC-160101 |  | other | scada |  | Y-160101 |
@@ -428,6 +417,10 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | YC-190111 |  | other | scada |  | Y-190111 |
 | YI (untagged) | event/state | indicator | scada |  |  |
 | YI (untagged) | event/state | indicator | scada |  |  |
+| YI-040111A |  | other | scada |  | Y-040111 |
+| YI-040111B |  | other | scada |  | Y-040111 |
+| YI-040121A |  | other | scada |  | Y-040121 |
+| YI-040121B |  | other | scada |  | Y-040121 |
 | YI-070181 |  | other | scada |  | Y-070181 |
 | YI-080101A |  | other | scada |  | Y-080101 |
 | YI-080101B |  | other | scada |  | Y-080101 |
@@ -442,13 +435,9 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | YI-100101C |  | other | field | BLR-100101 | Y-100101 |
 | YI-100101D |  | other | field | BLR-100101 | Y-100101 |
 | YI-110101A |  | other | local_panel |  | Y-110101 |
-| YI-110101A#2 |  | other | scada |  | Y-110101#2 |
 | YI-110101B |  | other | local_panel |  | Y-110101 |
-| YI-110101B#2 |  | other | scada |  | Y-110101#2 |
 | YI-110101C |  | other | local_panel |  | Y-110101 |
-| YI-110101C#2 |  | other | scada |  | Y-110101#2 |
 | YI-110101D |  | other | local_panel |  | Y-110101 |
-| YI-110101D#2 |  | other | scada |  | Y-110101#2 |
 | YI-110111A |  | other | local_panel |  | Y-110111 |
 | YI-110111B |  | other | local_panel |  | Y-110111 |
 | YI-110111C |  | other | local_panel |  | Y-110111 |
@@ -457,16 +446,12 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | YI-190111A |  | other | scada |  | Y-190111 |
 | YI-190111B |  | other | scada |  | Y-190111 |
 | YI-500,101 |  | other | plc |  | Y-500101 |
-| YI-500,101#2 |  | other | scada |  | Y-500101#2 |
-| YI-500,101#3 |  | other | scada |  | Y-500101#3 |
-| YI-500,101#4 |  | other | scada |  | Y-500101#4 |
 | YI-600,009C |  | other | plc |  | Y-600009C |
-| YI-600,009C#2 |  | other | scada |  | Y-600009C#2 |
 | YI-600,201E |  | other | field |  |  |
 | YI-600,204A |  | other | plc |  | Y-600204A |
-| YI-600,204A#2 |  | other | scada |  | Y-600204A#2 |
 | YI-600,204B |  | other | plc |  |  |
-| YI-600,204B#2 |  | other | scada |  |  |
+| ZA-040101 |  | other | scada |  |  |
+| ZA-040121 |  | other | scada |  |  |
 | ZA-070181 |  | other | scada |  | Z-070181 |
 | ZA-080101 |  | other | scada |  |  |
 | ZA-080132 |  | other | scada |  | Z-080132 |
@@ -478,11 +463,9 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | ZIC-080132 |  | other | scada |  | Z-080132 |
 | ZIC-170103 |  | other | scada |  | Z-170103 |
 | ZIC-500,101 |  | other | plc |  | Z-500101 |
-| ZIC-500,101#2 |  | other | scada |  | Z-500101#2 |
 | ZIO-070181 |  | other | scada |  | Z-070181 |
 | ZIO-170103 |  | other | scada |  | Z-170103 |
 | ZIO-500,101 |  | other | plc |  | Z-500101 |
-| ZIO-500,101#2 |  | other | scada |  | Z-500101#2 |
 | ZSC-070181 |  | other | field | XV-070181 | Z-070181 |
 | ZSC-080132 |  | other | field | FCV-080132 | Z-080132 |
 | ZSC-170103 |  | other | field | XV-170103 | Z-170103 |
@@ -520,6 +503,7 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | H-190111 | on_off |  |  | MXR-190111 | On off loop H-190111 (hand). Acts on MXR-190111. |
 | H-500101 | on_off |  |  | motor operated valve | On off loop H-500101 (hand). Acts on motor operated valve. |
 | H-600201F | on_off |  |  | VCP-600,201 | On off loop H-600201F (hand). Acts on VCP-600,201. |
+| J-040111 | on_off |  |  | MXR-040111 | On off loop J-040111 (power). Acts on MXR-040111. |
 | J-080101 | on_off |  |  | PMP-080101 | On off loop J-080101 (power). Acts on PMP-080101. |
 | L-001@P-101 | control |  | LCH-001@P-101, LCL-001@P-101 |  | Control loop L-001@P-101 (level). Controlled by LCH-001@P-101, LCL-001@P-101 (scada). |
 | L-001@P-401 | control |  | LCH-001@P-401, LCL-001@P-401 |  | Control loop L-001@P-401 (level). Controlled by LCH-001@P-401, LCL-001@P-401 (scada). |
@@ -541,22 +525,26 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | L-402 | monitoring | LI-402, LSH-402 |  |  | Monitoring loop L-402 (level). Sensed by LI-402, LSH-402 (IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQUALIZATION TANK' in LAH-402 label)). |
 | L-600201A | on_off |  |  | VCP-600,201 | On off loop L-600201A (level). Acts on VCP-600,201. |
 | L-600201B | on_off |  |  | VCP-600,201 | On off loop L-600201B (level). Acts on VCP-600,201. |
-| L-600201B#2 | monitoring |  |  |  | Monitoring loop L-600201B#2 (level). |
 | L-600201C | on_off |  |  | VCP-600,201 | On off loop L-600201C (level). Acts on VCP-600,201. |
 | L-600201D | on_off |  |  | VCP-600,201 | On off loop L-600201D (level). Acts on VCP-600,201. |
 | L-600204A | on_off |  |  | VCP-600,206 | On off loop L-600204A (level). Acts on VCP-600,206. |
 | L-600204B | on_off |  |  | VCP-600,206 | On off loop L-600204B (level). Acts on VCP-600,206. |
 | L-600204C | on_off |  |  | VCP-600,206 | On off loop L-600204C (level). Acts on VCP-600,206. |
 | L-600204D | on_off |  |  | VCP-600,206 | On off loop L-600204D (level). Acts on VCP-600,206. |
+| M-040111 | monitoring |  |  |  | Monitoring loop M-040111 (moisture). |
+| M-040121 | monitoring |  |  |  | Monitoring loop M-040121 (moisture). |
 | M-120111 | on_off |  |  | PNL-120100 | On off loop M-120111 (moisture). Acts on PNL-120100. |
 | M-120112 | on_off |  |  | PNL-120100 | On off loop M-120112 (moisture). Acts on PNL-120100. |
 | M-190111 | monitoring |  |  |  | Monitoring loop M-190111 (moisture). |
 | P-080101 | monitoring |  |  |  | Monitoring loop P-080101 (pressure). |
 | P-080121 | monitoring |  |  |  | Monitoring loop P-080121 (pressure). |
+| S-040121 | on_off |  |  | Recycle pump (tag not printed, typical for 2 pumps, left) | On off loop S-040121 (speed/frequency). Acts on Recycle pump (tag not printed, typical for 2 pumps, left). |
 | S-090101 | on_off |  |  | VFD-090101 | On off loop S-090101 (speed/frequency). Acts on VFD-090101. |
 | S-100101 | on_off |  |  | VFD-100101 | On off loop S-100101 (speed/frequency). Acts on VFD-100101. |
 | S-110101 | on_off |  |  | VFD-110101 | On off loop S-110101 (speed/frequency). Acts on VFD-110101. |
 | S-110111 | on_off |  |  | VFD-110111 | On off loop S-110111 (speed/frequency). Acts on VFD-110111. |
+| T-040111 | monitoring |  |  |  | Monitoring loop T-040111 (temperature). |
+| T-040121 | monitoring |  |  |  | Monitoring loop T-040121 (temperature). |
 | T-050102 | monitoring |  |  |  | Monitoring loop T-050102 (temperature). |
 | T-120111 | on_off |  |  | PNL-120100 | On off loop T-120111 (temperature). Acts on PNL-120100. |
 | T-120112 | on_off |  |  | PNL-120100 | On off loop T-120112 (temperature). Acts on PNL-120100. |
@@ -567,8 +555,9 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | X-090101 | on_off |  |  | BLR-090101 | On off loop X-090101 (unclassified). Acts on BLR-090101. |
 | X-100101 | on_off |  |  | BLR-100101 | On off loop X-100101 (unclassified). Acts on BLR-100101. |
 | X-110101 | on_off |  |  | BLR-110101 | On off loop X-110101 (unclassified). Acts on BLR-110101. |
-| X-110101#2 | on_off |  |  | BLR-110101 | On off loop X-110101#2 (unclassified). Acts on BLR-110101. |
 | X-110111 | on_off |  |  | BLR-110111 | On off loop X-110111 (unclassified). Acts on BLR-110111. |
+| Y-040111 | monitoring |  |  |  | Monitoring loop Y-040111 (event/state). |
+| Y-040121 | monitoring |  |  |  | Monitoring loop Y-040121 (event/state). |
 | Y-070181 | on_off |  |  | XV-070181 | On off loop Y-070181 (event/state). Acts on XV-070181. |
 | Y-080101 | on_off |  |  | PMP-080101 | On off loop Y-080101 (event/state). Acts on PMP-080101. |
 | Y-080111 | monitoring |  |  |  | Monitoring loop Y-080111 (event/state). |
@@ -576,24 +565,17 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | Y-090101 | monitoring |  |  |  | Monitoring loop Y-090101 (event/state). |
 | Y-100101 | monitoring |  |  |  | Monitoring loop Y-100101 (event/state). |
 | Y-110101 | monitoring |  |  |  | Monitoring loop Y-110101 (event/state). |
-| Y-110101#2 | monitoring |  |  |  | Monitoring loop Y-110101#2 (event/state). |
 | Y-110111 | monitoring |  |  |  | Monitoring loop Y-110111 (event/state). |
 | Y-160101 | on_off |  |  | PMP-160101 | On off loop Y-160101 (event/state). Acts on PMP-160101. |
 | Y-170103 | on_off |  |  | XV-170103 | On off loop Y-170103 (event/state). Acts on XV-170103. |
 | Y-190111 | on_off |  |  | MXR-190111 | On off loop Y-190111 (event/state). Acts on MXR-190111. |
-| Y-500101 | monitoring |  |  |  | Monitoring loop Y-500101 (event/state). |
-| Y-500101#2 | monitoring |  |  |  | Monitoring loop Y-500101#2 (event/state). |
-| Y-500101#3 | on_off |  |  | motor operated valve | On off loop Y-500101#3 (event/state). Acts on motor operated valve. |
-| Y-500101#4 | on_off |  |  | motor operated valve | On off loop Y-500101#4 (event/state). Acts on motor operated valve. |
+| Y-500101 | on_off |  |  | motor operated valve | On off loop Y-500101 (event/state). Acts on motor operated valve. |
 | Y-600009C | monitoring |  |  |  | Monitoring loop Y-600009C (event/state). |
-| Y-600009C#2 | monitoring |  |  |  | Monitoring loop Y-600009C#2 (event/state). |
 | Y-600204A | monitoring |  |  |  | Monitoring loop Y-600204A (event/state). |
-| Y-600204A#2 | monitoring |  |  |  | Monitoring loop Y-600204A#2 (event/state). |
 | Z-070181 | monitoring |  |  |  | Monitoring loop Z-070181 (position). |
 | Z-080132 | monitoring |  |  |  | Monitoring loop Z-080132 (position). |
 | Z-170103 | monitoring |  |  |  | Monitoring loop Z-170103 (position). |
 | Z-500101 | on_off |  |  | motor operated valve | On off loop Z-500101 (position). Acts on motor operated valve. |
-| Z-500101#2 | monitoring |  |  |  | Monitoring loop Z-500101#2 (position). |
 | Z-500201 | monitoring |  |  |  | Monitoring loop Z-500201 (position). |
 | Z-500201#2 | monitoring |  |  |  | Monitoring loop Z-500201#2 (position). |
 | Z-500301 | monitoring |  |  |  | Monitoring loop Z-500301 (position). |
@@ -649,4 +631,4 @@ Location is where the instrument senses the process. Pipe locations read `line (
 
 ## Data quality
 
-0 errors, 75 warnings and 366 informational items; see `qa_report.md`. Every node carries `confidence` and the sheet region it was read from (`provenance`). This graph was machine-extracted from drawings and must be verified by a qualified engineer before use in design, operations or safety work.
+0 errors, 10 warnings and 352 informational items; see `qa_report.md`. Every node carries `confidence` and the sheet region it was read from (`provenance`). This graph was machine-extracted from drawings and must be verified by a qualified engineer before use in design, operations or safety work.

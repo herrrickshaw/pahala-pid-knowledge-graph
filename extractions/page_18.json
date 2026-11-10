@@ -111,7 +111,9 @@
     0.1103,
     0.3369
    ],
-   "confidence": 0.7
+   "confidence": 0.7,
+   "part_of": "VFD-110101",
+   "notes": "Non-process item; part_of set to VFD-110101 because it feeds power to that drive."
   }
  ],
  "components": [
@@ -210,7 +212,8 @@
    "confidence": 0.9,
    "tag": "YI-110101A",
    "loop": "Y-110101",
-   "name": "READY"
+   "name": "READY",
+   "notes": "Same tag also drawn in the scada layer (bubbles YI-110101A-SCADA); merged into one instrument."
   },
   {
    "id": "YI-110101B",
@@ -224,7 +227,8 @@
    "confidence": 0.9,
    "tag": "YI-110101B",
    "loop": "Y-110101",
-   "name": "RUNNING"
+   "name": "RUNNING",
+   "notes": "Same tag also drawn in the scada layer (bubbles YI-110101B-SCADA); merged into one instrument."
   },
   {
    "id": "YI-110101C",
@@ -238,7 +242,8 @@
    "confidence": 0.9,
    "tag": "YI-110101C",
    "loop": "Y-110101",
-   "name": "LOADED"
+   "name": "LOADED",
+   "notes": "Same tag also drawn in the scada layer (bubbles YI-110101C-SCADA); merged into one instrument."
   },
   {
    "id": "YI-110101D",
@@ -252,7 +257,8 @@
    "confidence": 0.9,
    "tag": "YI-110101D",
    "loop": "Y-110101",
-   "name": "POWER"
+   "name": "POWER",
+   "notes": "Same tag also drawn in the scada layer (bubbles YI-110101D-SCADA); merged into one instrument."
   },
   {
    "id": "YA-110101A",
@@ -266,7 +272,8 @@
    "confidence": 0.9,
    "tag": "YA-110101A",
    "loop": "Y-110101",
-   "name": "ALARM"
+   "name": "ALARM",
+   "notes": "Same tag also drawn in the scada layer (bubbles YA-110101A-SCADA); merged into one instrument."
   },
   {
    "id": "YA-110101B",
@@ -280,7 +287,8 @@
    "confidence": 0.9,
    "tag": "YA-110101B",
    "loop": "Y-110101",
-   "name": "ERROR"
+   "name": "ERROR",
+   "notes": "Same tag also drawn in the scada layer (bubbles YA-110101B-SCADA); merged into one instrument."
   },
   {
    "id": "XC-110101A",
@@ -294,7 +302,8 @@
    "confidence": 0.9,
    "tag": "XC-110101A",
    "loop": "X-110101",
-   "name": "START"
+   "name": "START",
+   "notes": "Same tag also drawn in the scada layer (bubbles XC-110101A-SCADA); merged into one instrument."
   },
   {
    "id": "XC-110101B",
@@ -308,7 +317,8 @@
    "confidence": 0.9,
    "tag": "XC-110101B",
    "loop": "X-110101",
-   "name": "STOP"
+   "name": "STOP",
+   "notes": "Same tag also drawn in the scada layer (bubbles XC-110101B-SCADA); merged into one instrument."
   },
   {
    "id": "XC-110101C",
@@ -322,7 +332,8 @@
    "confidence": 0.9,
    "tag": "XC-110101C",
    "loop": "X-110101",
-   "name": "LOAD"
+   "name": "LOAD",
+   "notes": "Same tag also drawn in the scada layer (bubbles XC-110101C-SCADA); merged into one instrument."
   },
   {
    "id": "SC-110101",
@@ -335,7 +346,8 @@
    ],
    "confidence": 0.9,
    "tag": "SC-110101",
-   "loop": "S-110101"
+   "loop": "S-110101",
+   "notes": "Same tag also drawn in the scada layer (bubbles SC-110101-SCADA); merged into one instrument."
   },
   {
    "id": "FI-110101",
@@ -351,7 +363,8 @@
    "measures": {
     "line": "L1"
    },
-   "loop": "F-110101"
+   "loop": "F-110101",
+   "notes": "Same tag also drawn in the scada layer (bubbles FI-110101-SCADA); merged into one instrument."
   },
   {
    "id": "YI-110111A",
@@ -507,160 +520,6 @@
     "line": "L2"
    },
    "loop": "F-110111"
-  },
-  {
-   "id": "YI-110101A-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.1378,
-    0.1911,
-    0.1556,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "YI-110101A",
-   "loop": "Y-110101",
-   "name": "READY (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "YI-110101B-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.1588,
-    0.1911,
-    0.1767,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "YI-110101B",
-   "loop": "Y-110101",
-   "name": "RUNNING (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "YI-110101C-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.1798,
-    0.1911,
-    0.1977,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "YI-110101C",
-   "loop": "Y-110101",
-   "name": "LOADED (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "YI-110101D-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.2009,
-    0.1911,
-    0.2188,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "YI-110101D",
-   "loop": "Y-110101",
-   "name": "POWER (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "YA-110101A-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.2226,
-    0.1911,
-    0.2404,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "YA-110101A",
-   "loop": "Y-110101",
-   "name": "ALARM (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "YA-110101B-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.2436,
-    0.1911,
-    0.2615,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "YA-110101B",
-   "loop": "Y-110101",
-   "name": "ERROR (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "XC-110101A-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.2647,
-    0.1911,
-    0.2825,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "XC-110101A",
-   "loop": "X-110101",
-   "name": "START (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "XC-110101B-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.2857,
-    0.1911,
-    0.3036,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "XC-110101B",
-   "loop": "X-110101",
-   "name": "STOP (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "XC-110101C-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.3068,
-    0.1911,
-    0.3246,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "XC-110101C",
-   "loop": "X-110101",
-   "name": "LOAD (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "SC-110101-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.3278,
-    0.1911,
-    0.3457,
-    0.2187
-   ],
-   "confidence": 0.8,
-   "tag": "SC-110101",
-   "loop": "S-110101",
-   "name": "CURRENT (SCADA HMI, typical for 2 blowers)"
-  },
-  {
-   "id": "FI-110101-SCADA",
-   "location": "scada",
-   "bbox": [
-    0.3495,
-    0.1911,
-    0.3673,
-    0.2187
-   ],
-   "confidence": 0.85,
-   "tag": "FI-110101",
-   "loop": "F-110101",
-   "name": "FLOW (SCADA HMI, typical for 2 blowers)"
   }
  ],
  "lines": [
@@ -848,83 +707,6 @@
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.5
-  },
-  {
-   "from": "YI-110101A",
-   "to": "YI-110101A-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.7
-  },
-  {
-   "from": "YI-110101B",
-   "to": "YI-110101B-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.7
-  },
-  {
-   "from": "YI-110101C",
-   "to": "YI-110101C-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.7
-  },
-  {
-   "from": "YI-110101D",
-   "to": "YI-110101D-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.7
-  },
-  {
-   "from": "YA-110101A",
-   "to": "YA-110101A-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.7
-  },
-  {
-   "from": "YA-110101B",
-   "to": "YA-110101B-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.7
-  },
-  {
-   "from": "XC-110101A-SCADA",
-   "to": "XC-110101A",
-   "type": "software",
-   "purpose": "control",
-   "confidence": 0.7
-  },
-  {
-   "from": "XC-110101B-SCADA",
-   "to": "XC-110101B",
-   "type": "software",
-   "purpose": "control",
-   "confidence": 0.7
-  },
-  {
-   "from": "XC-110101C-SCADA",
-   "to": "XC-110101C",
-   "type": "software",
-   "purpose": "control",
-   "confidence": 0.7
-  },
-  {
-   "from": "SC-110101",
-   "to": "SC-110101-SCADA",
-   "type": "software",
-   "purpose": "measurement",
-   "confidence": 0.5
-  },
-  {
-   "from": "FI-110101",
-   "to": "FI-110101-SCADA",
-   "type": "software",
-   "purpose": "measurement",
-   "confidence": 0.7
   }
  ],
  "off_page_connectors": [

@@ -10,77 +10,70 @@
   "legend_notes": [
    "Sheet 17 of 25. Wet well WW-01 (TNK-120100), pumps and panel PNL-120100 are inside dash-dot outline VENDOR PACKAGE 3.",
    "Horizontal bands SCADA HMI, MBR PLC and MDP-2 are system zones; the DI card is an untagged MBR PLC I/O card.",
-   "CB 480V feeds the control panel."
+   "CB 480V feeds the control panel.",
+   "VENDOR PACKAGE 3: dashed enclosure around the wet well TNK-120100, its two pumps, instruments and local control panel PNL-120100. Recorded as a note rather than as equipment because it has no process connections of its own."
   ]
  },
  "equipment": [
-  {
-   "id": "PKG-3",
-   "kind": "package_unit",
-   "name": "VENDOR PACKAGE 3",
-   "bbox": [
-    0.36,
-    0.45,
-    0.68,
-    0.825
-   ],
-   "confidence": 0.8
-  },
   {
    "id": "TNK-120100",
    "tag": "TNK-120100",
    "kind": "sump",
    "name": "WW-01 EQUIPMENT GALLERY PUMP STATION wet well",
-   "part_of": "PKG-3",
+   "part_of": "TNK-120100",
    "bbox": [
     0.287,
     0.645,
     0.646,
     0.795
    ],
-   "confidence": 0.9
+   "confidence": 0.9,
+   "notes": "Inside the dashed VENDOR PACKAGE 3 enclosure with the wet well."
   },
   {
    "id": "PMP-120111",
    "tag": "PMP-120111",
    "kind": "sump_pump",
    "name": "Submersible pump",
-   "part_of": "PKG-3",
+   "part_of": "TNK-120100",
    "bbox": [
     0.532,
     0.74,
     0.565,
     0.8
    ],
-   "confidence": 0.9
+   "confidence": 0.9,
+   "notes": "Inside the dashed VENDOR PACKAGE 3 enclosure with the wet well."
   },
   {
    "id": "PMP-120112",
    "tag": "PMP-120112",
    "kind": "sump_pump",
    "name": "Submersible pump",
-   "part_of": "PKG-3",
+   "part_of": "TNK-120100",
    "bbox": [
     0.588,
     0.74,
     0.625,
     0.8
    ],
-   "confidence": 0.9
+   "confidence": 0.9,
+   "notes": "Inside the dashed VENDOR PACKAGE 3 enclosure with the wet well."
   },
   {
    "id": "PNL-120100",
    "tag": "PNL-120100",
    "kind": "other",
    "name": "EQUIPMENT GALLERY PUMP STATION LOCAL CONTROL PANEL",
-   "part_of": "PKG-3",
+   "part_of": "TNK-120100",
    "bbox": [
     0.389,
     0.456,
     0.66,
     0.55
    ],
-   "confidence": 0.95
+   "confidence": 0.95,
+   "notes": "Non-process item; part_of set to TNK-120100 because it is the local control panel of this pump station."
   }
  ],
  "components": [

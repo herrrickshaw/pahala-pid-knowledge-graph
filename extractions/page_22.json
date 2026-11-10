@@ -81,7 +81,8 @@
     0.225
    ],
    "confidence": 0.85,
-   "name": "Valve opened"
+   "name": "Valve opened",
+   "notes": "Same tag also drawn in the scada layer (bubbles ZIO-SCADA); merged into one instrument."
   },
   {
    "id": "ZIC-PLC",
@@ -95,7 +96,8 @@
     0.225
    ],
    "confidence": 0.85,
-   "name": "Valve closed"
+   "name": "Valve closed",
+   "notes": "Same tag also drawn in the scada layer (bubbles ZIC-SCADA); merged into one instrument."
   },
   {
    "id": "YA-PLC",
@@ -109,7 +111,8 @@
     0.225
    ],
    "confidence": 0.85,
-   "name": "Valve fault"
+   "name": "Valve fault",
+   "notes": "Same tag also drawn in the scada layer (bubbles YA-SCADA); merged into one instrument."
   },
   {
    "id": "YI-PLC",
@@ -123,7 +126,8 @@
     0.225
    ],
    "confidence": 0.85,
-   "name": "Valve in auto"
+   "name": "Valve in auto",
+   "notes": "Same tag also drawn in the scada layer (bubbles YI-AUTO-SCADA, YI-OPENSP-SCADA, YI-CLOSESP-SCADA); merged into one instrument."
   },
   {
    "id": "ZCO-PLC",
@@ -152,90 +156,6 @@
    ],
    "confidence": 0.85,
    "name": "Valve close command/setpoint"
-  },
-  {
-   "id": "ZIO-SCADA",
-   "tag": "ZIO-500,101",
-   "location": "scada",
-   "loop": "Z-500101",
-   "bbox": [
-    0.22899999999999998,
-    0.09,
-    0.251,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Valve opened"
-  },
-  {
-   "id": "ZIC-SCADA",
-   "tag": "ZIC-500,101",
-   "location": "scada",
-   "loop": "Z-500101",
-   "bbox": [
-    0.252,
-    0.09,
-    0.274,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Valve closed"
-  },
-  {
-   "id": "YA-SCADA",
-   "tag": "YA-500,101",
-   "location": "scada",
-   "loop": "Y-500101",
-   "bbox": [
-    0.27399999999999997,
-    0.09,
-    0.296,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Valve fault"
-  },
-  {
-   "id": "YI-AUTO-SCADA",
-   "tag": "YI-500,101",
-   "location": "scada",
-   "loop": "Y-500101",
-   "bbox": [
-    0.357,
-    0.09,
-    0.379,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Valve in auto"
-  },
-  {
-   "id": "YI-OPENSP-SCADA",
-   "tag": "YI-500,101",
-   "location": "scada",
-   "loop": "Y-500101",
-   "bbox": [
-    0.386,
-    0.09,
-    0.40800000000000003,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Valve open setpoint"
-  },
-  {
-   "id": "YI-CLOSESP-SCADA",
-   "tag": "YI-500,101",
-   "location": "scada",
-   "loop": "Y-500101",
-   "bbox": [
-    0.416,
-    0.09,
-    0.438,
-    0.115
-   ],
-   "confidence": 0.85,
-   "name": "Valve close setpoint"
   },
   {
    "id": "HS-500,101",
@@ -491,42 +411,14 @@
    "confidence": 0.45
   },
   {
-   "from": "ZIO-PLC",
-   "to": "ZIO-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.8
-  },
-  {
-   "from": "ZIC-PLC",
-   "to": "ZIC-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.8
-  },
-  {
-   "from": "YA-PLC",
-   "to": "YA-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.8
-  },
-  {
    "from": "YI-PLC",
-   "to": "YI-AUTO-SCADA",
-   "type": "software",
-   "purpose": "status",
-   "confidence": 0.8
-  },
-  {
-   "from": "YI-OPENSP-SCADA",
    "to": "ZCO-PLC",
    "type": "software",
    "purpose": "control",
    "confidence": 0.5
   },
   {
-   "from": "YI-CLOSESP-SCADA",
+   "from": "YI-PLC",
    "to": "ZCC-PLC",
    "type": "software",
    "purpose": "control",
