@@ -1,8 +1,9 @@
+# Run from this directory: python3 score.py
 import json,collections
 tot=collections.Counter(); bytype=collections.defaultdict(collections.Counter); bypage={}
 fails=[]
 for pg in range(9,26):
-    K=json.load(open(f'/tmp/audit_key_{pg:02d}.json')); R=json.load(open(f'audit/result_{pg:02d}.json'))['verdicts']
+    K=json.load(open(f'key/audit_key_{pg:02d}.json')); R=json.load(open(f'result_{pg:02d}.json'))['verdicts']
     c=collections.Counter()
     for cid,k in K.items():
         v=R.get(cid,{}).get('v','missing')
@@ -24,5 +25,5 @@ for (t,g),c in sorted(bytype.items()):
 print('--by page true correct%')
 for pg,c in bypage.items():
     n=sum(v for (g,_),v in c.items() if g=='true'); print(pg,n,'%.0f%%'%(100*c[('true','correct')]/n), 'decoy rejected', c[('decoy','wrong')],'/',sum(v for (g,_),v in c.items() if g=='decoy'))
-json.dump(fails,open('audit/disagreements.json','w'),indent=1)
+json.dump(fails,open('disagreements.json','w'),indent=1)
 print(len(fails),'disagreements')

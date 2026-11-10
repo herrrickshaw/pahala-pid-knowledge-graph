@@ -29,6 +29,5 @@ items missing from the graph. Files: `audit/claims_NN.json`, `result_NN.json`, `
   (AX-01, PA-01, MB-01) that the graph keeps as names, and MCP 600,101, which is deliberately a sheet note.
 
 **Limits.** The verifiers are models reading the same renderings as the extractors, so shared misreadings
-(for example a symbol type with no legend) would not be caught. Samples are 584 claims out of roughly 3,000,
-chosen at random per sheet. A tag-by-tag check against the PDF text layer was possible only for pages 21 and
+(for example a symbol type with no legend) would not be caught. Samples are 584 claims drawn at random per sheet from a population of about 791 (tags 307, lines 107, signals 251, measures 82, flags 44). A tag-by-tag check against the PDF text layer was possible only for pages 21 and
 23-25, where tag numbers are real text (all matched); on the other sheets the text is outlined.
