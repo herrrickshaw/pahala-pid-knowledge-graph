@@ -1,6 +1,6 @@
 # Pahala WWTP: process knowledge graph summary
 
-Built from `pahala.pdf` (17 sheets) by pid-to-kg 0.1.0 on 2026-11-10. The graph has 915 nodes and 1343 edges; this summary covers equipment-level flow, instruments and control loops. Query `graph.duckdb` or `graph.json` for pipe-segment and valve detail.
+Built from `pahala.pdf` (17 sheets) by pid-to-kg 0.1.0 on 2026-11-10. The graph has 915 nodes and 1339 edges; this summary covers equipment-level flow, instruments and control loops. Query `graph.duckdb` or `graph.json` for pipe-segment and valve detail.
 
 | Equipment | Instruments | Valves & fittings | Pipe segments | Control loops | Off-page links |
 |---|---|---|---|---|---|
@@ -569,7 +569,7 @@ Location is where the instrument senses the process. Pipe locations read `line (
 | Y-160101 | on_off |  |  | PMP-160101 | On off loop Y-160101 (event/state). Acts on PMP-160101. |
 | Y-170103 | on_off |  |  | XV-170103 | On off loop Y-170103 (event/state). Acts on XV-170103. |
 | Y-190111 | on_off |  |  | MXR-190111 | On off loop Y-190111 (event/state). Acts on MXR-190111. |
-| Y-500101 | on_off |  |  | motor operated valve | On off loop Y-500101 (event/state). Acts on motor operated valve. |
+| Y-500101 | monitoring |  |  |  | Monitoring loop Y-500101 (event/state). |
 | Y-600009C | monitoring |  |  |  | Monitoring loop Y-600009C (event/state). |
 | Y-600204A | monitoring |  |  |  | Monitoring loop Y-600204A (event/state). |
 | Z-070181 | monitoring |  |  |  | Monitoring loop Z-070181 (position). |

@@ -1,0 +1,155 @@
+{
+ "page": 21,
+ "verdicts": {
+  "C1": {
+   "v": "correct",
+   "evidence": "joined by common dashed signal bus above LI-401 (r1c2)"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "joined by common dashed signal bus above LI-401 (r1c2)"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "joined by common dashed signal bus above LI-401 (r1c2)"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "joined by common dashed signal bus above LI-401 (r1c2)"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "joined by common dashed signal bus above LI-401 (r1c2)"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "joined by common dashed signal bus above LI-401 (r1c2)"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "joined by common dashed signal bus above LI-401 (r1c2)"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "joined by common dashed signal bus above LI-401 (r1c2)"
+  },
+  "C35": {
+   "v": "correct",
+   "evidence": "joined by common dashed signal bus above LI-401 (r1c2)"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "dashed line LI-402 up to LI-401 (arrow into LI-401), r1c2"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "dashed line from LE-401 in tank up through LI-402 (r2c2/r3c2)"
+  },
+  "C18": {
+   "v": "wrong",
+   "evidence": "FIR-403 has its own dashed line to FIT-403 at r1c3/r3c3; not on the bus with LCL-001"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "FE-403 and FIT-403 bubbles joined, r3c3"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "LSH-402 dashed/solid line drops into tank with float probe, r3c3"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "LE-401 bubble with probe inside tank, r3c2"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "LI-001 on same level signal line as LE-401/LI-402/LI-401 (TANK LEVEL); indirect, no probe of its own"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "arrow into tank from contact basin, r3c2"
+  },
+  "C10": {
+   "v": "wrong",
+   "evidence": "arrow runs flag->contact basin, reversed"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "FROM PERMEATE flag -> contact basin, arrowheads rightwards"
+  },
+  "C21": {
+   "v": "wrong",
+   "evidence": "TO EFFLUENT flag points out of sheet; flow leaves tank, not enters"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "tank outlet line right via FE-403 to TO EFFLUENT DISPOSAL flag"
+  },
+  "C28": {
+   "v": "wrong",
+   "evidence": "flow goes contact basin -> tank, not reverse"
+  },
+  "C31": {
+   "v": "correct",
+   "evidence": "flag text 'FROM PERMEATE COLLECTION REF SHT P-204' at left, flow enters"
+  },
+  "C34": {
+   "v": "correct",
+   "evidence": "flag 'TO EFFLUENT DISPOSAL REF SHT P-501' at right, flow leaves"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C14": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C30": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C37": {
+   "v": "correct",
+   "evidence": "tag seen in overview/zoom"
+  },
+  "C17": {
+   "v": "wrong",
+   "evidence": "no such tag drawn; only -001 / -401 / -402 series exist here"
+  },
+  "C23": {
+   "v": "wrong",
+   "evidence": "no such tag drawn; only -001 / -401 / -402 series exist here"
+  },
+  "C36": {
+   "v": "wrong",
+   "evidence": "no such tag drawn; only -001 / -401 / -402 series exist here"
+  }
+ },
+ "missing_from_known": [],
+ "notes": "Top: SCADA I/O bubbles on a shared dashed bus via 'I' diamond; bus-peer claims treated as connected. No notable untagged-missing tags; 'FE-' valve-ish label and I diamond untagged."
+}

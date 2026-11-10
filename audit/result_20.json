@@ -1,0 +1,55 @@
+{
+ "page": 20,
+ "verdicts": {
+  "C1": {
+   "v": "wrong",
+   "evidence": "no TSH-190304"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "pump discharge via check, valve to WAS TRUCK flag"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "PNL-190300 box"
+  },
+  "C4": {
+   "v": "wrong",
+   "evidence": "truck flag outgoing"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "dashed from panel down to pump"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "dashed from TSH bubble to pump"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "flag WAS FROM WAS-01 P210 drawn, line enters pump"
+  },
+  "C8": {
+   "v": "wrong",
+   "evidence": "no PNL-190303"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "dashed from TSH to pump"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "TSH 190301 bubble"
+  },
+  "C11": {
+   "v": "wrong",
+   "evidence": "flow enters pump from flag"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "flag line with arrow into pump suction"
+  }
+ },
+ "missing_from_known": [],
+ "notes": "Pump tag printed as PMP- only. HMI bubble untagged."
+}

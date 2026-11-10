@@ -1,0 +1,145 @@
+{
+ "page": 11,
+ "verdicts": {
+  "C2": {
+   "v": "correct",
+   "evidence": "FBD-050111 diffuser label r3c2"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "AE 050102 r3c3"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "TIR 050102 bubble r1c3"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "AIT 050102 bubble r3c3"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "TAL 050102 bubble r1c3"
+  },
+  "C23": {
+   "v": "correct",
+   "evidence": "AIR 050102 bubble r1c3"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "TNK-050100 under PA-01"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "TIT 050102 bubble r3c3"
+  },
+  "C31": {
+   "v": "correct",
+   "evidence": "AIT 050101 bubble r3c3"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "AE 050101 bubble r3c3"
+  },
+  "C1": {
+   "v": "correct",
+   "evidence": "AE 050101 pH probe lowered into basin (r3c3)"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "AE 050102 DO/TEMP probe lowered into basin"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "flag RECYCLE FROM AX-01 REF SHT P201 enters tank"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "line from RECYCLE flag with arrow into tank (r2c2)"
+  },
+  "C5": {
+   "v": "wrong",
+   "evidence": "only AIR 050101 and 050102; no 050105"
+  },
+  "C7": {
+   "v": "wrong",
+   "evidence": "no AIR-050104"
+  },
+  "C21": {
+   "v": "wrong",
+   "evidence": "only AE-050101 and AE-050102"
+  },
+  "C6": {
+   "v": "unclear",
+   "evidence": "AE 050102 line goes up to TIT 050102; AIT 050102 bubble adjacent with no visible line to AE"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "dashed vertical from AE 050102 to TIT 050102"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "AIR 050102 bus right to AAL 050102 arrow (r1c3)"
+  },
+  "C10": {
+   "v": "wrong",
+   "evidence": "OVERFLOW flag is outlet; flow leaves tank to it"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "OVERFLOW TO MBR BASIN flag at right; weir WE-050121 line leads to it"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "tank over WE-050121 weir to OVERFLOW flag"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "dashed air line from PROCESS AIR flag through TP-01 down to FBD-050111 (r2c2)"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "PROCESS AIR FROM BLOWERS flag with air line leading in"
+  },
+  "C13": {
+   "v": "wrong",
+   "evidence": "reverse: air enters from flag to FBD"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "TIR 050102 bus to TAL 050102 arrow (r1c3)"
+  },
+  "C14": {
+   "v": "wrong",
+   "evidence": "V-120122 fed from tank bottom outlet; flow goes tank to valve"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "line from tank bottom outlet to V-120122"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "AE 050101 dashed link to AIT 050101"
+  },
+  "C19": {
+   "v": "wrong",
+   "evidence": "AE 050102 not connected to AAL 050102; AAL is on AIR 050102 SCADA bus"
+  },
+  "C26": {
+   "v": "wrong",
+   "evidence": "TIR 050102 bus separate from AIR 050101 loop"
+  },
+  "C30": {
+   "v": "wrong",
+   "evidence": "TNK-050100 not signal-linked to TIT"
+  }
+ },
+ "missing_from_known": [
+  {
+   "tag": "PA-01",
+   "where": "r3c2",
+   "what": "pre-aeration basin equipment label (TNK-050100)"
+  }
+ ],
+ "notes": "Gap in bus between TIR/TAL and AIR/AAL pairs (not connected)."
+}

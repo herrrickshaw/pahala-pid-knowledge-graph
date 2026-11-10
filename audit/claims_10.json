@@ -1,0 +1,225 @@
+{
+ "page": 10,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "tag",
+   "claim": "An item tagged LSL-040102 is drawn on this sheet."
+  },
+  {
+   "id": "C2",
+   "type": "signal",
+   "claim": "A signal line connects ME-040122 to LAL-040101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C3",
+   "type": "tag",
+   "claim": "An item tagged LAL-040101 is drawn on this sheet."
+  },
+  {
+   "id": "C4",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-040100 to off-page flag 'SCREENED INFLT FROM HEADWORKS'."
+  },
+  {
+   "id": "C5",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'pH ADJUSTMENT' to TNK-040100."
+  },
+  {
+   "id": "C6",
+   "type": "flag",
+   "claim": "An off-page flag reading 'EQUIPMENT CAL PS INFLUENT' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C7",
+   "type": "tag",
+   "claim": "An item tagged ZA-040124 is drawn on this sheet."
+  },
+  {
+   "id": "C8",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from centrifugal_pump 'Recycle pump (tag not printed, typical for 2 pumps' to off-page flag 'RECYCLE TO PA-01' passing through FE-040141."
+  },
+  {
+   "id": "C9",
+   "type": "tag",
+   "claim": "An item tagged LAL-040104 is drawn on this sheet."
+  },
+  {
+   "id": "C10",
+   "type": "flag",
+   "claim": "An off-page flag reading 'pH ADJUSTMENT' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C11",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'EQUIPMENT CAL PS INFLUENT' to TNK-040100."
+  },
+  {
+   "id": "C12",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'RECYCLE TO PA-01' to centrifugal_pump 'Recycle pump (tag not printed, typical for 2 pumps'."
+  },
+  {
+   "id": "C13",
+   "type": "signal",
+   "claim": "A signal line connects VFD-040121 to TSH-040111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C14",
+   "type": "tag",
+   "claim": "An item tagged MAH-040121 is drawn on this sheet."
+  },
+  {
+   "id": "C15",
+   "type": "measures",
+   "claim": "Instrument TSH-040122 is mounted on / senses centrifugal_pump 'Recycle pump (tag not printed, typical for 2 pumps'."
+  },
+  {
+   "id": "C16",
+   "type": "signal",
+   "claim": "A signal line connects YC-040121 to HS-040121 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C17",
+   "type": "tag",
+   "claim": "An item tagged TAH-040111 is drawn on this sheet."
+  },
+  {
+   "id": "C18",
+   "type": "measures",
+   "claim": "Instrument TSH-040111 is mounted on / senses MXR-040111."
+  },
+  {
+   "id": "C19",
+   "type": "signal",
+   "claim": "A signal line connects LSH-040103 to FAL-040141 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C20",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-040100 to centrifugal_pump 'Recycle pump (tag not printed, typical for 2 pumps'."
+  },
+  {
+   "id": "C21",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-040100 to centrifugal_pump 'Recycle pump (tag not printed, typical for 2 pumps'."
+  },
+  {
+   "id": "C22",
+   "type": "tag",
+   "claim": "An item tagged ME-040111 is drawn on this sheet."
+  },
+  {
+   "id": "C23",
+   "type": "signal",
+   "claim": "A signal line connects LIR-040101 to LAH-040101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C24",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-040100 to off-page flag 'pH ADJUSTMENT'."
+  },
+  {
+   "id": "C25",
+   "type": "signal",
+   "claim": "A signal line connects MY-040121 to MAH-040121 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C26",
+   "type": "flag",
+   "claim": "An off-page flag reading 'SCREENED INFLT FROM HEADWORKS' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C27",
+   "type": "flag",
+   "claim": "An off-page flag reading 'RECYCLE TO PA-01' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C28",
+   "type": "tag",
+   "claim": "An item tagged HS-040111 is drawn on this sheet."
+  },
+  {
+   "id": "C29",
+   "type": "tag",
+   "claim": "An item tagged TSH-040121 is drawn on this sheet."
+  },
+  {
+   "id": "C30",
+   "type": "tag",
+   "claim": "An item tagged YC-040111 is drawn on this sheet."
+  },
+  {
+   "id": "C31",
+   "type": "signal",
+   "claim": "A signal line connects LSL-040102 to LAL-040102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C32",
+   "type": "signal",
+   "claim": "A signal line connects ME-040121 to MS-040121 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C33",
+   "type": "signal",
+   "claim": "A signal line connects YC-040111 to ZA-040101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C34",
+   "type": "signal",
+   "claim": "A signal line connects JS-040111 to MXR-040111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C35",
+   "type": "measures",
+   "claim": "Instrument ME-040122 is mounted on / senses centrifugal_pump 'Recycle pump (tag not printed, typical for 2 pumps'."
+  },
+  {
+   "id": "C36",
+   "type": "measures",
+   "claim": "Instrument ME-040111 is mounted on / senses MXR-040111."
+  },
+  {
+   "id": "C37",
+   "type": "signal",
+   "claim": "A signal line connects FE-040141 to FIT-040141 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C38",
+   "type": "tag",
+   "claim": "An item tagged YI-040111B is drawn on this sheet."
+  },
+  {
+   "id": "C39",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'SCREENED INFLT FROM HEADWORKS' to TNK-040100."
+  },
+  {
+   "id": "C40",
+   "type": "measures",
+   "claim": "Instrument LSH-040103 is mounted on / senses TNK-040100."
+  },
+  {
+   "id": "C41",
+   "type": "signal",
+   "claim": "A signal line connects FIC-040121 to VFD-040121 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C42",
+   "type": "signal",
+   "claim": "A signal line connects ME-040111 to MS-040111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C43",
+   "type": "tag",
+   "claim": "An item tagged SS-040124 is drawn on this sheet."
+  },
+  {
+   "id": "C44",
+   "type": "tag",
+   "claim": "An item tagged TAH-040121 is drawn on this sheet."
+  }
+ ]
+}

@@ -409,20 +409,6 @@
    "type": "electrical",
    "purpose": "control",
    "confidence": 0.45
-  },
-  {
-   "from": "YI-PLC",
-   "to": "ZCO-PLC",
-   "type": "software",
-   "purpose": "control",
-   "confidence": 0.5
-  },
-  {
-   "from": "YI-PLC",
-   "to": "ZCC-PLC",
-   "type": "software",
-   "purpose": "control",
-   "confidence": 0.5
   }
  ],
  "off_page_connectors": [
@@ -476,6 +462,7 @@
  ],
  "unreadable": [
   "Direction of the ZCO/ZCC/HS dashed command signals and the arrow semantics of the YI (valve in auto) PLC bubble are ambiguous; modelled with low confidence.",
-  "Blank tile r1c3 taken from the overview only."
+  "Blank tile r1c3 taken from the overview only.",
+  "YI to ZCO/ZCC signals removed after audit: both lines end at the HS bubble with no direct YI link drawn."
  ]
 }

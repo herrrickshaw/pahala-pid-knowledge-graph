@@ -1,0 +1,151 @@
+{
+ "page": 17,
+ "verdicts": {
+  "C1": {
+   "v": "correct",
+   "evidence": "LSL bubble 120102 has solid line down into tank, r3c2"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "TNK-120100 printed under WW-01 label"
+  },
+  "C3": {
+   "v": "wrong",
+   "evidence": "ME-120112 dashed goes up to panel, not to TSH-120111"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "Flag DRAIN FROM EQUIPMENT BLDG, line with arrow into tank"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "PMP-120112 label under right pump"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "TSH 120112 dashed up to PNL-120100"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "TSH 120112 solid line runs down to pump 120112"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "dashed line from panel down to PMP-120111"
+  },
+  "C9": {
+   "v": "wrong",
+   "evidence": "UA-120100 connects via DI to panel, not to pump"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "LSL 120102 bubble"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "dashed from LSL up to panel"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "LSH 120103 bubble"
+  },
+  "C13": {
+   "v": "wrong",
+   "evidence": "no ME-120115 on sheet"
+  },
+  "C14": {
+   "v": "correct",
+   "evidence": "pump discharge goes up through valves, right to flag, arrows/outgoing flag"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "UA 120100 bubble top"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "LT 120101 dashed to panel"
+  },
+  "C17": {
+   "v": "wrong",
+   "evidence": "LE-120101 connects to LT by solid line, no direct line to panel"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "dashed from panel to PMP-120112"
+  },
+  "C19": {
+   "v": "wrong",
+   "evidence": "flag is outgoing; pump discharges to flag"
+  },
+  "C20": {
+   "v": "wrong",
+   "evidence": "no TSH-120114 on sheet"
+  },
+  "C21": {
+   "v": "wrong",
+   "evidence": "no LSL-120105; only LSL-120102"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "TSH 120111 dashed up to panel"
+  },
+  "C23": {
+   "v": "correct",
+   "evidence": "LSH dashed to panel"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "LE-120101 label on tank-bottom element"
+  },
+  "C25": {
+   "v": "wrong",
+   "evidence": "drain flag flows into tank, not out"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "LT solid line down to LE"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "LE sits in tank bottom"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "PNL-120100 box"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "UA-DI-dashed up/down to panel via untagged DI card"
+  },
+  "C30": {
+   "v": "unclear",
+   "evidence": "ME 120111 bubble has no solid line to pump; adjacent to TSH only"
+  },
+  "C31": {
+   "v": "correct",
+   "evidence": "flag EQUIP. GALLERY PS TO AX-01 REF SHT P201, outgoing orientation, flow from pumps"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "PMP-120111 label"
+  },
+  "C33": {
+   "v": "unclear",
+   "evidence": "ME 120112 bubble no direct line to pump"
+  },
+  "C34": {
+   "v": "correct",
+   "evidence": "TSH 120111 bubble"
+  },
+  "C35": {
+   "v": "correct",
+   "evidence": "ME 120111 dashed up to panel"
+  },
+  "C36": {
+   "v": "correct",
+   "evidence": "ME 120112 bubble"
+  }
+ },
+ "missing_from_known": [],
+ "notes": "ME bubbles have dashed to panel but no visible solid sensing line; pump discharge header runs to right flag."
+}

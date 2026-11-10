@@ -1,0 +1,79 @@
+[
+ [
+  9,
+  "C13",
+  "DECOY-ACCEPTED",
+  "A signal line connects LI-001 to FI-100.002 (instrument/control signal, not process piping).",
+  "LI-001 vertical data link joins the FI-100.002 bubble below it (r1c1); arrow points into LI-001"
+ ],
+ [
+  14,
+  "C25",
+  "DECOY-ACCEPTED",
+  "A signal line connects XC-100101C to YA-100101A (instrument/control signal, not process piping).",
+  "XC-C and YA-A on same thin signal bus in panel"
+ ],
+ [
+  16,
+  "C6",
+  "DECOY-ACCEPTED",
+  "Process flow on this sheet runs from PMP-160101 to TNK-160100.",
+  "discharge relief arrow back to tank top"
+ ],
+ [
+  18,
+  "C30",
+  "DECOY-ACCEPTED",
+  "A signal line connects XC-110101C to XC-110101B (instrument/control signal, not process piping).",
+  "both XC on same shared bus"
+ ],
+ [
+  18,
+  "C32",
+  "DECOY-ACCEPTED",
+  "A signal line connects XC-110101A to XC-110101B (instrument/control signal, not process piping).",
+  "both XC on same shared bus"
+ ],
+ [
+  21,
+  "C2",
+  "DECOY-ACCEPTED",
+  "A signal line connects LCH-001 to LCL-001 (instrument/control signal, not process piping).",
+  "joined by common dashed signal bus above LI-401 (r1c2)"
+ ],
+ [
+  21,
+  "C5",
+  "DECOY-ACCEPTED",
+  "A signal line connects LCH-001 to LI-001 (instrument/control signal, not process piping).",
+  "joined by common dashed signal bus above LI-401 (r1c2)"
+ ],
+ [
+  22,
+  "C7",
+  "signal",
+  "A signal line connects YI-500,101 to ZCC-500,101 (instrument/control signal, not process piping).",
+  "YI and ZCC both end at HS-500,101 bubble; no direct line (possible junction at HS)"
+ ],
+ [
+  22,
+  "C13",
+  "signal",
+  "A signal line connects YI-500,101 to ZCO-500,101 (instrument/control signal, not process piping).",
+  "YI and ZCO both end at HS-500,101 bubble; no direct line (possible junction at HS)"
+ ],
+ [
+  23,
+  "C32",
+  "DECOY-ACCEPTED",
+  "A signal line connects YA-600,201D to LI-600,201B (instrument/control signal, not process piping).",
+  "both on common dashed bus under field bubbles"
+ ],
+ [
+  25,
+  "C5",
+  "DECOY-ACCEPTED",
+  "A signal line connects YI-600,204B to YA-600,009C (instrument/control signal, not process piping).",
+  "both bubbles on common dashed bus"
+ ]
+]

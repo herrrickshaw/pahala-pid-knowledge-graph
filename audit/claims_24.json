@@ -1,0 +1,250 @@
+{
+ "page": 24,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "measures",
+   "claim": "Instrument LSH-600,204D is mounted on / senses T 600,204."
+  },
+  {
+   "id": "C2",
+   "type": "flag",
+   "claim": "An off-page flag reading 'FOS BULK FUEL STORAGE TANK' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C3",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,204 to P 600,205."
+  },
+  {
+   "id": "C4",
+   "type": "tag",
+   "claim": "An item tagged PI-600,208A is drawn on this sheet."
+  },
+  {
+   "id": "C5",
+   "type": "signal",
+   "claim": "A signal line connects LSH-600,204A to VCP 600,206 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C6",
+   "type": "flag",
+   "claim": "An off-page flag reading 'FOR GENERATOR' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C7",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,204 to boundary 'ATMOSPHERE (tank vents)'."
+  },
+  {
+   "id": "C8",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,206 to off-page flag 'LOW LEVEL GEN CONTROL PANEL' (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C9",
+   "type": "tag",
+   "claim": "An item tagged YA-600,204E is drawn on this sheet."
+  },
+  {
+   "id": "C10",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,206 to YA-600,205 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C11",
+   "type": "signal",
+   "claim": "A signal line connects YA-600,203 to PI-600,203B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C12",
+   "type": "flag",
+   "claim": "An off-page flag reading 'FOR BULK FUEL STORAGE TANK' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C13",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,206 to YA-600,203 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C14",
+   "type": "tag",
+   "claim": "An item tagged YA-600,207E is drawn on this sheet."
+  },
+  {
+   "id": "C15",
+   "type": "flag",
+   "claim": "An off-page flag reading 'LOW LEVEL GEN CONTROL PANEL' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C16",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,206 to LAL-600,204B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C17",
+   "type": "measures",
+   "claim": "Instrument LSH-600,204A is mounted on / senses T 600,204."
+  },
+  {
+   "id": "C18",
+   "type": "tag",
+   "claim": "An item tagged LAL-600,207B is drawn on this sheet."
+  },
+  {
+   "id": "C19",
+   "type": "tag",
+   "claim": "An item tagged VCP 600,206 is drawn on this sheet."
+  },
+  {
+   "id": "C20",
+   "type": "measures",
+   "claim": "Instrument LIT-600,204C is mounted on / senses T 600,204."
+  },
+  {
+   "id": "C21",
+   "type": "signal",
+   "claim": "A signal line connects LSH-600,204D to VCP 600,206 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C22",
+   "type": "tag",
+   "claim": "An item tagged FLT 600,202 is drawn on this sheet."
+  },
+  {
+   "id": "C23",
+   "type": "flag",
+   "claim": "An off-page flag reading 'FOS GENERATOR' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C24",
+   "type": "tag",
+   "claim": "An item tagged LSH-600,204D is drawn on this sheet."
+  },
+  {
+   "id": "C25",
+   "type": "signal",
+   "claim": "A signal line connects P 600,205 to VCP 600,206 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C26",
+   "type": "signal",
+   "claim": "A signal line connects T 600,204 to PI-600,205A (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C27",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from P 600,203 to T 600,204."
+  },
+  {
+   "id": "C28",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,206 to P 600,203 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C29",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,204 to boundary 'DRAIN (open end)'."
+  },
+  {
+   "id": "C30",
+   "type": "tag",
+   "claim": "An item tagged PI-600,203A is drawn on this sheet."
+  },
+  {
+   "id": "C31",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'FOS GENERATOR' to T 600,204."
+  },
+  {
+   "id": "C32",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from boundary 'ATMOSPHERE (tank vents)' to T 600,204."
+  },
+  {
+   "id": "C33",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,206 to LAH-600,204D (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C34",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,206 to P 600,205 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C35",
+   "type": "tag",
+   "claim": "An item tagged PI-600,205A is drawn on this sheet."
+  },
+  {
+   "id": "C36",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'FOS BULK FUEL STORAGE TANK' to FLT 600,202."
+  },
+  {
+   "id": "C37",
+   "type": "tag",
+   "claim": "An item tagged LAH-600,204D is drawn on this sheet."
+  },
+  {
+   "id": "C38",
+   "type": "tag",
+   "claim": "An item tagged LSL-600,204B is drawn on this sheet."
+  },
+  {
+   "id": "C39",
+   "type": "signal",
+   "claim": "A signal line connects PI-600,203B to LAL-600,204B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C40",
+   "type": "tag",
+   "claim": "An item tagged PI-600,203B is drawn on this sheet."
+  },
+  {
+   "id": "C41",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from P 600,205 to off-page flag 'FOR BULK FUEL STORAGE TANK'."
+  },
+  {
+   "id": "C42",
+   "type": "flag",
+   "claim": "An off-page flag reading 'HIGH LEVEL LOW LEVEL BULK TANK PANEL' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C43",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'FOR GENERATOR' to T 600,204."
+  },
+  {
+   "id": "C44",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,204 to off-page flag 'FOS GENERATOR'."
+  },
+  {
+   "id": "C45",
+   "type": "tag",
+   "claim": "An item tagged YA-600,203 is drawn on this sheet."
+  },
+  {
+   "id": "C46",
+   "type": "measures",
+   "claim": "Instrument LSL-600,204B is mounted on / senses T 600,204."
+  },
+  {
+   "id": "C47",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,204 to boundary 'ATMOSPHERE (tank vents)'."
+  },
+  {
+   "id": "C48",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from FLT 600,202 to P 600,203."
+  },
+  {
+   "id": "C49",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,204 to P 600,203."
+  }
+ ]
+}

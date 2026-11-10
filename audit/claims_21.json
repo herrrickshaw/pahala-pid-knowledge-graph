@@ -1,0 +1,190 @@
+{
+ "page": 21,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "signal",
+   "claim": "A signal line connects LCL-001 to LI-401 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C2",
+   "type": "signal",
+   "claim": "A signal line connects LCH-001 to LCL-001 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C3",
+   "type": "measures",
+   "claim": "Instrument LSH-402 is mounted on / senses tank 'IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQU'."
+  },
+  {
+   "id": "C4",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from other 'CONTACT BASIN' to tank 'IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQU'."
+  },
+  {
+   "id": "C5",
+   "type": "signal",
+   "claim": "A signal line connects LCH-001 to LI-001 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C6",
+   "type": "measures",
+   "claim": "Instrument LE-401 is mounted on / senses tank 'IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQU'."
+  },
+  {
+   "id": "C7",
+   "type": "signal",
+   "claim": "A signal line connects LI-401 to LAL-001 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C8",
+   "type": "tag",
+   "claim": "An item tagged LCH-001 is drawn on this sheet."
+  },
+  {
+   "id": "C9",
+   "type": "signal",
+   "claim": "A signal line connects LCL-001 to LI-401 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C10",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from other 'CONTACT BASIN' to off-page flag 'FROM PERMEATE COLLECTION REF SHT P-204'."
+  },
+  {
+   "id": "C11",
+   "type": "tag",
+   "claim": "An item tagged LE-401 is drawn on this sheet."
+  },
+  {
+   "id": "C12",
+   "type": "measures",
+   "claim": "Instrument LI-001 is mounted on / senses tank 'IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQU'."
+  },
+  {
+   "id": "C13",
+   "type": "tag",
+   "claim": "An item tagged LAH-402 is drawn on this sheet."
+  },
+  {
+   "id": "C14",
+   "type": "tag",
+   "claim": "An item tagged LI-401 is drawn on this sheet."
+  },
+  {
+   "id": "C15",
+   "type": "tag",
+   "claim": "An item tagged FIT-403 is drawn on this sheet."
+  },
+  {
+   "id": "C16",
+   "type": "tag",
+   "claim": "An item tagged LCL-001 is drawn on this sheet."
+  },
+  {
+   "id": "C17",
+   "type": "tag",
+   "claim": "An item tagged LAH-004 is drawn on this sheet."
+  },
+  {
+   "id": "C18",
+   "type": "signal",
+   "claim": "A signal line connects LCL-001 to FIR-403 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C19",
+   "type": "signal",
+   "claim": "A signal line connects LCH-001 to LI-401 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C20",
+   "type": "signal",
+   "claim": "A signal line connects LE-401 to LI-402 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C21",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'TO EFFLUENT DISPOSAL REF SHT P-501' to tank 'IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQU'."
+  },
+  {
+   "id": "C22",
+   "type": "signal",
+   "claim": "A signal line connects LI-401 to LI-001 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C23",
+   "type": "tag",
+   "claim": "An item tagged LAL-004 is drawn on this sheet."
+  },
+  {
+   "id": "C24",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from tank 'IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQU' to off-page flag 'TO EFFLUENT DISPOSAL REF SHT P-501' passing through FE-403."
+  },
+  {
+   "id": "C25",
+   "type": "signal",
+   "claim": "A signal line connects LI-402 to LI-401 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C26",
+   "type": "tag",
+   "claim": "An item tagged LAH-001 is drawn on this sheet."
+  },
+  {
+   "id": "C27",
+   "type": "tag",
+   "claim": "An item tagged FIR-403 is drawn on this sheet."
+  },
+  {
+   "id": "C28",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from tank 'IRRIGATION EQUALIZATION TANK (printed 'TANK'; 'EQU' to other 'CONTACT BASIN'."
+  },
+  {
+   "id": "C29",
+   "type": "signal",
+   "claim": "A signal line connects FE-403 to FIT-403 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C30",
+   "type": "tag",
+   "claim": "An item tagged FE-403 is drawn on this sheet."
+  },
+  {
+   "id": "C31",
+   "type": "flag",
+   "claim": "An off-page flag reading 'FROM PERMEATE COLLECTION REF SHT P-204' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C32",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'FROM PERMEATE COLLECTION REF SHT P-204' to other 'CONTACT BASIN'."
+  },
+  {
+   "id": "C33",
+   "type": "signal",
+   "claim": "A signal line connects LCH-001 to LI-401 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C34",
+   "type": "flag",
+   "claim": "An off-page flag reading 'TO EFFLUENT DISPOSAL REF SHT P-501' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C35",
+   "type": "signal",
+   "claim": "A signal line connects LCL-001 to LI-401 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C36",
+   "type": "tag",
+   "claim": "An item tagged LCH-004 is drawn on this sheet."
+  },
+  {
+   "id": "C37",
+   "type": "tag",
+   "claim": "An item tagged YA-001 is drawn on this sheet."
+  }
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "page": 10,
+ "verdicts": {
+  "C1": {
+   "v": "correct",
+   "evidence": "LSL 040102 bubble r2c3"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "LAL 040101 bubble r1c3"
+  },
+  "C14": {
+   "v": "correct",
+   "evidence": "MAH 040121 bubble r1c4"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "TAH 040111 bubble r1c2"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "ME 040111 bubble r2c2"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "HS 040111 bubble r1c2"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "TSH 040121 bubble r2c3"
+  },
+  "C30": {
+   "v": "correct",
+   "evidence": "YC 040111 bubble r1c2"
+  },
+  "C38": {
+   "v": "correct",
+   "evidence": "YI 040111 B bubble r1c2"
+  },
+  "C44": {
+   "v": "correct",
+   "evidence": "TAH 040121 bubble r1c4"
+  },
+  "C2": {
+   "v": "wrong",
+   "evidence": "ME-040122 dashes up to tilde end, not to LAL-040101 which is on the level-switch loop"
+  },
+  "C4": {
+   "v": "wrong",
+   "evidence": "flag is inlet; arrows run from flag into tank"
+  },
+  "C24": {
+   "v": "wrong",
+   "evidence": "pH ADJUSTMENT is an inlet flag; flow enters tank"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "pH ADJUSTMENT REF SHT P201 flag with arrows into tank (r2c2)"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "pH ADJUSTMENT REF SHT P201 flag with arrows into tank (r2c2)"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "SCREENED INFLT FROM HEADWORKS flag, line with arrow into tank (r2c2)"
+  },
+  "C39": {
+   "v": "correct",
+   "evidence": "SCREENED INFLT FROM HEADWORKS flag, line with arrow into tank (r2c2)"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "EQUIPMENT CAL PS INFLUENT flag, line with arrow into tank (r2c2)"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "EQUIPMENT CAL PS INFLUENT flag, line with arrow into tank (r2c2)"
+  },
+  "C7": {
+   "v": "wrong",
+   "evidence": "only ZA-040101 and ZA-040121; no ZA-040124"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "recycle pump discharge rises, through FE-040141, reducers, to RECYCLE TO PA-01 flag (r2c4/r2c5)"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "RECYCLE TO PA-01 flag at right end of discharge line"
+  },
+  "C12": {
+   "v": "wrong",
+   "evidence": "flag is outlet; flow runs from pump toward flag"
+  },
+  "C9": {
+   "v": "wrong",
+   "evidence": "only LAL-040101 and LAL-040102; no LAL-040104"
+  },
+  "C13": {
+   "v": "wrong",
+   "evidence": "VFD-040121 dashed line goes to pump 1 motor; TSH-040111 belongs to mixer loop via TY-040111"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "TSH 040122 solid probe line into pump 2 (r3c3)"
+  },
+  "C35": {
+   "v": "correct",
+   "evidence": "ME 040122 solid line into pump 2 (r3c3)"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "YC 040121 to DO card down to HS 040121 (r1c3)"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "TSH 040111 line to mixer MXR-040111 (r2c2/r3c2)"
+  },
+  "C36": {
+   "v": "correct",
+   "evidence": "ME 040111 line to mixer MXR-040111"
+  },
+  "C19": {
+   "v": "wrong",
+   "evidence": "LSH-040103 loop goes through DI card to LAH-040103; FAL-040141 is on the FIR flow loop"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "pump suction in tank bottom, discharge line rises (r3c3)"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "pump suction in tank bottom, discharge line rises (r3c3)"
+  },
+  "C23": {
+   "v": "correct",
+   "evidence": "LIR-040101 bus with junction dots to LAH-040101 and LAL-040101 (r1c3)"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "MAH 040121 line to DI then MY 040121 (r1c4/r2c4)"
+  },
+  "C31": {
+   "v": "correct",
+   "evidence": "LSL 040102 line up through DI to LAL 040102 (r2c3/r1c3)"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "ME 040121 dashed line up to MS 040121 (r2c3/r2c4)"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "YI/YC 040111 bus to ZA 040101 arrow (r1c2)"
+  },
+  "C34": {
+   "v": "correct",
+   "evidence": "JS 040111 dashed line down to mixer motor (r2c2/r3c2)"
+  },
+  "C37": {
+   "v": "correct",
+   "evidence": "FE 040141 directly under FIT 040141 (r2c4)"
+  },
+  "C40": {
+   "v": "correct",
+   "evidence": "LSH 040103 probe line into tank (r3c3)"
+  },
+  "C41": {
+   "v": "correct",
+   "evidence": "FIC 040121 to AO card dashed to VFD 040121 (r1c3)"
+  },
+  "C42": {
+   "v": "correct",
+   "evidence": "MS 040111 dashed line down to ME 040111 (r2c2)"
+  },
+  "C43": {
+   "v": "wrong",
+   "evidence": "SS-040121 only"
+  }
+ },
+ "missing_from_known": [
+  {
+   "tag": "AX-01",
+   "where": "r3c3",
+   "what": "anoxic basin equipment label (TNK-040100)"
+  }
+ ],
+ "notes": "Pumps and valves untagged. ME/TSH 040122 loops end in tilde marks (typical for 2 pumps)."
+}

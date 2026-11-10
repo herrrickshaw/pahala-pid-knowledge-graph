@@ -1,0 +1,205 @@
+{
+ "page": 23,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "measures",
+   "claim": "Instrument LSH-600,201D is mounted on / senses T 600,201."
+  },
+  {
+   "id": "C2",
+   "type": "tag",
+   "claim": "An item tagged LSH-600,201D is drawn on this sheet."
+  },
+  {
+   "id": "C3",
+   "type": "tag",
+   "claim": "An item tagged T 600,204 is drawn on this sheet."
+  },
+  {
+   "id": "C4",
+   "type": "tag",
+   "claim": "An item tagged LIT-600,201A is drawn on this sheet."
+  },
+  {
+   "id": "C5",
+   "type": "signal",
+   "claim": "A signal line connects LIT-600,201A to VCP 600,201 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C6",
+   "type": "tag",
+   "claim": "An item tagged LAH-600,201B is drawn on this sheet."
+  },
+  {
+   "id": "C7",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from boundary 'ATMOSPHERE (tank vents)' to T 600,201."
+  },
+  {
+   "id": "C8",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,201 to LI-600,201B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C9",
+   "type": "measures",
+   "claim": "Instrument LSL-600,201C is mounted on / senses T 600,201."
+  },
+  {
+   "id": "C10",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,201 to LAH-600,201C (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C11",
+   "type": "measures",
+   "claim": "Instrument LIT-600,201A is mounted on / senses T 600,201."
+  },
+  {
+   "id": "C12",
+   "type": "tag",
+   "claim": "An item tagged HS-600,201F is drawn on this sheet."
+  },
+  {
+   "id": "C13",
+   "type": "measures",
+   "claim": "Instrument LSH-600,201B is mounted on / senses T 600,201."
+  },
+  {
+   "id": "C14",
+   "type": "tag",
+   "claim": "An item tagged YA-600,204D is drawn on this sheet."
+  },
+  {
+   "id": "C15",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,201 to boundary 'ATMOSPHERE (tank vents)'."
+  },
+  {
+   "id": "C16",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,201 to LAL-600,201A (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C17",
+   "type": "signal",
+   "claim": "A signal line connects LSH-600,201D to VCP 600,201 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C18",
+   "type": "tag",
+   "claim": "An item tagged LAL-600,201A is drawn on this sheet."
+  },
+  {
+   "id": "C19",
+   "type": "signal",
+   "claim": "A signal line connects LSH-600,201D to LIT-600,201A (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C20",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,201 to YI-600,201E (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C21",
+   "type": "flag",
+   "claim": "An off-page flag reading 'FOS A DAY TANK' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C22",
+   "type": "tag",
+   "claim": "An item tagged VCP 600,201 is drawn on this sheet."
+  },
+  {
+   "id": "C23",
+   "type": "signal",
+   "claim": "A signal line connects LSH-600,201B to VCP 600,201 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C24",
+   "type": "tag",
+   "claim": "An item tagged YI-600,201E is drawn on this sheet."
+  },
+  {
+   "id": "C25",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,201 to YA-600,201D (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C26",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'FOR DAY TANK' to T 600,201."
+  },
+  {
+   "id": "C27",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,201 to boundary 'ATMOSPHERE (tank vents)'."
+  },
+  {
+   "id": "C28",
+   "type": "tag",
+   "claim": "An item tagged LSH-600,201B is drawn on this sheet."
+  },
+  {
+   "id": "C29",
+   "type": "signal",
+   "claim": "A signal line connects LSL-600,201C to VCP 600,201 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C30",
+   "type": "tag",
+   "claim": "An item tagged LAH-600,201C is drawn on this sheet."
+  },
+  {
+   "id": "C31",
+   "type": "flag",
+   "claim": "An off-page flag reading 'HIGH LEVEL LOW LEVEL DAY TANK PANEL' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C32",
+   "type": "signal",
+   "claim": "A signal line connects YA-600,201D to LI-600,201B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C33",
+   "type": "tag",
+   "claim": "An item tagged T 600,201 is drawn on this sheet."
+  },
+  {
+   "id": "C34",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,201 to off-page flag 'FOR DAY TANK'."
+  },
+  {
+   "id": "C35",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,201 to off-page flag 'FOS A DAY TANK'."
+  },
+  {
+   "id": "C36",
+   "type": "flag",
+   "claim": "An off-page flag reading 'FOR DAY TANK' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C37",
+   "type": "signal",
+   "claim": "A signal line connects VCP 600,201 to LAH-600,201B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C38",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from T 600,201 to boundary 'ATMOSPHERE (tank vents)'."
+  },
+  {
+   "id": "C39",
+   "type": "tag",
+   "claim": "An item tagged YI-600,204E is drawn on this sheet."
+  },
+  {
+   "id": "C40",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from boundary 'ATMOSPHERE (tank vents)' to T 600,201."
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "page": 25,
+ "verdicts": {
+  "C6": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C30": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C34": {
+   "v": "correct",
+   "evidence": "tag seen on page 25"
+  },
+  "C2": {
+   "v": "wrong",
+   "evidence": "no such tag (check series 600,009C/204; VCP is 600,209)"
+  },
+  "C31": {
+   "v": "wrong",
+   "evidence": "no such tag (check series 600,009C/204; VCP is 600,209)"
+  },
+  "C32": {
+   "v": "wrong",
+   "evidence": "no such tag (check series 600,009C/204; VCP is 600,209)"
+  },
+  "C1": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP 600,209 up to bus under bubbles, arrow towards SCADA"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP 600,209 up to bus under bubbles, arrow towards SCADA"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP 600,209 up to bus under bubbles, arrow towards SCADA"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP 600,209 up to bus under bubbles, arrow towards SCADA"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP 600,209 up to bus under bubbles, arrow towards SCADA"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "both bubbles on common dashed bus"
+  },
+  "C3": {
+   "v": "wrong",
+   "evidence": "arrow points to SCADA bubble; signal VCP -> YI, reversed"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "dashed VCP to generator (r3c2)"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "dashed from panel ESP right to charger"
+  },
+  "C29": {
+   "v": "wrong",
+   "evidence": "YI-600,204B signal goes to SCADA/VCP, not to GEN directly"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "dashed from flag into panel top"
+  },
+  "C35": {
+   "v": "correct",
+   "evidence": "flag at left, signal enters panel"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "FOS DAY TANK flag at left, flow enters"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "FOR DAY TANK flag at right, flow leaves"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "FOS flag -> valve, coil, pump P 600,207"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "pump -> arrow into generator"
+  },
+  "C18": {
+   "v": "wrong",
+   "evidence": "reversed"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "generator -> arrow down -> FOR line to flag"
+  },
+  "C23": {
+   "v": "wrong",
+   "evidence": "reversed"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "generator exhaust riser -> 12in EE -> silencer"
+  },
+  "C14": {
+   "v": "correct",
+   "evidence": "silencer -> arrow right to boundary"
+  },
+  "C15": {
+   "v": "wrong",
+   "evidence": "reversed"
+  },
+  "C36": {
+   "v": "correct",
+   "evidence": "silencer drain 1/2in-D -> D"
+  }
+ },
+ "missing_from_known": [
+  {
+   "tag": "MCP 600,101",
+   "where": "r1c1",
+   "what": "boxed MCP label"
+  }
+ ],
+ "notes": "Two bubbles share YA-600,204A (GEN FAULT, GEN TROUBLE). Silencer S 600,210, charger CHGR 600,211."
+}

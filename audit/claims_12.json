@@ -1,0 +1,215 @@
+{
+ "page": 12,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "tag",
+   "claim": "An item tagged LAH-070102 is drawn on this sheet."
+  },
+  {
+   "id": "C2",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'OVERFLOW FROM PRE-AERATION BASIN REF SHT P202' to TNK-070100."
+  },
+  {
+   "id": "C3",
+   "type": "tag",
+   "claim": "An item tagged TNK-070100 is drawn on this sheet."
+  },
+  {
+   "id": "C4",
+   "type": "tag",
+   "claim": "An item tagged SMU-070111 is drawn on this sheet."
+  },
+  {
+   "id": "C5",
+   "type": "flag",
+   "claim": "An off-page flag reading 'OVERFLOW FROM PRE-AERATION BASIN REF SHT P202' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C6",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-070100 to SMU-070121."
+  },
+  {
+   "id": "C7",
+   "type": "tag",
+   "claim": "An item tagged ZIC-070181 is drawn on this sheet."
+  },
+  {
+   "id": "C8",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from boundary 'Source of bold dashed line at XV-070181 (not drawn)' to TNK-070100 passing through XV-070181."
+  },
+  {
+   "id": "C9",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-070100 to SMU-070111."
+  },
+  {
+   "id": "C10",
+   "type": "signal",
+   "claim": "A signal line connects FIR-070186 to FAL-070186 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C11",
+   "type": "measures",
+   "claim": "Instrument ZSO-070181 is mounted on / senses XV-070181."
+  },
+  {
+   "id": "C12",
+   "type": "tag",
+   "claim": "An item tagged FIT-070186 is drawn on this sheet."
+  },
+  {
+   "id": "C13",
+   "type": "flag",
+   "claim": "An off-page flag reading 'PROCESS AIR FROM BLOWERS REF SHT P205' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C14",
+   "type": "measures",
+   "claim": "Instrument LSH-070102 is mounted on / senses TNK-070100."
+  },
+  {
+   "id": "C15",
+   "type": "tag",
+   "claim": "An item tagged FE-070189 is drawn on this sheet."
+  },
+  {
+   "id": "C16",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TV-070182 to off-page flag 'WAS TO WAS-01 REF SHT P210' passing through FE-070186."
+  },
+  {
+   "id": "C17",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'PROCESS AIR FROM BLOWERS REF SHT P205' to membrane_filter 'SMU- (FUTURE MEMBRANES)'."
+  },
+  {
+   "id": "C18",
+   "type": "measures",
+   "claim": "Instrument LSL-070101 is mounted on / senses TNK-070100."
+  },
+  {
+   "id": "C19",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from SMU-070111 to off-page flag 'UPPER PERMEATE TO COLLECTION REF SHT P204'."
+  },
+  {
+   "id": "C20",
+   "type": "tag",
+   "claim": "An item tagged ZA-070181 is drawn on this sheet."
+  },
+  {
+   "id": "C21",
+   "type": "tag",
+   "claim": "An item tagged LAL-070101 is drawn on this sheet."
+  },
+  {
+   "id": "C22",
+   "type": "flag",
+   "claim": "An off-page flag reading 'LOWER PERMEATE TO COLLECTION REF SHT P204' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C23",
+   "type": "signal",
+   "claim": "A signal line connects LAL-070101 to YI-070181 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C24",
+   "type": "measures",
+   "claim": "Instrument ZSC-070181 is mounted on / senses XV-070181."
+  },
+  {
+   "id": "C25",
+   "type": "tag",
+   "claim": "An item tagged SMU-070121 is drawn on this sheet."
+  },
+  {
+   "id": "C26",
+   "type": "signal",
+   "claim": "A signal line connects FE-070186 to FIT-070186 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C27",
+   "type": "signal",
+   "claim": "A signal line connects HS-070181 to XV-070181 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C28",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from SMU-070111 to off-page flag 'LOWER PERMEATE TO COLLECTION REF SHT P204'."
+  },
+  {
+   "id": "C29",
+   "type": "flag",
+   "claim": "An off-page flag reading 'ACID WASH REF SHT P206' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C30",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-070100 to boundary 'Source of bold dashed line at XV-070181 (not drawn)'."
+  },
+  {
+   "id": "C31",
+   "type": "signal",
+   "claim": "A signal line connects YC-070181 to ZA-070181 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C32",
+   "type": "flag",
+   "claim": "An off-page flag reading 'UPPER PERMEATE TO COLLECTION REF SHT P204' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C33",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'UPPER PERMEATE TO COLLECTION REF SHT P204' to SMU-070111."
+  },
+  {
+   "id": "C34",
+   "type": "signal",
+   "claim": "A signal line connects ZIC-070181 to ZA-070181 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C35",
+   "type": "tag",
+   "claim": "An item tagged ZA-070184 is drawn on this sheet."
+  },
+  {
+   "id": "C36",
+   "type": "signal",
+   "claim": "A signal line connects FAL-070186 to YI-070181 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C37",
+   "type": "tag",
+   "claim": "An item tagged YI-070184 is drawn on this sheet."
+  },
+  {
+   "id": "C38",
+   "type": "signal",
+   "claim": "A signal line connects ZIO-070181 to ZA-070181 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C39",
+   "type": "tag",
+   "claim": "An item tagged LSH-070102 is drawn on this sheet."
+  },
+  {
+   "id": "C40",
+   "type": "tag",
+   "claim": "An item tagged FAL-070186 is drawn on this sheet."
+  },
+  {
+   "id": "C41",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'WAS TO WAS-01 REF SHT P210' to TV-070182."
+  },
+  {
+   "id": "C42",
+   "type": "flag",
+   "claim": "An off-page flag reading 'WAS TO WAS-01 REF SHT P210' is drawn, and flow leaves this sheet there."
+  }
+ ]
+}

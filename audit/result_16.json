@@ -1,0 +1,55 @@
+{
+ "page": 16,
+ "verdicts": {
+  "C1": {
+   "v": "correct",
+   "evidence": "pump discharge to flag pH ADJUSTMENT TO AX-01"
+  },
+  "C2": {
+   "v": "wrong",
+   "evidence": "only TNK-160100"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "YC-160101 DO dashed to outlet/plug powering pump; indirect"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "arrow from tank outlet to pump"
+  },
+  "C5": {
+   "v": "wrong",
+   "evidence": "outgoing flag, reverse"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "discharge relief arrow back to tank top"
+  },
+  "C7": {
+   "v": "wrong",
+   "evidence": "only PMP-160101"
+  },
+  "C8": {
+   "v": "wrong",
+   "evidence": "only YC-160101"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "TNK-160100 label"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "outgoing flag at r2c4"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "YC 160101 RUN bubble"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "PMP-160101 label"
+  }
+ },
+ "missing_from_known": [],
+ "notes": "Sparse sheet. Relief/recirc line from discharge to tank."
+}

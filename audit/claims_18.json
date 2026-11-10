@@ -1,0 +1,165 @@
+{
+ "page": 18,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "signal",
+   "claim": "A signal line connects SC-110111 to VFD-110111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C2",
+   "type": "tag",
+   "claim": "An item tagged YI-110111A is drawn on this sheet."
+  },
+  {
+   "id": "C3",
+   "type": "signal",
+   "claim": "A signal line connects VFD-110101 to BLR-110111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C4",
+   "type": "signal",
+   "claim": "A signal line connects BLR-110101 to YI-110101B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C5",
+   "type": "signal",
+   "claim": "A signal line connects BLR-110111 to YI-110111B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C6",
+   "type": "tag",
+   "claim": "An item tagged YI-110111B is drawn on this sheet."
+  },
+  {
+   "id": "C7",
+   "type": "tag",
+   "claim": "An item tagged YA-110101A is drawn on this sheet."
+  },
+  {
+   "id": "C8",
+   "type": "tag",
+   "claim": "An item tagged YI-110101C is drawn on this sheet."
+  },
+  {
+   "id": "C9",
+   "type": "signal",
+   "claim": "A signal line connects BLR-110101 to YI-110101C (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C10",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from BLR-110111 to off-page flag 'PROCESS AIR TO PA&MB BLRs REF SHT P205'."
+  },
+  {
+   "id": "C11",
+   "type": "signal",
+   "claim": "A signal line connects XC-110101B to BLR-110101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C12",
+   "type": "signal",
+   "claim": "A signal line connects BLR-110111 to YA-110111A (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C13",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from BLR-110101 to off-page flag 'PROCESS AIR WAS-01 REF SHT P210'."
+  },
+  {
+   "id": "C14",
+   "type": "tag",
+   "claim": "An item tagged YI-110104A is drawn on this sheet."
+  },
+  {
+   "id": "C15",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'PROCESS AIR WAS-01 REF SHT P210' to BLR-110101."
+  },
+  {
+   "id": "C16",
+   "type": "tag",
+   "claim": "An item tagged YI-110111D is drawn on this sheet."
+  },
+  {
+   "id": "C17",
+   "type": "tag",
+   "claim": "An item tagged SC-110114 is drawn on this sheet."
+  },
+  {
+   "id": "C18",
+   "type": "tag",
+   "claim": "An item tagged SC-110111 is drawn on this sheet."
+  },
+  {
+   "id": "C19",
+   "type": "flag",
+   "claim": "An off-page flag reading 'PROCESS AIR TO PA&MB BLRs REF SHT P205' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C20",
+   "type": "tag",
+   "claim": "An item tagged YI-110101D is drawn on this sheet."
+  },
+  {
+   "id": "C21",
+   "type": "signal",
+   "claim": "A signal line connects BLR-110101 to YA-110101A (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C22",
+   "type": "signal",
+   "claim": "A signal line connects XC-110111C to BLR-110111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C23",
+   "type": "signal",
+   "claim": "A signal line connects XC-110111A to BLR-110111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C24",
+   "type": "tag",
+   "claim": "An item tagged YI-110101A is drawn on this sheet."
+  },
+  {
+   "id": "C25",
+   "type": "tag",
+   "claim": "An item tagged VFD-110101 is drawn on this sheet."
+  },
+  {
+   "id": "C26",
+   "type": "signal",
+   "claim": "A signal line connects XC-110111B to BLR-110111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C27",
+   "type": "flag",
+   "claim": "An off-page flag reading 'PROCESS AIR WAS-01 REF SHT P210' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C28",
+   "type": "tag",
+   "claim": "An item tagged YI-110101B is drawn on this sheet."
+  },
+  {
+   "id": "C29",
+   "type": "tag",
+   "claim": "An item tagged XC-110114A is drawn on this sheet."
+  },
+  {
+   "id": "C30",
+   "type": "signal",
+   "claim": "A signal line connects XC-110101C to XC-110101B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C31",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'PROCESS AIR TO PA&MB BLRs REF SHT P205' to BLR-110111."
+  },
+  {
+   "id": "C32",
+   "type": "signal",
+   "claim": "A signal line connects XC-110101A to XC-110101B (instrument/control signal, not process piping)."
+  }
+ ]
+}

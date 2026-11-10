@@ -1,0 +1,135 @@
+{
+ "page": 22,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "tag",
+   "claim": "An item tagged HS-500,104 is drawn on this sheet."
+  },
+  {
+   "id": "C2",
+   "type": "tag",
+   "claim": "An item tagged ZSO-500,204 is drawn on this sheet."
+  },
+  {
+   "id": "C3",
+   "type": "tag",
+   "claim": "An item tagged ZIO-500,101 is drawn on this sheet."
+  },
+  {
+   "id": "C4",
+   "type": "tag",
+   "claim": "An item tagged ZSC-500,201 is drawn on this sheet."
+  },
+  {
+   "id": "C5",
+   "type": "tag",
+   "claim": "An item tagged HS-500,101 is drawn on this sheet."
+  },
+  {
+   "id": "C6",
+   "type": "signal",
+   "claim": "A signal line connects ZIO-500,101 to ZSC-500,301 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C7",
+   "type": "signal",
+   "claim": "A signal line connects YI-500,101 to ZCC-500,101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C8",
+   "type": "tag",
+   "claim": "An item tagged ZSC-500,104 is drawn on this sheet."
+  },
+  {
+   "id": "C9",
+   "type": "tag",
+   "claim": "An item tagged ZSO-500,101 is drawn on this sheet."
+  },
+  {
+   "id": "C10",
+   "type": "signal",
+   "claim": "A signal line connects ZSC-500,101 to ZIC-500,101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C11",
+   "type": "signal",
+   "claim": "A signal line connects ZCO-500,101 to HS-500,101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C12",
+   "type": "signal",
+   "claim": "A signal line connects ZSC-500,301 to ZIO-500,101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C13",
+   "type": "signal",
+   "claim": "A signal line connects YI-500,101 to ZCO-500,101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C14",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from boundary 'DRIP ZONE 1' to off-page flag 'FROM IRRIGATION EQUALIZATION TANK'."
+  },
+  {
+   "id": "C15",
+   "type": "signal",
+   "claim": "A signal line connects ZIC-500,101 to ZSC-500,101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C16",
+   "type": "tag",
+   "claim": "An item tagged YA-500,101 is drawn on this sheet."
+  },
+  {
+   "id": "C17",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'FROM IRRIGATION EQUALIZATION TANK' to boundary 'DRIP ZONE 1'."
+  },
+  {
+   "id": "C18",
+   "type": "signal",
+   "claim": "A signal line connects ZSO-500,101 to ZIO-500,101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C19",
+   "type": "tag",
+   "claim": "An item tagged ZSC-500,201 is drawn on this sheet."
+  },
+  {
+   "id": "C20",
+   "type": "flag",
+   "claim": "An off-page flag reading 'FROM IRRIGATION EQUALIZATION TANK' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C21",
+   "type": "tag",
+   "claim": "An item tagged ZSO-500,201 is drawn on this sheet."
+  },
+  {
+   "id": "C22",
+   "type": "signal",
+   "claim": "A signal line connects HS-500,101 to YI-500,101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C23",
+   "type": "tag",
+   "claim": "An item tagged ZCO-500,101 is drawn on this sheet."
+  },
+  {
+   "id": "C24",
+   "type": "signal",
+   "claim": "A signal line connects ZCC-500,101 to HS-500,101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C25",
+   "type": "tag",
+   "claim": "An item tagged ZSC-500,101 is drawn on this sheet."
+  },
+  {
+   "id": "C26",
+   "type": "tag",
+   "claim": "An item tagged ZSC-500,301 is drawn on this sheet."
+  }
+ ]
+}

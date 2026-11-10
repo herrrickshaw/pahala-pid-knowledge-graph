@@ -1,0 +1,65 @@
+{
+ "page": 16,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from PMP-160101 to off-page flag 'pH ADJUSTMENT TO AX-01'."
+  },
+  {
+   "id": "C2",
+   "type": "tag",
+   "claim": "An item tagged TNK-160103 is drawn on this sheet."
+  },
+  {
+   "id": "C3",
+   "type": "signal",
+   "claim": "A signal line connects YC-160101 to PMP-160101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C4",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-160100 to PMP-160101."
+  },
+  {
+   "id": "C5",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'pH ADJUSTMENT TO AX-01' to PMP-160101."
+  },
+  {
+   "id": "C6",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from PMP-160101 to TNK-160100."
+  },
+  {
+   "id": "C7",
+   "type": "tag",
+   "claim": "An item tagged PMP-160104 is drawn on this sheet."
+  },
+  {
+   "id": "C8",
+   "type": "tag",
+   "claim": "An item tagged YC-160104 is drawn on this sheet."
+  },
+  {
+   "id": "C9",
+   "type": "tag",
+   "claim": "An item tagged TNK-160100 is drawn on this sheet."
+  },
+  {
+   "id": "C10",
+   "type": "flag",
+   "claim": "An off-page flag reading 'pH ADJUSTMENT TO AX-01' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C11",
+   "type": "tag",
+   "claim": "An item tagged YC-160101 is drawn on this sheet."
+  },
+  {
+   "id": "C12",
+   "type": "tag",
+   "claim": "An item tagged PMP-160101 is drawn on this sheet."
+  }
+ ]
+}

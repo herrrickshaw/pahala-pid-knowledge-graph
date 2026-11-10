@@ -1,0 +1,200 @@
+{
+ "page": 19,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "signal",
+   "claim": "A signal line connects MY-190111 to YC-190111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C2",
+   "type": "tag",
+   "claim": "An item tagged MXR-190111 is drawn on this sheet."
+  },
+  {
+   "id": "C3",
+   "type": "tag",
+   "claim": "An item tagged ZA-190111 is drawn on this sheet."
+  },
+  {
+   "id": "C4",
+   "type": "tag",
+   "claim": "An item tagged YI-190111B is drawn on this sheet."
+  },
+  {
+   "id": "C5",
+   "type": "signal",
+   "claim": "A signal line connects MY-190111 to MAH-190111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C6",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-190100 to off-page flag 'WAS FROM MB-01 REF SHT P203'."
+  },
+  {
+   "id": "C7",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from FBD-190103 to off-page flag 'PROCESS AIR FROM BLOWERS REF SHT P205'."
+  },
+  {
+   "id": "C8",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-190100 to off-page flag 'WAS TO WAS PUMPS REF SHT P211'."
+  },
+  {
+   "id": "C9",
+   "type": "measures",
+   "claim": "Instrument ME-190111 is mounted on / senses MXR-190111."
+  },
+  {
+   "id": "C10",
+   "type": "tag",
+   "claim": "An item tagged HS-190111 is drawn on this sheet."
+  },
+  {
+   "id": "C11",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'WAS TO WAS PUMPS REF SHT P211' to TNK-190100."
+  },
+  {
+   "id": "C12",
+   "type": "signal",
+   "claim": "A signal line connects MXR-190111 to JS-190111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C13",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'PROCESS AIR FROM BLOWERS REF SHT P205' to FBD-190103."
+  },
+  {
+   "id": "C14",
+   "type": "signal",
+   "claim": "A signal line connects HS-190111 to YI-190111B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C15",
+   "type": "flag",
+   "claim": "An off-page flag reading 'PROCESS AIR FROM BLOWERS REF SHT P205' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C16",
+   "type": "tag",
+   "claim": "An item tagged YI-190111A is drawn on this sheet."
+  },
+  {
+   "id": "C17",
+   "type": "signal",
+   "claim": "A signal line connects TY-190111 to HS-190111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C18",
+   "type": "signal",
+   "claim": "A signal line connects YC-190111 to HS-190111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C19",
+   "type": "signal",
+   "claim": "A signal line connects YI-190111A to ZA-190111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C20",
+   "type": "signal",
+   "claim": "A signal line connects TSH-190111 to TY-190111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C21",
+   "type": "measures",
+   "claim": "Instrument LE-190102 is mounted on / senses TNK-190100."
+  },
+  {
+   "id": "C22",
+   "type": "measures",
+   "claim": "Instrument TSH-190111 is mounted on / senses MXR-190111."
+  },
+  {
+   "id": "C23",
+   "type": "tag",
+   "claim": "An item tagged MY-190111 is drawn on this sheet."
+  },
+  {
+   "id": "C24",
+   "type": "measures",
+   "claim": "Instrument LT-190102 is mounted on / senses TNK-190100."
+  },
+  {
+   "id": "C25",
+   "type": "signal",
+   "claim": "A signal line connects MAH-190111 to LAL-190102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C26",
+   "type": "tag",
+   "claim": "An item tagged ME-190114 is drawn on this sheet."
+  },
+  {
+   "id": "C27",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'WAS FROM MB-01 REF SHT P203' to TNK-190100."
+  },
+  {
+   "id": "C28",
+   "type": "tag",
+   "claim": "An item tagged TNK-190100 is drawn on this sheet."
+  },
+  {
+   "id": "C29",
+   "type": "signal",
+   "claim": "A signal line connects LIR-190102 to LAL-190102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C30",
+   "type": "tag",
+   "claim": "An item tagged LT-190102 is drawn on this sheet."
+  },
+  {
+   "id": "C31",
+   "type": "tag",
+   "claim": "An item tagged YI-190114B is drawn on this sheet."
+  },
+  {
+   "id": "C32",
+   "type": "signal",
+   "claim": "A signal line connects LIR-190102 to LAH-190102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C33",
+   "type": "flag",
+   "claim": "An off-page flag reading 'WAS FROM MB-01 REF SHT P203' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C34",
+   "type": "tag",
+   "claim": "An item tagged ME-190111 is drawn on this sheet."
+  },
+  {
+   "id": "C35",
+   "type": "tag",
+   "claim": "An item tagged MS-190114 is drawn on this sheet."
+  },
+  {
+   "id": "C36",
+   "type": "tag",
+   "claim": "An item tagged TY-190111 is drawn on this sheet."
+  },
+  {
+   "id": "C37",
+   "type": "signal",
+   "claim": "A signal line connects LT-190102 to LIR-190102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C38",
+   "type": "flag",
+   "claim": "An off-page flag reading 'WAS TO WAS PUMPS REF SHT P211' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C39",
+   "type": "signal",
+   "claim": "A signal line connects MXR-190111 to MY-190111 (instrument/control signal, not process piping)."
+  }
+ ]
+}

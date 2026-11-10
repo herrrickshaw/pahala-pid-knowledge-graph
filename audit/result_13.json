@@ -1,0 +1,135 @@
+{
+ "page": 13,
+ "verdicts": {
+  "C1": {
+   "v": "correct",
+   "evidence": "HS 080112 dashed down to XV 080112 at r2c4"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "flag LOWER PERMEATE FROM MB-01, pointed end toward pipe at r1c1/r2c1"
+  },
+  "C3": {
+   "v": "wrong",
+   "evidence": "tag drawn is FIT-080141 not 080144"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "YI 080101 A bubble at r1c3"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "upper flag line runs right through pump, FE-080141, FCV-080132, to PERMEATE TO DISINFECTION"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "PERMEATE TO DISINFECTION outgoing flag at r3c5"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "ZA 080101 FAIL bubble r1c3"
+  },
+  "C8": {
+   "v": "wrong",
+   "evidence": "no YI-080104B; only 080101A/B"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "PAH 080121 HIGH PRESS bubble r1c2"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "YC 080101 RUN bubble r1c3"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "AE/AIT 080001 stacked, dashed line to AI card"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "ZIC 080132 CLOSED bubble r1c4"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "UPPER PERMEATE FROM MB-01 flag at left, flow enters"
+  },
+  "C14": {
+   "v": "wrong",
+   "evidence": "reversed; flow enters at upper flag and leaves at disinfection flag"
+  },
+  "C15": {
+   "v": "wrong",
+   "evidence": "ZSC-080132 goes to ZIC-080132 DI card, not YI-080112"
+  },
+  "C16": {
+   "v": "wrong",
+   "evidence": "ZA-080132 fed by FC/ZIC bus; PT-080121 is on a separate loop far left"
+  },
+  "C17": {
+   "v": "wrong",
+   "evidence": "PAH-080121 is fed by PIR-080121 via arrow; no link to XC-080111"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "ZSC stacked on FCV-080132 bubble"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "dashed line from REMOTE DI passes through HS to JS; HS and JS joined"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "AIR 080001 solid line with arrow up to AAH 080001"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "YI 080101 B bus to ZA-080101 (junction line to FAIL)"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "YC 080101 on same bus joined to ZA-080101"
+  },
+  "C23": {
+   "v": "wrong",
+   "evidence": "no HS-080104; HS-080101/111/112 only"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "ZA 080132 FAIL bubble r1c4"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "FIT/FE 080141 stacked pair, FE on pipe"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "XC 080111 OPEN/CLOSE r1c1"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "FC 080132 on bus with ZIC, up to ZA 080132"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "PIR 080121 bus line to arrow into PAH 080121"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "HS 080111 dashed down to XV 080111"
+  },
+  "C30": {
+   "v": "correct",
+   "evidence": "YI 080101 B bubble r1c3"
+  },
+  "C31": {
+   "v": "correct",
+   "evidence": "PMP-080101 label under pump r2c3"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "FE-080141 printed under M at r2c4 and in bubble"
+  }
+ },
+ "missing_from_known": [],
+ "notes": "Known list appears complete. Upper and Lower permeate flags both incoming; FE/FIT, AE/AIT, ZSC/FCV drawn as stacked bubble pairs."
+}

@@ -1,0 +1,209 @@
+{
+ "page": 24,
+ "verdicts": {
+  "C9": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C30": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C35": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C37": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C38": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C40": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C45": {
+   "v": "correct",
+   "evidence": "tag seen on page 24"
+  },
+  "C4": {
+   "v": "wrong",
+   "evidence": "no such tag; sheet is 600,202-205"
+  },
+  "C14": {
+   "v": "wrong",
+   "evidence": "no such tag; sheet is 600,202-205"
+  },
+  "C18": {
+   "v": "wrong",
+   "evidence": "no such tag; sheet is 600,202-205"
+  },
+  "C1": {
+   "v": "correct",
+   "evidence": "sensor probe/line into T 600,204 / containment"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "sensor probe/line into T 600,204 / containment"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "sensor probe/line into T 600,204 / containment"
+  },
+  "C46": {
+   "v": "correct",
+   "evidence": "sensor probe/line into T 600,204 / containment"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "dashed line to/from VCP 600,206 (field bus or direct)"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "dashed line to/from VCP 600,206 (field bus or direct)"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "dashed line to/from VCP 600,206 (field bus or direct)"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "dashed line to/from VCP 600,206 (field bus or direct)"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "dashed line to/from VCP 600,206 (field bus or direct)"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "dashed line to/from VCP 600,206 (field bus or direct)"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "dashed from pump P 600,205 up to VCP"
+  },
+  "C34": {
+   "v": "correct",
+   "evidence": "dashed VCP to P 600,205"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "dashed VCP down to pump P 600,203"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "dashed from VCP to LOW LEVEL GEN CONTROL PANEL flag top right"
+  },
+  "C11": {
+   "v": "wrong",
+   "evidence": "YA-600,203 is on SCADA bus; PI-600,203B is a local gauge on pipe"
+  },
+  "C26": {
+   "v": "wrong",
+   "evidence": "PI-600,205A reads pipe at pump 2, not tank"
+  },
+  "C39": {
+   "v": "wrong",
+   "evidence": "PI-600,203B on pipe, no line to LAL-600,204B"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "flag at left r2c1/r1c1, flow enters via FOS line"
+  },
+  "C36": {
+   "v": "correct",
+   "evidence": "FOS BULK FUEL STORAGE TANK flag -> filter FLT 600,202"
+  },
+  "C48": {
+   "v": "correct",
+   "evidence": "filter -> pump P 600,203 along line"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "P 600,203 -> arrow into tank"
+  },
+  "C49": {
+   "v": "wrong",
+   "evidence": "reversed; pump discharges into tank"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "tank riser -> pump P 600,205"
+  },
+  "C41": {
+   "v": "correct",
+   "evidence": "P 600,205 -> FOR BULK FUEL STORAGE TANK flag"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "flag at right, flow leaves"
+  },
+  "C23": {
+   "v": "correct",
+   "evidence": "FOS GENERATOR flag right, flow leaves"
+  },
+  "C44": {
+   "v": "correct",
+   "evidence": "tank riser up -> FOS GENERATOR"
+  },
+  "C31": {
+   "v": "wrong",
+   "evidence": "flow leaves tank to FOS GENERATOR"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "FOR GENERATOR flag left; line with arrow into tank"
+  },
+  "C43": {
+   "v": "correct",
+   "evidence": "FOR GENERATOR -> arrow into tank"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "flag at top right, signal leaves"
+  },
+  "C42": {
+   "v": "correct",
+   "evidence": "flag at left, dashed with arrowhead into panel"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "tank drain line with valve to open end"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "tank vent hook / relief arrow outward"
+  },
+  "C47": {
+   "v": "correct",
+   "evidence": "tank vent hook / relief arrow outward"
+  },
+  "C32": {
+   "v": "wrong",
+   "evidence": "reversed"
+  }
+ },
+ "missing_from_known": [
+  {
+   "tag": "MCP 600,101",
+   "where": "r1c1",
+   "what": "boxed MCP label"
+  }
+ ],
+ "notes": "Tank T 600,204; PI-600,203A/B, 205A/B local. LAH-600,204A known OK."
+}

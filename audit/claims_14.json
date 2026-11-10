@@ -1,0 +1,210 @@
+{
+ "page": 14,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from filter 'Inlet filter/silencer (two hatched boxes joined by' to BLR-100101."
+  },
+  {
+   "id": "C2",
+   "type": "measures",
+   "claim": "Instrument YI-090101A is mounted on / senses BLR-090101."
+  },
+  {
+   "id": "C3",
+   "type": "flag",
+   "claim": "An off-page flag reading 'PROCESS AIR TO MB-01' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C4",
+   "type": "tag",
+   "claim": "An item tagged XC-090101C is drawn on this sheet."
+  },
+  {
+   "id": "C5",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from BLR-090101 to filter 'Inlet filter/silencer (two hatched boxes joined by'."
+  },
+  {
+   "id": "C6",
+   "type": "signal",
+   "claim": "A signal line connects YI-090101D to XC-100101B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C7",
+   "type": "tag",
+   "claim": "An item tagged VFD-090101 is drawn on this sheet."
+  },
+  {
+   "id": "C8",
+   "type": "flag",
+   "claim": "An off-page flag reading 'PROCESS AIR TO PA-01' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C9",
+   "type": "signal",
+   "claim": "A signal line connects XC-090101C to BLR-090101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C10",
+   "type": "signal",
+   "claim": "A signal line connects VFD-090101 to BLR-090101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C11",
+   "type": "tag",
+   "claim": "An item tagged XC-100104A is drawn on this sheet."
+  },
+  {
+   "id": "C12",
+   "type": "tag",
+   "claim": "An item tagged XC-090101A is drawn on this sheet."
+  },
+  {
+   "id": "C13",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from filter 'Inlet filter/silencer (two hatched boxes joined by' to BLR-090101."
+  },
+  {
+   "id": "C14",
+   "type": "tag",
+   "claim": "An item tagged XC-100101C is drawn on this sheet."
+  },
+  {
+   "id": "C15",
+   "type": "measures",
+   "claim": "Instrument YI-100101D is mounted on / senses BLR-100101."
+  },
+  {
+   "id": "C16",
+   "type": "tag",
+   "claim": "An item tagged XC-100101B is drawn on this sheet."
+  },
+  {
+   "id": "C17",
+   "type": "tag",
+   "claim": "An item tagged YA-090101B is drawn on this sheet."
+  },
+  {
+   "id": "C18",
+   "type": "tag",
+   "claim": "An item tagged YI-090101D is drawn on this sheet."
+  },
+  {
+   "id": "C19",
+   "type": "measures",
+   "claim": "Instrument YI-090101D is mounted on / senses BLR-090101."
+  },
+  {
+   "id": "C20",
+   "type": "tag",
+   "claim": "An item tagged BLR-090101 is drawn on this sheet."
+  },
+  {
+   "id": "C21",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from BLR-100101 to filter 'Inlet filter/silencer (two hatched boxes joined by'."
+  },
+  {
+   "id": "C22",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from BLR-100101 to off-page flag 'PROCESS AIR TO PA-01'."
+  },
+  {
+   "id": "C23",
+   "type": "signal",
+   "claim": "A signal line connects SC-100101 to VFD-100101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C24",
+   "type": "measures",
+   "claim": "Instrument YI-100101C is mounted on / senses BLR-100101."
+  },
+  {
+   "id": "C25",
+   "type": "signal",
+   "claim": "A signal line connects XC-100101C to YA-100101A (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C26",
+   "type": "measures",
+   "claim": "Instrument YI-090101B is mounted on / senses BLR-090101."
+  },
+  {
+   "id": "C27",
+   "type": "flag",
+   "claim": "An off-page flag reading 'PROCESS AIR FROM STD-BY BLR.' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C28",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from BLR-090101 to off-page flag 'PROCESS AIR TO MB-01'."
+  },
+  {
+   "id": "C29",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'PROCESS AIR TO MB-01' to BLR-090101."
+  },
+  {
+   "id": "C30",
+   "type": "tag",
+   "claim": "An item tagged XC-090104A is drawn on this sheet."
+  },
+  {
+   "id": "C31",
+   "type": "tag",
+   "claim": "An item tagged BLR-100101 is drawn on this sheet."
+  },
+  {
+   "id": "C32",
+   "type": "signal",
+   "claim": "A signal line connects XC-090101B to BLR-090101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C33",
+   "type": "tag",
+   "claim": "An item tagged YA-090101A is drawn on this sheet."
+  },
+  {
+   "id": "C34",
+   "type": "signal",
+   "claim": "A signal line connects XC-100101C to BLR-100101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C35",
+   "type": "signal",
+   "claim": "A signal line connects XC-100101A to BLR-100101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C36",
+   "type": "tag",
+   "claim": "An item tagged YI-090104D is drawn on this sheet."
+  },
+  {
+   "id": "C37",
+   "type": "signal",
+   "claim": "A signal line connects VFD-100101 to BLR-100101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C38",
+   "type": "signal",
+   "claim": "A signal line connects XC-090101A to BLR-090101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C39",
+   "type": "signal",
+   "claim": "A signal line connects XC-100101B to BLR-100101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C40",
+   "type": "signal",
+   "claim": "A signal line connects VFD-100101 to YI-100101D (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C41",
+   "type": "signal",
+   "claim": "A signal line connects SC-090101 to VFD-090101 (instrument/control signal, not process piping)."
+  }
+ ]
+}

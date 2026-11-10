@@ -1,0 +1,170 @@
+{
+ "page": 11,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "measures",
+   "claim": "Instrument AE-050101 is mounted on / senses TNK-050100."
+  },
+  {
+   "id": "C2",
+   "type": "tag",
+   "claim": "An item tagged FBD-050111 is drawn on this sheet."
+  },
+  {
+   "id": "C3",
+   "type": "tag",
+   "claim": "An item tagged AE-050102 is drawn on this sheet."
+  },
+  {
+   "id": "C4",
+   "type": "flag",
+   "claim": "An off-page flag reading 'RECYCLE FROM AX-01 REF SHT P201' is drawn, and flow enters this sheet there."
+  },
+  {
+   "id": "C5",
+   "type": "tag",
+   "claim": "An item tagged AIR-050105 is drawn on this sheet."
+  },
+  {
+   "id": "C6",
+   "type": "signal",
+   "claim": "A signal line connects AE-050102 to AIT-050102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C7",
+   "type": "tag",
+   "claim": "An item tagged AIR-050104 is drawn on this sheet."
+  },
+  {
+   "id": "C8",
+   "type": "signal",
+   "claim": "A signal line connects AE-050102 to TIT-050102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C9",
+   "type": "signal",
+   "claim": "A signal line connects AIR-050102 to AAL-050102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C10",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'OVERFLOW TO MBR BASIN REF SHT P203' to TNK-050100."
+  },
+  {
+   "id": "C11",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'PROCESS AIR FROM BLOWERS REF SHT P205' to FBD-050111 passing through TP-01."
+  },
+  {
+   "id": "C12",
+   "type": "signal",
+   "claim": "A signal line connects TIR-050102 to TAL-050102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C13",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from FBD-050111 to off-page flag 'PROCESS AIR FROM BLOWERS REF SHT P205'."
+  },
+  {
+   "id": "C14",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from V-120122 to TNK-050100."
+  },
+  {
+   "id": "C15",
+   "type": "signal",
+   "claim": "A signal line connects AE-050101 to AIT-050101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C16",
+   "type": "tag",
+   "claim": "An item tagged TIR-050102 is drawn on this sheet."
+  },
+  {
+   "id": "C17",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-050100 to off-page flag 'OVERFLOW TO MBR BASIN REF SHT P203' passing through WE-050121."
+  },
+  {
+   "id": "C18",
+   "type": "tag",
+   "claim": "An item tagged AIT-050102 is drawn on this sheet."
+  },
+  {
+   "id": "C19",
+   "type": "signal",
+   "claim": "A signal line connects AE-050102 to AAL-050102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C20",
+   "type": "tag",
+   "claim": "An item tagged TAL-050102 is drawn on this sheet."
+  },
+  {
+   "id": "C21",
+   "type": "tag",
+   "claim": "An item tagged AE-050105 is drawn on this sheet."
+  },
+  {
+   "id": "C22",
+   "type": "flag",
+   "claim": "An off-page flag reading 'OVERFLOW TO MBR BASIN REF SHT P203' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C23",
+   "type": "tag",
+   "claim": "An item tagged AIR-050102 is drawn on this sheet."
+  },
+  {
+   "id": "C24",
+   "type": "tag",
+   "claim": "An item tagged TNK-050100 is drawn on this sheet."
+  },
+  {
+   "id": "C25",
+   "type": "tag",
+   "claim": "An item tagged TIT-050102 is drawn on this sheet."
+  },
+  {
+   "id": "C26",
+   "type": "signal",
+   "claim": "A signal line connects TIR-050102 to AIR-050101 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C27",
+   "type": "measures",
+   "claim": "Instrument AE-050102 is mounted on / senses TNK-050100."
+  },
+  {
+   "id": "C28",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'RECYCLE FROM AX-01 REF SHT P201' to TNK-050100."
+  },
+  {
+   "id": "C29",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-050100 to V-120122."
+  },
+  {
+   "id": "C30",
+   "type": "signal",
+   "claim": "A signal line connects TNK-050100 to TIT-050102 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C31",
+   "type": "tag",
+   "claim": "An item tagged AIT-050101 is drawn on this sheet."
+  },
+  {
+   "id": "C32",
+   "type": "tag",
+   "claim": "An item tagged AE-050101 is drawn on this sheet."
+  },
+  {
+   "id": "C33",
+   "type": "flag",
+   "claim": "An off-page flag reading 'PROCESS AIR FROM BLOWERS REF SHT P205' is drawn, and flow enters this sheet there."
+  }
+ ]
+}

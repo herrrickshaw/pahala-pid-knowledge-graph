@@ -1,0 +1,200 @@
+{
+ "page": 9,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "tag",
+   "claim": "An item tagged LAH-100.125 is drawn on this sheet."
+  },
+  {
+   "id": "C2",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from boundary 'OTHER USES' to boundary '3W UTILITY WATER'."
+  },
+  {
+   "id": "C3",
+   "type": "signal",
+   "claim": "A signal line connects VCP-100 to LI-100.124B (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C4",
+   "type": "signal",
+   "claim": "A signal line connects VCP-100 to LDI-100.124 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C5",
+   "type": "signal",
+   "claim": "A signal line connects VCP-100 to LI-100.124A (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C6",
+   "type": "tag",
+   "claim": "An item tagged LDI-100.124 is drawn on this sheet."
+  },
+  {
+   "id": "C7",
+   "type": "signal",
+   "claim": "A signal line connects FI-100.002 to LI-001 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C8",
+   "type": "flag",
+   "claim": "An off-page flag reading 'TO MBR' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C9",
+   "type": "signal",
+   "claim": "A signal line connects LI-100.124B to LDAH-100.124 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C10",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from box 'Screening channel (HWWL) with fine screen, inside ' to screen 'Manual bar rack channel (HWWL, inclined rack symbo'."
+  },
+  {
+   "id": "C11",
+   "type": "signal",
+   "claim": "A signal line connects FIT-100.002 to FI-100.002 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C12",
+   "type": "tag",
+   "claim": "An item tagged LAL-001 is drawn on this sheet."
+  },
+  {
+   "id": "C13",
+   "type": "signal",
+   "claim": "A signal line connects LI-001 to FI-100.002 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C14",
+   "type": "signal",
+   "claim": "A signal line connects VCP-100 to LDAH-100.115 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C15",
+   "type": "tag",
+   "claim": "An item tagged LCL-001 is drawn on this sheet."
+  },
+  {
+   "id": "C16",
+   "type": "signal",
+   "claim": "A signal line connects LSH-100.115 to VCP-100 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C17",
+   "type": "tag",
+   "claim": "An item tagged LDAH-100.124 is drawn on this sheet."
+  },
+  {
+   "id": "C18",
+   "type": "tag",
+   "claim": "An item tagged LDAH-100.115 is drawn on this sheet."
+  },
+  {
+   "id": "C19",
+   "type": "tag",
+   "claim": "An item tagged LI-100.124B is drawn on this sheet."
+  },
+  {
+   "id": "C20",
+   "type": "measures",
+   "claim": "Instrument LIT-100.114A is mounted on / senses box 'Screening channel (HWWL) with fine screen, inside '."
+  },
+  {
+   "id": "C21",
+   "type": "signal",
+   "claim": "A signal line connects FI-100.002 to LCH-001 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C22",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from screen 'Manual bar rack channel (HWWL, inclined rack symbo' to tank 'GRIT REMOVAL TANK'."
+  },
+  {
+   "id": "C23",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from screen 'FINE SCREEN (SCREEN 2): inclined screw/auger scree' to bin 'BAG OR CONTAINER (screenings)'."
+  },
+  {
+   "id": "C24",
+   "type": "tag",
+   "claim": "An item tagged FI-100.005 is drawn on this sheet."
+  },
+  {
+   "id": "C25",
+   "type": "signal",
+   "claim": "A signal line connects LIT-100.114B to VCP-100 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C26",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from boundary 'RS FROM PAHALA' to box 'Screening channel (HWWL) with fine screen, inside '."
+  },
+  {
+   "id": "C27",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from boundary '3W UTILITY WATER' to boundary 'OTHER USES'."
+  },
+  {
+   "id": "C28",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'TO MBR' to tank 'GRIT REMOVAL TANK'."
+  },
+  {
+   "id": "C29",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from tank 'GRIT REMOVAL TANK' to off-page flag 'TO MBR'."
+  },
+  {
+   "id": "C30",
+   "type": "signal",
+   "claim": "A signal line connects LIT-100.114B to LCL-001 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C31",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from box 'Screening channel (HWWL) with fine screen, inside ' to boundary 'RS FROM PAHALA'."
+  },
+  {
+   "id": "C32",
+   "type": "tag",
+   "claim": "An item tagged FI-100.002 is drawn on this sheet."
+  },
+  {
+   "id": "C33",
+   "type": "tag",
+   "claim": "An item tagged LSH-100.115 is drawn on this sheet."
+  },
+  {
+   "id": "C34",
+   "type": "measures",
+   "claim": "Instrument LIT-100.114B is mounted on / senses box 'Screening channel (HWWL) with fine screen, inside '."
+  },
+  {
+   "id": "C35",
+   "type": "signal",
+   "claim": "A signal line connects FI-100.002 to LCL-001 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C36",
+   "type": "tag",
+   "claim": "An item tagged YA-004 is drawn on this sheet."
+  },
+  {
+   "id": "C37",
+   "type": "tag",
+   "claim": "An item tagged LI-100.124A is drawn on this sheet."
+  },
+  {
+   "id": "C38",
+   "type": "tag",
+   "claim": "An item tagged LIT-100.117A is drawn on this sheet."
+  },
+  {
+   "id": "C39",
+   "type": "measures",
+   "claim": "Instrument LSH-100.115 is mounted on / senses box 'Screening channel (HWWL) with fine screen, inside '."
+  }
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "page": 14,
+ "verdicts": {
+  "C1": {
+   "v": "unclear",
+   "evidence": "filter symbol is tee off discharge pipe with arrow pointing right; direction relative to blower not determinable"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "YI 090101A on blower panel r3c1"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "outgoing flag PROCESS AIR TO MB-01 r3c4, tip away from line"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "XC 090101C bubble"
+  },
+  "C5": {
+   "v": "unclear",
+   "evidence": "filter symbol is tee off discharge pipe with arrow pointing right; direction relative to blower not determinable"
+  },
+  "C6": {
+   "v": "wrong",
+   "evidence": "YI-090101D and XC-100101B belong to different blowers/buses"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "VFD 090101 bubble"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "outgoing flag PROCESS AIR TO PA-01 r2c4"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "XC-090101C on blower 090101 panel bus; link to blower indirect"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "VFD bubble with cable to blower (hatched)"
+  },
+  "C11": {
+   "v": "wrong",
+   "evidence": "no XC-100104A; XC-100101A/B/C"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "XC 090101A bubble"
+  },
+  "C13": {
+   "v": "unclear",
+   "evidence": "filter symbol is tee off discharge pipe with arrow pointing right; direction relative to blower not determinable"
+  },
+  "C14": {
+   "v": "correct",
+   "evidence": "XC 100101C bubble"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "YI 100101D on BLR-100101 panel"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "XC 100101B bubble"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "YA 090101B bubble"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "YI 090101D bubble"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "YI 090101D on BLR-090101 panel"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "BLR-090101 label"
+  },
+  "C21": {
+   "v": "unclear",
+   "evidence": "filter symbol is tee off discharge pipe with arrow pointing right; direction relative to blower not determinable"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "blower discharge through check valve (arrow right) to flag PROCESS AIR TO PA-01"
+  },
+  "C23": {
+   "v": "unclear",
+   "evidence": "SC and VFD not drawn on common line; VFD only has cable to blower and dashed line to CB"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "YI 100101C on BLR-100101 panel"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "XC-C and YA-A on same thin signal bus in panel"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "YI 090101B on BLR-090101 panel"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "incoming flag PROCESS AIR FROM STD-BY BLR r3c1, joins line to blower 090101 discharge"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "blower 090101 discharge via check valve right to PROCESS AIR TO MB-01"
+  },
+  "C29": {
+   "v": "wrong",
+   "evidence": "reversed; MB-01 flag is outgoing"
+  },
+  "C30": {
+   "v": "wrong",
+   "evidence": "no XC-090104A; XC-090101A/B/C"
+  },
+  "C31": {
+   "v": "correct",
+   "evidence": "BLR-100101 label"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "XC-090101B on blower panel bus; link to blower indirect"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "YA 090101A bubble"
+  },
+  "C34": {
+   "v": "correct",
+   "evidence": "XC-100101C on blower panel bus; indirect"
+  },
+  "C35": {
+   "v": "correct",
+   "evidence": "XC-100101A on blower panel bus; indirect"
+  },
+  "C36": {
+   "v": "wrong",
+   "evidence": "no YI-090104D; YI-090101D"
+  },
+  "C37": {
+   "v": "correct",
+   "evidence": "VFD cable to blower hatched"
+  },
+  "C38": {
+   "v": "correct",
+   "evidence": "XC-090101A on panel bus; indirect"
+  },
+  "C39": {
+   "v": "correct",
+   "evidence": "XC-100101B on panel bus; indirect"
+  },
+  "C40": {
+   "v": "unclear",
+   "evidence": "VFD not on the signal bus to YI-D; bus starts at OIT"
+  },
+  "C41": {
+   "v": "unclear",
+   "evidence": "SC and VFD not drawn on common line"
+  }
+ },
+ "missing_from_known": [],
+ "notes": "Panel bus ties instrument bubbles and OIT, not the VFD. Claims linking instruments to BLR assumed through panel/blower enclosure. Filter/silencer relation to blower direction ambiguous. OIT and CB 480V untagged."
+}

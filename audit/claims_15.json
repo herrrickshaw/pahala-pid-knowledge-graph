@@ -1,0 +1,175 @@
+{
+ "page": 15,
+ "claims": [
+  {
+   "id": "C1",
+   "type": "tag",
+   "claim": "An item tagged FE-170122 is drawn on this sheet."
+  },
+  {
+   "id": "C2",
+   "type": "signal",
+   "claim": "A signal line connects HS-170103 to XV-170103 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C3",
+   "type": "tag",
+   "claim": "An item tagged ZIO-170103 is drawn on this sheet."
+  },
+  {
+   "id": "C4",
+   "type": "signal",
+   "claim": "A signal line connects ZSO-170103 to ZIO-170103 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C5",
+   "type": "tag",
+   "claim": "An item tagged ZSC-170106 is drawn on this sheet."
+  },
+  {
+   "id": "C6",
+   "type": "signal",
+   "claim": "A signal line connects ZSC-170103 to ZIC-170103 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C7",
+   "type": "tag",
+   "claim": "An item tagged TNK-170100 is drawn on this sheet."
+  },
+  {
+   "id": "C8",
+   "type": "tag",
+   "claim": "An item tagged ZSO-170103 is drawn on this sheet."
+  },
+  {
+   "id": "C9",
+   "type": "measures",
+   "claim": "Instrument ZSC-170103 is mounted on / senses XV-170103."
+  },
+  {
+   "id": "C10",
+   "type": "tag",
+   "claim": "An item tagged PG-170114 is drawn on this sheet."
+  },
+  {
+   "id": "C11",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from TNK-170100 to other 'Chemical injector/eductor symbol on utility water ' passing through FI-170121."
+  },
+  {
+   "id": "C12",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from other 'Chemical injector/eductor symbol on utility water ' to boundary 'UTILITY WATER'."
+  },
+  {
+   "id": "C13",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from other 'Chemical injector/eductor symbol on utility water ' to off-page flag 'ACID WASH TO MB-01' passing through FE-170122."
+  },
+  {
+   "id": "C14",
+   "type": "signal",
+   "claim": "A signal line connects ZIO-170103 to ZA-170103 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C15",
+   "type": "signal",
+   "claim": "A signal line connects FE-170122 to FIT-170122 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C16",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from other 'Chemical injector/eductor symbol on utility water ' to TNK-170100."
+  },
+  {
+   "id": "C17",
+   "type": "tag",
+   "claim": "An item tagged ZIC-170103 is drawn on this sheet."
+  },
+  {
+   "id": "C18",
+   "type": "measures",
+   "claim": "Instrument ZSO-170103 is mounted on / senses XV-170103."
+  },
+  {
+   "id": "C19",
+   "type": "tag",
+   "claim": "An item tagged FIT-170122 is drawn on this sheet."
+  },
+  {
+   "id": "C20",
+   "type": "tag",
+   "claim": "An item tagged ZSC-170103 is drawn on this sheet."
+  },
+  {
+   "id": "C21",
+   "type": "signal",
+   "claim": "A signal line connects FIT-170122 to FQIR-170122 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C22",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from boundary 'UTILITY WATER' to other 'Chemical injector/eductor symbol on utility water ' passing through XV-170103."
+  },
+  {
+   "id": "C23",
+   "type": "signal",
+   "claim": "A signal line connects YC-170103 to HS-170103 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C24",
+   "type": "signal",
+   "claim": "A signal line connects YI-170103 to PG-170112 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C25",
+   "type": "signal",
+   "claim": "A signal line connects ZIC-170103 to ZA-170103 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C26",
+   "type": "flag",
+   "claim": "An off-page flag reading 'ACID WASH TO MB-01' is drawn, and flow leaves this sheet there."
+  },
+  {
+   "id": "C27",
+   "type": "signal",
+   "claim": "A signal line connects ZIO-170103 to PG-170111 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C28",
+   "type": "signal",
+   "claim": "A signal line connects HS-170103 to YI-170103 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C29",
+   "type": "tag",
+   "claim": "An item tagged YC-170103 is drawn on this sheet."
+  },
+  {
+   "id": "C30",
+   "type": "signal",
+   "claim": "A signal line connects ZSO-170103 to ZIC-170103 (instrument/control signal, not process piping)."
+  },
+  {
+   "id": "C31",
+   "type": "tag",
+   "claim": "An item tagged FI-170121 is drawn on this sheet."
+  },
+  {
+   "id": "C32",
+   "type": "tag",
+   "claim": "An item tagged FIT-170125 is drawn on this sheet."
+  },
+  {
+   "id": "C33",
+   "type": "tag",
+   "claim": "An item tagged HS-170103 is drawn on this sheet."
+  },
+  {
+   "id": "C34",
+   "type": "flow",
+   "claim": "Process flow on this sheet runs from off-page flag 'ACID WASH TO MB-01' to other 'Chemical injector/eductor symbol on utility water '."
+  }
+ ]
+}

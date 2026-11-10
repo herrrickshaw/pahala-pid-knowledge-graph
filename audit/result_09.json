@@ -1,0 +1,184 @@
+{
+ "page": 9,
+ "verdicts": {
+  "C1": {
+   "v": "correct",
+   "evidence": "LAH 100.125 bubble r1c2"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "LDI 100.124 bubble r1c2/r1c3"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "LAL 001 bubble r1c1"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "LCL 001 bubble r1c1"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "LDAH 100.124 bubble and field instrument r1c2"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "LDAH 100.115 bubble r1c2"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "LI 100,124B bubble r1c2"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "FI 100.002 square-circle bubble r1c1"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "LSH 100,115 in vendor package r2c2"
+  },
+  "C37": {
+   "v": "correct",
+   "evidence": "LI 100,124A bubble r1c2"
+  },
+  "C2": {
+   "v": "wrong",
+   "evidence": "3W UTILITY WATER is the source flag at left; line runs right to OTHER USES"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "line runs from 3W UTILITY WATER flag at left to OTHER USES at right"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "LI 124B line drops straight to VCP-100 box top (r1c2/r2c2)"
+  },
+  "C4": {
+   "v": "unclear",
+   "evidence": "LDI-124 sits on a bus that crosses the 124B line to VCP with no junction dot; link to VCP not explicit"
+  },
+  "C5": {
+   "v": "unclear",
+   "evidence": "LI-124A drops to the same bus that crosses the 124B line with no junction dot; link to VCP not explicit"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "LI-001 vertical data link joins the FI-100.002 bubble below it (r1c1); arrow points into LI-001"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "LI-001 vertical data link joins the FI-100.002 bubble below it (r1c1); arrow points into LI-001"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "LCH/LCL 001 verticals drop onto common SCADA bus that joins LI-001 line to FI-100.002 (r1c1)"
+  },
+  "C35": {
+   "v": "correct",
+   "evidence": "LCH/LCL 001 verticals drop onto common SCADA bus that joins LI-001 line to FI-100.002 (r1c1)"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "TO MBR pentagon flag at right of grit tank, flow arrow leaves"
+  },
+  "C9": {
+   "v": "wrong",
+   "evidence": "LI-124B goes to VCP-100; LDAH-124 goes separately to VCP via dashed line; they are not joined to each other"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "screening channel outlet (line at 1016 up) merges at junction with bypass, then through overflow weir to bar rack channel (r2c3)"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "dashed signal line from FIT 100,002 up to FI 100.002 (r1c1)"
+  },
+  "C14": {
+   "v": "correct",
+   "evidence": "LDAH 100.115 dashed bracket joins to VCP via dashed line (r1c2)"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "LSH 100,115 dashed line up to VCP-100 (r2c2)"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "LIT 100,114B dashed line up to VCP-100 (r2c2/r2c3)"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "LIT 114A ultrasonic transducer over screening channel inside vendor package (r2c2)"
+  },
+  "C34": {
+   "v": "correct",
+   "evidence": "LIT 114B ultrasonic transducer over screening channel (r2c2)"
+  },
+  "C39": {
+   "v": "correct",
+   "evidence": "LSH 115 float drop sensing screening channel level (r2c2)"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "bar rack channel exit line runs right then down to grit tank (r2c3/r2c4)"
+  },
+  "C23": {
+   "v": "correct",
+   "evidence": "screw discharge line goes right and down with arrow into BAG OR CONTAINER (r2c3)"
+  },
+  "C24": {
+   "v": "wrong",
+   "evidence": "only FI-100.002 present; no FI-100.005"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "RS FROM PAHALA arrow line enters screening channel at left (r2c2)"
+  },
+  "C28": {
+   "v": "wrong",
+   "evidence": "TO MBR is the outlet flag; flow leaves grit tank to it"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "grit tank outlet line to TO MBR flag (r2c4)"
+  },
+  "C30": {
+   "v": "wrong",
+   "evidence": "LIT-114B dashes only up to VCP-100, not to LCL-001"
+  },
+  "C31": {
+   "v": "wrong",
+   "evidence": "flow enters screening channel from RS FROM PAHALA, reverse of claim"
+  },
+  "C36": {
+   "v": "wrong",
+   "evidence": "only YA-001 and YA-007 seen; no YA-004"
+  },
+  "C38": {
+   "v": "wrong",
+   "evidence": "LIT 100,114A/B present; no 117A"
+  }
+ },
+ "missing_from_known": [
+  {
+   "tag": "YI-100,(partial)",
+   "where": "r1c3",
+   "what": "SCREEN 2 IN AUTO status indicator bubble, number truncated"
+  },
+  {
+   "tag": "YI-100,(partial)",
+   "where": "r1c3",
+   "what": "SCREEN 2 RUNNING status indicator bubble, number truncated"
+  },
+  {
+   "tag": "LAH-100,(partial)",
+   "where": "r1c3",
+   "what": "high level alarm at SCADA for PS-2 fault, field LSH below"
+  },
+  {
+   "tag": "LSH-100,(partial)",
+   "where": "r2c3",
+   "what": "float level switch in manual bar rack channel (HWWL)"
+  }
+ ],
+ "notes": "Number suffixes truncated on several bubbles (YI, LAH, LSH). Spec boxes along bottom untagged. 3W/OTHER USES flag direction: 3W is the source. LI-124A/LDI/YI bus crosses the 124B line to VCP without a junction dot."
+}

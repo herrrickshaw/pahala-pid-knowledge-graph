@@ -1,0 +1,111 @@
+{
+ "page": 22,
+ "verdicts": {
+  "C3": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C23": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "tag seen (r1c2/r2c2/r3c2-3)"
+  },
+  "C1": {
+   "v": "wrong",
+   "evidence": "no such tag; sheet uses 500,101/201/301 only"
+  },
+  "C2": {
+   "v": "wrong",
+   "evidence": "no such tag; sheet uses 500,101/201/301 only"
+  },
+  "C8": {
+   "v": "wrong",
+   "evidence": "no such tag; sheet uses 500,101/201/301 only"
+  },
+  "C6": {
+   "v": "wrong",
+   "evidence": "ZSC-500,301 belongs to zone 3 actuator, not connected to ZIO-500,101"
+  },
+  "C12": {
+   "v": "wrong",
+   "evidence": "no line between ZSC-500,301 and ZIO-500,101"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "dashed line ZIO up from ZSO-500,101 (arrow toward ZIO), r2c2"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "dashed line ZSC-500,101 to ZIC (arrow into ZIC)"
+  },
+  "C15": {
+   "v": "wrong",
+   "evidence": "arrow points up into ZIC, signal goes ZSC->ZIC, reversed"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "ZCO dashed to HS-500,101, r2c2"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "ZCC dashed to HS-500,101, r2c2"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "dashed vertical HS-500,101 up to YI"
+  },
+  "C7": {
+   "v": "wrong",
+   "evidence": "YI and ZCC both end at HS-500,101 bubble; no direct line (possible junction at HS)"
+  },
+  "C13": {
+   "v": "wrong",
+   "evidence": "YI and ZCO both end at HS-500,101 bubble; no direct line (possible junction at HS)"
+  },
+  "C14": {
+   "v": "wrong",
+   "evidence": "flow irrigation tank flag -> headers -> drip zones; reversed"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "IRRIGATION EQUALIZATION TANK flag -> header -> DRIP ZONE 1"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "flag at left r3c1/r3c2, flow enters"
+  }
+ },
+ "missing_from_known": [],
+ "notes": "Tag numbers print as '500, 101'. Zone 4 actuator ZSO/ZSC printed 500,201 (same as zone 2). Known list includes ZSO-500,301 which is drawn."
+}

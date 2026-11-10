@@ -1,0 +1,186 @@
+{
+ "page": 12,
+ "verdicts": {
+  "C1": {
+   "v": "correct",
+   "evidence": "LAH 070102 bubble r1c4"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "MB-01 TNK-070100 label r3c3"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "SMU-070111 label r3c2"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "ZIC 070181 bubble r1c2"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "FIT 070186 bubble r3c4"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "ZA 070181 bubble r1c2"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "LAL 070101 bubble r1c4"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "SMU-070121 label r3c2/r3c3"
+  },
+  "C39": {
+   "v": "correct",
+   "evidence": "LSH 070102 bubble r2c4"
+  },
+  "C40": {
+   "v": "correct",
+   "evidence": "FAL 070186 bubble r1c4"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "OVERFLOW FROM PRE-AERATION BASIN flag enters tank with arrow (r2c1/r3c2)"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "OVERFLOW FROM PRE-AERATION BASIN flag enters tank with arrow (r2c1/r3c2)"
+  },
+  "C6": {
+   "v": "unclear",
+   "evidence": "SMU stacks sit inside basin; no explicit flow line tank to SMU"
+  },
+  "C9": {
+   "v": "unclear",
+   "evidence": "SMU stacks sit inside basin; no explicit flow line tank to SMU"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "bold dashed line from XV 070181 down with arrows into basin (r2c2)"
+  },
+  "C30": {
+   "v": "wrong",
+   "evidence": "arrows point into basin from XV line, reverse"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "FIR 070186 bus to FAL 070186 arrow (r1c4)"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "ZSO stacked on XV 070181 (r2c2)"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "ZSC stacked on XV 070181 (r2c2)"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "PROCESS AIR FROM BLOWERS REF SHT P205 flag, dashed air line leading in"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "air dashed line to x=848 branch down to future SMU 3in-A air vessels (r2c3/r3c3)"
+  },
+  "C14": {
+   "v": "correct",
+   "evidence": "LSH 070102 probe line into basin (r3c4)"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "LSL 070101 probe line into basin (r3c4)"
+  },
+  "C15": {
+   "v": "wrong",
+   "evidence": "only FE-070186; no FE-070189"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "TV-070182 outlet through FE-070186 to WAS TO WAS-01 flag (r3c4)"
+  },
+  "C41": {
+   "v": "wrong",
+   "evidence": "flow runs from TV to flag, not into TV"
+  },
+  "C42": {
+   "v": "correct",
+   "evidence": "WAS TO WAS-01 flag at right end of 3in-WAS line"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "upper permeate header from SMU-070111 riser to UPPER PERMEATE flag (r2c2/r2c4)"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "lower permeate header from SMU-070111 riser to LOWER PERMEATE flag"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "LOWER PERMEATE flag at right, flow leaves"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "UPPER PERMEATE flag at right, flow leaves"
+  },
+  "C33": {
+   "v": "wrong",
+   "evidence": "reverse: SMU to flag"
+  },
+  "C23": {
+   "v": "wrong",
+   "evidence": "LAL-070101 goes through DI card to LSL-070101, not YI-070181"
+  },
+  "C36": {
+   "v": "wrong",
+   "evidence": "FAL-070186 on FIR loop at right, YI-070181 on valve loop"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "FE 070186 directly under FIT 070186 (r3c4)"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "HS 070181 dashed line to XV 070181 right side (r1c2/r2c2)"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "ACID WASH REF SHT P206 flag enters line at top left"
+  },
+  "C31": {
+   "v": "correct",
+   "evidence": "YC 070181 on bus with ZIC/ZIO to ZA arrow (r1c2)"
+  },
+  "C34": {
+   "v": "correct",
+   "evidence": "ZIC 070181 on bus to ZA 070181 arrow"
+  },
+  "C38": {
+   "v": "correct",
+   "evidence": "ZIO 070181 on bus to ZA 070181 arrow"
+  },
+  "C35": {
+   "v": "wrong",
+   "evidence": "no ZA-070184; only ZA-070181"
+  },
+  "C37": {
+   "v": "wrong",
+   "evidence": "no YI-070184; only YI-070181"
+  }
+ },
+ "missing_from_known": [
+  {
+   "tag": "MB-01",
+   "where": "r3c3",
+   "what": "membrane bioreactor basin equipment label (TNK-070100)"
+  },
+  {
+   "tag": "TP-03",
+   "where": "r2c4",
+   "what": "test point hexagon tag on process air/permeate header"
+  }
+ ],
+ "notes": "Upper/lower permeate headers come from separate stacks of each SMU. Pumps/valves untagged except TV-070182 and FE-070186."
+}

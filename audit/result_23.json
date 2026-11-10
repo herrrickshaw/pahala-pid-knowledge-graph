@@ -1,0 +1,173 @@
+{
+ "page": 23,
+ "verdicts": {
+  "C2": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C30": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "tag seen on page 23"
+  },
+  "C3": {
+   "v": "wrong",
+   "evidence": "no such tag; this sheet is the 600,201 series"
+  },
+  "C14": {
+   "v": "wrong",
+   "evidence": "no such tag; this sheet is the 600,201 series"
+  },
+  "C39": {
+   "v": "wrong",
+   "evidence": "no such tag; this sheet is the 600,201 series"
+  },
+  "C1": {
+   "v": "correct",
+   "evidence": "LSH-600,201D leak sensor attached to tank containment (r3c3)"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "LSL probe inside tank"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "LIT probe line into tank"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "LSH-B probe in tank"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "dashed line to VCP box in FUEL TANK MONITORING SYSTEM"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "dashed line to VCP box in FUEL TANK MONITORING SYSTEM"
+  },
+  "C23": {
+   "v": "correct",
+   "evidence": "dashed line to VCP box in FUEL TANK MONITORING SYSTEM"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "dashed line to VCP box in FUEL TANK MONITORING SYSTEM"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP down bus to that bubble, arrow towards SCADA"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP down bus to that bubble, arrow towards SCADA"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP down bus to that bubble, arrow towards SCADA"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP down bus to that bubble, arrow towards SCADA"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP down bus to that bubble, arrow towards SCADA"
+  },
+  "C37": {
+   "v": "correct",
+   "evidence": "dashed signal from VCP down bus to that bubble, arrow towards SCADA"
+  },
+  "C19": {
+   "v": "wrong",
+   "evidence": "LSH-D and LIT each wired separately to VCP; no line between them"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "both on common dashed bus under field bubbles"
+  },
+  "C7": {
+   "v": "wrong",
+   "evidence": "tank vent hooks vent tank to atmosphere; relief arrow outward; reversed"
+  },
+  "C40": {
+   "v": "wrong",
+   "evidence": "same: reversed"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "tank vent hooks/relief arrow out of tank"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "tank vent hooks/relief arrow out of tank"
+  },
+  "C38": {
+   "v": "correct",
+   "evidence": "tank vent hooks/relief arrow out of tank"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "FOS A DAY TANK flag right, flow leaves"
+  },
+  "C35": {
+   "v": "correct",
+   "evidence": "tank riser -> FOS flag"
+  },
+  "C34": {
+   "v": "wrong",
+   "evidence": "FOR flow enters tank (arrow into tank), not leaves"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "FOR DAY TANK flag -> arrow down into tank"
+  },
+  "C36": {
+   "v": "correct",
+   "evidence": "FOR DAY TANK flag at left, flow enters"
+  },
+  "C31": {
+   "v": "correct",
+   "evidence": "signal flag HIGH LEVEL LOW LEVEL DAY TANK PANEL arrowhead into flag, r1c4"
+  }
+ },
+ "missing_from_known": [
+  {
+   "tag": "MCP 600,101",
+   "where": "r1c1",
+   "what": "boxed MCP label at left under SCADA line"
+  }
+ ],
+ "notes": "Tank is labelled BULK FUEL STORAGE TANK, T 600,201. LAH-600,201B/C known list is correct."
+}

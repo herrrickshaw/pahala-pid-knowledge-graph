@@ -1,0 +1,163 @@
+{
+ "page": 19,
+ "verdicts": {
+  "C1": {
+   "v": "wrong",
+   "evidence": "MY goes via DI to MAH and dashed to MS; YC separate DO to HS"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "MXR-190111 label at mixer"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "ZA 190111 FAIL bubble"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "REMOTE YI 190111B"
+  },
+  "C5": {
+   "v": "correct",
+   "evidence": "MY-DI up solid line to MAH"
+  },
+  "C6": {
+   "v": "wrong",
+   "evidence": "WAS FROM MB-01 flag, arrow flows down into tank"
+  },
+  "C7": {
+   "v": "wrong",
+   "evidence": "flag A is inbound to FBD, arrow orientation like inbound flag"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "tank outlet right through check valve to flag C WAS TO WAS PUMPS"
+  },
+  "C9": {
+   "v": "unclear",
+   "evidence": "ME bubble has no line to mixer; dashed to MS; TSH has the solid"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "HS bubble with HOR"
+  },
+  "C11": {
+   "v": "wrong",
+   "evidence": "flag P211 is outgoing"
+  },
+  "C12": {
+   "v": "correct",
+   "evidence": "JS dashed down to mixer motor"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "flag A line to FBD-190103 diffuser"
+  },
+  "C14": {
+   "v": "correct",
+   "evidence": "YI 190111B via DI dashed to HS"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "flag A PROCESS AIR FROM BLOWERS P205 inbound"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "YI 190111A RUNNING"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "dashed horizontal HS to TY"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "YC via DO dashed to HS"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "bus node of YI A connects line up to ZA"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "TY dashed down to TSH"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "LE-190102 at tank bottom"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "TSH solid line to mixer motor"
+  },
+  "C23": {
+   "v": "correct",
+   "evidence": "MY bubble"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "LT solid line runs down to LE in tank"
+  },
+  "C25": {
+   "v": "wrong",
+   "evidence": "MAH not connected to LAL; LAL on LIR bus"
+  },
+  "C26": {
+   "v": "wrong",
+   "evidence": "no ME-190114"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "flag E WAS FROM MB-01 P203 inbound arrow into tank"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "TNK-190100 label"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "LIR bus to LAL"
+  },
+  "C30": {
+   "v": "correct",
+   "evidence": "LT bubble"
+  },
+  "C31": {
+   "v": "wrong",
+   "evidence": "no YI-190114B"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "LIR bus to LAH"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "flag E inbound"
+  },
+  "C34": {
+   "v": "correct",
+   "evidence": "ME 190111 bubble"
+  },
+  "C35": {
+   "v": "wrong",
+   "evidence": "MS is 190111 not 190114"
+  },
+  "C36": {
+   "v": "correct",
+   "evidence": "TY 190111 bubble"
+  },
+  "C37": {
+   "v": "correct",
+   "evidence": "LT dashed up to AI to LIR"
+  },
+  "C38": {
+   "v": "correct",
+   "evidence": "flag C outgoing"
+  },
+  "C39": {
+   "v": "unclear",
+   "evidence": "MY dashed to MS, MS to ME; no explicit MXR line"
+  }
+ },
+ "missing_from_known": [],
+ "notes": "Mixer instruments MY/MS/ME chain; ME has no explicit line to MXR."
+}

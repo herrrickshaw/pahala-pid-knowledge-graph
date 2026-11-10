@@ -1,0 +1,149 @@
+{
+ "page": 15,
+ "verdicts": {
+  "C1": {
+   "v": "correct",
+   "evidence": "FE 170122 stacked under FIT, on pipe"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "HS 170103 dashed to XV 170103 bubble"
+  },
+  "C3": {
+   "v": "correct",
+   "evidence": "ZIO 170103 OPENED bubble"
+  },
+  "C4": {
+   "v": "correct",
+   "evidence": "ZIO DI dashed down to ZSO bubble"
+  },
+  "C5": {
+   "v": "wrong",
+   "evidence": "tag is ZSC-170103, no 170106"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "ZIC DI dashed down to ZSC bubble"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "TNK-170100 label under drum"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "ZSO 170103 bubble"
+  },
+  "C9": {
+   "v": "correct",
+   "evidence": "ZSC stacked with XV 170103"
+  },
+  "C10": {
+   "v": "wrong",
+   "evidence": "PG tags are 170111 and 170112"
+  },
+  "C11": {
+   "v": "correct",
+   "evidence": "drum hose to FI-170121 up into eductor"
+  },
+  "C12": {
+   "v": "wrong",
+   "evidence": "utility water enters from flag, reverse"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "eductor then FE-170122 to ACID WASH TO MB-01"
+  },
+  "C14": {
+   "v": "correct",
+   "evidence": "ZIO on bus joined to ZA 170103"
+  },
+  "C15": {
+   "v": "correct",
+   "evidence": "FE/FIT 170122 stacked"
+  },
+  "C16": {
+   "v": "wrong",
+   "evidence": "no line from eductor to tank; flow tank to eductor"
+  },
+  "C17": {
+   "v": "correct",
+   "evidence": "ZIC 170103 bubble"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "ZSO stacked on XV pair"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "FIT 170122 bubble"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "ZSC 170103 bubble"
+  },
+  "C21": {
+   "v": "correct",
+   "evidence": "FIT dashed up to FQIR AI card"
+  },
+  "C22": {
+   "v": "correct",
+   "evidence": "UTILITY WATER flag then valve XV-170103 then eductor"
+  },
+  "C23": {
+   "v": "correct",
+   "evidence": "YC DO and HS dashed link"
+  },
+  "C24": {
+   "v": "wrong",
+   "evidence": "YI not tied to PG-170112"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "ZIC on bus to ZA 170103"
+  },
+  "C26": {
+   "v": "correct",
+   "evidence": "ACID WASH TO MB-01 outgoing flag"
+  },
+  "C27": {
+   "v": "wrong",
+   "evidence": "ZIO links to ZSO, PG 170111 on pipe"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "dashed line HS to DI card for YI 170103"
+  },
+  "C29": {
+   "v": "correct",
+   "evidence": "YC 170103 OPEN/CLOSE bubble"
+  },
+  "C30": {
+   "v": "wrong",
+   "evidence": "ZSO goes to ZIO; ZIC goes to ZSC"
+  },
+  "C31": {
+   "v": "correct",
+   "evidence": "FI 170121 bubble"
+  },
+  "C32": {
+   "v": "wrong",
+   "evidence": "FIT-170122 only; no 170125"
+  },
+  "C33": {
+   "v": "correct",
+   "evidence": "HS 170103 bubble"
+  },
+  "C34": {
+   "v": "wrong",
+   "evidence": "ACID WASH flag outgoing, reverse"
+  }
+ },
+ "missing_from_known": [
+  {
+   "tag": "FE-170121",
+   "where": "r3c2",
+   "what": "element label printed beside FI-170121 bubble on chemical line"
+  }
+ ],
+ "notes": "Eductor feeds acid into utility water line."
+}

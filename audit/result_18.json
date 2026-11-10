@@ -1,0 +1,135 @@
+{
+ "page": 18,
+ "verdicts": {
+  "C1": {
+   "v": "unclear",
+   "evidence": "VFD not on the signal bus; SC bubble on bus, no explicit line to VFD"
+  },
+  "C2": {
+   "v": "correct",
+   "evidence": "YI 110111A bubble"
+  },
+  "C3": {
+   "v": "wrong",
+   "evidence": "VFD-110101 attached to BLR-110101 directly, not 110111"
+  },
+  "C4": {
+   "v": "unclear",
+   "evidence": "no explicit line blower to YI bubble; bubbles on bus within same panel"
+  },
+  "C5": {
+   "v": "unclear",
+   "evidence": "no explicit line blower to YI bubble; same panel"
+  },
+  "C6": {
+   "v": "correct",
+   "evidence": "YI 110111B bubble"
+  },
+  "C7": {
+   "v": "correct",
+   "evidence": "YA 110101A bubble"
+  },
+  "C8": {
+   "v": "correct",
+   "evidence": "YI 110101C bubble"
+  },
+  "C9": {
+   "v": "unclear",
+   "evidence": "no explicit blower-to-SC line; same panel"
+  },
+  "C10": {
+   "v": "correct",
+   "evidence": "outgoing flag b PROCESS AIR TO PA&MB BLRs P205, stand-by blower discharge to it"
+  },
+  "C11": {
+   "v": "unclear",
+   "evidence": "XC bubble on bus, no explicit line to blower"
+  },
+  "C12": {
+   "v": "unclear",
+   "evidence": "no explicit line blower to YA; same panel"
+  },
+  "C13": {
+   "v": "correct",
+   "evidence": "WAS storage blower discharge goes to outgoing flag a P210"
+  },
+  "C14": {
+   "v": "wrong",
+   "evidence": "no YI-110104A"
+  },
+  "C15": {
+   "v": "wrong",
+   "evidence": "flag a is outgoing; flow from blower to flag"
+  },
+  "C16": {
+   "v": "correct",
+   "evidence": "YI 110111D bubble"
+  },
+  "C17": {
+   "v": "wrong",
+   "evidence": "no SC-110114"
+  },
+  "C18": {
+   "v": "correct",
+   "evidence": "SC 110111 bubble"
+  },
+  "C19": {
+   "v": "correct",
+   "evidence": "flag b outgoing"
+  },
+  "C20": {
+   "v": "correct",
+   "evidence": "YI 110101D bubble"
+  },
+  "C21": {
+   "v": "unclear",
+   "evidence": "no explicit line blower to YA; same panel"
+  },
+  "C22": {
+   "v": "unclear",
+   "evidence": "no explicit line XC to blower; same panel"
+  },
+  "C23": {
+   "v": "unclear",
+   "evidence": "no explicit line; same panel"
+  },
+  "C24": {
+   "v": "correct",
+   "evidence": "YI 110101A bubble"
+  },
+  "C25": {
+   "v": "correct",
+   "evidence": "VFD 110101 bubble"
+  },
+  "C26": {
+   "v": "unclear",
+   "evidence": "no explicit line; same panel"
+  },
+  "C27": {
+   "v": "correct",
+   "evidence": "flag a drawn, outgoing"
+  },
+  "C28": {
+   "v": "correct",
+   "evidence": "YI 110101B bubble"
+  },
+  "C29": {
+   "v": "wrong",
+   "evidence": "no XC-110114A"
+  },
+  "C30": {
+   "v": "correct",
+   "evidence": "both XC on same shared bus"
+  },
+  "C31": {
+   "v": "wrong",
+   "evidence": "flag b outgoing, not feeding blower"
+  },
+  "C32": {
+   "v": "correct",
+   "evidence": "both XC on same shared bus"
+  }
+ },
+ "missing_from_known": [],
+ "notes": "Instrument bubbles hang off a shared multi-drop bus to OIT and PLC DI/DO cards; no individual lines from blower to bubbles. Blower-to-bubble claims marked unclear for matching blower, VFD connects to blower motor directly."
+}
