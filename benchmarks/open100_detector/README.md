@@ -34,3 +34,19 @@ Scored on the same 12 real OPEN100 sheets (never trained on); 4% radius:
 | pump | 16 | 34 | 0.09 | 0.19 | 0.12 | merged equipment 0.04 |
 
 Tank/pump counts are tiny, so those rows are noisy. Files: `make_tiles_v2.py`, `score_detector2.py`, `pid2.yaml`, `score_v2.txt`, `train_results_v2.csv`.
+
+## v3: multi-scale synthetic tiles, 15 more epochs
+
+Initialised from v2 weights; the PID2Graph Synthetic sheets are tiled at two scales (0.45 and 0.8) so tank/pump sizes vary (real OPEN100 tanks are ~3x larger in pixels than at v2's single training scale). Same classes and scorer (`score_detector2.py`). 4% radius, native scale:
+
+| Class | GT | Detected | P | R | F1 | v2 F1 |
+|---|---|---|---|---|---|---|
+| valve | 257 | 311 | 0.77 | 0.93 | 0.84 | 0.73 |
+| instrumentation | 350 | 358 | 0.92 | 0.95 | 0.94 | 0.86 |
+| tank | 35 | 36 | 0.11 | 0.11 | 0.11 | 0.17 |
+| pump | 16 | 12 | 0.17 | 0.12 | 0.14 | 0.12 |
+| ALL (4 classes) | 658 | 717 | 0.80 | 0.88 | 0.84 | 0.74 |
+
+Valve and instrumentation improved; tank and pump did not (35 and 16 GT, so changes are within noise). Synthetic val mAP50 is 0.993, so the tank/pump failure is the synthetic-to-real gap, not under-training.
+Running inference at 0.5x is worse (ALL F1 0.42, `score_v3_s0.5.txt`) because valves/instruments shrink below their trained size; native scale is right.
+Files: `make_tiles_v3.py`, `pid3.yaml`, `score_v3_s1.0.txt`, `score_v3_s0.5.txt`, `train_results_v3.csv`.
