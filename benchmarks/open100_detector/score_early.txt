@@ -1,0 +1,32 @@
+page 1 dets 67
+page 2 dets 16
+page 3 dets 29
+page 4 dets 38
+page 5 dets 17
+page 6 dets 107
+page 7 dets 125
+page 8 dets 85
+page 9 dets 67
+page 10 dets 69
+page 11 dets 68
+page 12 dets 102
+detections kept by class: {'instrumentation': 519, 'valve': 119, 'general': 30} | weights: ckpt_early.pt | scale 1.0 conf 0.25
+
+=== node match radius 1% of image width
+valve            GT  257 ours  119  P 0.27 R 0.12 F1 0.17
+instrumentation  GT  350 ours  519  P 0.43 R 0.63 F1 0.51
+equipment        GT  285 ours   30  P 0.07 R 0.01 F1 0.01
+ALL (3 classes)  GT  892 ours  668  P 0.38 R 0.29 F1 0.33
+
+=== node match radius 2% of image width
+valve            GT  257 ours  119  P 0.27 R 0.12 F1 0.17
+instrumentation  GT  350 ours  519  P 0.44 R 0.65 F1 0.53
+equipment        GT  285 ours   30  P 0.07 R 0.01 F1 0.01
+ALL (3 classes)  GT  892 ours  668  P 0.39 R 0.29 F1 0.34
+
+=== node match radius 4% of image width
+valve            GT  257 ours  119  P 0.29 R 0.13 F1 0.18
+instrumentation  GT  350 ours  519  P 0.46 R 0.68 F1 0.55
+equipment        GT  285 ours   30  P 0.07 R 0.01 F1 0.01
+ALL (3 classes)  GT  892 ours  668  P 0.41 R 0.31 F1 0.35
+./venv/bin/python -I score_detector.py ckpt_early.pt ../pid2graph_data/open10  40.50s user 8.16s system 84% cpu 57.497 total
