@@ -1,0 +1,1857 @@
+{
+ "schema_version": "1.0",
+ "page": 11,
+ "sheet": {
+  "drawing_number": "PID 110",
+  "title": "CHEMICAL VOLUME COOLING WATER",
+  "revision": "A",
+  "drawing_type": "pid",
+  "issue_status": "INFORMATION ONLY - NOT FOR CONSTRUCTION",
+  "legend_notes": [
+   "Sheet 1 of 1",
+   "NC = normally closed (black valve symbols on filter vents and drains)",
+   "Equipment data blocks along the bottom give service only; other fields blank"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "CVCS-VCT-118",
+   "tag": "CVCS-VCT-118",
+   "kind": "vessel",
+   "name": "VOLUME CONTROL TANK",
+   "bbox": [
+    0.1566,
+    0.3251,
+    0.2542,
+    0.5809
+   ],
+   "attributes": {
+    "service": "VOLUME CONTROL TANK",
+    "OD": "blank",
+    "LENGTH": "blank",
+    "MATERIAL": "blank"
+   }
+  },
+  {
+   "id": "CVCS-HX-110",
+   "tag": "CVCS-HX-110",
+   "kind": "heat_exchanger",
+   "name": "REGEN HEAT EXCHANGER",
+   "bbox": [
+    0.2854,
+    0.1945,
+    0.3917,
+    0.2358
+   ],
+   "attributes": {
+    "service": "REGEN HEAT EXCHANGER",
+    "OD": "blank",
+    "LENGTH": "blank",
+    "MATERIAL": "blank"
+   }
+  },
+  {
+   "id": "CVCS-HX-111",
+   "tag": "CVCS-HX-111",
+   "kind": "heat_exchanger",
+   "name": "LETDOWN HEAT EXCHANGER",
+   "bbox": [
+    0.4833,
+    0.1247,
+    0.6037,
+    0.166
+   ],
+   "attributes": {
+    "service": "LETDOWN HEAT EXCHANGER",
+    "OD": "blank",
+    "LENGTH": "blank",
+    "MATERIAL": "blank"
+   }
+  },
+  {
+   "id": "CVCS-FL-112A",
+   "tag": "CVCS-FL-112A",
+   "kind": "filter",
+   "name": "LETDOWN FILTER",
+   "bbox": [
+    0.7176,
+    0.4874,
+    0.7508,
+    0.5725
+   ],
+   "attributes": {
+    "service": "LETDOWN FILTER",
+    "OD": "blank",
+    "LENGTH": "blank",
+    "MATERIAL": "blank"
+   }
+  },
+  {
+   "id": "CVCS-FL-112B",
+   "tag": "CVCS-FL-112B",
+   "kind": "filter",
+   "name": "LETDOWN FILTER",
+   "bbox": [
+    0.8045,
+    0.4874,
+    0.838,
+    0.5725
+   ],
+   "attributes": {
+    "service": "LETDOWN FILTER",
+    "OD": "blank",
+    "LENGTH": "blank",
+    "MATERIAL": "blank"
+   }
+  },
+  {
+   "id": "CVCS-AN-113A",
+   "tag": "CVCS-AN-113A",
+   "kind": "other",
+   "name": "BORON ANALYZER",
+   "bbox": [
+    0.4662,
+    0.3795,
+    0.4939,
+    0.4169
+   ],
+   "attributes": {
+    "service": "BORON ANALYZER"
+   }
+  },
+  {
+   "id": "CVCS-AN-113B",
+   "tag": "CVCS-AN-113B",
+   "kind": "other",
+   "name": "RADIATION ANALYZER",
+   "bbox": [
+    0.5429,
+    0.3795,
+    0.5704,
+    0.4169
+   ],
+   "attributes": {
+    "service": "RADIATION ANALYZER"
+   }
+  },
+  {
+   "id": "CVCS-ION-114A",
+   "tag": "CVCS-ION-114A",
+   "kind": "ion_exchange",
+   "name": "ION EXCHANGER",
+   "bbox": [
+    0.3605,
+    0.6046,
+    0.4025,
+    0.7433
+   ],
+   "attributes": {
+    "service": "ION EXCHANGER",
+    "OD": "blank",
+    "LENGTH": "blank",
+    "MATERIAL": "blank"
+   }
+  },
+  {
+   "id": "CVCS-ION-114B",
+   "tag": "CVCS-ION-114B",
+   "kind": "ion_exchange",
+   "name": "ION EXCHANGER",
+   "bbox": [
+    0.4277,
+    0.6046,
+    0.4699,
+    0.7433
+   ],
+   "attributes": {
+    "service": "ION EXCHANGER",
+    "OD": "blank",
+    "LENGTH": "blank",
+    "MATERIAL": "blank"
+   }
+  },
+  {
+   "id": "CVCS-PU-115",
+   "tag": "CVCS-PU-115",
+   "kind": "positive_displacement_pump",
+   "name": "POSITIVE DISPLACEMENT CHARGING PUMP",
+   "bbox": [
+    0.2553,
+    0.6283,
+    0.2789,
+    0.6632
+   ],
+   "attributes": {
+    "service": "POSITIVE DISPLACEMENT CHARGING PUMP",
+    "CAPACITY": "blank",
+    "DISCHARGE": "blank",
+    "RPM": "blank",
+    "HP": "blank"
+   }
+  },
+  {
+   "id": "CVCS-PU-116",
+   "tag": "CVCS-PU-116",
+   "kind": "positive_displacement_pump",
+   "name": "POSITIVE DISPLACEMENT CHARGING PUMP",
+   "bbox": [
+    0.2553,
+    0.7048,
+    0.2789,
+    0.7397
+   ],
+   "attributes": {
+    "service": "POSITIVE DISPLACEMENT CHARGING PUMP",
+    "CAPACITY": "blank",
+    "DISCHARGE": "blank",
+    "RPM": "blank",
+    "HP": "blank"
+   }
+  },
+  {
+   "id": "CVCS-PU-117",
+   "tag": "CVCS-PU-117",
+   "kind": "positive_displacement_pump",
+   "name": "POSITIVE DISPLACEMENT CHARGING PUMP",
+   "bbox": [
+    0.2553,
+    0.784,
+    0.2789,
+    0.8192
+   ],
+   "attributes": {
+    "service": "POSITIVE DISPLACEMENT CHARGING PUMP",
+    "CAPACITY": "blank",
+    "DISCHARGE": "blank",
+    "RPM": "blank",
+    "HP": "blank"
+   }
+  }
+ ],
+ "components": [
+  {
+   "id": "MOV-1151",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.1074,
+    0.1752,
+    0.1223,
+    0.1975
+   ],
+   "tag": "MOV-1151",
+   "actuator": "electric"
+  },
+  {
+   "id": "FCV-1162",
+   "kind": "control_valve",
+   "bbox": [
+    0.1407,
+    0.2561,
+    0.1518,
+    0.284
+   ],
+   "tag": "FCV-1162",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "PSV-1161",
+   "kind": "relief_valve",
+   "bbox": [
+    0.1996,
+    0.221,
+    0.2092,
+    0.2366
+   ],
+   "tag": "PSV-1161"
+  },
+  {
+   "id": "LCV-1161",
+   "kind": "control_valve",
+   "bbox": [
+    0.1093,
+    0.3817,
+    0.1204,
+    0.4096
+   ],
+   "tag": "LCV-1161",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "LCV-XXX",
+   "kind": "control_valve",
+   "bbox": [
+    0.1093,
+    0.4754,
+    0.1204,
+    0.5033
+   ],
+   "tag": "LCV-XXX",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "PSV-1101",
+   "kind": "relief_valve",
+   "bbox": [
+    0.3614,
+    0.159,
+    0.3711,
+    0.1747
+   ],
+   "tag": "PSV-1101"
+  },
+  {
+   "id": "FCV-1101",
+   "kind": "control_valve",
+   "bbox": [
+    0.4569,
+    0.2009,
+    0.468,
+    0.2288
+   ],
+   "tag": "FCV-1101",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "PSC-1112",
+   "kind": "relief_valve",
+   "bbox": [
+    0.5695,
+    0.0968,
+    0.5792,
+    0.1124
+   ],
+   "tag": "PSC-1112"
+  },
+  {
+   "id": "PCV-1112",
+   "kind": "control_valve",
+   "bbox": [
+    0.6152,
+    0.0865,
+    0.6375,
+    0.1088
+   ],
+   "tag": "PCV-1112",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "PSV-1113",
+   "kind": "relief_valve",
+   "bbox": [
+    0.6392,
+    0.1797,
+    0.6488,
+    0.1953
+   ],
+   "tag": "PSV-1113"
+  },
+  {
+   "id": "FCV-1116",
+   "kind": "control_valve",
+   "bbox": [
+    0.6171,
+    0.2799,
+    0.6356,
+    0.3022
+   ],
+   "tag": "FCV-1116",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "MOV-1115",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.6672,
+    0.4344,
+    0.6895,
+    0.4512
+   ],
+   "tag": "MOV-1115",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1113",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.723,
+    0.44,
+    0.7453,
+    0.4568
+   ],
+   "tag": "MOV-1113",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1114",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.8096,
+    0.44,
+    0.8318,
+    0.4568
+   ],
+   "tag": "MOV-1114",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1123",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.3671,
+    0.5664,
+    0.395,
+    0.5831
+   ],
+   "tag": "MOV-1123",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1122",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.435,
+    0.5664,
+    0.4628,
+    0.5831
+   ],
+   "tag": "MOV-1122",
+   "actuator": "electric"
+  },
+  {
+   "id": "FCV-1121",
+   "kind": "three_way_valve",
+   "bbox": [
+    0.4985,
+    0.8633,
+    0.5097,
+    0.8856
+   ],
+   "tag": "FCV-1121",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "RV-1153",
+   "kind": "relief_valve",
+   "bbox": [
+    0.2908,
+    0.608,
+    0.3004,
+    0.6236
+   ],
+   "tag": "RV-1153"
+  },
+  {
+   "id": "RV-1152",
+   "kind": "relief_valve",
+   "bbox": [
+    0.2908,
+    0.6853,
+    0.3004,
+    0.7009
+   ],
+   "tag": "RV-1152"
+  },
+  {
+   "id": "RV-1151",
+   "kind": "relief_valve",
+   "bbox": [
+    0.2908,
+    0.7634,
+    0.3004,
+    0.779
+   ],
+   "tag": "RV-1151"
+  },
+  {
+   "id": "V-RHRS",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4125,
+    0.1883,
+    0.4221,
+    0.204
+   ]
+  },
+  {
+   "id": "V-N5",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3391,
+    0.3041,
+    0.3488,
+    0.3198
+   ]
+  },
+  {
+   "id": "V-PIT",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6109,
+    0.2001,
+    0.6206,
+    0.2157
+   ]
+  },
+  {
+   "id": "V-CAS",
+   "kind": "gate_valve",
+   "bbox": [
+    0.1903,
+    0.6256,
+    0.1999,
+    0.6412
+   ]
+  },
+  {
+   "id": "V3W-N9",
+   "kind": "three_way_valve",
+   "bbox": [
+    0.2005,
+    0.6052,
+    0.2101,
+    0.6208
+   ],
+   "notes": "three-way style valve below tank outlet N9, with small circle at left"
+  },
+  {
+   "id": "V-FLA",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6908,
+    0.5181,
+    0.7005,
+    0.5338
+   ]
+  },
+  {
+   "id": "V-FLB",
+   "kind": "gate_valve",
+   "bbox": [
+    0.7815,
+    0.5181,
+    0.7912,
+    0.5338
+   ]
+  },
+  {
+   "id": "V-IONA",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3763,
+    0.7793,
+    0.3859,
+    0.7949
+   ]
+  },
+  {
+   "id": "V-IONB",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4441,
+    0.7793,
+    0.4537,
+    0.7949
+   ]
+  },
+  {
+   "id": "ORF-1114",
+   "kind": "other",
+   "bbox": [
+    0.6728,
+    0.303,
+    0.6839,
+    0.3153
+   ],
+   "name": "in-line flow orifice (flange pair) for FO/FT-1114"
+  },
+  {
+   "id": "VENT-A",
+   "kind": "vent",
+   "bbox": [
+    0.7408,
+    0.4713,
+    0.7505,
+    0.4869
+   ],
+   "normal_position": "closed",
+   "notes": "NC"
+  },
+  {
+   "id": "DRAIN-A",
+   "kind": "drain",
+   "bbox": [
+    0.7362,
+    0.5753,
+    0.7458,
+    0.591
+   ],
+   "normal_position": "closed",
+   "notes": "NC"
+  },
+  {
+   "id": "VENT-B",
+   "kind": "vent",
+   "bbox": [
+    0.8276,
+    0.4713,
+    0.8372,
+    0.4869
+   ],
+   "normal_position": "closed",
+   "notes": "NC"
+  },
+  {
+   "id": "DRAIN-B",
+   "kind": "drain",
+   "bbox": [
+    0.8227,
+    0.5753,
+    0.8324,
+    0.591
+   ],
+   "normal_position": "closed",
+   "notes": "NC"
+  }
+ ],
+ "instruments": [
+  {
+   "id": "BUB-MOV-1151",
+   "location": "field",
+   "bbox": [
+    0.1217,
+    0.156,
+    0.1358,
+    0.1772
+   ],
+   "measures": {
+    "item": "MOV-1151"
+   },
+   "function": "MOV",
+   "notes": "tag bubble of MOV-1151"
+  },
+  {
+   "id": "BUB-FCV-1162",
+   "location": "field",
+   "bbox": [
+    0.1529,
+    0.2386,
+    0.167,
+    0.2598
+   ],
+   "measures": {
+    "item": "FCV-1162"
+   },
+   "function": "FCV",
+   "notes": "tag bubble of FCV-1162"
+  },
+  {
+   "id": "BUB-PSV-1161",
+   "location": "field",
+   "bbox": [
+    0.2087,
+    0.2023,
+    0.2228,
+    0.2235
+   ],
+   "measures": {
+    "item": "PSV-1161"
+   },
+   "function": "PSV",
+   "notes": "tag bubble of PSV-1161"
+  },
+  {
+   "id": "BUB-LCV-1161",
+   "location": "field",
+   "bbox": [
+    0.1184,
+    0.3638,
+    0.1325,
+    0.385
+   ],
+   "measures": {
+    "item": "LCV-1161"
+   },
+   "function": "LCV",
+   "notes": "tag bubble of LCV-1161"
+  },
+  {
+   "id": "BUB-LCV-XXX",
+   "location": "field",
+   "bbox": [
+    0.1184,
+    0.4579,
+    0.1325,
+    0.4791
+   ],
+   "measures": {
+    "item": "LCV-XXX"
+   },
+   "function": "LCV",
+   "notes": "tag bubble of LCV-XXX"
+  },
+  {
+   "id": "BUB-PSV-1101",
+   "location": "field",
+   "bbox": [
+    0.3478,
+    0.1395,
+    0.3619,
+    0.1607
+   ],
+   "measures": {
+    "item": "PSV-1101"
+   },
+   "function": "PSV",
+   "notes": "tag bubble of PSV-1101"
+  },
+  {
+   "id": "BUB-FCV-1101",
+   "location": "field",
+   "bbox": [
+    0.466,
+    0.1814,
+    0.4801,
+    0.2026
+   ],
+   "measures": {
+    "item": "FCV-1101"
+   },
+   "function": "FCV",
+   "notes": "tag bubble of FCV-1101"
+  },
+  {
+   "id": "BUB-PSC-1112",
+   "location": "field",
+   "bbox": [
+    0.5565,
+    0.0765,
+    0.5706,
+    0.0977
+   ],
+   "measures": {
+    "item": "PSC-1112"
+   },
+   "function": "PSC",
+   "notes": "tag bubble of PSC-1112"
+  },
+  {
+   "id": "BUB-PCV-1112",
+   "location": "field",
+   "bbox": [
+    0.6085,
+    0.1032,
+    0.6226,
+    0.1244
+   ],
+   "measures": {
+    "item": "PCV-1112"
+   },
+   "function": "PCV",
+   "notes": "tag bubble of PCV-1112"
+  },
+  {
+   "id": "BUB-PSV-1113",
+   "location": "field",
+   "bbox": [
+    0.6297,
+    0.1557,
+    0.6438,
+    0.1769
+   ],
+   "measures": {
+    "item": "PSV-1113"
+   },
+   "function": "PSV",
+   "notes": "tag bubble of PSV-1113"
+  },
+  {
+   "id": "BUB-FCV-1116",
+   "location": "field",
+   "bbox": [
+    0.6085,
+    0.3013,
+    0.6226,
+    0.3225
+   ],
+   "measures": {
+    "item": "FCV-1116"
+   },
+   "function": "FCV",
+   "notes": "tag bubble of FCV-1116"
+  },
+  {
+   "id": "BUB-MOV-1115",
+   "location": "field",
+   "bbox": [
+    0.6607,
+    0.4163,
+    0.6748,
+    0.4375
+   ],
+   "measures": {
+    "item": "MOV-1115"
+   },
+   "function": "MOV",
+   "notes": "tag bubble of MOV-1115"
+  },
+  {
+   "id": "BUB-MOV-1113",
+   "location": "field",
+   "bbox": [
+    0.7129,
+    0.4526,
+    0.7271,
+    0.4738
+   ],
+   "measures": {
+    "item": "MOV-1113"
+   },
+   "function": "MOV",
+   "notes": "tag bubble of MOV-1113"
+  },
+  {
+   "id": "BUB-MOV-1114",
+   "location": "field",
+   "bbox": [
+    0.7999,
+    0.4581,
+    0.814,
+    0.4794
+   ],
+   "measures": {
+    "item": "MOV-1114"
+   },
+   "function": "MOV",
+   "notes": "tag bubble of MOV-1114"
+  },
+  {
+   "id": "BUB-MOV-1123",
+   "location": "field",
+   "bbox": [
+    0.3564,
+    0.5801,
+    0.3705,
+    0.6013
+   ],
+   "measures": {
+    "item": "MOV-1123"
+   },
+   "function": "MOV",
+   "notes": "tag bubble of MOV-1123"
+  },
+  {
+   "id": "BUB-MOV-1122",
+   "location": "field",
+   "bbox": [
+    0.4238,
+    0.5801,
+    0.4379,
+    0.6013
+   ],
+   "measures": {
+    "item": "MOV-1122"
+   },
+   "function": "MOV",
+   "notes": "tag bubble of MOV-1122"
+  },
+  {
+   "id": "BUB-FCV-1121",
+   "location": "field",
+   "bbox": [
+    0.4833,
+    0.8862,
+    0.4974,
+    0.9074
+   ],
+   "measures": {
+    "item": "FCV-1121"
+   },
+   "function": "FCV",
+   "notes": "tag bubble of FCV-1121"
+  },
+  {
+   "id": "BUB-RV-1153",
+   "location": "field",
+   "bbox": [
+    0.299,
+    0.5884,
+    0.3131,
+    0.6097
+   ],
+   "measures": {
+    "item": "RV-1153"
+   },
+   "function": "RV",
+   "notes": "tag bubble of RV-1153"
+  },
+  {
+   "id": "BUB-RV-1152",
+   "location": "field",
+   "bbox": [
+    0.299,
+    0.6671,
+    0.3131,
+    0.6883
+   ],
+   "measures": {
+    "item": "RV-1152"
+   },
+   "function": "RV",
+   "notes": "tag bubble of RV-1152"
+  },
+  {
+   "id": "BUB-RV-1151",
+   "location": "field",
+   "bbox": [
+    0.2956,
+    0.7453,
+    0.3097,
+    0.7665
+   ],
+   "measures": {
+    "item": "RV-1151"
+   },
+   "function": "RV",
+   "notes": "tag bubble of RV-1151"
+  },
+  {
+   "id": "TE-11051A",
+   "location": "field",
+   "bbox": [
+    0.1078,
+    0.0536,
+    0.1219,
+    0.0748
+   ],
+   "measures": {
+    "line": "L2"
+   },
+   "tag": "TE-11051A"
+  },
+  {
+   "id": "TE-11051B",
+   "location": "field",
+   "bbox": [
+    0.1234,
+    0.0536,
+    0.1375,
+    0.0748
+   ],
+   "measures": {
+    "line": "L2"
+   },
+   "tag": "TE-11051B"
+  },
+  {
+   "id": "TE-10160A",
+   "location": "field",
+   "bbox": [
+    0.1078,
+    0.1052,
+    0.1219,
+    0.1264
+   ],
+   "measures": {
+    "line": "L1"
+   },
+   "tag": "TE-10160A"
+  },
+  {
+   "id": "TE-10160B",
+   "location": "field",
+   "bbox": [
+    0.1234,
+    0.1052,
+    0.1375,
+    0.1264
+   ],
+   "measures": {
+    "line": "L1"
+   },
+   "tag": "TE-10160B"
+  },
+  {
+   "id": "PIT-11859",
+   "location": "field",
+   "bbox": [
+    0.2334,
+    0.291,
+    0.2475,
+    0.3122
+   ],
+   "measures": {
+    "item": "CVCS-VCT-118"
+   },
+   "tag": "PIT-11859"
+  },
+  {
+   "id": "LIT-11858",
+   "location": "field",
+   "bbox": [
+    0.2677,
+    0.3744,
+    0.2819,
+    0.3956
+   ],
+   "measures": {
+    "item": "CVCS-VCT-118"
+   },
+   "tag": "LIT-11858"
+  },
+  {
+   "id": "LIT-11857",
+   "location": "field",
+   "bbox": [
+    0.2677,
+    0.4997,
+    0.2819,
+    0.5209
+   ],
+   "measures": {
+    "item": "CVCS-VCT-118"
+   },
+   "tag": "LIT-11857"
+  },
+  {
+   "id": "TE-11052A",
+   "location": "field",
+   "bbox": [
+    0.4292,
+    0.1708,
+    0.4433,
+    0.192
+   ],
+   "measures": {
+    "line": "L6"
+   },
+   "tag": "TE-11052A"
+  },
+  {
+   "id": "TE-11052B",
+   "location": "field",
+   "bbox": [
+    0.4452,
+    0.1708,
+    0.4593,
+    0.192
+   ],
+   "measures": {
+    "line": "L6"
+   },
+   "tag": "TE-11052B"
+  },
+  {
+   "id": "TE-11153A",
+   "location": "field",
+   "bbox": [
+    0.5251,
+    0.0725,
+    0.5392,
+    0.0938
+   ],
+   "measures": {
+    "line": "L8"
+   },
+   "tag": "TE-11153A"
+  },
+  {
+   "id": "TE-11153B",
+   "location": "field",
+   "bbox": [
+    0.5411,
+    0.0725,
+    0.5552,
+    0.0938
+   ],
+   "measures": {
+    "line": "L8"
+   },
+   "tag": "TE-11153B"
+  },
+  {
+   "id": "PIT-11154A",
+   "location": "field",
+   "bbox": [
+    0.5981,
+    0.1763,
+    0.6122,
+    0.1975
+   ],
+   "measures": {
+    "line": "L_PIT"
+   },
+   "tag": "PIT-11154A"
+  },
+  {
+   "id": "PIT-11154B",
+   "location": "field",
+   "bbox": [
+    0.5981,
+    0.2179,
+    0.6122,
+    0.2391
+   ],
+   "measures": {
+    "line": "L_PIT"
+   },
+   "tag": "PIT-11154B"
+  },
+  {
+   "id": "TE-11155A",
+   "location": "field",
+   "bbox": [
+    0.6607,
+    0.2285,
+    0.6748,
+    0.2497
+   ],
+   "measures": {
+    "line": "L8",
+    "after": "PCV-1112"
+   },
+   "tag": "TE-11155A"
+  },
+  {
+   "id": "TE-11155B",
+   "location": "field",
+   "bbox": [
+    0.6763,
+    0.2285,
+    0.6904,
+    0.2497
+   ],
+   "measures": {
+    "line": "L8",
+    "after": "PCV-1112"
+   },
+   "tag": "TE-11155B"
+  },
+  {
+   "id": "FO-1114",
+   "location": "field",
+   "bbox": [
+    0.6886,
+    0.2991,
+    0.7027,
+    0.3203
+   ],
+   "measures": {
+    "item": "ORF-1114"
+   },
+   "tag": "FO-1114"
+  },
+  {
+   "id": "FT-1114",
+   "location": "field",
+   "bbox": [
+    0.7023,
+    0.2991,
+    0.7165,
+    0.3203
+   ],
+   "measures": {
+    "item": "ORF-1114"
+   },
+   "tag": "FT-1114"
+  },
+  {
+   "id": "PIT-11256",
+   "location": "field",
+   "bbox": [
+    0.7165,
+    0.656,
+    0.7306,
+    0.6772
+   ],
+   "measures": {
+    "line": "L_h",
+    "after": "V-FLB"
+   },
+   "tag": "PIT-11256"
+  },
+  {
+   "id": "PIT-11561",
+   "location": "field",
+   "bbox": [
+    0.3372,
+    0.5725,
+    0.3514,
+    0.5938
+   ],
+   "measures": {
+    "line": "L_hdr"
+   },
+   "tag": "PIT-11561"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "OPC-RCSin",
+   "to": "CVCS-HX-110",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-101022-SPEC-HC-X"
+  },
+  {
+   "id": "L2",
+   "from": "CVCS-HX-110",
+   "to": "OPC-RCSout",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-110053-SPEC-HC-X"
+  },
+  {
+   "id": "L6",
+   "from": "CVCS-HX-110",
+   "to": "CVCS-HX-111",
+   "path": [
+    "FCV-1101"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-110026-SPEC-HC-X"
+  },
+  {
+   "id": "L3",
+   "from": "OPC-RHRS",
+   "to": {
+    "line": "L6"
+   },
+   "path": [
+    "V-RHRS"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-RHRS-121071-SPEC-HC-X"
+  },
+  {
+   "id": "L4",
+   "from": "CVCS-HX-110",
+   "to": "PSV-1101",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-110054-SPEC-HC-X"
+  },
+  {
+   "id": "L5",
+   "from": "PSV-1101",
+   "to": "B-PSV1101",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-110054-SPEC-HC-X"
+  },
+  {
+   "id": "L7",
+   "from": {
+    "line": "L_hdr"
+   },
+   "to": "CVCS-HX-110",
+   "path": [
+    "V-N5"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-115C043-SPEC-HC-X"
+  },
+  {
+   "id": "L_hdr",
+   "from": "CVCS-PU-117",
+   "to": "OPC-RHR",
+   "path": [
+    "MOV-1151"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-115C043-SPEC-HC-X"
+  },
+  {
+   "id": "Ld_116",
+   "from": "CVCS-PU-116",
+   "to": {
+    "line": "L_hdr"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-115B045-SPEC-HC-X"
+  },
+  {
+   "id": "Ld_115",
+   "from": "CVCS-PU-115",
+   "to": {
+    "line": "L_hdr"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-115A047-SPEC-HC-X"
+  },
+  {
+   "id": "L_suct",
+   "from": "CVCS-VCT-118",
+   "to": "CVCS-PU-117",
+   "path": [
+    "V3W-N9"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-116040-SPEC-HC-X"
+  },
+  {
+   "id": "L_cas",
+   "from": "OPC-CAS",
+   "to": {
+    "line": "L_suct",
+    "after": "V3W-N9"
+   },
+   "path": [
+    "V-CAS"
+   ],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "Ls_115",
+   "from": {
+    "line": "L_suct",
+    "after": "V3W-N9"
+   },
+   "to": "CVCS-PU-115",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-116042-SPEC-HC-X"
+  },
+  {
+   "id": "Ls_116",
+   "from": {
+    "line": "L_suct",
+    "after": "V3W-N9"
+   },
+   "to": "CVCS-PU-116",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-116041-SPEC-HC-X"
+  },
+  {
+   "id": "LRV_115",
+   "from": {
+    "line": "Ld_115"
+   },
+   "to": {
+    "line": "Ls_115"
+   },
+   "path": [
+    "RV-1153"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-115A048-SPEC-HC-X"
+  },
+  {
+   "id": "LRV_116",
+   "from": {
+    "line": "Ld_116"
+   },
+   "to": {
+    "line": "Ls_116"
+   },
+   "path": [
+    "RV-1152"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-115B046-SPEC-HC-X"
+  },
+  {
+   "id": "LRV_117",
+   "from": {
+    "line": "L_hdr"
+   },
+   "to": {
+    "line": "L_suct",
+    "after": "V3W-N9"
+   },
+   "path": [
+    "RV-1151"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-115C044-SPEC-HC-X",
+   "confidence": 0.85,
+   "notes": "relief valve branch from PU-117 discharge"
+  },
+  {
+   "id": "Lv1",
+   "from": "OPC-RWS1",
+   "to": "CVCS-VCT-118",
+   "path": [
+    "FCV-1162"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-RWS-116055-SPEC-HC-X"
+  },
+  {
+   "id": "Lv2",
+   "from": "CVCS-VCT-118",
+   "to": "OPC-RWS2",
+   "path": [
+    "LCV-1161"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-RWS-116052-SPEC-HC-X"
+  },
+  {
+   "id": "Lv3",
+   "from": "OPC-MUW",
+   "to": "CVCS-VCT-118",
+   "path": [
+    "LCV-XXX"
+   ],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "Lv4",
+   "from": "CVCS-VCT-118",
+   "to": "PSV-1161",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-WPS-116050-SPEC-HC-X"
+  },
+  {
+   "id": "Lv5",
+   "from": "PSV-1161",
+   "to": "OPC-WPS1",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-WPS-116050-SPEC-HC-X"
+  },
+  {
+   "id": "L8",
+   "from": "CVCS-HX-111",
+   "to": "CVCS-FL-112B",
+   "path": [
+    "PCV-1112",
+    "ORF-1114",
+    "MOV-1114"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-111027-SPEC-HC-X"
+  },
+  {
+   "id": "L_PIT",
+   "from": {
+    "line": "L8",
+    "after": "PCV-1112"
+   },
+   "to": "PIT-11154A",
+   "path": [
+    "V-PIT"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.7,
+   "notes": "valved impulse branch to PIT-11154A/B"
+  },
+  {
+   "id": "LJ_psv",
+   "from": {
+    "line": "L8",
+    "after": "PCV-1112"
+   },
+   "to": "PSV-1113",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-WPS-111058-SPEC-HC-X"
+  },
+  {
+   "id": "LJ_wps",
+   "from": "PSV-1113",
+   "to": "OPC-WPS2",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-WPS-111058-SPEC-HC-X"
+  },
+  {
+   "id": "L_PSC1",
+   "from": "CVCS-HX-111",
+   "to": "PSC-1112",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-111057-SPEC-HC-X"
+  },
+  {
+   "id": "L_PSC2",
+   "from": "PSC-1112",
+   "to": "B-PSC1112",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-111057-SPEC-HC-X"
+  },
+  {
+   "id": "LJ_an",
+   "from": {
+    "line": "L8",
+    "after": "PCV-1112"
+   },
+   "to": "CVCS-AN-113A",
+   "path": [
+    "FCV-1116"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-111032-SPEC-HC-X"
+  },
+  {
+   "id": "LJ_anB",
+   "from": {
+    "line": "LJ_an",
+    "after": "FCV-1116"
+   },
+   "to": "CVCS-AN-113B",
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-111033-SPEC-HC-X"
+  },
+  {
+   "id": "LFA",
+   "from": {
+    "line": "L8",
+    "after": "ORF-1114"
+   },
+   "to": "CVCS-FL-112A",
+   "path": [
+    "MOV-1113"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-111028-SPEC-HC-X"
+  },
+  {
+   "id": "L_h1115",
+   "from": {
+    "line": "L8",
+    "after": "ORF-1114"
+   },
+   "to": {
+    "line": "L_h"
+   },
+   "path": [
+    "MOV-1115"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-111031-SPEC-HC-X"
+  },
+  {
+   "id": "L_h",
+   "from": "CVCS-FL-112B",
+   "to": {
+    "line": "L_vert"
+   },
+   "path": [
+    "V-FLB"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SPEC-CVCS-112A030-SPEC-HC-X"
+  },
+  {
+   "id": "Lo_A",
+   "from": "CVCS-FL-112A",
+   "to": {
+    "line": "L_h",
+    "after": "V-FLB"
+   },
+   "path": [
+    "V-FLA"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SPEC-CVCS-112A030-SPEC-HC-X"
+  },
+  {
+   "id": "L_vert",
+   "from": "CVCS-AN-113B",
+   "to": "CVCS-VCT-118",
+   "path": [
+    "FCV-1121"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-113B035-SPEC-HC-X"
+  },
+  {
+   "id": "LAnA",
+   "from": "CVCS-AN-113A",
+   "to": {
+    "line": "L_vert"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-113A034-SPEC-HC-X"
+  },
+  {
+   "id": "Lion_A",
+   "from": "CVCS-ION-114A",
+   "to": {
+    "line": "L_vert",
+    "after": "FCV-1121"
+   },
+   "path": [
+    "V-IONA"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-114A039-SPEC-HC-X"
+  },
+  {
+   "id": "Lion_B",
+   "from": "CVCS-ION-114B",
+   "to": {
+    "line": "L_vert",
+    "after": "FCV-1121"
+   },
+   "path": [
+    "V-IONB"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-114B038-SPEC-HC-X"
+  },
+  {
+   "id": "L_inB",
+   "from": {
+    "line": "L_vert",
+    "after": "FCV-1121"
+   },
+   "to": "CVCS-ION-114B",
+   "path": [
+    "MOV-1122"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-112A036-SPEC-HC-X"
+  },
+  {
+   "id": "L_inA",
+   "from": {
+    "line": "L_inB"
+   },
+   "to": "CVCS-ION-114A",
+   "path": [
+    "MOV-1123"
+   ],
+   "flow_direction": "shown",
+   "line_number": "SIZE-CVCS-112A0037-SPEC-HC-X"
+  },
+  {
+   "id": "Lvent_A",
+   "from": "CVCS-FL-112A",
+   "to": "B-VENTDRAIN",
+   "path": [
+    "VENT-A"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  },
+  {
+   "id": "Ldrain_A",
+   "from": "CVCS-FL-112A",
+   "to": "B-VENTDRAIN",
+   "path": [
+    "DRAIN-A"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  },
+  {
+   "id": "Lvent_B",
+   "from": "CVCS-FL-112B",
+   "to": "B-VENTDRAIN",
+   "path": [
+    "VENT-B"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  },
+  {
+   "id": "Ldrain_B",
+   "from": "CVCS-FL-112B",
+   "to": "B-VENTDRAIN",
+   "path": [
+    "DRAIN-B"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  }
+ ],
+ "signals": [],
+ "off_page_connectors": [
+  {
+   "id": "OPC-RHRS",
+   "direction": "in",
+   "name": "PID 120-1 (C-1) RHRS",
+   "other_drawing": "PID 120-1",
+   "line_number": "SIZE-RHRS-121071-SPEC-HC-X",
+   "bbox": [
+    0.0177,
+    0.0301,
+    0.087,
+    0.0511
+   ]
+  },
+  {
+   "id": "OPC-RCSout",
+   "direction": "out",
+   "name": "PID 100-1 RCS",
+   "other_drawing": "PID 100-1",
+   "line_number": "SIZE-CVCS-110053-SPEC-HC-X",
+   "bbox": [
+    0.0177,
+    0.0831,
+    0.0873,
+    0.1044
+   ]
+  },
+  {
+   "id": "OPC-RCSin",
+   "direction": "in",
+   "name": "PID 100-1 (C-1) RCS",
+   "other_drawing": "PID 100-1",
+   "line_number": "SIZE-CVCS-101022-SPEC-HC-X",
+   "bbox": [
+    0.0177,
+    0.1345,
+    0.087,
+    0.1554
+   ]
+  },
+  {
+   "id": "OPC-RHR",
+   "direction": "out",
+   "name": "PID 120-1 RHR",
+   "other_drawing": "PID 120-1",
+   "line_number": "SIZE-CVCS-115C049-SPEC-HC-X",
+   "bbox": [
+    0.0177,
+    0.1763,
+    0.0873,
+    0.1975
+   ]
+  },
+  {
+   "id": "OPC-WPS1",
+   "direction": "out",
+   "name": "WPS PID 270-1 WASTE PROCESS SYSTEM",
+   "other_drawing": "WPS PID 270-1",
+   "line_number": "SIZE-WPS-116050-SPEC-HC-X",
+   "bbox": [
+    0.0177,
+    0.2182,
+    0.0873,
+    0.2391
+   ]
+  },
+  {
+   "id": "OPC-RWS1",
+   "direction": "in",
+   "name": "RWS PID 320-1 RAD WASTE SYSTEM",
+   "other_drawing": "RWS PID 320-1",
+   "line_number": "SIZE-RWS-116055-SPEC-HC-X",
+   "bbox": [
+    0.0177,
+    0.26,
+    0.0873,
+    0.281
+   ]
+  },
+  {
+   "id": "OPC-RWS2",
+   "direction": "out",
+   "name": "RWS PID 320-1 RAD WASTE SYSTEM",
+   "other_drawing": "RWS PID 320-1",
+   "line_number": "SIZE-RWS-116052-SPEC-HC-X",
+   "bbox": [
+    0.0177,
+    0.385,
+    0.0873,
+    0.4062
+   ]
+  },
+  {
+   "id": "OPC-MUW",
+   "direction": "in",
+   "name": "PID 300-1 MAKE-UP WATER",
+   "other_drawing": "PID 300-1",
+   "bbox": [
+    0.0177,
+    0.4791,
+    0.087,
+    0.5
+   ]
+  },
+  {
+   "id": "OPC-CAS",
+   "direction": "in",
+   "name": "CAS PID 320-1 CHEMICAL ADDITION SYSTEM",
+   "other_drawing": "CAS PID 320-1",
+   "bbox": [
+    0.0177,
+    0.6228,
+    0.087,
+    0.644
+   ]
+  },
+  {
+   "id": "OPC-WPS2",
+   "direction": "out",
+   "name": "WPS PID 270-1 WASTE PROCESS SYSTEM",
+   "other_drawing": "WPS PID 270-1",
+   "line_number": "SIZE-WPS-111058-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.1763,
+    0.835,
+    0.1975
+   ]
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B-PSV1101",
+   "name": "open discharge of PSV-1101 (arrow, line 110054)",
+   "direction": "sink",
+   "bbox": [
+    0.3746,
+    0.1228,
+    0.3848,
+    0.1674
+   ]
+  },
+  {
+   "id": "B-PSC1112",
+   "name": "open discharge of PSC-1112 (arrow, line 111057)",
+   "direction": "sink",
+   "bbox": [
+    0.5799,
+    0.0698,
+    0.5929,
+    0.106
+   ]
+  },
+  {
+   "id": "B-VENTDRAIN",
+   "name": "filter vent and drain (NC valves) to open end",
+   "direction": "sink",
+   "bbox": [
+    0.7369,
+    0.4721,
+    0.7518,
+    0.5949
+   ]
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r1c5",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r2c5",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4",
+  "r3c5"
+ ],
+ "unreadable": [
+  "line sizes and specs printed as SIZE/SPEC placeholders",
+  "HX-111 end stubs (II marks at both ends) not connected to any line",
+  "circle beside valve V3W-N9 not interpreted",
+  "tag letters of PSC-1112 read as printed (PSC)"
+ ]
+}

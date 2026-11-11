@@ -1,0 +1,1548 @@
+{
+ "schema_version": "1.0",
+ "page": 7,
+ "sheet": {
+  "drawing_number": "PID 100-2",
+  "title": "REACTOR COOLANT SYSTEM",
+  "revision": "A",
+  "drawing_type": "pid",
+  "issue_status": "INFORMATION ONLY - NOT FOR CONSTRUCTION (preliminary design), sheet 2 of 2 (title block number PID 100)",
+  "legend_notes": [
+   "Pressurizer, pressure relief tank and pump detail sheet",
+   "Detail A / Detail B are block drawings of RCS-PU-102A / RCS-PU-102B with instruments and coolant heat exchangers",
+   "Line sizes/specs printed as SIZE-...-SPEC-HC-X placeholders"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "RCS-V-103",
+   "kind": "vessel",
+   "bbox": [
+    0.2346,
+    0.2461,
+    0.2788,
+    0.7299
+   ],
+   "tag": "RCS-V-103",
+   "name": "Pressurizer",
+   "confidence": 0.9
+  },
+  {
+   "id": "RCS-EX-105",
+   "kind": "heater",
+   "bbox": [
+    0.2041,
+    0.6521,
+    0.2528,
+    0.6878
+   ],
+   "tag": "RCS-EX-105",
+   "name": "Electric heater",
+   "part_of": "RCS-V-103",
+   "confidence": 0.9
+  },
+  {
+   "id": "RCS-VE-104",
+   "kind": "vessel",
+   "bbox": [
+    0.4926,
+    0.1451,
+    0.7258,
+    0.2288
+   ],
+   "tag": "RCS-VE-104",
+   "name": "Pressure relief tank",
+   "confidence": 0.9
+  },
+  {
+   "id": "RCS-PU-102A",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.4024,
+    0.5578,
+    0.4861,
+    0.8605
+   ],
+   "tag": "RCS-PU-102A",
+   "name": "Reactor coolant pump A (Detail A)",
+   "confidence": 0.9
+  },
+  {
+   "id": "RCS-PU-102B",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.611,
+    0.3641,
+    0.6944,
+    0.6671
+   ],
+   "tag": "RCS-PU-102B",
+   "name": "Reactor coolant pump B (Detail B)",
+   "confidence": 0.9
+  },
+  {
+   "id": "RCX-A",
+   "kind": "heat_exchanger",
+   "bbox": [
+    0.4792,
+    0.7718,
+    0.5069,
+    0.8396
+   ],
+   "tag": "RC-P100-X001",
+   "name": "Coolant heat exchanger (pump A)",
+   "part_of": "RCS-PU-102A",
+   "confidence": 0.9
+  },
+  {
+   "id": "RCX-B",
+   "kind": "heat_exchanger",
+   "bbox": [
+    0.6874,
+    0.5781,
+    0.7151,
+    0.6459
+   ],
+   "tag": "RC-P100-X001",
+   "name": "Coolant heat exchanger (pump B)",
+   "part_of": "RCS-PU-102B",
+   "confidence": 0.9
+  }
+ ],
+ "components": [
+  {
+   "id": "V-PCV1001",
+   "kind": "control_valve",
+   "bbox": [
+    0.1403,
+    0.0977,
+    0.1493,
+    0.1183
+   ],
+   "name": "PCV-1001",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-PCV1011",
+   "kind": "control_valve",
+   "bbox": [
+    0.1403,
+    0.2539,
+    0.1493,
+    0.2746
+   ],
+   "name": "PCV-1011",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-PRV1031",
+   "kind": "relief_valve",
+   "bbox": [
+    0.2541,
+    0.0963,
+    0.2608,
+    0.1094
+   ],
+   "name": "PRV-1031",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-PRV1032",
+   "kind": "relief_valve",
+   "bbox": [
+    0.2753,
+    0.1515,
+    0.2816,
+    0.1618
+   ],
+   "name": "PRV-1032",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-PCV1031",
+   "kind": "control_valve",
+   "bbox": [
+    0.3212,
+    0.2059,
+    0.3314,
+    0.226
+   ],
+   "name": "PCV-1031",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-PCV1032",
+   "kind": "control_valve",
+   "bbox": [
+    0.3212,
+    0.2539,
+    0.3318,
+    0.274
+   ],
+   "name": "PCV-1032",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-PCV1041",
+   "kind": "control_valve",
+   "bbox": [
+    0.684,
+    0.0566,
+    0.6914,
+    0.0759
+   ],
+   "name": "PCV-1041",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-TCV1043",
+   "kind": "control_valve",
+   "bbox": [
+    0.705,
+    0.0982,
+    0.7125,
+    0.1177
+   ],
+   "name": "TCV-1043",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-LCV1043",
+   "kind": "control_valve",
+   "bbox": [
+    0.7621,
+    0.2394,
+    0.7695,
+    0.2589
+   ],
+   "name": "LCV-1043",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "RED1",
+   "kind": "reducer",
+   "bbox": [
+    0.3082,
+    0.0999,
+    0.313,
+    0.108
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "RED2",
+   "kind": "reducer",
+   "bbox": [
+    0.3639,
+    0.0999,
+    0.3688,
+    0.108
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "ORF-1002",
+   "kind": "other",
+   "bbox": [
+    0.166,
+    0.1409,
+    0.1704,
+    0.1493
+   ],
+   "name": "orifice (flange pair)",
+   "notes": "orifice plate in bypass line 100009",
+   "confidence": 0.9
+  },
+  {
+   "id": "ORF-1001",
+   "kind": "other",
+   "bbox": [
+    0.166,
+    0.2972,
+    0.1704,
+    0.3055
+   ],
+   "name": "orifice (flange pair)",
+   "notes": "orifice plate in bypass line 100010",
+   "confidence": 0.9
+  },
+  {
+   "id": "RD1",
+   "kind": "rupture_disc",
+   "bbox": [
+    0.5483,
+    0.1283,
+    0.5576,
+    0.1367
+   ],
+   "name": "RUPTURE DISK (N2)",
+   "confidence": 0.9
+  },
+  {
+   "id": "RD2",
+   "kind": "rupture_disc",
+   "bbox": [
+    0.5991,
+    0.1283,
+    0.6084,
+    0.1367
+   ],
+   "name": "RUPTURE DISK (N3)",
+   "confidence": 0.9
+  }
+ ],
+ "instruments": [
+  {
+   "id": "PCV-1001",
+   "tag": "PCV-1001",
+   "location": "field",
+   "bbox": [
+    0.1496,
+    0.0815,
+    0.1636,
+    0.1024
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PCV-1011",
+   "tag": "PCV-1011",
+   "location": "field",
+   "bbox": [
+    0.1487,
+    0.238,
+    0.1628,
+    0.2589
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PRV-1031",
+   "tag": "PRV-1031",
+   "location": "field",
+   "bbox": [
+    0.2379,
+    0.0731,
+    0.2519,
+    0.094
+   ],
+   "measures": {
+    "item": "V-PRV1031"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PRV-1032",
+   "tag": "PRV-1032",
+   "location": "field",
+   "bbox": [
+    0.2602,
+    0.1306,
+    0.2742,
+    0.1515
+   ],
+   "measures": {
+    "item": "V-PRV1032"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PCV-1031",
+   "tag": "PCV-1031",
+   "location": "field",
+   "bbox": [
+    0.3312,
+    0.1889,
+    0.3452,
+    0.2098
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PCV-1032",
+   "tag": "PCV-1032",
+   "location": "field",
+   "bbox": [
+    0.3336,
+    0.2386,
+    0.3476,
+    0.2595
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PCV-1041",
+   "tag": "PCV-1041",
+   "location": "field",
+   "bbox": [
+    0.6911,
+    0.0371,
+    0.705,
+    0.0575
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TCV-1043",
+   "tag": "TCV-1043",
+   "location": "field",
+   "bbox": [
+    0.7125,
+    0.0809,
+    0.7262,
+    0.101
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "LCV-1043",
+   "tag": "LCV-1043",
+   "location": "field",
+   "bbox": [
+    0.7487,
+    0.2218,
+    0.7625,
+    0.2427
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PSE-1041",
+   "tag": "PSE-1041",
+   "location": "field",
+   "bbox": [
+    0.5366,
+    0.094,
+    0.5506,
+    0.115
+   ],
+   "measures": {
+    "item": "RD1"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PSE-1042",
+   "tag": "PSE-1042",
+   "location": "field",
+   "bbox": [
+    0.5861,
+    0.094,
+    0.6,
+    0.115
+   ],
+   "measures": {
+    "item": "RD2"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10117",
+   "tag": "TE-10117",
+   "location": "field",
+   "bbox": [
+    0.097,
+    0.0619,
+    0.111,
+    0.0829
+   ],
+   "measures": {
+    "line": "M1"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10118",
+   "tag": "TE-10118",
+   "location": "field",
+   "bbox": [
+    0.097,
+    0.2185,
+    0.111,
+    0.2394
+   ],
+   "measures": {
+    "line": "M2"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "FO-1002",
+   "tag": "FO-1002",
+   "location": "field",
+   "bbox": [
+    0.1613,
+    0.1666,
+    0.1751,
+    0.1875
+   ],
+   "measures": {
+    "item": "ORF-1002"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "FT-1002",
+   "tag": "FT-1002",
+   "location": "field",
+   "bbox": [
+    0.1472,
+    0.1666,
+    0.161,
+    0.1875
+   ],
+   "measures": {
+    "item": "ORF-1002"
+   },
+   "confidence": 0.8
+  },
+  {
+   "id": "FO-1001",
+   "tag": "FO-1001",
+   "location": "field",
+   "bbox": [
+    0.1613,
+    0.3147,
+    0.1751,
+    0.3357
+   ],
+   "measures": {
+    "item": "ORF-1001"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "FT-1001",
+   "tag": "FT-1001",
+   "location": "field",
+   "bbox": [
+    0.1751,
+    0.3147,
+    0.189,
+    0.3357
+   ],
+   "measures": {
+    "item": "ORF-1001"
+   },
+   "confidence": 0.8
+  },
+  {
+   "id": "TE-10319",
+   "tag": "TE-10319",
+   "location": "field",
+   "bbox": [
+    0.2983,
+    0.3055,
+    0.3123,
+    0.3237
+   ],
+   "measures": {
+    "item": "RCS-V-103"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10321",
+   "tag": "TE-10321",
+   "location": "field",
+   "bbox": [
+    0.2983,
+    0.6772,
+    0.3123,
+    0.6981
+   ],
+   "measures": {
+    "item": "RCS-V-103"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LIT-10320",
+   "tag": "LIT-10320",
+   "location": "field",
+   "bbox": [
+    0.2913,
+    0.4685,
+    0.3054,
+    0.4897
+   ],
+   "measures": {
+    "item": "RCS-V-103"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LIT-10322",
+   "tag": "LIT-10322",
+   "location": "field",
+   "bbox": [
+    0.1803,
+    0.5522,
+    0.1942,
+    0.5731
+   ],
+   "measures": {
+    "item": "RCS-V-103"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LIT-10323",
+   "tag": "LIT-10323",
+   "location": "field",
+   "bbox": [
+    0.2078,
+    0.4894,
+    0.2217,
+    0.5106
+   ],
+   "measures": {
+    "item": "RCS-V-103"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10324",
+   "tag": "TE-10324",
+   "location": "field",
+   "bbox": [
+    0.4586,
+    0.1878,
+    0.4725,
+    0.2087
+   ],
+   "measures": {
+    "item": "RCS-VE-104"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-10326",
+   "tag": "PT-10326",
+   "location": "field",
+   "bbox": [
+    0.7571,
+    0.1437,
+    0.7708,
+    0.1646
+   ],
+   "measures": {
+    "item": "RCS-VE-104"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LIT-10325",
+   "tag": "LIT-10325",
+   "location": "field",
+   "bbox": [
+    0.7361,
+    0.1763,
+    0.7496,
+    0.1973
+   ],
+   "measures": {
+    "item": "RCS-VE-104"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102A27",
+   "tag": "TE-102A27",
+   "location": "field",
+   "bbox": [
+    0.3745,
+    0.6415,
+    0.3885,
+    0.6624
+   ],
+   "measures": {
+    "item": "RCS-PU-102A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102A28",
+   "tag": "TE-102A28",
+   "location": "field",
+   "bbox": [
+    0.3816,
+    0.6936,
+    0.3955,
+    0.7146
+   ],
+   "measures": {
+    "item": "RCS-PU-102A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102A29",
+   "tag": "TE-102A29",
+   "location": "field",
+   "bbox": [
+    0.3816,
+    0.7665,
+    0.3955,
+    0.7874
+   ],
+   "measures": {
+    "item": "RCS-PU-102A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102A30",
+   "tag": "TE-102A30",
+   "location": "field",
+   "bbox": [
+    0.3816,
+    0.8292,
+    0.3955,
+    0.8502
+   ],
+   "measures": {
+    "item": "RCS-PU-102A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102A31",
+   "tag": "YE-102A31",
+   "location": "field",
+   "bbox": [
+    0.5275,
+    0.579,
+    0.5414,
+    0.5999
+   ],
+   "measures": {
+    "item": "RCS-PU-102A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102A32",
+   "tag": "YE-102A32",
+   "location": "field",
+   "bbox": [
+    0.5275,
+    0.6102,
+    0.5414,
+    0.6311
+   ],
+   "measures": {
+    "item": "RCS-PU-102A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102A33",
+   "tag": "YE-102A33",
+   "location": "field",
+   "bbox": [
+    0.5275,
+    0.6415,
+    0.5414,
+    0.6624
+   ],
+   "measures": {
+    "item": "RCS-PU-102A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102A34",
+   "tag": "YE-102A34",
+   "location": "field",
+   "bbox": [
+    0.4996,
+    0.6833,
+    0.5136,
+    0.7042
+   ],
+   "measures": {
+    "item": "RCS-PU-102A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102A35",
+   "tag": "YE-102A35",
+   "location": "field",
+   "bbox": [
+    0.4996,
+    0.7246,
+    0.5136,
+    0.7455
+   ],
+   "measures": {
+    "item": "RCS-PU-102A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102A36",
+   "tag": "TE-102A36",
+   "location": "field",
+   "bbox": [
+    0.5204,
+    0.7949,
+    0.5344,
+    0.8158
+   ],
+   "measures": {
+    "item": "RCX-A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102A37",
+   "tag": "TE-102A37",
+   "location": "field",
+   "bbox": [
+    0.5483,
+    0.8697,
+    0.5623,
+    0.8906
+   ],
+   "measures": {
+    "line": "AA_IN"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102A38",
+   "tag": "TE-102A38",
+   "location": "field",
+   "bbox": [
+    0.5762,
+    0.8055,
+    0.5901,
+    0.8265
+   ],
+   "measures": {
+    "line": "AA_OUT"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102B39",
+   "tag": "TE-102B39",
+   "location": "field",
+   "bbox": [
+    0.5831,
+    0.4484,
+    0.5972,
+    0.4693
+   ],
+   "measures": {
+    "item": "RCS-PU-102B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102B40",
+   "tag": "TE-102B40",
+   "location": "field",
+   "bbox": [
+    0.5901,
+    0.5,
+    0.6043,
+    0.5209
+   ],
+   "measures": {
+    "item": "RCS-PU-102B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102B41",
+   "tag": "TE-102B41",
+   "location": "field",
+   "bbox": [
+    0.5901,
+    0.5731,
+    0.6043,
+    0.594
+   ],
+   "measures": {
+    "item": "RCS-PU-102B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102B42",
+   "tag": "TE-102B42",
+   "location": "field",
+   "bbox": [
+    0.5901,
+    0.6359,
+    0.6043,
+    0.6568
+   ],
+   "measures": {
+    "item": "RCS-PU-102B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102B43",
+   "tag": "YE-102B43",
+   "location": "field",
+   "bbox": [
+    0.7361,
+    0.385,
+    0.75,
+    0.406
+   ],
+   "measures": {
+    "item": "RCS-PU-102B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102B44",
+   "tag": "YE-102B44",
+   "location": "field",
+   "bbox": [
+    0.7361,
+    0.4163,
+    0.75,
+    0.4372
+   ],
+   "measures": {
+    "item": "RCS-PU-102B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102B45",
+   "tag": "YE-102B45",
+   "location": "field",
+   "bbox": [
+    0.7361,
+    0.4475,
+    0.75,
+    0.4688
+   ],
+   "measures": {
+    "item": "RCS-PU-102B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102B46",
+   "tag": "YE-102B46",
+   "location": "field",
+   "bbox": [
+    0.7082,
+    0.4897,
+    0.7221,
+    0.5106
+   ],
+   "measures": {
+    "item": "RCS-PU-102B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "YE-102B47",
+   "tag": "YE-102B47",
+   "location": "field",
+   "bbox": [
+    0.7082,
+    0.5315,
+    0.7221,
+    0.5525
+   ],
+   "measures": {
+    "item": "RCS-PU-102B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102B48",
+   "tag": "TE-102B48",
+   "location": "field",
+   "bbox": [
+    0.729,
+    0.6018,
+    0.7429,
+    0.6228
+   ],
+   "measures": {
+    "item": "RCX-B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102B49",
+   "tag": "TE-102B49",
+   "location": "field",
+   "bbox": [
+    0.7569,
+    0.6763,
+    0.7708,
+    0.6973
+   ],
+   "measures": {
+    "line": "AB_IN"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-102B50",
+   "tag": "TE-102B50",
+   "location": "field",
+   "bbox": [
+    0.7848,
+    0.6116,
+    0.7987,
+    0.6325
+   ],
+   "measures": {
+    "line": "AB_OUT"
+   },
+   "confidence": 0.9
+  }
+ ],
+ "lines": [
+  {
+   "id": "M1",
+   "from": "OPC1",
+   "to": {
+    "line": "LSP"
+   },
+   "path": [
+    "V-PCV1001"
+   ],
+   "line_number": "SIZE-RCS-100007-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "M2",
+   "from": "OPC2",
+   "to": {
+    "line": "LSP"
+   },
+   "path": [
+    "V-PCV1011"
+   ],
+   "line_number": "SIZE-RCS-100008-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "BP1",
+   "from": {
+    "line": "M1"
+   },
+   "to": {
+    "line": "LSP"
+   },
+   "path": [
+    "ORF-1002"
+   ],
+   "line_number": "SIZE-RCS-100009-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "BP2",
+   "from": {
+    "line": "M2"
+   },
+   "to": {
+    "line": "LSP"
+   },
+   "path": [
+    "ORF-1001"
+   ],
+   "line_number": "SIZE-RCS-100010-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LSP",
+   "from": {
+    "line": "M1",
+    "after": "V-PCV1001"
+   },
+   "to": "RCS-V-103",
+   "path": [],
+   "notes": "spray header to pressurizer N1",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LS",
+   "from": "OPC3",
+   "to": "RCS-V-103",
+   "path": [],
+   "line_number": "SIZE-RCS-101006-SPEC-HC-X",
+   "notes": "surge line to N5; two opposed arrowheads drawn mid-line",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "L11",
+   "from": "RCS-V-103",
+   "to": "RCS-VE-104",
+   "path": [
+    "V-PCV1031"
+   ],
+   "line_number": "SIZE-RCS-103011-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "N4 to relief tank N1",
+   "confidence": 0.9
+  },
+  {
+   "id": "L12",
+   "from": {
+    "line": "L11"
+   },
+   "to": {
+    "line": "L11",
+    "after": "V-PCV1031"
+   },
+   "path": [
+    "V-PCV1032"
+   ],
+   "line_number": "SIZE-RCS-103012-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LR1",
+   "from": "RCS-V-103",
+   "to": {
+    "line": "L11",
+    "after": "V-PCV1031"
+   },
+   "path": [
+    "V-PRV1031",
+    "RED1",
+    "RED2"
+   ],
+   "line_number": "SIZE-RCS-103013-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "N2 relief line",
+   "confidence": 0.9
+  },
+  {
+   "id": "LR2",
+   "from": "RCS-V-103",
+   "to": {
+    "line": "LR1",
+    "after": "RED1"
+   },
+   "path": [
+    "V-PRV1032"
+   ],
+   "line_number": "SIZE-RCS-103014-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "N3 relief line",
+   "confidence": 0.9
+  },
+  {
+   "id": "LSW",
+   "from": "OPC5",
+   "to": "RCS-VE-104",
+   "path": [
+    "V-TCV1043"
+   ],
+   "line_number": "SIZE-SWS-132172-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LRW1",
+   "from": "RCS-VE-104",
+   "to": "OPC4",
+   "path": [
+    "V-PCV1041"
+   ],
+   "line_number": "SIZE-RWS-104025-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LRW2",
+   "from": "RCS-VE-104",
+   "to": "OPC6",
+   "path": [
+    "V-LCV1043"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LRD1",
+   "from": "RCS-VE-104",
+   "to": "RD1",
+   "path": [],
+   "notes": "N2 rupture disk",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "LRD2",
+   "from": "RCS-VE-104",
+   "to": "RD2",
+   "path": [],
+   "notes": "N3 rupture disk",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "PA_IN",
+   "from": "BA_IN",
+   "to": "RCS-PU-102A",
+   "path": [],
+   "line_number": "SIZE-RCS-100002-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "PA_OUT",
+   "from": "RCS-PU-102A",
+   "to": "BA_OUT",
+   "path": [],
+   "line_number": "SIZE-RCS-100003-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "PB_IN",
+   "from": "BB_IN",
+   "to": "RCS-PU-102B",
+   "path": [],
+   "line_number": "SIZE-RCS-100004-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "PB_OUT",
+   "from": "RCS-PU-102B",
+   "to": "BB_OUT",
+   "path": [],
+   "line_number": "SIZE-RCS-100005-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "AA_IN",
+   "from": "OPC8",
+   "to": "RCX-A",
+   "path": [],
+   "line_number": "SIZE-ACW-211157-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "AA_OUT",
+   "from": "RCX-A",
+   "to": "OPC7",
+   "path": [],
+   "line_number": "SIZE-ACW-102161-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.7
+  },
+  {
+   "id": "AB_IN",
+   "from": "OPC10",
+   "to": "RCX-B",
+   "path": [],
+   "line_number": "SIZE-ACW-211158-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "AB_OUT",
+   "from": "RCX-B",
+   "to": "OPC9",
+   "path": [],
+   "line_number": "SIZE-ACW-102160-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  }
+ ],
+ "signals": [
+  {
+   "from": "PCV-1001",
+   "to": "V-PCV1001",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "PCV-1011",
+   "to": "V-PCV1011",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "PCV-1031",
+   "to": "V-PCV1031",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "PCV-1032",
+   "to": "V-PCV1032",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "PCV-1041",
+   "to": "V-PCV1041",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "TCV-1043",
+   "to": "V-TCV1043",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "LCV-1043",
+   "to": "V-LCV1043",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "PID 100-1 (G-1) RCS",
+   "bbox": [
+    0.0204,
+    0.1032,
+    0.0901,
+    0.1247
+   ],
+   "other_drawing": "PID 100-1",
+   "line_number": "SIZE-RCS-100007-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "PID 100-1 (C-1) RCS",
+   "bbox": [
+    0.0204,
+    0.26,
+    0.0901,
+    0.2815
+   ],
+   "other_drawing": "PID 100-1",
+   "line_number": "SIZE-RCS-100008-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC3",
+   "direction": "in",
+   "name": "PID 100-1 (D-1) RCS",
+   "bbox": [
+    0.0204,
+    0.7815,
+    0.0901,
+    0.8025
+   ],
+   "other_drawing": "PID 100-1",
+   "line_number": "SIZE-RCS-101006-SPEC-HC-X",
+   "confidence": 0.8
+  },
+  {
+   "id": "OPC4",
+   "direction": "out",
+   "name": "RWS PID 320-1 RAD WASTE SYSTEM",
+   "bbox": [
+    0.7777,
+    0.0619,
+    0.8472,
+    0.0829
+   ],
+   "other_drawing": "PID 320",
+   "line_number": "SIZE-RWS-104025-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC5",
+   "direction": "in",
+   "name": "SWS PID 130-1 SERVICE WATER SYSTEM",
+   "bbox": [
+    0.7777,
+    0.1032,
+    0.8472,
+    0.1242
+   ],
+   "other_drawing": "PID 130",
+   "line_number": "SIZE-SWS-132172-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC6",
+   "direction": "out",
+   "name": "RWS PID 320-1 RAD WASTE SYSTEM",
+   "bbox": [
+    0.7777,
+    0.245,
+    0.8472,
+    0.2659
+   ],
+   "other_drawing": "PID 320",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC7",
+   "direction": "out",
+   "name": "ACW PID 210-2 AUX COOLING WATER",
+   "bbox": [
+    0.618,
+    0.829,
+    0.6874,
+    0.8499
+   ],
+   "other_drawing": "PID 210-2",
+   "line_number": "SIZE-ACW-102161-SPEC-HC-X",
+   "notes": "pump A coolant out",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC8",
+   "direction": "in",
+   "name": "ACW PID 210-2 (C-1) AUX COOLING WATER",
+   "bbox": [
+    0.618,
+    0.8917,
+    0.6874,
+    0.9127
+   ],
+   "other_drawing": "PID 210-2",
+   "line_number": "SIZE-ACW-211157-SPEC-HC-X",
+   "notes": "pump A coolant in",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC9",
+   "direction": "out",
+   "name": "ACW PID 210-2 AUX COOLING WATER",
+   "bbox": [
+    0.7777,
+    0.6359,
+    0.8472,
+    0.6568
+   ],
+   "other_drawing": "PID 210-2",
+   "line_number": "SIZE-ACW-102160-SPEC-HC-X",
+   "notes": "pump B coolant out",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC10",
+   "direction": "in",
+   "name": "ACW PID 210-2 (C-1) AUX COOLING WATER",
+   "bbox": [
+    0.7779,
+    0.6981,
+    0.8472,
+    0.719
+   ],
+   "other_drawing": "PID 210-2",
+   "line_number": "SIZE-ACW-211158-SPEC-HC-X",
+   "notes": "pump B coolant in",
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "BA_IN",
+   "direction": "source",
+   "name": "Line RCS-100002 start (pump A inlet, no flag)",
+   "bbox": [
+    0.4405,
+    0.4791,
+    0.5112,
+    0.4902
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "BA_OUT",
+   "direction": "sink",
+   "name": "Line RCS-100003 end (pump A outlet, no flag)",
+   "bbox": [
+    0.3188,
+    0.6256,
+    0.3336,
+    0.6353
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "BB_IN",
+   "direction": "source",
+   "name": "Line RCS-100004 start (pump B inlet, no flag)",
+   "bbox": [
+    0.7147,
+    0.3214,
+    0.7296,
+    0.3326
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "BB_OUT",
+   "direction": "sink",
+   "name": "Line RCS-100005 end (pump B outlet, no flag)",
+   "bbox": [
+    0.5372,
+    0.4316,
+    0.552,
+    0.4414
+   ],
+   "confidence": 0.8
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r1c5",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r2c5",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4",
+  "r3c5"
+ ],
+ "unreadable": [
+  "Internal spray header/sparger of RCS-VE-104 and level-leg loops of RCS-V-103 not modelled as lines",
+  "Dashed lines inside RCS-V-103 not modelled",
+  "SIZE-ACW-102161 label on pump A coolant outlet is floating beside YE-102A35; assigned to the outlet with low confidence",
+  "Open line ends of RCS-100002..100005 have no flag (modelled as boundaries)"
+ ]
+}

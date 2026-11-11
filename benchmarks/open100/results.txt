@@ -1,0 +1,45 @@
+pages scored: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+##### COARSE (equipment-like classes merged) #####
+r=1% equipment+other symbols: GT 285 ours 157 P 0.68 R 0.37 F1 0.48
+   edges[clique] among matched nodes: P 0.68 R 0.84 F1 0.75 (TP 1410 FP 669 FN 263); recall vs all 1789 GT edges: 0.79
+   edges[adj   ] among matched nodes: P 0.91 R 0.31 F1 0.46 (TP 520 FP 50 FN 1153); recall vs all 1789 GT edges: 0.29
+r=2% equipment+other symbols: GT 285 ours 157 P 0.73 R 0.40 F1 0.52
+   edges[clique] among matched nodes: P 0.68 R 0.84 F1 0.75 (TP 1424 FP 682 FN 279); recall vs all 1795 GT edges: 0.79
+   edges[adj   ] among matched nodes: P 0.90 R 0.31 F1 0.46 (TP 530 FP 58 FN 1173); recall vs all 1795 GT edges: 0.30
+r=4% equipment+other symbols: GT 285 ours 157 P 0.76 R 0.42 F1 0.54
+   edges[clique] among matched nodes: P 0.67 R 0.84 F1 0.75 (TP 1424 FP 691 FN 279); recall vs all 1795 GT edges: 0.79
+   edges[adj   ] among matched nodes: P 0.90 R 0.31 F1 0.46 (TP 530 FP 61 FN 1173); recall vs all 1795 GT edges: 0.30
+
+=== node match radius 1% of image width
+valve          GT  257 ours  249  P 0.99 R 0.96 F1 0.98
+instrumentation GT  350 ours  358  P 0.98 R 1.00 F1 0.99
+inlet/outlet   GT   96 ours   95  P 1.00 R 0.99 F1 0.99
+tank           GT   35 ours   13  P 0.92 R 0.34 F1 0.50
+pump           GT   16 ours   20  P 0.30 R 0.38 F1 0.33
+general        GT  234 ours  124  P 0.45 R 0.24 F1 0.31
+ALL nodes      GT  988 ours  859  P 0.89 R 0.78 F1 0.83
+PROCESS edges (no instruments) among matched nodes: P 0.83 R 0.98 F1 0.90 (TP 727 FP 147 FN 14); recall vs all GT process edges 0.57 of 1277
+edges among matched nodes: P 0.60 R 0.83 F1 0.70  (TP 1115 FP 735 FN 232);  GT edges total 1953, recall vs all GT edges 0.57
+
+=== node match radius 2% of image width
+valve          GT  257 ours  249  P 1.00 R 0.96 F1 0.98
+instrumentation GT  350 ours  358  P 0.98 R 1.00 F1 0.99
+inlet/outlet   GT   96 ours   95  P 1.00 R 0.99 F1 0.99
+tank           GT   35 ours   13  P 0.92 R 0.34 F1 0.50
+pump           GT   16 ours   20  P 0.40 R 0.50 F1 0.44
+general        GT  234 ours  124  P 0.52 R 0.27 F1 0.36
+ALL nodes      GT  988 ours  859  P 0.90 R 0.79 F1 0.84
+PROCESS edges (no instruments) among matched nodes: P 0.82 R 0.98 F1 0.89 (TP 735 FP 159 FN 16); recall vs all GT process edges 0.58 of 1277
+edges among matched nodes: P 0.60 R 0.83 F1 0.70  (TP 1127 FP 754 FN 234);  GT edges total 1953, recall vs all GT edges 0.58
+
+=== node match radius 4% of image width
+valve          GT  257 ours  249  P 1.00 R 0.96 F1 0.98
+instrumentation GT  350 ours  358  P 0.98 R 1.00 F1 0.99
+inlet/outlet   GT   96 ours   95  P 1.00 R 0.99 F1 0.99
+tank           GT   35 ours   13  P 0.92 R 0.34 F1 0.50
+pump           GT   16 ours   20  P 0.40 R 0.50 F1 0.44
+general        GT  234 ours  124  P 0.60 R 0.32 F1 0.41
+ALL nodes      GT  988 ours  859  P 0.92 R 0.80 F1 0.85
+PROCESS edges (no instruments) among matched nodes: P 0.80 R 0.98 F1 0.88 (TP 739 FP 181 FN 16); recall vs all GT process edges 0.58 of 1277
+edges among matched nodes: P 0.59 R 0.83 F1 0.69  (TP 1131 FP 781 FN 234);  GT edges total 1953, recall vs all GT edges 0.58

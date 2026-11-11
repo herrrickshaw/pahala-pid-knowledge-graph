@@ -1,0 +1,1007 @@
+{
+ "schema_version": "1.0",
+ "page": 4,
+ "sheet": {
+  "drawing_number": "PID 170",
+  "title": "FEEDWATER SYSTEM",
+  "revision": "A",
+  "drawing_type": "pid",
+  "issue_status": "INFORMATION ONLY - NOT FOR CONSTRUCTION (preliminary design, Energy Impact Center, OPEN 100, 09/01/2020); sheet 1 of 2",
+  "legend_notes": [
+   "Line numbers printed with placeholder size 'SIZE' and spec 'SPEC-HC-X'.",
+   "Bubbles attached by a leader to a valve actuator tag that valve (tag shown in bubble).",
+   "Hexagon callouts 'DET A SHT 2' and 'DET B SHT 2' beside the pumps refer to details on sheet 2; not modelled.",
+   "Boxes marked M beside MOV valves are the motor actuators.",
+   "Nozzle labels N1..N6 not modelled."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "CND-HTR-160",
+   "kind": "pressure_vessel",
+   "bbox": [
+    0.169,
+    0.23,
+    0.2921,
+    0.2833
+   ],
+   "confidence": 0.95,
+   "tag": "CND-HTR-160",
+   "name": "DEAREATOR (ASME Section VIII Div 1)"
+  },
+  {
+   "id": "CND-TK-165",
+   "kind": "tank",
+   "bbox": [
+    0.146,
+    0.3241,
+    0.3214,
+    0.4287
+   ],
+   "confidence": 0.95,
+   "tag": "CND-TK-165",
+   "name": "DEAREATOR STORAGE TANK"
+  },
+  {
+   "id": "FWS-PU-170A",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.2615,
+    0.5646,
+    0.2908,
+    0.5941
+   ],
+   "confidence": 0.9,
+   "tag": "FWS-PU-170A",
+   "name": "FEEDWATER PUMP"
+  },
+  {
+   "id": "MOT-170A",
+   "kind": "motor",
+   "bbox": [
+    0.2934,
+    0.5646,
+    0.3144,
+    0.5941
+   ],
+   "confidence": 0.8,
+   "name": "pump motor",
+   "part_of": "FWS-PU-170A"
+  },
+  {
+   "id": "FWS-PU-170B",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.2615,
+    0.7852,
+    0.2908,
+    0.8137
+   ],
+   "confidence": 0.9,
+   "tag": "FWS-PU-170B",
+   "name": "FEEDWATER PUMP"
+  },
+  {
+   "id": "MOT-170B",
+   "kind": "motor",
+   "bbox": [
+    0.2934,
+    0.7852,
+    0.3144,
+    0.8137
+   ],
+   "confidence": 0.8,
+   "name": "pump motor",
+   "part_of": "FWS-PU-170B"
+  },
+  {
+   "id": "FWS-HTR-170",
+   "kind": "heat_exchanger",
+   "bbox": [
+    0.5759,
+    0.5913,
+    0.683,
+    0.6435
+   ],
+   "confidence": 0.95,
+   "tag": "FWS-HTR-170",
+   "name": "HP FEEDWATER HEATER"
+  }
+ ],
+ "components": [
+  {
+   "id": "FCV-XXX",
+   "kind": "control_valve",
+   "bbox": [
+    0.3809,
+    0.2427,
+    0.3911,
+    0.256
+   ],
+   "confidence": 0.9,
+   "tag": "FCV-XXX",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "VBR1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.2987,
+    0.2655,
+    0.3089,
+    0.2788
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VBR2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3264,
+    0.401,
+    0.3366,
+    0.4143
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "MOV-1651",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.2146,
+    0.5258,
+    0.2248,
+    0.5391
+   ],
+   "confidence": 0.9,
+   "tag": "MOV-1651",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1652",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.2112,
+    0.7395,
+    0.2214,
+    0.7529
+   ],
+   "confidence": 0.9,
+   "tag": "MOV-1652",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1701",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.3404,
+    0.5258,
+    0.3506,
+    0.5391
+   ],
+   "confidence": 0.9,
+   "tag": "MOV-1701",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1702",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.3334,
+    0.7395,
+    0.3436,
+    0.7529
+   ],
+   "confidence": 0.9,
+   "tag": "MOV-1702",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1704",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.4925,
+    0.5684,
+    0.5002,
+    0.5856
+   ],
+   "confidence": 0.9,
+   "tag": "MOV-1704",
+   "actuator": "electric"
+  },
+  {
+   "id": "CVA",
+   "kind": "check_valve",
+   "bbox": [
+    0.3652,
+    0.5258,
+    0.3754,
+    0.5391
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "CVB",
+   "kind": "check_valve",
+   "bbox": [
+    0.3545,
+    0.7395,
+    0.3647,
+    0.7529
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PCV-1703",
+   "kind": "control_valve",
+   "bbox": [
+    0.4309,
+    0.6229,
+    0.4411,
+    0.6362
+   ],
+   "confidence": 0.9,
+   "tag": "PCV-1703",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "VQ1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.457,
+    0.5944,
+    0.4646,
+    0.6115
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VQ2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.471,
+    0.5944,
+    0.4786,
+    0.6115
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VH1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5511,
+    0.6229,
+    0.5614,
+    0.6362
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VH2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5511,
+    0.6019,
+    0.5614,
+    0.6152
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FCV-1615",
+   "kind": "control_valve",
+   "bbox": [
+    0.6059,
+    0.3932,
+    0.6161,
+    0.4065
+   ],
+   "confidence": 0.9,
+   "tag": "FCV-1615",
+   "actuator": "pneumatic"
+  }
+ ],
+ "instruments": [
+  {
+   "id": "I-FCV-XXX",
+   "tag": "FCV-XXX",
+   "location": "field",
+   "bbox": [
+    0.3906,
+    0.2147,
+    0.4059,
+    0.2375
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "FCV-XXX"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MOV-1651",
+   "tag": "MOV-1651",
+   "location": "field",
+   "bbox": [
+    0.2008,
+    0.5042,
+    0.2161,
+    0.527
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MOV-1651"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MOV-1652",
+   "tag": "MOV-1652",
+   "location": "field",
+   "bbox": [
+    0.1974,
+    0.7181,
+    0.2128,
+    0.7409
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MOV-1652"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MOV-1701",
+   "tag": "MOV-1701",
+   "location": "field",
+   "bbox": [
+    0.3267,
+    0.5042,
+    0.342,
+    0.527
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MOV-1701"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MOV-1702",
+   "tag": "MOV-1702",
+   "location": "field",
+   "bbox": [
+    0.3195,
+    0.7167,
+    0.3348,
+    0.7395
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MOV-1702"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MOV-1704",
+   "tag": "MOV-1704",
+   "location": "field",
+   "bbox": [
+    0.479,
+    0.5846,
+    0.4943,
+    0.6074
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MOV-1704"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-PCV-1703",
+   "tag": "PCV-1703",
+   "location": "field",
+   "bbox": [
+    0.4385,
+    0.595,
+    0.4538,
+    0.6178
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "PCV-1703"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-FCV-1615",
+   "tag": "FCV-1615",
+   "location": "field",
+   "bbox": [
+    0.6136,
+    0.3646,
+    0.6289,
+    0.3875
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "FCV-1615"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "PIT-160104",
+   "tag": "PIT-160104",
+   "location": "field",
+   "bbox": [
+    0.2394,
+    0.191,
+    0.2547,
+    0.2138
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "CND-HTR-160"
+   }
+  },
+  {
+   "id": "TE-160105B",
+   "tag": "TE-160105B",
+   "location": "field",
+   "bbox": [
+    0.2694,
+    0.1701,
+    0.2847,
+    0.1929
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "item": "CND-HTR-160"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "TE-160105A",
+   "tag": "TE-160105A",
+   "location": "field",
+   "bbox": [
+    0.2694,
+    0.191,
+    0.2847,
+    0.2138
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "CND-HTR-160"
+   }
+  },
+  {
+   "id": "TE-160106A",
+   "tag": "TE-160106A",
+   "location": "field",
+   "bbox": [
+    0.2946,
+    0.224,
+    0.3099,
+    0.2468
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "CND-HTR-160"
+   }
+  },
+  {
+   "id": "TE-160106B",
+   "tag": "TE-160106B",
+   "location": "field",
+   "bbox": [
+    0.313,
+    0.224,
+    0.3283,
+    0.2468
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "item": "CND-HTR-160"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "PIT-165107",
+   "tag": "PIT-165107",
+   "location": "field",
+   "bbox": [
+    0.2888,
+    0.2914,
+    0.3041,
+    0.3143
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "CND-TK-165"
+   }
+  },
+  {
+   "id": "LIT-165108A",
+   "tag": "LIT-165108A",
+   "location": "field",
+   "bbox": [
+    0.3587,
+    0.3027,
+    0.374,
+    0.3255
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "LBR"
+   }
+  },
+  {
+   "id": "LIT-165108B",
+   "tag": "LIT-165108B",
+   "location": "field",
+   "bbox": [
+    0.3772,
+    0.3027,
+    0.3925,
+    0.3255
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "LBR"
+   }
+  },
+  {
+   "id": "LIT-165109A",
+   "tag": "LIT-165109A",
+   "location": "field",
+   "bbox": [
+    0.3587,
+    0.373,
+    0.374,
+    0.3958
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "LBR"
+   }
+  },
+  {
+   "id": "LIT-165109B",
+   "tag": "LIT-165109B",
+   "location": "field",
+   "bbox": [
+    0.3772,
+    0.373,
+    0.3925,
+    0.3958
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "LBR"
+   }
+  },
+  {
+   "id": "TE-165110A",
+   "tag": "TE-165110A",
+   "location": "field",
+   "bbox": [
+    0.2051,
+    0.4484,
+    0.2204,
+    0.4712
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LSUC"
+   }
+  },
+  {
+   "id": "TE-165110B",
+   "tag": "TE-165110B",
+   "location": "field",
+   "bbox": [
+    0.2246,
+    0.4484,
+    0.2399,
+    0.4712
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "line": "LSUC"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "PIT-165112",
+   "tag": "PIT-165112",
+   "location": "field",
+   "bbox": [
+    0.2401,
+    0.4903,
+    0.2554,
+    0.5131
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LSA",
+    "after": "MOV-1651"
+   }
+  },
+  {
+   "id": "PIT-170115",
+   "tag": "PIT-170115",
+   "location": "field",
+   "bbox": [
+    0.2959,
+    0.4903,
+    0.3112,
+    0.5131
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LDA"
+   }
+  },
+  {
+   "id": "PIT-165111",
+   "tag": "PIT-165111",
+   "location": "field",
+   "bbox": [
+    0.2401,
+    0.7041,
+    0.2554,
+    0.7269
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LSUC",
+    "after": "MOV-1652"
+   }
+  },
+  {
+   "id": "PIT-170113",
+   "tag": "PIT-170113",
+   "location": "field",
+   "bbox": [
+    0.2959,
+    0.7041,
+    0.3112,
+    0.7269
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LMAIN"
+   }
+  },
+  {
+   "id": "TE-170135A",
+   "tag": "TE-170135A",
+   "location": "field",
+   "bbox": [
+    0.4268,
+    0.6817,
+    0.4422,
+    0.7046
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LMAIN",
+    "after": "CVB"
+   }
+  },
+  {
+   "id": "TE-170135B",
+   "tag": "TE-170135B",
+   "location": "field",
+   "bbox": [
+    0.4461,
+    0.6817,
+    0.4614,
+    0.7046
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "line": "LMAIN",
+    "after": "CVB"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "PIT-170114",
+   "tag": "PIT-170114",
+   "location": "field",
+   "bbox": [
+    0.5194,
+    0.5963,
+    0.5347,
+    0.6191
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LMAIN",
+    "after": "PCV-1703"
+   }
+  },
+  {
+   "id": "PIT-170116",
+   "tag": "PIT-170116",
+   "location": "field",
+   "bbox": [
+    0.502,
+    0.4855,
+    0.5173,
+    0.5083
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LMOV"
+   }
+  },
+  {
+   "id": "TE-170117A",
+   "tag": "TE-170117A",
+   "location": "field",
+   "bbox": [
+    0.5544,
+    0.4302,
+    0.5697,
+    0.453
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LHO"
+   }
+  },
+  {
+   "id": "TE-170117B",
+   "tag": "TE-170117B",
+   "location": "field",
+   "bbox": [
+    0.5733,
+    0.4302,
+    0.5886,
+    0.453
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "line": "LHO"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "PIT-170118",
+   "tag": "PIT-170118",
+   "location": "field",
+   "bbox": [
+    0.6381,
+    0.3605,
+    0.6534,
+    0.3833
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LHO",
+    "after": "FCV-1615"
+   }
+  }
+ ],
+ "lines": [
+  {
+   "id": "LSUC",
+   "from": "CND-TK-165",
+   "to": "FWS-PU-170B",
+   "path": [
+    "MOV-1652"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-FWS-165127-SPEC-HC-X"
+  },
+  {
+   "id": "LSA",
+   "from": {
+    "line": "LSUC"
+   },
+   "to": "FWS-PU-170A",
+   "path": [
+    "MOV-1651"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-FWS-165129-SPEC-HC-X"
+  },
+  {
+   "id": "LDA",
+   "from": "FWS-PU-170A",
+   "to": {
+    "line": "LMAIN",
+    "after": "CVB"
+   },
+   "path": [
+    "MOV-1701",
+    "CVA"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-FWS-170130-SPEC-HC-X"
+  },
+  {
+   "id": "LMAIN",
+   "from": "FWS-PU-170B",
+   "to": "FWS-HTR-170",
+   "path": [
+    "MOV-1702",
+    "CVB",
+    "PCV-1703",
+    "VH1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-FWS-170128-SPEC-HC-X"
+  },
+  {
+   "id": "LFW132",
+   "from": {
+    "line": "LDA",
+    "after": "CVA"
+   },
+   "to": "CND-HTR-160",
+   "path": [
+    "FCV-XXX"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-FWS-170132-SPEC-HC-X",
+   "notes": "feed line from the pump discharge vertical up the right side to deaerator nozzle N4"
+  },
+  {
+   "id": "LQ1",
+   "from": {
+    "line": "LMAIN",
+    "after": "PCV-1703"
+   },
+   "to": "OPC-MSB",
+   "path": [
+    "VQ1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-170133-SPEC-HC-X"
+  },
+  {
+   "id": "LQ2",
+   "from": {
+    "line": "LMAIN",
+    "after": "PCV-1703"
+   },
+   "to": "OPC-WSS",
+   "path": [
+    "VQ2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-WSS-170134-SPEC-HC-X"
+  },
+  {
+   "id": "LMOV",
+   "from": {
+    "line": "LMAIN",
+    "after": "PCV-1703"
+   },
+   "to": {
+    "line": "LHO",
+    "after": "VH2"
+   },
+   "path": [
+    "MOV-1704"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-FWS-170135-SPEC-HC-X",
+   "notes": "heater bypass"
+  },
+  {
+   "id": "LHO",
+   "from": "FWS-HTR-170",
+   "to": "OPC-SG",
+   "path": [
+    "VH2",
+    "FCV-1615"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-FWS-161131-SPEC-HC-X"
+  },
+  {
+   "id": "LBR",
+   "from": "CND-HTR-160",
+   "to": "CND-TK-165",
+   "path": [
+    "VBR1",
+    "VBR2"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.7,
+   "notes": "level bridle from HTR-160 N5 to TK-165 N4; LIT taps on the vertical leg"
+  },
+  {
+   "id": "LDEA",
+   "from": "CND-HTR-160",
+   "to": "CND-TK-165",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "N6 to N3 spool between the two shells"
+  }
+ ],
+ "signals": [],
+ "off_page_connectors": [
+  {
+   "id": "OPC-MSB",
+   "direction": "out",
+   "name": "FWS TO MAIN STM BYPASS MSS PID 140-1",
+   "other_drawing": "PID 140",
+   "bbox": [
+    0.7647,
+    0.2006,
+    0.8348,
+    0.2215
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-MSS-170133-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-WSS",
+   "direction": "out",
+   "name": "FW SAMPLE WSS PID 290-1",
+   "other_drawing": "PID 290",
+   "bbox": [
+    0.7647,
+    0.2956,
+    0.8348,
+    0.3165
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-WSS-170134-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-SG",
+   "direction": "out",
+   "name": "FWS TO STEAM GENERATOR FWS PID 170-2",
+   "other_drawing": "PID 170",
+   "bbox": [
+    0.7647,
+    0.3888,
+    0.8348,
+    0.4106
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-FWS-161131-SPEC-HC-X"
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r1c5",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r2c5",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4",
+  "r3c5"
+ ],
+ "unreadable": [
+  "Line number of the level bridle and the N6/N3 spool is not printed.",
+  "Tee point of 170133/170134 quench lines relative to PCV-1703 inferred from the drawing."
+ ]
+}

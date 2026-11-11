@@ -1,0 +1,1162 @@
+{
+ "schema_version": "1.0",
+ "page": 8,
+ "sheet": {
+  "drawing_number": "PID 210",
+  "title": "AUX COOLING WATER SYSTEM",
+  "revision": "A",
+  "drawing_type": "pid",
+  "issue_status": "INFORMATION ONLY - NOT FOR CONSTRUCTION (preliminary design), sheet 1 of 2",
+  "legend_notes": [
+   "Hatched vertical bars are turbine building walls (not process items)",
+   "XXX tags are placeholders printed on the drawing",
+   "Line sizes/specs printed as SIZE-...-SPEC-HC-X placeholders",
+   "Flags point in the direction of flow"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "ACW-TK-212",
+   "kind": "tank",
+   "bbox": [
+    0.1428,
+    0.1647,
+    0.2027,
+    0.3197
+   ],
+   "tag": "ACW-TK-212",
+   "name": "Aux cooling water tank",
+   "confidence": 0.9
+  },
+  {
+   "id": "ACW-AXC-210",
+   "kind": "heat_exchanger",
+   "bbox": [
+    0.3848,
+    0.2418,
+    0.4683,
+    0.3723
+   ],
+   "tag": "ACW-AXC-210",
+   "name": "Aux cooling water air cooler (fan, finned)",
+   "confidence": 0.9
+  },
+  {
+   "id": "ACW-PU-211A",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.2593,
+    0.6132,
+    0.2845,
+    0.651
+   ],
+   "tag": "ACW-PU-211A",
+   "name": "Aux cooling water pump A",
+   "confidence": 0.9
+  },
+  {
+   "id": "ACW-PU-211B",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.2593,
+    0.7029,
+    0.2845,
+    0.7407
+   ],
+   "tag": "ACW-PU-211B",
+   "name": "Aux cooling water pump B",
+   "confidence": 0.9
+  },
+  {
+   "id": "ACW-PU-211C",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.2593,
+    0.7969,
+    0.2845,
+    0.8344
+   ],
+   "tag": "ACW-PU-211C",
+   "name": "Aux cooling water pump C",
+   "confidence": 0.9
+  },
+  {
+   "id": "FWS-PU-170A",
+   "kind": "heat_exchanger",
+   "bbox": [
+    0.6071,
+    0.4108,
+    0.6624,
+    0.4538
+   ],
+   "tag": "FWS-PU-170A",
+   "name": "Lube oil cooler (service LUBE OIL COOLER)",
+   "confidence": 0.9
+  },
+  {
+   "id": "FWS-PU-170B",
+   "kind": "heat_exchanger",
+   "bbox": [
+    0.6071,
+    0.5837,
+    0.6624,
+    0.6254
+   ],
+   "tag": "FWS-PU-170B",
+   "name": "Lube oil cooler (service LUBE OIL COOLER)",
+   "confidence": 0.9
+  }
+ ],
+ "components": [
+  {
+   "id": "V-FCV1",
+   "kind": "control_valve",
+   "bbox": [
+    0.1327,
+    0.1215,
+    0.1401,
+    0.1408
+   ],
+   "name": "FCV-XXX",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "VENT1",
+   "kind": "vent",
+   "bbox": [
+    0.1654,
+    0.1439,
+    0.1734,
+    0.1647
+   ],
+   "name": "open vent loop on tank top",
+   "confidence": 0.9
+  },
+  {
+   "id": "V_tk",
+   "kind": "gate_valve",
+   "bbox": [
+    0.1704,
+    0.3367,
+    0.175,
+    0.3484
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V_ret",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3372,
+    0.4371,
+    0.3423,
+    0.4489
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V_hdr",
+   "kind": "gate_valve",
+   "bbox": [
+    0.518,
+    0.3324,
+    0.5226,
+    0.3448
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V-FCV2",
+   "kind": "control_valve",
+   "bbox": [
+    0.5726,
+    0.3891,
+    0.5797,
+    0.4081
+   ],
+   "name": "FCV-XXX",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-TCVA",
+   "kind": "control_valve",
+   "bbox": [
+    0.5726,
+    0.435,
+    0.5797,
+    0.4544
+   ],
+   "name": "TCV-XXX",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-TCVB",
+   "kind": "control_valve",
+   "bbox": [
+    0.5726,
+    0.6064,
+    0.5797,
+    0.6263
+   ],
+   "name": "TCV-XXX",
+   "actuator": "pneumatic",
+   "confidence": 0.9
+  },
+  {
+   "id": "V_oA",
+   "kind": "gate_valve",
+   "bbox": [
+    0.697,
+    0.4474,
+    0.7045,
+    0.4544
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V_oB",
+   "kind": "gate_valve",
+   "bbox": [
+    0.697,
+    0.6191,
+    0.7045,
+    0.6263
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V_sA",
+   "kind": "gate_valve",
+   "bbox": [
+    0.2107,
+    0.6259,
+    0.2182,
+    0.6331
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V_sB",
+   "kind": "gate_valve",
+   "bbox": [
+    0.2107,
+    0.7153,
+    0.2182,
+    0.7226
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V_sC",
+   "kind": "gate_valve",
+   "bbox": [
+    0.2107,
+    0.809,
+    0.2182,
+    0.8163
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V_dA",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3118,
+    0.6156,
+    0.3191,
+    0.6225
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "CK_A",
+   "kind": "check_valve",
+   "bbox": [
+    0.3324,
+    0.6135,
+    0.3401,
+    0.6225
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V_dB",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3118,
+    0.7053,
+    0.3191,
+    0.7123
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "CK_B",
+   "kind": "check_valve",
+   "bbox": [
+    0.3324,
+    0.7035,
+    0.3401,
+    0.7126
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V_dC",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3084,
+    0.799,
+    0.3157,
+    0.806
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "CK_C",
+   "kind": "check_valve",
+   "bbox": [
+    0.3324,
+    0.7972,
+    0.3401,
+    0.8063
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "ORF-XXX",
+   "kind": "other",
+   "bbox": [
+    0.4173,
+    0.7501,
+    0.4219,
+    0.76
+   ],
+   "name": "orifice (flange pair)",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-MOV",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.5682,
+    0.7159,
+    0.5757,
+    0.7386
+   ],
+   "name": "MOV-2111",
+   "actuator": "electric",
+   "confidence": 0.9
+  }
+ ],
+ "instruments": [
+  {
+   "id": "FCV-XXX-1",
+   "tag": "FCV-XXX",
+   "location": "field",
+   "bbox": [
+    0.119,
+    0.1109,
+    0.1331,
+    0.1321
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FCV-XXX-2",
+   "tag": "FCV-XXX",
+   "location": "field",
+   "bbox": [
+    0.5793,
+    0.3716,
+    0.5934,
+    0.3927
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TCV-XXX-A",
+   "tag": "TCV-XXX",
+   "location": "field",
+   "bbox": [
+    0.5793,
+    0.4178,
+    0.5934,
+    0.439
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TCV-XXX-B",
+   "tag": "TCV-XXX",
+   "location": "field",
+   "bbox": [
+    0.5793,
+    0.5892,
+    0.5934,
+    0.6103
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "MOV-2111",
+   "tag": "MOV-2111",
+   "location": "field",
+   "bbox": [
+    0.5535,
+    0.7044,
+    0.5672,
+    0.7256
+   ],
+   "measures": {
+    "item": "V-MOV"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LG-212204",
+   "tag": "LG-212204",
+   "location": "field",
+   "bbox": [
+    0.2162,
+    0.1671,
+    0.2303,
+    0.1889
+   ],
+   "measures": {
+    "item": "ACW-TK-212"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LIT-212205",
+   "tag": "LIT-212205",
+   "location": "field",
+   "bbox": [
+    0.2335,
+    0.2146,
+    0.248,
+    0.2363
+   ],
+   "measures": {
+    "item": "ACW-TK-212"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LIT-212206",
+   "tag": "LIT-212206",
+   "location": "field",
+   "bbox": [
+    0.2335,
+    0.2699,
+    0.248,
+    0.2916
+   ],
+   "measures": {
+    "item": "ACW-TK-212"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-210207A",
+   "tag": "TE-210207A",
+   "location": "field",
+   "bbox": [
+    0.2615,
+    0.4424,
+    0.2783,
+    0.4651
+   ],
+   "measures": {
+    "line": "LJ"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-210207B",
+   "tag": "TE-210207B",
+   "location": "field",
+   "bbox": [
+    0.2811,
+    0.4424,
+    0.296,
+    0.4651
+   ],
+   "measures": {
+    "line": "LJ"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "PIT-210208a",
+   "tag": "PIT-210208",
+   "location": "field",
+   "bbox": [
+    0.2283,
+    0.599,
+    0.2426,
+    0.6216
+   ],
+   "measures": {
+    "line": "LSA",
+    "after": "V_sA"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PIT-210208b",
+   "tag": "PIT-210208",
+   "location": "field",
+   "bbox": [
+    0.2283,
+    0.6881,
+    0.2426,
+    0.7114
+   ],
+   "measures": {
+    "line": "LJ",
+    "after": "V_sB"
+   },
+   "notes": "same tag printed on pump A and pump B suction",
+   "confidence": 0.9
+  },
+  {
+   "id": "PIT-210209",
+   "tag": "PIT-210209",
+   "location": "field",
+   "bbox": [
+    0.2283,
+    0.7824,
+    0.2426,
+    0.8051
+   ],
+   "measures": {
+    "line": "LSC",
+    "after": "V_sC"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PIT-211210a",
+   "tag": "PIT-211210",
+   "location": "field",
+   "bbox": [
+    0.2906,
+    0.5814,
+    0.3054,
+    0.6035
+   ],
+   "measures": {
+    "line": "LDA"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PIT-211210b",
+   "tag": "PIT-211210",
+   "location": "field",
+   "bbox": [
+    0.2906,
+    0.6715,
+    0.3054,
+    0.6939
+   ],
+   "measures": {
+    "line": "LDm"
+   },
+   "notes": "same tag printed on pump A and pump B discharge",
+   "confidence": 0.9
+  },
+  {
+   "id": "PIT-211211",
+   "tag": "PIT-211211",
+   "location": "field",
+   "bbox": [
+    0.2906,
+    0.7613,
+    0.3054,
+    0.7839
+   ],
+   "measures": {
+    "line": "LDC"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-211212A",
+   "tag": "TE-211212A",
+   "location": "field",
+   "bbox": [
+    0.3727,
+    0.7138,
+    0.3895,
+    0.7365
+   ],
+   "measures": {
+    "line": "LDm",
+    "after": "CK_B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-211212B",
+   "tag": "TE-211212B",
+   "location": "field",
+   "bbox": [
+    0.3915,
+    0.7138,
+    0.4086,
+    0.7365
+   ],
+   "measures": {
+    "line": "LDm",
+    "after": "CK_B"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "FO-XXX",
+   "tag": "FO-XXX",
+   "location": "field",
+   "bbox": [
+    0.4122,
+    0.7135,
+    0.4262,
+    0.7356
+   ],
+   "measures": {
+    "item": "ORF-XXX"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "FT-XXX",
+   "tag": "FT-XXX",
+   "location": "field",
+   "bbox": [
+    0.4264,
+    0.7135,
+    0.4401,
+    0.7356
+   ],
+   "measures": {
+    "item": "ORF-XXX"
+   },
+   "confidence": 0.8
+  },
+  {
+   "id": "PIT-211212",
+   "tag": "PIT-211212",
+   "location": "field",
+   "bbox": [
+    0.5083,
+    0.7135,
+    0.5224,
+    0.7356
+   ],
+   "measures": {
+    "line": "LDm",
+    "after": "ORF-XXX"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-170215A",
+   "tag": "TE-170215A",
+   "location": "field",
+   "bbox": [
+    0.5547,
+    0.3173,
+    0.5696,
+    0.3391
+   ],
+   "measures": {
+    "line": "LCB",
+    "after": "V_oB"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-170215B",
+   "tag": "TE-170215B",
+   "location": "field",
+   "bbox": [
+    0.5726,
+    0.3173,
+    0.5873,
+    0.3391
+   ],
+   "measures": {
+    "line": "LCB",
+    "after": "V_oB"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "TE-170213B",
+   "tag": "TE-170213B",
+   "location": "field",
+   "bbox": [
+    0.6968,
+    0.4646,
+    0.711,
+    0.4855
+   ],
+   "measures": {
+    "line": "LCA",
+    "after": "V_oA"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "TE-170213A",
+   "tag": "TE-170213A",
+   "location": "field",
+   "bbox": [
+    0.7144,
+    0.4646,
+    0.7291,
+    0.4855
+   ],
+   "measures": {
+    "line": "LCA",
+    "after": "V_oA"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-170214A",
+   "tag": "TE-170214A",
+   "location": "field",
+   "bbox": [
+    0.716,
+    0.6435,
+    0.7305,
+    0.6647
+   ],
+   "measures": {
+    "line": "LCB",
+    "after": "V_oB"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-170214B",
+   "tag": "TE-170214B",
+   "location": "field",
+   "bbox": [
+    0.7335,
+    0.6435,
+    0.7487,
+    0.6647
+   ],
+   "measures": {
+    "line": "LCB",
+    "after": "V_oB"
+   },
+   "confidence": 0.7
+  }
+ ],
+ "lines": [
+  {
+   "id": "LM1",
+   "from": "OPC1",
+   "to": "ACW-TK-212",
+   "path": [
+    "V-FCV1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LTV",
+   "from": "ACW-TK-212",
+   "to": "VENT1",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  },
+  {
+   "id": "LT",
+   "from": "ACW-TK-212",
+   "to": {
+    "line": "LJ",
+    "after": "V_ret"
+   },
+   "path": [
+    "V_tk"
+   ],
+   "line_number": "SIZE-ACW-212145-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LJ",
+   "from": "ACW-AXC-210",
+   "to": "ACW-PU-211B",
+   "path": [
+    "V_ret",
+    "V_sB"
+   ],
+   "line_number": "SIZE-ACW-210146-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LSA",
+   "from": {
+    "line": "LJ",
+    "after": "V_ret"
+   },
+   "to": "ACW-PU-211A",
+   "path": [
+    "V_sA"
+   ],
+   "line_number": "SIZE-ACW-210147-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LSC",
+   "from": {
+    "line": "LJ",
+    "after": "V_ret"
+   },
+   "to": "ACW-PU-211C",
+   "path": [
+    "V_sC"
+   ],
+   "line_number": "SIZE-ACW-210148-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LDA",
+   "from": "ACW-PU-211A",
+   "to": {
+    "line": "LDm",
+    "after": "CK_B"
+   },
+   "path": [
+    "V_dA",
+    "CK_A"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LDC",
+   "from": "ACW-PU-211C",
+   "to": {
+    "line": "LDm",
+    "after": "CK_B"
+   },
+   "path": [
+    "V_dC",
+    "CK_C"
+   ],
+   "line_number": "SIZE-ACW-211149-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LDm",
+   "from": "ACW-PU-211B",
+   "to": {
+    "line": "LCB",
+    "after": "V_oB"
+   },
+   "path": [
+    "V_dB",
+    "CK_B",
+    "ORF-XXX",
+    "V-FCV2"
+   ],
+   "line_number": "SIZE-ACW-211150-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "common discharge/distribution riser; ends via FCV-XXX into the return header",
+   "confidence": 0.9
+  },
+  {
+   "id": "LB1",
+   "from": {
+    "line": "LDm",
+    "after": "ORF-XXX"
+   },
+   "to": "OPC5",
+   "path": [],
+   "line_number": "SIZE-ACW-211153-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LB2",
+   "from": {
+    "line": "LDm",
+    "after": "ORF-XXX"
+   },
+   "to": "OPC6",
+   "path": [],
+   "line_number": "SIZE-ACW-175271-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LB3",
+   "from": {
+    "line": "LDm",
+    "after": "ORF-XXX"
+   },
+   "to": "OPC7",
+   "path": [
+    "V-MOV"
+   ],
+   "line_number": "SIZE-ACW-211152-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LCBin",
+   "from": {
+    "line": "LDm",
+    "after": "ORF-XXX"
+   },
+   "to": "FWS-PU-170B",
+   "path": [
+    "V-TCVB"
+   ],
+   "line_number": "SIZE-ACW-211151-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LCAin",
+   "from": {
+    "line": "LDm",
+    "after": "ORF-XXX"
+   },
+   "to": "FWS-PU-170A",
+   "path": [
+    "V-TCVA"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LCA",
+   "from": "FWS-PU-170A",
+   "to": {
+    "line": "LCB",
+    "after": "V_oB"
+   },
+   "path": [
+    "V_oA"
+   ],
+   "line_number": "SIZE-ACW-170155-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LCB",
+   "from": "FWS-PU-170B",
+   "to": "ACW-AXC-210",
+   "path": [
+    "V_oB",
+    "V_hdr"
+   ],
+   "line_number": "SIZE-ACW-170154-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "cooler return, header to AXC inlet",
+   "confidence": 0.9
+  },
+  {
+   "id": "LIN1",
+   "from": "OPC2",
+   "to": {
+    "line": "LCB",
+    "after": "V_oB"
+   },
+   "path": [],
+   "line_number": "SIZE-FWS-175271-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LIN2",
+   "from": "OPC3",
+   "to": {
+    "line": "LCB",
+    "after": "V_oB"
+   },
+   "path": [],
+   "line_number": "SIZE-ACW-250261-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LIN3",
+   "from": "OPC4",
+   "to": {
+    "line": "LCB",
+    "after": "V_oB"
+   },
+   "path": [],
+   "line_number": "SIZE-ACW-211270-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  }
+ ],
+ "signals": [
+  {
+   "from": "FCV-XXX-1",
+   "to": "V-FCV1",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "FCV-XXX-2",
+   "to": "V-FCV2",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "TCV-XXX-A",
+   "to": "V-TCVA",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "TCV-XXX-B",
+   "to": "V-TCVB",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "WTS PID 160-1 MAKE-UP WATER",
+   "bbox": [
+    0.0355,
+    0.1269,
+    0.1049,
+    0.1481
+   ],
+   "other_drawing": "PID 160",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "ACW PID 210-2 (F-1) AUX COOLING WATER SYSTEM",
+   "bbox": [
+    0.7705,
+    0.2031,
+    0.8401,
+    0.2242
+   ],
+   "other_drawing": "PID 210-2",
+   "line_number": "SIZE-FWS-175271-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC3",
+   "direction": "in",
+   "name": "TBS-240-1 TURBINE",
+   "bbox": [
+    0.7705,
+    0.2653,
+    0.8401,
+    0.2865
+   ],
+   "other_drawing": "PID 240",
+   "line_number": "SIZE-ACW-250261-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC4",
+   "direction": "in",
+   "name": "FWS PID 170-2 FEEDWATER SYSTEM",
+   "bbox": [
+    0.7705,
+    0.3022,
+    0.8401,
+    0.3234
+   ],
+   "other_drawing": "PID 170-2",
+   "line_number": "SIZE-ACW-211270-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC5",
+   "direction": "out",
+   "name": "TBS PID 250-1 TURBINE",
+   "bbox": [
+    0.7705,
+    0.6615,
+    0.8401,
+    0.6827
+   ],
+   "other_drawing": "PID 250",
+   "line_number": "SIZE-ACW-211153-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC6",
+   "direction": "out",
+   "name": "FWS PID 170-2 FEEDWATER SYSTEM",
+   "bbox": [
+    0.7705,
+    0.7332,
+    0.8401,
+    0.7543
+   ],
+   "other_drawing": "PID 170-2",
+   "line_number": "SIZE-ACW-175271-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC7",
+   "direction": "out",
+   "name": "ACW PID 210-2 AUX COOLING WATER SYSTEM",
+   "bbox": [
+    0.7705,
+    0.7975,
+    0.8401,
+    0.8187
+   ],
+   "other_drawing": "PID 210-2",
+   "line_number": "SIZE-ACW-211152-SPEC-HC-X",
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "PIT tags 210208 and 211210 are printed twice (pumps A and B); kept as duplicate tags",
+  "Common discharge junction of pumps A/B/C is a drawn junction without a symbol; modelled with B discharge line continuing as the riser",
+  "Tank top: second small flanged stub at right not modelled"
+ ]
+}

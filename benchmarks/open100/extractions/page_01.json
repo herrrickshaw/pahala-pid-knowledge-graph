@@ -1,0 +1,1687 @@
+{
+ "schema_version": "1.0",
+ "page": 1,
+ "sheet": {
+  "drawing_number": "PID 140",
+  "title": "MAIN STEAM SYSTEM",
+  "revision": "A",
+  "drawing_type": "pid",
+  "issue_status": "INFORMATION ONLY - NOT FOR CONSTRUCTION (preliminary design, Energy Impact Center, OPEN 100, 09/01/2020)",
+  "legend_notes": [
+   "Line numbers printed with placeholder size 'SIZE' and spec 'SPEC-HC-X'.",
+   "Instrument bubbles attached by a thin leader to a valve actuator tag that valve (valve tag shown in bubble).",
+   "Two rectangles straddling the main steam pipe under RE-1402 / RE-1403 are the element of the RE bubble; not modelled separately.",
+   "Small circles on pipes at TE bubbles are thermowell taps."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "RCS-SG-100",
+   "kind": "boiler",
+   "bbox": [
+    0.0816,
+    0.5619,
+    0.125,
+    0.7695
+   ],
+   "confidence": 0.95,
+   "tag": "RCS-SG-100",
+   "name": "STEAM GENERATOR",
+   "notes": "Service: STEAM GENERATOR; nozzle N2 outlet at top"
+  },
+  {
+   "id": "MSS-XSS-140",
+   "kind": "heater",
+   "bbox": [
+    0.2245,
+    0.4305,
+    0.2615,
+    0.5829
+   ],
+   "confidence": 0.95,
+   "tag": "MSS-XSS-140",
+   "name": "STEAM SUPERHEATER",
+   "notes": "Nozzle N1 inlet (lower left), N2 outlet (upper right)"
+  }
+ ],
+ "components": [
+  {
+   "id": "TCV-1401",
+   "kind": "control_valve",
+   "bbox": [
+    0.1786,
+    0.4105,
+    0.1888,
+    0.4238
+   ],
+   "confidence": 0.9,
+   "tag": "TCV-1401",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "VENT-1",
+   "kind": "other",
+   "bbox": [
+    0.2679,
+    0.3467,
+    0.2953,
+    0.379
+   ],
+   "confidence": 0.75,
+   "name": "venturi / flow nozzle element on main steam line (with FT-1401)"
+  },
+  {
+   "id": "MSIV-1402",
+   "kind": "globe_valve",
+   "bbox": [
+    0.4898,
+    0.2695,
+    0.5,
+    0.2829
+   ],
+   "confidence": 0.8,
+   "tag": "MSIV-1402",
+   "actuator": "pneumatic",
+   "notes": "Main steam isolation valve, dot in body, diaphragm actuator"
+  },
+  {
+   "id": "MSCV-XXX",
+   "kind": "check_valve",
+   "bbox": [
+    0.5383,
+    0.2695,
+    0.5497,
+    0.2848
+   ],
+   "confidence": 0.9,
+   "tag": "MSCV-XXX",
+   "actuator": "none"
+  },
+  {
+   "id": "MS-14010",
+   "kind": "control_valve",
+   "bbox": [
+    0.5108,
+    0.2114,
+    0.521,
+    0.2248
+   ],
+   "confidence": 0.9,
+   "tag": "MS-14010",
+   "actuator": "pneumatic",
+   "notes": "valve with diaphragm actuator, tag in bubble 'MS 14010'"
+  },
+  {
+   "id": "AORV-XXX",
+   "kind": "control_valve",
+   "bbox": [
+    0.4267,
+    0.1495,
+    0.4369,
+    0.1629
+   ],
+   "confidence": 0.9,
+   "tag": "AORV-XXX",
+   "actuator": "pneumatic",
+   "notes": "atmospheric steam dump / relief valve (AORV)"
+  },
+  {
+   "id": "V-AORV1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4267,
+    0.1914,
+    0.4369,
+    0.2048
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PSV-1404",
+   "kind": "relief_valve",
+   "bbox": [
+    0.4407,
+    0.1705,
+    0.4522,
+    0.1857
+   ],
+   "confidence": 0.9,
+   "tag": "PSV-1404",
+   "actuator": "self"
+  },
+  {
+   "id": "PSV-1405",
+   "kind": "relief_valve",
+   "bbox": [
+    0.4617,
+    0.1714,
+    0.4732,
+    0.1867
+   ],
+   "confidence": 0.9,
+   "tag": "PSV-1405",
+   "actuator": "self"
+  },
+  {
+   "id": "PSV-1406",
+   "kind": "relief_valve",
+   "bbox": [
+    0.4828,
+    0.1714,
+    0.4943,
+    0.1867
+   ],
+   "confidence": 0.9,
+   "tag": "PSV-1406",
+   "actuator": "self"
+  },
+  {
+   "id": "PSV-1407",
+   "kind": "relief_valve",
+   "bbox": [
+    0.5038,
+    0.1714,
+    0.5153,
+    0.1867
+   ],
+   "confidence": 0.9,
+   "tag": "PSV-1407",
+   "actuator": "self"
+  },
+  {
+   "id": "V-ES1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5944,
+    0.2543,
+    0.6046,
+    0.2676
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "MSV-1404",
+   "kind": "on_off_valve",
+   "bbox": [
+    0.6378,
+    0.2695,
+    0.648,
+    0.2829
+   ],
+   "confidence": 0.9,
+   "tag": "MSV-1404",
+   "actuator": "hydraulic",
+   "notes": "box 'H' above actuator"
+  },
+  {
+   "id": "MSV-1405",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.6665,
+    0.2695,
+    0.6767,
+    0.2829
+   ],
+   "confidence": 0.9,
+   "tag": "MSV-1405",
+   "actuator": "electric",
+   "notes": "box 'M' above actuator"
+  },
+  {
+   "id": "MSBV-1407",
+   "kind": "control_valve",
+   "bbox": [
+    0.6301,
+    0.5305,
+    0.6454,
+    0.5457
+   ],
+   "confidence": 0.8,
+   "tag": "MSBV-1407",
+   "actuator": "pneumatic",
+   "notes": "bowtie with half-bowtie at FWS junction; diaphragm actuator"
+  },
+  {
+   "id": "TCV-1408",
+   "kind": "control_valve",
+   "bbox": [
+    0.6339,
+    0.5676,
+    0.6441,
+    0.581
+   ],
+   "confidence": 0.9,
+   "tag": "TCV-1408",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "TCV-1402",
+   "kind": "control_valve",
+   "bbox": [
+    0.3552,
+    0.3533,
+    0.3654,
+    0.3667
+   ],
+   "confidence": 0.9,
+   "tag": "TCV-1402",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "VB78a",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3463,
+    0.3714,
+    0.3565,
+    0.3848
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TR78",
+   "kind": "steam_trap",
+   "bbox": [
+    0.3597,
+    0.3714,
+    0.3699,
+    0.3848
+   ],
+   "confidence": 0.9,
+   "notes": "box marked T"
+  },
+  {
+   "id": "VB78b",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3731,
+    0.3714,
+    0.3833,
+    0.3848
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "CUP78",
+   "kind": "other",
+   "bbox": [
+    0.3361,
+    0.3933,
+    0.3463,
+    0.4067
+   ],
+   "confidence": 0.7,
+   "name": "cup-shaped drain pot / trap symbol"
+  },
+  {
+   "id": "VD78a",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3425,
+    0.4095,
+    0.3527,
+    0.4229
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VD78b",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3565,
+    0.4095,
+    0.3667,
+    0.4229
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TCV-1403",
+   "kind": "control_valve",
+   "bbox": [
+    0.4547,
+    0.3533,
+    0.4649,
+    0.3667
+   ],
+   "confidence": 0.9,
+   "tag": "TCV-1403",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "VB79a",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4509,
+    0.3714,
+    0.4611,
+    0.3848
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TR79",
+   "kind": "steam_trap",
+   "bbox": [
+    0.4643,
+    0.3714,
+    0.4745,
+    0.3848
+   ],
+   "confidence": 0.9,
+   "notes": "box marked T"
+  },
+  {
+   "id": "VB79b",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4777,
+    0.3714,
+    0.4879,
+    0.3848
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "CUP79",
+   "kind": "other",
+   "bbox": [
+    0.4407,
+    0.3924,
+    0.4509,
+    0.4057
+   ],
+   "confidence": 0.7,
+   "name": "cup-shaped drain pot / trap symbol"
+  },
+  {
+   "id": "VD79a",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4477,
+    0.4095,
+    0.4579,
+    0.4229
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VD79b",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4611,
+    0.4095,
+    0.4713,
+    0.4229
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TCV-1406",
+   "kind": "control_valve",
+   "bbox": [
+    0.5944,
+    0.3533,
+    0.6046,
+    0.3667
+   ],
+   "confidence": 0.9,
+   "tag": "TCV-1406",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "VB82a",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5912,
+    0.3714,
+    0.6014,
+    0.3848
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TR82",
+   "kind": "steam_trap",
+   "bbox": [
+    0.6046,
+    0.3714,
+    0.6148,
+    0.3848
+   ],
+   "confidence": 0.9,
+   "notes": "box marked T"
+  },
+  {
+   "id": "VB82b",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6173,
+    0.3714,
+    0.6276,
+    0.3848
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "CUP82",
+   "kind": "other",
+   "bbox": [
+    0.5804,
+    0.3924,
+    0.5906,
+    0.4057
+   ],
+   "confidence": 0.7,
+   "name": "cup-shaped drain pot / trap symbol"
+  },
+  {
+   "id": "VD82a",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5874,
+    0.4095,
+    0.5976,
+    0.4229
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VD82b",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6014,
+    0.4095,
+    0.6116,
+    0.4229
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TCV-1409",
+   "kind": "control_valve",
+   "bbox": [
+    0.5753,
+    0.6238,
+    0.5855,
+    0.6371
+   ],
+   "confidence": 0.9,
+   "tag": "TCV-1409",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "VB80a",
+   "kind": "gate_valve",
+   "bbox": [
+    0.567,
+    0.6419,
+    0.5772,
+    0.6552
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TR80",
+   "kind": "steam_trap",
+   "bbox": [
+    0.5797,
+    0.6419,
+    0.5899,
+    0.6552
+   ],
+   "confidence": 0.9,
+   "notes": "box marked T"
+  },
+  {
+   "id": "VB80b",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5931,
+    0.6419,
+    0.6033,
+    0.6552
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "CUP80",
+   "kind": "other",
+   "bbox": [
+    0.5561,
+    0.6629,
+    0.5663,
+    0.6762
+   ],
+   "confidence": 0.7,
+   "name": "cup-shaped drain pot / trap symbol"
+  },
+  {
+   "id": "VD80a",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5631,
+    0.68,
+    0.5733,
+    0.6933
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VD80b",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5772,
+    0.68,
+    0.5874,
+    0.6933
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "instruments": [
+  {
+   "id": "RE-1402",
+   "tag": "RE-1402",
+   "location": "field",
+   "bbox": [
+    0.3023,
+    0.2229,
+    0.3176,
+    0.2457
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LH",
+    "after": "VENT-1"
+   },
+   "name": "RE bubble on element straddling main steam pipe"
+  },
+  {
+   "id": "PT-14085",
+   "tag": "PT-14085",
+   "location": "field",
+   "bbox": [
+    0.3374,
+    0.2229,
+    0.3527,
+    0.2457
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LH",
+    "after": "VENT-1"
+   }
+  },
+  {
+   "id": "PT-14086",
+   "tag": "PT-14086",
+   "location": "field",
+   "bbox": [
+    0.3584,
+    0.2229,
+    0.3737,
+    0.2457
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LH",
+    "after": "VENT-1"
+   }
+  },
+  {
+   "id": "PT-14087",
+   "tag": "PT-14087",
+   "location": "field",
+   "bbox": [
+    0.3795,
+    0.2229,
+    0.3948,
+    0.2457
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LH",
+    "after": "VENT-1"
+   }
+  },
+  {
+   "id": "PT-14088",
+   "tag": "PT-14088",
+   "location": "field",
+   "bbox": [
+    0.4005,
+    0.2229,
+    0.4158,
+    0.2457
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LH",
+    "after": "VENT-1"
+   }
+  },
+  {
+   "id": "TE-14084A",
+   "tag": "TE-14084A",
+   "location": "field",
+   "bbox": [
+    0.2462,
+    0.3057,
+    0.2615,
+    0.3286
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LH",
+    "after": "VENT-1"
+   }
+  },
+  {
+   "id": "TE-14084B",
+   "tag": "TE-14084B",
+   "location": "field",
+   "bbox": [
+    0.2462,
+    0.3276,
+    0.2615,
+    0.3505
+   ],
+   "confidence": 0.7,
+   "measures": {
+    "line": "LH",
+    "after": "VENT-1"
+   },
+   "notes": "no tap line drawn; redundant twin of TE-14084A"
+  },
+  {
+   "id": "FT-1401",
+   "tag": "FT-1401",
+   "location": "field",
+   "bbox": [
+    0.287,
+    0.3543,
+    0.3023,
+    0.3771
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "VENT-1"
+   }
+  },
+  {
+   "id": "FT-1401-2",
+   "tag": "FT-1401",
+   "location": "field",
+   "bbox": [
+    0.301,
+    0.3543,
+    0.3163,
+    0.3771
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "VENT-1"
+   },
+   "notes": "second bubble also printed FT 1401"
+  },
+  {
+   "id": "RE-1403",
+   "tag": "RE-1403",
+   "location": "field",
+   "bbox": [
+    0.5159,
+    0.2229,
+    0.5312,
+    0.2457
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LH",
+    "after": "MSIV-1402"
+   }
+  },
+  {
+   "id": "I-TCV-1401",
+   "tag": "TCV-1401",
+   "location": "field",
+   "bbox": [
+    0.1875,
+    0.3848,
+    0.2028,
+    0.4076
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "TCV-1401"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MSIV-1402",
+   "tag": "MSIV-1402",
+   "location": "field",
+   "bbox": [
+    0.4758,
+    0.239,
+    0.4911,
+    0.2619
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MSIV-1402"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MS-14010",
+   "tag": "MS-14010",
+   "location": "field",
+   "bbox": [
+    0.521,
+    0.1867,
+    0.5364,
+    0.2095
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MS-14010"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-AORV-XXX",
+   "tag": "AORV-XXX",
+   "location": "field",
+   "bbox": [
+    0.4107,
+    0.1629,
+    0.426,
+    0.1857
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "AORV-XXX"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-PSV-1404",
+   "tag": "PSV-1404",
+   "location": "field",
+   "bbox": [
+    0.442,
+    0.1419,
+    0.4573,
+    0.1648
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "PSV-1404"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-PSV-1405",
+   "tag": "PSV-1405",
+   "location": "field",
+   "bbox": [
+    0.4636,
+    0.1419,
+    0.479,
+    0.1648
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "PSV-1405"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-PSV-1406",
+   "tag": "PSV-1406",
+   "location": "field",
+   "bbox": [
+    0.4847,
+    0.1429,
+    0.5,
+    0.1657
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "PSV-1406"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-PSV-1407",
+   "tag": "PSV-1407",
+   "location": "field",
+   "bbox": [
+    0.5064,
+    0.1429,
+    0.5217,
+    0.1657
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "PSV-1407"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MSV-1404",
+   "tag": "MSV-1404",
+   "location": "field",
+   "bbox": [
+    0.6467,
+    0.2429,
+    0.662,
+    0.2657
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MSV-1404"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MSV-1405",
+   "tag": "MSV-1405",
+   "location": "field",
+   "bbox": [
+    0.6773,
+    0.2429,
+    0.6926,
+    0.2657
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MSV-1405"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-MSBV-1407",
+   "tag": "MSBV-1407",
+   "location": "field",
+   "bbox": [
+    0.6397,
+    0.4981,
+    0.655,
+    0.521
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MSBV-1407"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-TCV-1408",
+   "tag": "TCV-1408",
+   "location": "field",
+   "bbox": [
+    0.6186,
+    0.5448,
+    0.6339,
+    0.5676
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "TCV-1408"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-TCV-1402",
+   "tag": "TCV-1402",
+   "location": "field",
+   "bbox": [
+    0.3635,
+    0.3286,
+    0.3788,
+    0.3514
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "TCV-1402"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-TCV-1403",
+   "tag": "TCV-1403",
+   "location": "field",
+   "bbox": [
+    0.4624,
+    0.3314,
+    0.4777,
+    0.3543
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "TCV-1403"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-TCV-1406",
+   "tag": "TCV-1406",
+   "location": "field",
+   "bbox": [
+    0.6033,
+    0.3314,
+    0.6186,
+    0.3543
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "TCV-1406"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "I-TCV-1409",
+   "tag": "TCV-1409",
+   "location": "field",
+   "bbox": [
+    0.5829,
+    0.5971,
+    0.5982,
+    0.62
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "TCV-1409"
+   },
+   "notes": "bubble tags the adjacent valve"
+  },
+  {
+   "id": "TE-14089A",
+   "tag": "TE-14089A",
+   "location": "field",
+   "bbox": [
+    0.3546,
+    0.2962,
+    0.3699,
+    0.319
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LD78"
+   }
+  },
+  {
+   "id": "TE-14089B",
+   "tag": "TE-14089B",
+   "location": "field",
+   "bbox": [
+    0.3712,
+    0.2962,
+    0.3865,
+    0.319
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "line": "LD78"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "TE-14090A",
+   "tag": "TE-14090A",
+   "location": "field",
+   "bbox": [
+    0.4592,
+    0.2962,
+    0.4745,
+    0.319
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LD79"
+   }
+  },
+  {
+   "id": "TE-14090B",
+   "tag": "TE-14090B",
+   "location": "field",
+   "bbox": [
+    0.4751,
+    0.2962,
+    0.4904,
+    0.319
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "line": "LD79"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "TE-14091A",
+   "tag": "TE-14091A",
+   "location": "field",
+   "bbox": [
+    0.6059,
+    0.2314,
+    0.6212,
+    0.2543
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LH",
+    "after": "MSCV-XXX"
+   }
+  },
+  {
+   "id": "TE-14091B",
+   "tag": "TE-14091B",
+   "location": "field",
+   "bbox": [
+    0.6218,
+    0.2314,
+    0.6371,
+    0.2543
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "line": "LH",
+    "after": "MSCV-XXX"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "TE-14092A",
+   "tag": "TE-14092A",
+   "location": "field",
+   "bbox": [
+    0.5995,
+    0.3067,
+    0.6148,
+    0.3295
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LD82"
+   }
+  },
+  {
+   "id": "TE-14092B",
+   "tag": "TE-14092B",
+   "location": "field",
+   "bbox": [
+    0.6154,
+    0.3067,
+    0.6307,
+    0.3295
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "line": "LD82"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "TE-14093A",
+   "tag": "TE-14093A",
+   "location": "field",
+   "bbox": [
+    0.6033,
+    0.4943,
+    0.6186,
+    0.5171
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "L81"
+   }
+  },
+  {
+   "id": "TE-14093B",
+   "tag": "TE-14093B",
+   "location": "field",
+   "bbox": [
+    0.5867,
+    0.4943,
+    0.602,
+    0.5171
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "line": "L81"
+   },
+   "notes": "twin bubble without its own tap line"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "RCS-SG-100",
+   "to": "MSS-XSS-140",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-100075-SPEC-HC-X"
+  },
+  {
+   "id": "L2",
+   "from": {
+    "line": "L1"
+   },
+   "to": {
+    "line": "LH"
+   },
+   "path": [
+    "TCV-1401"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "notes": "superheater bypass; rejoins superheater outlet line before the venturi"
+  },
+  {
+   "id": "LH",
+   "from": "MSS-XSS-140",
+   "to": "OPC-TBS1",
+   "path": [
+    "VENT-1",
+    "MSIV-1402",
+    "MSCV-XXX",
+    "MSV-1404",
+    "MSV-1405"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-140076-SPEC-HC-X"
+  },
+  {
+   "id": "LP",
+   "from": {
+    "line": "LH",
+    "after": "VENT-1"
+   },
+   "to": {
+    "line": "LH",
+    "after": "MSIV-1402"
+   },
+   "path": [
+    "MS-14010"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-140084-SPEC-HC-X",
+   "notes": "loop above the MSIV carrying the relief valves, AORV and valve MS-14010"
+  },
+  {
+   "id": "LA",
+   "from": {
+    "line": "LP"
+   },
+   "to": "ATM",
+   "path": [
+    "V-AORV1",
+    "AORV-XXX"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-140085-SPEC-HC-X"
+  },
+  {
+   "id": "L-PSV1404",
+   "from": {
+    "line": "LP"
+   },
+   "to": "ATM",
+   "path": [
+    "PSV-1404"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-140086-SPEC-HC-X"
+  },
+  {
+   "id": "L-PSV1405",
+   "from": {
+    "line": "LP"
+   },
+   "to": "ATM",
+   "path": [
+    "PSV-1405"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-140087-SPEC-HC-X"
+  },
+  {
+   "id": "L-PSV1406",
+   "from": {
+    "line": "LP"
+   },
+   "to": "ATM",
+   "path": [
+    "PSV-1406"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-140088-SPEC-HC-X"
+  },
+  {
+   "id": "L-PSV1407",
+   "from": {
+    "line": "LP"
+   },
+   "to": "ATM",
+   "path": [
+    "PSV-1407"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-140089-SPEC-HC-X"
+  },
+  {
+   "id": "LES",
+   "from": {
+    "line": "LH",
+    "after": "MSCV-XXX"
+   },
+   "to": "OPC-ES",
+   "path": [
+    "V-ES1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-ES-140083-SPEC-HC-X"
+  },
+  {
+   "id": "L77",
+   "from": {
+    "line": "LH",
+    "after": "MSCV-XXX"
+   },
+   "to": "OPC-TBS2",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-140077-SPEC-HC-X"
+  },
+  {
+   "id": "LD78",
+   "from": {
+    "line": "LH",
+    "after": "VENT-1"
+   },
+   "to": "DRN",
+   "path": [
+    "CUP78",
+    "VD78a",
+    "VD78b"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140078-SPEC-HC-X"
+  },
+  {
+   "id": "LT78",
+   "from": {
+    "line": "LD78"
+   },
+   "to": "OPC-HPD78",
+   "path": [
+    "TCV-1402"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140078-SPEC-HC-X"
+  },
+  {
+   "id": "LB78",
+   "from": {
+    "line": "LD78"
+   },
+   "to": {
+    "line": "LT78",
+    "after": "TCV-1402"
+   },
+   "path": [
+    "VB78a",
+    "TR78",
+    "VB78b"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140078-SPEC-HC-X",
+   "notes": "bypass around the temperature control valve"
+  },
+  {
+   "id": "LD79",
+   "from": {
+    "line": "LH",
+    "after": "VENT-1"
+   },
+   "to": "DRN",
+   "path": [
+    "CUP79",
+    "VD79a",
+    "VD79b"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140079-SPEC-HC-X"
+  },
+  {
+   "id": "LT79",
+   "from": {
+    "line": "LD79"
+   },
+   "to": "OPC-HPD79",
+   "path": [
+    "TCV-1403"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140079-SPEC-HC-X"
+  },
+  {
+   "id": "LB79",
+   "from": {
+    "line": "LD79"
+   },
+   "to": {
+    "line": "LT79",
+    "after": "TCV-1403"
+   },
+   "path": [
+    "VB79a",
+    "TR79",
+    "VB79b"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140079-SPEC-HC-X",
+   "notes": "bypass around the temperature control valve"
+  },
+  {
+   "id": "LD82",
+   "from": {
+    "line": "LH",
+    "after": "MSCV-XXX"
+   },
+   "to": "DRN",
+   "path": [
+    "CUP82",
+    "VD82a",
+    "VD82b"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140082-SPEC-HC-X"
+  },
+  {
+   "id": "LT82",
+   "from": {
+    "line": "LD82"
+   },
+   "to": "OPC-HPD82",
+   "path": [
+    "TCV-1406"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140082-SPEC-HC-X"
+  },
+  {
+   "id": "LB82",
+   "from": {
+    "line": "LD82"
+   },
+   "to": {
+    "line": "LT82",
+    "after": "TCV-1406"
+   },
+   "path": [
+    "VB82a",
+    "TR82",
+    "VB82b"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140082-SPEC-HC-X",
+   "notes": "bypass around the temperature control valve"
+  },
+  {
+   "id": "LD80",
+   "from": {
+    "line": "LH",
+    "after": "MSCV-XXX"
+   },
+   "to": "DRN",
+   "path": [
+    "CUP80",
+    "VD80a",
+    "VD80b"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140080-SPEC-HC-X"
+  },
+  {
+   "id": "LT80",
+   "from": {
+    "line": "LD80"
+   },
+   "to": "OPC-HPD80",
+   "path": [
+    "TCV-1409"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140080-SPEC-HC-X"
+  },
+  {
+   "id": "LB80",
+   "from": {
+    "line": "LD80"
+   },
+   "to": {
+    "line": "LT80",
+    "after": "TCV-1409"
+   },
+   "path": [
+    "VB80a",
+    "TR80",
+    "VB80b"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-HPSD-140080-SPEC-HC-X",
+   "notes": "bypass around the temperature control valve"
+  },
+  {
+   "id": "L81",
+   "from": {
+    "line": "LD80"
+   },
+   "to": "OPC-BYP",
+   "path": [
+    "MSBV-1407"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-MSS-140081-SPEC-HC-X"
+  },
+  {
+   "id": "LFW",
+   "from": "OPC-FWS",
+   "to": {
+    "line": "L81",
+    "after": "MSBV-1407"
+   },
+   "path": [
+    "TCV-1408"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-FWS-140083-SPEC-HC-X"
+  }
+ ],
+ "signals": [],
+ "off_page_connectors": [
+  {
+   "id": "OPC-ES",
+   "direction": "out",
+   "name": "EXTRACTION STEAM ES PID 180-1",
+   "other_drawing": "PID 180",
+   "bbox": [
+    0.7679,
+    0.1248,
+    0.838,
+    0.1476
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-ES-140083-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-TBS1",
+   "direction": "out",
+   "name": "TBS PID 240-1 TURBINE SYSTEM",
+   "other_drawing": "PID 240",
+   "bbox": [
+    0.7679,
+    0.2657,
+    0.838,
+    0.2886
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-MSS-140076-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-TBS2",
+   "direction": "out",
+   "name": "TBS PID 240-1 TURBINE SYSTEM",
+   "other_drawing": "PID 240",
+   "bbox": [
+    0.7679,
+    0.3333,
+    0.838,
+    0.3562
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-MSS-140077-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-HPD82",
+   "direction": "out",
+   "name": "HIGH PRESSURE STEAM DRAINS HPD PID 190-1",
+   "other_drawing": "PID 190",
+   "bbox": [
+    0.7679,
+    0.4276,
+    0.838,
+    0.4505
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-HPSD-140082-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-BYP",
+   "direction": "out",
+   "name": "MAIN STEAM BY-PASS ACC PID 150-1",
+   "other_drawing": "PID 150",
+   "bbox": [
+    0.7679,
+    0.5267,
+    0.838,
+    0.5495
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-MSS-140081-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-FWS",
+   "direction": "in",
+   "name": "FWS TO STM BYPASS FWS PID 170-1",
+   "other_drawing": "PID 170",
+   "bbox": [
+    0.7679,
+    0.5781,
+    0.838,
+    0.601
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-FWS-140083-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-HPD80",
+   "direction": "out",
+   "name": "HIGH PRESSURE STEAM DRAINS HPD PID 190-1",
+   "other_drawing": "PID 190",
+   "bbox": [
+    0.7679,
+    0.6867,
+    0.838,
+    0.7095
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-HPSD-140080-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-HPD79",
+   "direction": "out",
+   "name": "HIGH PRESSURE STEAM DRAINS HPD PID 190-1",
+   "other_drawing": "PID 190",
+   "bbox": [
+    0.7679,
+    0.7467,
+    0.838,
+    0.7695
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-HPSD-140079-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-HPD78",
+   "direction": "out",
+   "name": "HIGH PRESSURE STEAM DRAINS HPD PID 190-1",
+   "other_drawing": "PID 190",
+   "bbox": [
+    0.7679,
+    0.8076,
+    0.838,
+    0.8305
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-HPSD-140078-SPEC-HC-X"
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "ATM",
+   "name": "OPEN DISCHARGE (arrow up at sheet top, relief / steam dump outlet)",
+   "direction": "sink"
+  },
+  {
+   "id": "DRN",
+   "name": "OPEN DRAIN (open pipe end after two valves)",
+   "direction": "sink"
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Bubble 'MS 14010' number: read as 14010 (OCR hint said 4010).",
+  "Tag numbers on TE/PT bubbles read as 5 digits (e.g. 14085) from zoomed tiles."
+ ]
+}

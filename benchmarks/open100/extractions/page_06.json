@@ -1,0 +1,1545 @@
+{
+ "schema_version": "1.0",
+ "page": 6,
+ "sheet": {
+  "drawing_number": "PID 100-1",
+  "title": "REACTOR COOLANT SYSTEM",
+  "revision": "A",
+  "drawing_type": "pid",
+  "issue_status": "INFORMATION ONLY - NOT FOR CONSTRUCTION (preliminary design), sheet 1 of 2 (title block number PID 100)",
+  "legend_notes": [
+   "Valve labels V-1-100X / V-A-100X are placeholder tags repeated on many valves; not used as tags",
+   "Hexagons 'DET A SHT 2' and 'DET B SHT 2' refer to pump details on sheet 2",
+   "Line sizes/specs printed as SIZE-...-SPEC-HC-X placeholders"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "RCS-XR-100",
+   "kind": "vessel",
+   "bbox": [
+    0.222,
+    0.3069,
+    0.3345,
+    0.4749
+   ],
+   "tag": "RCS-XR-100",
+   "name": "Reactor vessel (plan view)",
+   "confidence": 0.9
+  },
+  {
+   "id": "RCS-SG-101",
+   "kind": "vessel",
+   "bbox": [
+    0.6953,
+    0.2902,
+    0.7298,
+    0.4869
+   ],
+   "tag": "RCS-SG-101",
+   "name": "Steam generator",
+   "confidence": 0.9
+  },
+  {
+   "id": "RCS-PU-102A",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.4524,
+    0.5647,
+    0.4711,
+    0.6395
+   ],
+   "tag": "RCS-PU-102A",
+   "name": "Reactor coolant pump A (RC-P102A)",
+   "confidence": 0.9
+  },
+  {
+   "id": "RCS-PU-102B",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.3833,
+    0.7846,
+    0.4012,
+    0.8591
+   ],
+   "tag": "RCS-PU-102B",
+   "name": "Reactor coolant pump B (RC-P102B)",
+   "confidence": 0.9
+  }
+ ],
+ "components": [
+  {
+   "id": "VW1",
+   "kind": "ball_valve",
+   "bbox": [
+    0.2229,
+    0.2533,
+    0.2275,
+    0.2656
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VW2",
+   "kind": "ball_valve",
+   "bbox": [
+    0.2229,
+    0.2009,
+    0.2275,
+    0.2134
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VLE",
+   "kind": "ball_valve",
+   "bbox": [
+    0.354,
+    0.2408,
+    0.3622,
+    0.2489
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VA",
+   "kind": "ball_valve",
+   "bbox": [
+    0.1652,
+    0.387,
+    0.1734,
+    0.3951
+   ],
+   "name": "V-A-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "TW101",
+   "kind": "other",
+   "bbox": [
+    0.3162,
+    0.2994,
+    0.3203,
+    0.3061
+   ],
+   "name": "TW101",
+   "notes": "thermowell",
+   "confidence": 0.9
+  },
+  {
+   "id": "TW102",
+   "kind": "other",
+   "bbox": [
+    0.3259,
+    0.2866,
+    0.33,
+    0.293
+   ],
+   "name": "TW102",
+   "notes": "thermowell",
+   "confidence": 0.9
+  },
+  {
+   "id": "TW103",
+   "kind": "other",
+   "bbox": [
+    0.1958,
+    0.3901,
+    0.1999,
+    0.3962
+   ],
+   "name": "TW103",
+   "notes": "thermowell",
+   "confidence": 0.9
+  },
+  {
+   "id": "TW104",
+   "kind": "other",
+   "bbox": [
+    0.1818,
+    0.3859,
+    0.1859,
+    0.392
+   ],
+   "name": "TW104",
+   "notes": "thermowell",
+   "confidence": 0.9
+  },
+  {
+   "id": "VIMP1007",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5011,
+    0.1468,
+    0.5063,
+    0.159
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "CV_A",
+   "kind": "check_valve",
+   "bbox": [
+    0.3674,
+    0.5762,
+    0.3758,
+    0.5854
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VIMP10210",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3969,
+    0.5608,
+    0.4019,
+    0.5725
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VIMP1009",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4731,
+    0.524,
+    0.4784,
+    0.5363
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VFA1",
+   "kind": "ball_valve",
+   "bbox": [
+    0.508,
+    0.5218,
+    0.5136,
+    0.5346
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VFA2",
+   "kind": "ball_valve",
+   "bbox": [
+    0.5356,
+    0.5218,
+    0.5412,
+    0.5346
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VFA3",
+   "kind": "ball_valve",
+   "bbox": [
+    0.5636,
+    0.5218,
+    0.5692,
+    0.5346
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VBPA",
+   "kind": "ball_valve",
+   "bbox": [
+    0.5625,
+    0.5678,
+    0.5707,
+    0.5765
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "HDRA",
+   "kind": "tee",
+   "bbox": [
+    0.5091,
+    0.4939,
+    0.5147,
+    0.5022
+   ],
+   "name": "header junction of SIZE-RCS-101018",
+   "confidence": 0.5,
+   "notes": "header line top joining the three FE branches"
+  },
+  {
+   "id": "VWS1",
+   "kind": "ball_valve",
+   "bbox": [
+    0.7223,
+    0.6613,
+    0.7303,
+    0.6702
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VWS2",
+   "kind": "ball_valve",
+   "bbox": [
+    0.7568,
+    0.6613,
+    0.7654,
+    0.6702
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "CV_B",
+   "kind": "check_valve",
+   "bbox": [
+    0.2965,
+    0.7958,
+    0.3051,
+    0.8058
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VIMP10214",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3273,
+    0.7645,
+    0.332,
+    0.7771
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VIMP10013",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4109,
+    0.7366,
+    0.4159,
+    0.7492
+   ],
+   "name": "V-1-100X",
+   "confidence": 0.9
+  },
+  {
+   "id": "VFB1",
+   "kind": "ball_valve",
+   "bbox": [
+    0.4455,
+    0.7335,
+    0.4504,
+    0.7455
+   ],
+   "tag": "V-1-1013",
+   "confidence": 0.9
+  },
+  {
+   "id": "VFB2",
+   "kind": "ball_valve",
+   "bbox": [
+    0.4664,
+    0.7335,
+    0.4713,
+    0.7455
+   ],
+   "tag": "V-1-1012",
+   "confidence": 0.9
+  },
+  {
+   "id": "VFB3",
+   "kind": "ball_valve",
+   "bbox": [
+    0.4875,
+    0.7335,
+    0.4924,
+    0.7455
+   ],
+   "tag": "V-1-1011",
+   "confidence": 0.9
+  },
+  {
+   "id": "V-1-1014",
+   "kind": "ball_valve",
+   "bbox": [
+    0.486,
+    0.7768,
+    0.4935,
+    0.7838
+   ],
+   "tag": "V-1-1014",
+   "confidence": 0.9
+  },
+  {
+   "id": "HDRB",
+   "kind": "tee",
+   "bbox": [
+    0.4476,
+    0.685,
+    0.4532,
+    0.6934
+   ],
+   "name": "header junction of SIZE-RCS-101015",
+   "confidence": 0.5,
+   "notes": "header line top joining the three FE branches"
+  }
+ ],
+ "instruments": [
+  {
+   "id": "TE-1001B",
+   "tag": "TE-1001B",
+   "location": "field",
+   "bbox": [
+    0.3022,
+    0.2595,
+    0.3162,
+    0.2804
+   ],
+   "measures": {
+    "item": "TW101"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "TE-1001A",
+   "tag": "TE-1001A",
+   "location": "field",
+   "bbox": [
+    0.2935,
+    0.2754,
+    0.3069,
+    0.2958
+   ],
+   "measures": {
+    "item": "TW101"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-1002B",
+   "tag": "TE-1002B",
+   "location": "field",
+   "bbox": [
+    0.3529,
+    0.2796,
+    0.3666,
+    0.2999
+   ],
+   "measures": {
+    "item": "TW102"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "TE-1002A",
+   "tag": "TE-1002A",
+   "location": "field",
+   "bbox": [
+    0.3442,
+    0.2958,
+    0.3578,
+    0.3153
+   ],
+   "measures": {
+    "item": "TW102"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LE-1003A",
+   "tag": "LE-1003A",
+   "location": "field",
+   "bbox": [
+    0.3802,
+    0.2185,
+    0.394,
+    0.2391
+   ],
+   "measures": {
+    "item": "RCS-XR-100"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LE-1003B",
+   "tag": "LE-1003B",
+   "location": "field",
+   "bbox": [
+    0.3802,
+    0.2497,
+    0.394,
+    0.2701
+   ],
+   "measures": {
+    "item": "RCS-XR-100"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LE-1006A",
+   "tag": "LE-1006A",
+   "location": "field",
+   "bbox": [
+    0.136,
+    0.3599,
+    0.1498,
+    0.3806
+   ],
+   "measures": {
+    "item": "RCS-XR-100"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LE-1006B",
+   "tag": "LE-1006B",
+   "location": "field",
+   "bbox": [
+    0.136,
+    0.4015,
+    0.1498,
+    0.4222
+   ],
+   "measures": {
+    "item": "RCS-XR-100"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-1004B",
+   "tag": "TE-1004B",
+   "location": "field",
+   "bbox": [
+    0.1628,
+    0.3493,
+    0.1762,
+    0.3703
+   ],
+   "measures": {
+    "item": "TW104"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "TE-1004A",
+   "tag": "TE-1004A",
+   "location": "field",
+   "bbox": [
+    0.1768,
+    0.3493,
+    0.1906,
+    0.3703
+   ],
+   "measures": {
+    "item": "TW104"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-1005B",
+   "tag": "TE-1005B",
+   "location": "field",
+   "bbox": [
+    0.1768,
+    0.4141,
+    0.1906,
+    0.433
+   ],
+   "measures": {
+    "item": "TW103"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "TE-1005A",
+   "tag": "TE-1005A",
+   "location": "field",
+   "bbox": [
+    0.191,
+    0.4141,
+    0.2048,
+    0.433
+   ],
+   "measures": {
+    "item": "TW103"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-1007A",
+   "tag": "PT-1007A",
+   "location": "field",
+   "bbox": [
+    0.4828,
+    0.1214,
+    0.4966,
+    0.1423
+   ],
+   "measures": {
+    "line": "H1"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-1007B",
+   "tag": "PT-1007B",
+   "location": "field",
+   "bbox": [
+    0.5106,
+    0.1214,
+    0.5246,
+    0.1423
+   ],
+   "measures": {
+    "line": "H1"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-1008A",
+   "tag": "TE-1008A",
+   "location": "field",
+   "bbox": [
+    0.5526,
+    0.132,
+    0.5662,
+    0.1526
+   ],
+   "measures": {
+    "line": "H1"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-1008B",
+   "tag": "TE-1008B",
+   "location": "field",
+   "bbox": [
+    0.5664,
+    0.132,
+    0.5802,
+    0.1526
+   ],
+   "measures": {
+    "line": "H1"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "PT-1009A",
+   "tag": "PT-1009A",
+   "location": "field",
+   "bbox": [
+    0.4549,
+    0.4986,
+    0.4689,
+    0.5195
+   ],
+   "measures": {
+    "line": "PSA"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-1009B",
+   "tag": "PT-1009B",
+   "location": "field",
+   "bbox": [
+    0.4827,
+    0.4986,
+    0.4966,
+    0.5195
+   ],
+   "measures": {
+    "line": "PSA"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-10210A",
+   "tag": "PT-10210A",
+   "location": "field",
+   "bbox": [
+    0.3787,
+    0.5301,
+    0.3923,
+    0.5511
+   ],
+   "measures": {
+    "line": "LA"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-10210B",
+   "tag": "PT-10210B",
+   "location": "field",
+   "bbox": [
+    0.4063,
+    0.5301,
+    0.4201,
+    0.5511
+   ],
+   "measures": {
+    "line": "LA"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10211A",
+   "tag": "TE-10211A",
+   "location": "field",
+   "bbox": [
+    0.3436,
+    0.5301,
+    0.3576,
+    0.5511
+   ],
+   "measures": {
+    "line": "LA",
+    "after": "CV_A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10211B",
+   "tag": "TE-10211B",
+   "location": "field",
+   "bbox": [
+    0.3591,
+    0.5301,
+    0.3731,
+    0.5511
+   ],
+   "measures": {
+    "line": "LA",
+    "after": "CV_A"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "TE-10212A",
+   "tag": "TE-10212A",
+   "location": "field",
+   "bbox": [
+    0.3296,
+    0.6136,
+    0.3436,
+    0.6345
+   ],
+   "measures": {
+    "line": "LA",
+    "after": "CV_A"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10212B",
+   "tag": "TE-10212B",
+   "location": "field",
+   "bbox": [
+    0.3447,
+    0.6136,
+    0.3585,
+    0.6345
+   ],
+   "measures": {
+    "line": "LA",
+    "after": "CV_A"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "PT-10013A",
+   "tag": "PT-10013A",
+   "location": "field",
+   "bbox": [
+    0.3923,
+    0.7112,
+    0.4063,
+    0.7321
+   ],
+   "measures": {
+    "line": "PSB"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-10013B",
+   "tag": "PT-10013B",
+   "location": "field",
+   "bbox": [
+    0.4201,
+    0.7112,
+    0.4341,
+    0.7321
+   ],
+   "measures": {
+    "line": "PSB"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-10214A",
+   "tag": "PT-10214A",
+   "location": "field",
+   "bbox": [
+    0.3087,
+    0.7386,
+    0.3227,
+    0.76
+   ],
+   "measures": {
+    "line": "LB"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-10214B",
+   "tag": "PT-10214B",
+   "location": "field",
+   "bbox": [
+    0.3367,
+    0.7386,
+    0.3507,
+    0.76
+   ],
+   "measures": {
+    "line": "LB"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10215A",
+   "tag": "TE-10215A",
+   "location": "field",
+   "bbox": [
+    0.2668,
+    0.7386,
+    0.2808,
+    0.76
+   ],
+   "measures": {
+    "line": "LB",
+    "after": "CV_B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10215B",
+   "tag": "TE-10215B",
+   "location": "field",
+   "bbox": [
+    0.2828,
+    0.7386,
+    0.2968,
+    0.76
+   ],
+   "measures": {
+    "line": "LB",
+    "after": "CV_B"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "TE-10216A",
+   "tag": "TE-10216A",
+   "location": "field",
+   "bbox": [
+    0.2323,
+    0.7386,
+    0.2463,
+    0.76
+   ],
+   "measures": {
+    "line": "LB",
+    "after": "CV_B"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-10216B",
+   "tag": "TE-10216B",
+   "location": "field",
+   "bbox": [
+    0.2476,
+    0.7386,
+    0.2616,
+    0.76
+   ],
+   "measures": {
+    "line": "LB",
+    "after": "CV_B"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "FT-1011",
+   "tag": "FT-1011",
+   "location": "field",
+   "bbox": [
+    0.5034,
+    0.4849,
+    0.5183,
+    0.5117
+   ],
+   "notes": "bubble reads FE (flow element, triangle); tag FT-1011 printed beside",
+   "confidence": 0.9
+  },
+  {
+   "id": "FT-1012",
+   "tag": "FT-1012",
+   "location": "field",
+   "bbox": [
+    0.5313,
+    0.4849,
+    0.5463,
+    0.5117
+   ],
+   "notes": "bubble reads FE (flow element, triangle); tag FT-1012 printed beside",
+   "confidence": 0.9
+  },
+  {
+   "id": "FT-1013",
+   "tag": "FT-1013",
+   "location": "field",
+   "bbox": [
+    0.5589,
+    0.4849,
+    0.5739,
+    0.5117
+   ],
+   "notes": "bubble reads FE (flow element, triangle); tag FT-1013 printed beside",
+   "confidence": 0.9
+  },
+  {
+   "id": "FT-1014",
+   "tag": "FT-1014",
+   "location": "field",
+   "bbox": [
+    0.4409,
+    0.692,
+    0.4558,
+    0.7188
+   ],
+   "notes": "bubble reads FE (flow element, triangle); tag FT-1014 printed beside",
+   "confidence": 0.9
+  },
+  {
+   "id": "FT-1015",
+   "tag": "FT-1015",
+   "location": "field",
+   "bbox": [
+    0.4618,
+    0.692,
+    0.4767,
+    0.7188
+   ],
+   "notes": "bubble reads FE (flow element, triangle); tag FT-1015 printed beside",
+   "confidence": 0.9
+  },
+  {
+   "id": "FT-1016",
+   "tag": "FT-1016",
+   "location": "field",
+   "bbox": [
+    0.4827,
+    0.692,
+    0.4976,
+    0.7188
+   ],
+   "notes": "bubble reads FE (flow element, triangle); tag FT-1016 printed beside",
+   "confidence": 0.9
+  }
+ ],
+ "lines": [
+  {
+   "id": "H1",
+   "from": "RCS-XR-100",
+   "to": "RCS-SG-101",
+   "path": [],
+   "line_number": "SIZE-RCS-100001-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "hot leg N1 to SG N4",
+   "confidence": 0.9
+  },
+  {
+   "id": "H1A",
+   "from": "OPC1",
+   "to": {
+    "line": "H1"
+   },
+   "path": [],
+   "line_number": "SPEC-RHRS-121A065-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "H1B",
+   "from": {
+    "line": "H1"
+   },
+   "to": "OPC6",
+   "path": [],
+   "line_number": "SIZE-RHRS-100021-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LWS1",
+   "from": "RCS-XR-100",
+   "to": "OPC7",
+   "path": [
+    "VW1",
+    "VW2"
+   ],
+   "line_number": "SIZE-WSS-100023-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LLVL",
+   "from": "RCS-XR-100",
+   "to": "VLE",
+   "path": [
+    "TW101",
+    "TW102"
+   ],
+   "notes": "thin sensing line to level elements LE-1003A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "LLVL2",
+   "from": "RCS-XR-100",
+   "to": "VA",
+   "path": [
+    "TW103",
+    "TW104"
+   ],
+   "notes": "thin sensing line to level elements LE-1006A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "PSB",
+   "from": "RCS-SG-101",
+   "to": "RCS-PU-102B",
+   "path": [],
+   "line_number": "SIZE-RCS-101002-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "SG N3 outlet header running down and left to pump B suction N1",
+   "confidence": 0.9
+  },
+  {
+   "id": "PSA",
+   "from": {
+    "line": "PSB"
+   },
+   "to": "RCS-PU-102A",
+   "path": [],
+   "line_number": "SIZE-RCS-101004-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "branch to pump A suction N1",
+   "confidence": 0.9
+  },
+  {
+   "id": "L6B",
+   "from": {
+    "line": "PSB"
+   },
+   "to": "OPC9",
+   "path": [],
+   "line_number": "SIZE-RCS-101006-SPEC-HC-X",
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  },
+  {
+   "id": "LCV",
+   "from": {
+    "line": "PSB"
+   },
+   "to": "OPC10",
+   "path": [],
+   "line_number": "SIZE-CVCS-101022-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LWSL",
+   "from": {
+    "line": "LCV"
+   },
+   "to": "OPC11",
+   "path": [
+    "VWS1",
+    "VWS2"
+   ],
+   "line_number": "SIZE-WS-101024-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "BA1",
+   "from": {
+    "line": "PSA"
+   },
+   "to": "HDRA",
+   "path": [
+    "VFA1",
+    "FT-1011"
+   ],
+   "line_number": "SIZE-RCS-101018-SPEC-HC-X",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "BA2",
+   "from": {
+    "line": "PSA"
+   },
+   "to": "HDRA",
+   "path": [
+    "VFA2",
+    "FT-1012"
+   ],
+   "line_number": "SIZE-RCS-101019-SPEC-HC-X",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "BA3",
+   "from": {
+    "line": "PSA"
+   },
+   "to": "HDRA",
+   "path": [
+    "VFA3",
+    "FT-1013"
+   ],
+   "line_number": "SIZE-RCS-100020-SPEC-HC-X",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "BPA",
+   "from": {
+    "line": "PSA"
+   },
+   "to": "HDRA",
+   "path": [
+    "VBPA"
+   ],
+   "line_number": "SIZE-RCS-101018-SPEC-HC-X",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "BB1",
+   "from": {
+    "line": "PSB"
+   },
+   "to": "HDRB",
+   "path": [
+    "VFB1",
+    "FT-1014"
+   ],
+   "line_number": "SIZE-RCS-101015-SPEC-HC-X",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "BB2",
+   "from": {
+    "line": "PSB"
+   },
+   "to": "HDRB",
+   "path": [
+    "VFB2",
+    "FT-1015"
+   ],
+   "line_number": "SIZE-RCS-101016-SPEC-HC-X",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "BB3",
+   "from": {
+    "line": "PSB"
+   },
+   "to": "HDRB",
+   "path": [
+    "VFB3",
+    "FT-1016"
+   ],
+   "line_number": "SIZE-RCS-101017-SPEC-HC-X",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "BPB",
+   "from": {
+    "line": "PSB"
+   },
+   "to": "HDRB",
+   "path": [
+    "V-1-1014"
+   ],
+   "line_number": "SIZE-RCS-101015-SPEC-HC-X",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "L1007",
+   "from": {
+    "line": "H1"
+   },
+   "to": "VIMP1007",
+   "path": [],
+   "notes": "impulse line PT-1007A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "L1009",
+   "from": {
+    "line": "PSA"
+   },
+   "to": "VIMP1009",
+   "path": [],
+   "notes": "impulse line PT-1009A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "L10013",
+   "from": {
+    "line": "PSB"
+   },
+   "to": "VIMP10013",
+   "path": [],
+   "notes": "impulse line PT-10013A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "LA",
+   "from": "RCS-PU-102A",
+   "to": "RCS-XR-100",
+   "path": [
+    "CV_A"
+   ],
+   "line_number": "SIZE-RCS-102A005-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "pump A discharge N2, up to reactor N3",
+   "confidence": 0.9
+  },
+  {
+   "id": "LAI",
+   "from": {
+    "line": "LA"
+   },
+   "to": "VIMP10210",
+   "path": [],
+   "notes": "impulse line PT-10210A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "LA1",
+   "from": "OPC3",
+   "to": {
+    "line": "LA"
+   },
+   "path": [],
+   "line_number": "SIZE-RHRS-121A072-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LA2",
+   "from": "OPC2",
+   "to": {
+    "line": "LA"
+   },
+   "path": [],
+   "line_number": "SIZE-CVCS-110053-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LA3",
+   "from": {
+    "line": "LA"
+   },
+   "to": "OPC8",
+   "path": [],
+   "line_number": "SIZE-RCS-100007-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LB",
+   "from": "RCS-PU-102B",
+   "to": "RCS-XR-100",
+   "path": [
+    "CV_B"
+   ],
+   "line_number": "SIZE-RCS-102B003-SPEC-HC-X",
+   "flow_direction": "shown",
+   "notes": "pump B discharge N2, up to reactor N2",
+   "confidence": 0.9
+  },
+  {
+   "id": "LBI",
+   "from": {
+    "line": "LB"
+   },
+   "to": "VIMP10214",
+   "path": [],
+   "notes": "impulse line PT-10214A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "LB1",
+   "from": "OPC4",
+   "to": {
+    "line": "LB"
+   },
+   "path": [],
+   "line_number": "SIZE-CVCS-115C049-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LB2",
+   "from": "OPC5",
+   "to": {
+    "line": "LB"
+   },
+   "path": [],
+   "line_number": "SIZE-RHRS-121073-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LB3",
+   "from": {
+    "line": "LB"
+   },
+   "to": "OPC12",
+   "path": [],
+   "line_number": "SIZE-RCS-100008-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  }
+ ],
+ "signals": [],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "PID 120-1 (D-1) RHRS",
+   "bbox": [
+    0.0281,
+    0.1765,
+    0.0969,
+    0.1975
+   ],
+   "other_drawing": "PID 120",
+   "line_number": "SPEC-RHRS-121A065-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "PID 110-1 (H-12) CVCS",
+   "bbox": [
+    0.0281,
+    0.4981,
+    0.0969,
+    0.52
+   ],
+   "other_drawing": "PID 110",
+   "line_number": "SIZE-CVCS-110053-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC3",
+   "direction": "in",
+   "name": "PID 120-1 (E-1) RHRS",
+   "bbox": [
+    0.0281,
+    0.5305,
+    0.0969,
+    0.5515
+   ],
+   "other_drawing": "PID 120",
+   "line_number": "SIZE-RHRS-121A072-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC4",
+   "direction": "in",
+   "name": "PID 110-1 (G-12) CVCS",
+   "bbox": [
+    0.0281,
+    0.582,
+    0.0969,
+    0.603
+   ],
+   "other_drawing": "PID 110",
+   "line_number": "SIZE-CVCS-115C049-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC5",
+   "direction": "in",
+   "name": "PID 120-1 (C-1) RHRS",
+   "bbox": [
+    0.0281,
+    0.6135,
+    0.0969,
+    0.6355
+   ],
+   "other_drawing": "PID 120",
+   "line_number": "SIZE-RHRS-121073-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC6",
+   "direction": "out",
+   "name": "RES. HEAT REMOVAL SYSTEM RHRS PID-120-01",
+   "bbox": [
+    0.7832,
+    0.0353,
+    0.852,
+    0.0572
+   ],
+   "other_drawing": "PID 120",
+   "line_number": "SIZE-RHRS-100021-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC7",
+   "direction": "out",
+   "name": "WSS PID 290-1 WATER SAMPLE SYSTEM",
+   "bbox": [
+    0.7832,
+    0.0811,
+    0.852,
+    0.103
+   ],
+   "other_drawing": "PID 290",
+   "line_number": "SIZE-WSS-100023-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC8",
+   "direction": "out",
+   "name": "REACTOR COOLANT SYSTEM RCS-PID-100-2",
+   "bbox": [
+    0.7832,
+    0.1966,
+    0.852,
+    0.2185
+   ],
+   "other_drawing": "PID 100-2",
+   "line_number": "SIZE-RCS-100007-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC9",
+   "direction": "out",
+   "name": "REACTOR COOLANT SYSTEM RC-PID-100-2",
+   "bbox": [
+    0.7832,
+    0.5448,
+    0.852,
+    0.5668
+   ],
+   "other_drawing": "PID 100-2",
+   "line_number": "SIZE-RCS-101006-SPEC-HC-X",
+   "confidence": 0.7
+  },
+  {
+   "id": "OPC10",
+   "direction": "out",
+   "name": "CHEMICAL & VOLUME CONTROL CVCS-PID-110-1",
+   "bbox": [
+    0.7832,
+    0.6021,
+    0.852,
+    0.625
+   ],
+   "other_drawing": "PID 110",
+   "line_number": "SIZE-CVCS-101022-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC11",
+   "direction": "out",
+   "name": "WSS PID 290-1 WATER SAMPLE SYSTEM",
+   "bbox": [
+    0.7832,
+    0.6545,
+    0.852,
+    0.6765
+   ],
+   "other_drawing": "PID 290",
+   "line_number": "SIZE-WS-101024-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC12",
+   "direction": "out",
+   "name": "REACTOR COOLANT SYSTEM RCS-PID-100-2",
+   "bbox": [
+    0.7832,
+    0.6956,
+    0.852,
+    0.7175
+   ],
+   "other_drawing": "PID 100-2",
+   "line_number": "SIZE-RCS-100008-SPEC-HC-X",
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r1c5",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r2c5",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4",
+  "r3c5"
+ ],
+ "unreadable": [
+  "Direction of RCS-101006 line to flag 'REACTOR COOLANT SYSTEM RC-PID-100-2' (two opposed arrowheads drawn)",
+  "Exact connection of the thin header lines (SIZE-RCS-101018/101015) around the FE flow-measurement loops is interpreted; HDRA/HDRB tee components are modelling junctions for the drawn header lines",
+  "Hot-leg label on flag 'RHRS PID-120-01' read as drawn"
+ ]
+}

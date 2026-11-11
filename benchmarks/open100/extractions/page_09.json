@@ -1,0 +1,708 @@
+{
+ "schema_version": "1.0",
+ "page": 9,
+ "sheet": {
+  "drawing_number": "PID 210",
+  "title": "AUX. COOLING WATER SYSTEM",
+  "revision": "A",
+  "drawing_type": "pid",
+  "issue_status": "INFORMATION ONLY - NOT FOR CONSTRUCTION",
+  "legend_notes": [
+   "Sheet 2 of 2; line numbers printed as SIZE-xxx-SPEC-HC-X placeholders"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "CVCS-HX-111",
+   "tag": "CVCS-HX-111",
+   "kind": "heat_exchanger",
+   "name": "LETDOWN HEAT EXCHANGER",
+   "bbox": [
+    0.3559,
+    0.511,
+    0.4796,
+    0.5532
+   ],
+   "attributes": {
+    "service": "LETDOWN HEAT EXCHANGER",
+    "OD": "blank",
+    "LENGTH": "blank",
+    "MATERIAL": "blank"
+   }
+  }
+ ],
+ "components": [
+  {
+   "id": "V3W-A",
+   "kind": "three_way_valve",
+   "bbox": [
+    0.6505,
+    0.0959,
+    0.6645,
+    0.1189
+   ],
+   "actuator": "pneumatic",
+   "notes": "three-way valve with diaphragm actuator, blank tag bubble"
+  },
+  {
+   "id": "V3W-B",
+   "kind": "three_way_valve",
+   "bbox": [
+    0.6888,
+    0.1745,
+    0.7028,
+    0.1975
+   ],
+   "actuator": "pneumatic",
+   "notes": "three-way valve with diaphragm actuator, blank tag bubble"
+  },
+  {
+   "id": "REH",
+   "kind": "other",
+   "bbox": [
+    0.4592,
+    0.3452,
+    0.4739,
+    0.3653
+   ],
+   "name": "radiation element housing (two rectangles around line)",
+   "notes": "RE-XXX sensing element"
+  },
+  {
+   "id": "MOV-1113",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.5026,
+    0.3356,
+    0.5128,
+    0.3605
+   ],
+   "tag": "MOV-1113",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1114",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.5619,
+    0.3356,
+    0.5721,
+    0.3605
+   ],
+   "tag": "MOV-1114",
+   "actuator": "electric"
+  },
+  {
+   "id": "TCV-1115",
+   "kind": "control_valve",
+   "bbox": [
+    0.5281,
+    0.4477,
+    0.5408,
+    0.4794
+   ],
+   "tag": "TCV-1115",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "PSV-XXX",
+   "kind": "relief_valve",
+   "bbox": [
+    0.5019,
+    0.4794,
+    0.5134,
+    0.4986
+   ],
+   "tag": "PSV-XXX"
+  },
+  {
+   "id": "MOV-2112",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.264,
+    0.6491,
+    0.2742,
+    0.6711
+   ],
+   "tag": "MOV-2112",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-1325",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.3125,
+    0.6491,
+    0.3227,
+    0.6711
+   ],
+   "tag": "MOV-1325",
+   "actuator": "electric"
+  },
+  {
+   "id": "MOV-XXX",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.625,
+    0.8802,
+    0.6352,
+    0.9032
+   ],
+   "tag": "MOV-XXX",
+   "actuator": "electric"
+  },
+  {
+   "id": "CK1",
+   "kind": "check_valve",
+   "bbox": [
+    0.2054,
+    0.6568,
+    0.2143,
+    0.6692
+   ]
+  },
+  {
+   "id": "CK2",
+   "kind": "check_valve",
+   "bbox": [
+    0.5695,
+    0.8092,
+    0.5784,
+    0.8217
+   ]
+  }
+ ],
+ "instruments": [
+  {
+   "id": "BUB-A",
+   "location": "field",
+   "bbox": [
+    0.639,
+    0.0834,
+    0.6543,
+    0.1064
+   ],
+   "function": "unknown",
+   "measures": {
+    "item": "V3W-A"
+   },
+   "notes": "blank tag bubble on three-way valve"
+  },
+  {
+   "id": "BUB-B",
+   "location": "field",
+   "bbox": [
+    0.6773,
+    0.1611,
+    0.6926,
+    0.1841
+   ],
+   "function": "unknown",
+   "measures": {
+    "item": "V3W-B"
+   },
+   "notes": "blank tag bubble on three-way valve"
+  },
+  {
+   "id": "RE-XXX",
+   "location": "field",
+   "bbox": [
+    0.4592,
+    0.3078,
+    0.4732,
+    0.3289
+   ],
+   "tag": "RE-XXX",
+   "measures": {
+    "item": "REH"
+   }
+  },
+  {
+   "id": "BUB-MOV-1113",
+   "location": "field",
+   "bbox": [
+    0.4866,
+    0.3231,
+    0.5019,
+    0.3461
+   ],
+   "function": "MOV",
+   "measures": {
+    "item": "MOV-1113"
+   },
+   "notes": "tag bubble of MOV-1113"
+  },
+  {
+   "id": "BUB-MOV-1114",
+   "location": "field",
+   "bbox": [
+    0.5695,
+    0.3231,
+    0.5848,
+    0.3461
+   ],
+   "function": "MOV",
+   "measures": {
+    "item": "MOV-1114"
+   },
+   "notes": "tag bubble of MOV-1114"
+  },
+  {
+   "id": "BUB-TCV-1115",
+   "location": "field",
+   "bbox": [
+    0.5172,
+    0.4487,
+    0.5325,
+    0.4717
+   ],
+   "function": "TCV",
+   "measures": {
+    "item": "TCV-1115"
+   },
+   "notes": "tag bubble of TCV-1115"
+  },
+  {
+   "id": "BUB-PSV-XXX",
+   "location": "field",
+   "bbox": [
+    0.4885,
+    0.4545,
+    0.5038,
+    0.4775
+   ],
+   "function": "PSV",
+   "measures": {
+    "item": "PSV-XXX"
+   },
+   "notes": "tag bubble of PSV-XXX"
+  },
+  {
+   "id": "TE-XXX-1",
+   "location": "field",
+   "bbox": [
+    0.3195,
+    0.4957,
+    0.3348,
+    0.5187
+   ],
+   "tag": "TE-XXX",
+   "measures": {
+    "line": "L_Ma"
+   }
+  },
+  {
+   "id": "TE-XXX-2",
+   "location": "field",
+   "bbox": [
+    0.3335,
+    0.4957,
+    0.3489,
+    0.5187
+   ],
+   "tag": "TE-XXX",
+   "measures": {
+    "line": "L_HXin",
+    "after": "MOV-2112"
+   }
+  },
+  {
+   "id": "TE-111216A",
+   "location": "field",
+   "bbox": [
+    0.5453,
+    0.4995,
+    0.5606,
+    0.5225
+   ],
+   "tag": "TE-111216A",
+   "measures": {
+    "line": "L_Ma"
+   }
+  },
+  {
+   "id": "TE-111216B",
+   "location": "field",
+   "bbox": [
+    0.5644,
+    0.4995,
+    0.5797,
+    0.5225
+   ],
+   "tag": "TE-111216B",
+   "measures": {
+    "line": "L_Ma"
+   }
+  },
+  {
+   "id": "BUB-MOV-2112",
+   "location": "field",
+   "bbox": [
+    0.2468,
+    0.629,
+    0.2621,
+    0.652
+   ],
+   "function": "MOV",
+   "measures": {
+    "item": "MOV-2112"
+   },
+   "notes": "tag bubble of MOV-2112"
+  },
+  {
+   "id": "BUB-MOV-1325",
+   "location": "field",
+   "bbox": [
+    0.3227,
+    0.6299,
+    0.338,
+    0.6529
+   ],
+   "function": "MOV",
+   "measures": {
+    "item": "MOV-1325"
+   },
+   "notes": "tag bubble of MOV-1325"
+  },
+  {
+   "id": "BUB-MOV-XXX",
+   "location": "field",
+   "bbox": [
+    0.6307,
+    0.8658,
+    0.646,
+    0.8888
+   ],
+   "function": "MOV",
+   "measures": {
+    "item": "MOV-XXX"
+   },
+   "notes": "tag bubble of MOV-XXX"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L_V1",
+   "line_number": "SIZE-ACW-102160-SPEC-HC-X",
+   "from": "OPC1",
+   "to": "V3W-A",
+   "path": [],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_V2",
+   "line_number": "SIZE-ACW-102160-SPEC-HC-X",
+   "from": "V3W-A",
+   "to": {
+    "line": "L_Ma",
+    "after": "REH"
+   },
+   "path": [],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_S",
+   "line_number": "SIZE-ACS-102163-SPEC-HC-X",
+   "from": "V3W-A",
+   "to": "OPC3",
+   "path": [],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_V3",
+   "line_number": "SIZE-ACW-102161-SPEC-HC-X",
+   "from": "OPC2",
+   "to": "V3W-B",
+   "path": [],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_V4",
+   "line_number": "SIZE-ACW-102161-SPEC-HC-X",
+   "from": "V3W-B",
+   "to": {
+    "line": "L_V2"
+   },
+   "path": [],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_V5",
+   "line_number": "SIZE-ACS-102159-SPEC-HC-X",
+   "from": "V3W-B",
+   "to": {
+    "line": "L_S"
+   },
+   "path": [],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_Ma",
+   "line_number": "SIZE-ACW-111156-SPEC-HC-X",
+   "from": "CVCS-HX-111",
+   "to": "OPC4",
+   "path": [
+    "TCV-1115",
+    "MOV-1113",
+    "REH"
+   ],
+   "flow_direction": "inferred"
+  },
+  {
+   "id": "L_Mb",
+   "line_number": "SIZE-ACW-111162-SPEC-HC-X",
+   "from": {
+    "line": "L_Ma",
+    "after": "TCV-1115"
+   },
+   "to": "OPC5",
+   "path": [
+    "MOV-1114"
+   ],
+   "flow_direction": "inferred"
+  },
+  {
+   "id": "L_P1",
+   "line_number": "SIZE-ACW-111164-SPEC-HC-X",
+   "from": {
+    "line": "L_Ma"
+   },
+   "to": "PSV-XXX",
+   "path": [],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_P2",
+   "line_number": "SIZE-ACW-111164-SPEC-HC-X",
+   "from": "PSV-XXX",
+   "to": "OPC6",
+   "path": [],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_HXin",
+   "line_number": "SIZE-ACW-211152-SPEC-HC-X",
+   "from": "OPC7",
+   "to": "CVCS-HX-111",
+   "path": [
+    "CK1",
+    "MOV-2112"
+   ],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_D",
+   "line_number": "SIZE-ACW-211158-SPEC-HC-X",
+   "from": {
+    "line": "L_HXin"
+   },
+   "to": "OPC10",
+   "path": [
+    "CK2"
+   ],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_Up",
+   "line_number": "SIZE-ACW-211157-SPEC-HC-X",
+   "from": {
+    "line": "L_D",
+    "after": "CK2"
+   },
+   "to": "OPC9",
+   "path": [],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_SW",
+   "line_number": "SIZE-SWS-130182-SPEC-HC-X",
+   "from": "OPC11",
+   "to": {
+    "line": "L_D",
+    "after": "CK2"
+   },
+   "path": [
+    "MOV-XXX"
+   ],
+   "flow_direction": "shown"
+  },
+  {
+   "id": "L_SWc",
+   "line_number": "SIZE-SWS-132181-SPEC-HC-X",
+   "from": "OPC8",
+   "to": {
+    "line": "L_HXin",
+    "after": "MOV-2112"
+   },
+   "path": [
+    "MOV-1325"
+   ],
+   "flow_direction": "shown"
+  }
+ ],
+ "signals": [],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "RCS PID 100-2(C-1) AUX COOLING WATER",
+   "other_drawing": "RCS PID 100-2",
+   "line_number": "SIZE-ACW-102160-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.0988,
+    0.8342,
+    0.1208
+   ]
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "RCS PID 100-2 (A-4) AUX COOLING WATER",
+   "other_drawing": "RCS PID 100-2",
+   "line_number": "SIZE-ACW-102161-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.1774,
+    0.8342,
+    0.1985
+   ]
+  },
+  {
+   "id": "OPC3",
+   "direction": "out",
+   "name": "SWS PID 130-1 SERVICE WATER SYSTEM",
+   "other_drawing": "SWS PID 130-1",
+   "line_number": "SIZE-ACS-102163-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.2608,
+    0.8342,
+    0.2828
+   ]
+  },
+  {
+   "id": "OPC4",
+   "direction": "out",
+   "name": "ACW PID 210-1 AUC COOLING WATER SYSTEM",
+   "other_drawing": "ACW PID 210-1",
+   "line_number": "SIZE-ACW-111156-SPEC-HC-X",
+   "bbox": [
+    0.0287,
+    0.3442,
+    0.0982,
+    0.3663
+   ]
+  },
+  {
+   "id": "OPC5",
+   "direction": "out",
+   "name": "SWS PID 130-1 SERVICE WATER SYSTEM",
+   "other_drawing": "SWS PID 130-1",
+   "line_number": "SIZE-ACW-111162-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.3442,
+    0.8342,
+    0.3663
+   ]
+  },
+  {
+   "id": "OPC6",
+   "direction": "out",
+   "name": "WPS PID 270-1 WASTE PROCESS",
+   "other_drawing": "WPS PID 270-1",
+   "line_number": "SIZE-ACW-111164-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.5532,
+    0.8342,
+    0.5753
+   ]
+  },
+  {
+   "id": "OPC7",
+   "direction": "in",
+   "name": "ACW PID 210-1 (A-1) AUX COOLING WATER SYSTEM",
+   "other_drawing": "ACW PID 210-1",
+   "line_number": "SIZE-ACW-211152-SPEC-HC-X",
+   "bbox": [
+    0.0287,
+    0.652,
+    0.0982,
+    0.674
+   ]
+  },
+  {
+   "id": "OPC8",
+   "direction": "in",
+   "name": "SWS PID 130-1 SERVICE WATER SYSTEM",
+   "other_drawing": "SWS PID 130-1",
+   "line_number": "SIZE-SWS-132181-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.652,
+    0.8342,
+    0.674
+   ]
+  },
+  {
+   "id": "OPC9",
+   "direction": "out",
+   "name": "RCS PID 100-2 AUX COOLING WATER",
+   "other_drawing": "RCS PID 100-2",
+   "line_number": "SIZE-ACW-211157-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.7248,
+    0.8342,
+    0.7469
+   ]
+  },
+  {
+   "id": "OPC10",
+   "direction": "out",
+   "name": "RCS PID 100-2 AUX COOLING WATER",
+   "other_drawing": "RCS PID 100-2",
+   "line_number": "SIZE-ACW-211158-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.8035,
+    0.8342,
+    0.8255
+   ]
+  },
+  {
+   "id": "OPC11",
+   "direction": "in",
+   "name": "SWS PID 130-1 SERVICE WATER",
+   "other_drawing": "SWS PID 130-1",
+   "line_number": "SIZE-SWS-130182-SPEC-HC-X",
+   "bbox": [
+    0.7653,
+    0.8869,
+    0.8342,
+    0.9089
+   ]
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "line sizes and specs printed as SIZE/SPEC placeholders",
+  "flow direction of main line ACW-111156 not marked (inferred)"
+ ]
+}

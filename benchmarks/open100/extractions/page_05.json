@@ -1,0 +1,1511 @@
+{
+ "schema_version": "1.0",
+ "page": 5,
+ "sheet": {
+  "drawing_number": "PID 180",
+  "title": "EXTRACTION STEAM SYSTEM",
+  "revision": "A",
+  "drawing_type": "pid",
+  "issue_status": "INFORMATION ONLY - NOT FOR CONSTRUCTION (preliminary design)",
+  "legend_notes": [
+   "Line numbers printed with SIZE placeholder, e.g. SIZE-ESS-140083-SPEC-HC-X",
+   "Flags point in the direction of flow"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "CND-HTR-166",
+   "kind": "vessel",
+   "bbox": [
+    0.2264,
+    0.3457,
+    0.352,
+    0.4011
+   ],
+   "tag": "CND-HTR-166",
+   "name": "Deaerator (heater) horizontal vessel",
+   "confidence": 0.9
+  },
+  {
+   "id": "CND-TK-165",
+   "kind": "tank",
+   "bbox": [
+    0.2041,
+    0.4394,
+    0.3814,
+    0.5482
+   ],
+   "tag": "CND-TK-165",
+   "name": "Deaerator storage tank",
+   "confidence": 0.9
+  },
+  {
+   "id": "FWS-HTR-161",
+   "kind": "heat_exchanger",
+   "bbox": [
+    0.5344,
+    0.68,
+    0.6454,
+    0.7259
+   ],
+   "tag": "FWS-HTR-161",
+   "name": "HP FWS heater",
+   "confidence": 0.9
+  },
+  {
+   "id": "ESS-HTR-180",
+   "kind": "other",
+   "bbox": [
+    0.5281,
+    0.148,
+    0.5427,
+    0.1652
+   ],
+   "tag": "ESS-HTR-180",
+   "name": "DE superheater (in-line, steam line with water spray)",
+   "confidence": 0.9
+  }
+ ],
+ "components": [
+  {
+   "id": "TCV-16013",
+   "kind": "control_valve",
+   "bbox": [
+    0.4955,
+    0.0879,
+    0.5057,
+    0.1022
+   ],
+   "actuator": "pneumatic",
+   "confidence": 0.9,
+   "name": "TCV-16013"
+  },
+  {
+   "id": "CHK1",
+   "kind": "check_valve",
+   "bbox": [
+    0.5179,
+    0.1022,
+    0.5255,
+    0.1117
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FCV-18012",
+   "kind": "control_valve",
+   "bbox": [
+    0.5695,
+    0.1442,
+    0.5778,
+    0.1643
+   ],
+   "actuator": "pneumatic",
+   "confidence": 0.9,
+   "name": "FCV-18012"
+  },
+  {
+   "id": "PCV-14011",
+   "kind": "control_valve",
+   "bbox": [
+    0.6671,
+    0.1433,
+    0.6767,
+    0.1652
+   ],
+   "actuator": "pneumatic",
+   "confidence": 0.9,
+   "name": "PCV-14011"
+  },
+  {
+   "id": "MOV-14010",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.7085,
+    0.1404,
+    0.7175,
+    0.1652
+   ],
+   "actuator": "electric",
+   "confidence": 0.9,
+   "name": "MOV-14010"
+  },
+  {
+   "id": "VA1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6824,
+    0.1748,
+    0.6881,
+    0.1862
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VA2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6824,
+    0.2063,
+    0.6881,
+    0.2178
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VB1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6543,
+    0.1748,
+    0.6601,
+    0.1862
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VB2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6543,
+    0.2063,
+    0.6601,
+    0.2178
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PSV-14014",
+   "kind": "relief_valve",
+   "bbox": [
+    0.6129,
+    0.1242,
+    0.6212,
+    0.1356
+   ],
+   "confidence": 0.9,
+   "name": "PSV-14014"
+  },
+  {
+   "id": "VN4",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3591,
+    0.3477,
+    0.3667,
+    0.3582
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VIMP1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4834,
+    0.1404,
+    0.4904,
+    0.1538
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TCV-2502",
+   "kind": "control_valve",
+   "bbox": [
+    0.389,
+    0.3477,
+    0.3973,
+    0.3677
+   ],
+   "actuator": "pneumatic",
+   "confidence": 0.9,
+   "name": "TCV-2502"
+  },
+  {
+   "id": "VBP1",
+   "kind": "globe_valve",
+   "bbox": [
+    0.2264,
+    0.2989,
+    0.2328,
+    0.3123
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VBP2",
+   "kind": "globe_valve",
+   "bbox": [
+    0.2717,
+    0.2989,
+    0.2787,
+    0.3123
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PSV-1663",
+   "kind": "relief_valve",
+   "bbox": [
+    0.3227,
+    0.3123,
+    0.3304,
+    0.3238
+   ],
+   "confidence": 0.9,
+   "name": "PSV-1663"
+  },
+  {
+   "id": "FCV-16508",
+   "kind": "control_valve",
+   "bbox": [
+    0.1448,
+    0.341,
+    0.1537,
+    0.3629
+   ],
+   "actuator": "pneumatic",
+   "confidence": 0.9,
+   "name": "FCV-16508"
+  },
+  {
+   "id": "FCV-16506",
+   "kind": "control_valve",
+   "bbox": [
+    0.1907,
+    0.3677,
+    0.1996,
+    0.3887
+   ],
+   "actuator": "pneumatic",
+   "confidence": 0.9,
+   "name": "FCV-16506"
+  },
+  {
+   "id": "LCV-16507",
+   "kind": "control_valve",
+   "bbox": [
+    0.1486,
+    0.4451,
+    0.1575,
+    0.4661
+   ],
+   "actuator": "pneumatic",
+   "confidence": 0.9,
+   "name": "LCV-16507"
+  },
+  {
+   "id": "LCV-16509",
+   "kind": "control_valve",
+   "bbox": [
+    0.1486,
+    0.5081,
+    0.1575,
+    0.5301
+   ],
+   "actuator": "pneumatic",
+   "confidence": 0.9,
+   "name": "LCV-16509"
+  },
+  {
+   "id": "LVC-1615",
+   "kind": "control_valve",
+   "bbox": [
+    0.5867,
+    0.7631,
+    0.5957,
+    0.7851
+   ],
+   "actuator": "pneumatic",
+   "confidence": 0.9,
+   "name": "LVC-1615"
+  },
+  {
+   "id": "VIMP2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5957,
+    0.4193,
+    0.6014,
+    0.4327
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VIMP3",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6856,
+    0.5855,
+    0.6926,
+    0.5989
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "MOV-UNTAGGED",
+   "kind": "motor_operated_valve",
+   "bbox": [
+    0.5842,
+    0.5941,
+    0.5931,
+    0.6189
+   ],
+   "actuator": "electric",
+   "notes": "M actuator box, no tag printed",
+   "confidence": 0.9
+  },
+  {
+   "id": "VH1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4962,
+    0.4642,
+    0.5038,
+    0.4718
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "TRAP1",
+   "kind": "steam_trap",
+   "bbox": [
+    0.5096,
+    0.4623,
+    0.5159,
+    0.4718
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VH2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5223,
+    0.4642,
+    0.53,
+    0.4718
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VHBP",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5089,
+    0.4852,
+    0.5166,
+    0.4928
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FUN1",
+   "kind": "drain",
+   "bbox": [
+    0.4834,
+    0.4957,
+    0.4911,
+    0.5043
+   ],
+   "notes": "funnel/drain cup at bottom of vertical header",
+   "confidence": 0.9
+  },
+  {
+   "id": "VD1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4968,
+    0.5091,
+    0.5045,
+    0.5167
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VD2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5115,
+    0.5091,
+    0.5191,
+    0.5167
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FUN2",
+   "kind": "drain",
+   "bbox": [
+    0.6154,
+    0.7889,
+    0.6237,
+    0.7985
+   ],
+   "notes": "funnel/drain cup below N3 line corner",
+   "confidence": 0.9
+  },
+  {
+   "id": "VF1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6288,
+    0.8013,
+    0.6378,
+    0.8118
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VF2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6429,
+    0.8013,
+    0.6518,
+    0.8118
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "ORF-1661",
+   "kind": "other",
+   "bbox": [
+    0.2411,
+    0.2989,
+    0.2468,
+    0.3095
+   ],
+   "name": "orifice (flange pair)",
+   "confidence": 0.9
+  },
+  {
+   "id": "ORF-1662",
+   "kind": "other",
+   "bbox": [
+    0.2851,
+    0.2989,
+    0.2921,
+    0.3095
+   ],
+   "name": "orifice (flange pair)",
+   "confidence": 0.9
+  }
+ ],
+ "instruments": [
+  {
+   "id": "TE-180137A",
+   "tag": "TE-180137A",
+   "location": "field",
+   "bbox": [
+    0.4235,
+    0.1242,
+    0.4388,
+    0.1452
+   ],
+   "measures": {
+    "line": "L3"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-180137B",
+   "tag": "TE-180137B",
+   "location": "field",
+   "bbox": [
+    0.442,
+    0.1242,
+    0.4573,
+    0.1452
+   ],
+   "measures": {
+    "line": "L3"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "PIT-180138A",
+   "tag": "PIT-180138A",
+   "location": "field",
+   "bbox": [
+    0.4649,
+    0.1242,
+    0.4802,
+    0.1452
+   ],
+   "measures": {
+    "line": "L3"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PIT-180138B",
+   "tag": "PIT-180138B",
+   "location": "field",
+   "bbox": [
+    0.4936,
+    0.1242,
+    0.5096,
+    0.1452
+   ],
+   "measures": {
+    "line": "L3"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-250136A",
+   "tag": "TE-250136A",
+   "location": "field",
+   "bbox": [
+    0.5478,
+    0.4059,
+    0.5651,
+    0.4288
+   ],
+   "measures": {
+    "line": "L4"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-250136B",
+   "tag": "TE-250136B",
+   "location": "field",
+   "bbox": [
+    0.5478,
+    0.384,
+    0.5651,
+    0.4069
+   ],
+   "measures": {
+    "line": "L4"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "PT-250135A",
+   "tag": "PT-250135A",
+   "location": "field",
+   "bbox": [
+    0.5765,
+    0.405,
+    0.5925,
+    0.4279
+   ],
+   "measures": {
+    "line": "L4"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-250135B",
+   "tag": "PT-250135B",
+   "location": "field",
+   "bbox": [
+    0.6046,
+    0.405,
+    0.6205,
+    0.4279
+   ],
+   "measures": {
+    "line": "L4"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-250139A",
+   "tag": "PT-250139A",
+   "location": "field",
+   "bbox": [
+    0.6671,
+    0.5635,
+    0.6837,
+    0.5845
+   ],
+   "measures": {
+    "line": "L7"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PT-250139B",
+   "tag": "PT-250139B",
+   "location": "field",
+   "bbox": [
+    0.6945,
+    0.5635,
+    0.7105,
+    0.5845
+   ],
+   "measures": {
+    "line": "L7"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-250140A",
+   "tag": "TE-250140A",
+   "location": "field",
+   "bbox": [
+    0.7188,
+    0.5712,
+    0.7347,
+    0.5922
+   ],
+   "measures": {
+    "line": "L7"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-250140B",
+   "tag": "TE-250140B",
+   "location": "field",
+   "bbox": [
+    0.7379,
+    0.5712,
+    0.7538,
+    0.5922
+   ],
+   "measures": {
+    "line": "L7"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "PI-250141",
+   "tag": "PI-250141",
+   "location": "field",
+   "bbox": [
+    0.5982,
+    0.5769,
+    0.6129,
+    0.5979
+   ],
+   "measures": {
+    "line": "L7"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PIT-250142",
+   "tag": "PIT-250142",
+   "location": "field",
+   "bbox": [
+    0.5631,
+    0.5769,
+    0.5778,
+    0.5979
+   ],
+   "measures": {
+    "line": "L7",
+    "after": "MOV-UNTAGGED"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-161143A",
+   "tag": "TE-161143A",
+   "location": "field",
+   "bbox": [
+    0.618,
+    0.6504,
+    0.6339,
+    0.6724
+   ],
+   "measures": {
+    "item": "FWS-HTR-161"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TE-161143B",
+   "tag": "TE-161143B",
+   "location": "field",
+   "bbox": [
+    0.618,
+    0.6294,
+    0.6339,
+    0.6504
+   ],
+   "measures": {
+    "item": "FWS-HTR-161"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "LIT-161144A",
+   "tag": "LIT-161144A",
+   "location": "field",
+   "bbox": [
+    0.6244,
+    0.7402,
+    0.6409,
+    0.7584
+   ],
+   "measures": {
+    "line": "L8"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "LIT-161144B",
+   "tag": "LIT-161144B",
+   "location": "field",
+   "bbox": [
+    0.6435,
+    0.7402,
+    0.6601,
+    0.7584
+   ],
+   "measures": {
+    "line": "L8"
+   },
+   "confidence": 0.7
+  },
+  {
+   "id": "FO-1661",
+   "tag": "FO-1661",
+   "location": "field",
+   "bbox": [
+    0.2506,
+    0.2923,
+    0.2659,
+    0.3142
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "ORF-1661"
+   }
+  },
+  {
+   "id": "FO-1662",
+   "tag": "FO-1662",
+   "location": "field",
+   "bbox": [
+    0.2959,
+    0.2923,
+    0.3106,
+    0.3142
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "ORF-1662"
+   }
+  },
+  {
+   "id": "TCV-16013-B",
+   "tag": "TCV-16013",
+   "location": "field",
+   "bbox": [
+    0.5032,
+    0.0774,
+    0.5185,
+    0.0984
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FCV-18012-B",
+   "tag": "FCV-18012",
+   "location": "field",
+   "bbox": [
+    0.5772,
+    0.1289,
+    0.5918,
+    0.15
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PCV-14011-B",
+   "tag": "PCV-14011",
+   "location": "field",
+   "bbox": [
+    0.6505,
+    0.1289,
+    0.6645,
+    0.15
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "MOV-14010-B",
+   "tag": "MOV-14010",
+   "location": "field",
+   "bbox": [
+    0.7175,
+    0.1328,
+    0.7321,
+    0.1538
+   ],
+   "measures": {
+    "item": "MOV-14010"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "PSV-14014-B",
+   "tag": "PSV-14014",
+   "location": "field",
+   "bbox": [
+    0.5989,
+    0.0974,
+    0.6122,
+    0.1184
+   ],
+   "measures": {
+    "item": "PSV-14014"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "TCV-2502-B",
+   "tag": "TCV-2502",
+   "location": "field",
+   "bbox": [
+    0.3967,
+    0.3324,
+    0.4107,
+    0.3534
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "PSV-1663-B",
+   "tag": "PSV-1663",
+   "location": "field",
+   "bbox": [
+    0.3093,
+    0.2827,
+    0.3233,
+    0.3018
+   ],
+   "measures": {
+    "item": "PSV-1663"
+   },
+   "confidence": 0.9
+  },
+  {
+   "id": "FCV-16508-B",
+   "tag": "FCV-16508",
+   "location": "field",
+   "bbox": [
+    0.1537,
+    0.3247,
+    0.1677,
+    0.3448
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FCV-16506-B",
+   "tag": "FCV-16506",
+   "location": "field",
+   "bbox": [
+    0.1945,
+    0.3954,
+    0.2085,
+    0.4164
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "LCV-16507-B",
+   "tag": "LCV-16507",
+   "location": "field",
+   "bbox": [
+    0.1562,
+    0.4317,
+    0.1703,
+    0.4527
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "LCV-16509-B",
+   "tag": "LCV-16509",
+   "location": "field",
+   "bbox": [
+    0.1562,
+    0.4947,
+    0.1703,
+    0.5158
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "LVC-1615-B",
+   "tag": "LVC-1615",
+   "location": "field",
+   "bbox": [
+    0.595,
+    0.7545,
+    0.6091,
+    0.7765
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "OPC1",
+   "to": "ESS-HTR-180",
+   "path": [
+    "TCV-16013",
+    "CHK1"
+   ],
+   "line_number": "SIZE-CND-165117-SPEC-HC-X",
+   "service": "condensate spray water",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L2",
+   "from": "OPC5",
+   "to": "ESS-HTR-180",
+   "path": [
+    "MOV-14010",
+    "PCV-14011",
+    "FCV-18012"
+   ],
+   "line_number": "SIZE-ESS-140083-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L2A",
+   "from": {
+    "line": "L2",
+    "after": "MOV-14010"
+   },
+   "to": "VA2",
+   "path": [
+    "VA1"
+   ],
+   "notes": "drain branch",
+   "flow_direction": "inferred",
+   "confidence": 0.8
+  },
+  {
+   "id": "L2B",
+   "from": {
+    "line": "L2",
+    "after": "PCV-14011"
+   },
+   "to": "VB2",
+   "path": [
+    "VB1"
+   ],
+   "notes": "drain branch",
+   "flow_direction": "inferred",
+   "confidence": 0.8
+  },
+  {
+   "id": "L2P",
+   "from": {
+    "line": "L2",
+    "after": "PCV-14011"
+   },
+   "to": "VNT4",
+   "path": [
+    "PSV-14014"
+   ],
+   "line_number": "SIZE-MSS-140141-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L3",
+   "from": "ESS-HTR-180",
+   "to": "CND-HTR-166",
+   "path": [
+    "VN4"
+   ],
+   "line_number": "SIZE-ESS-140083-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L3I",
+   "from": {
+    "line": "L3"
+   },
+   "to": "VIMP1",
+   "path": [],
+   "notes": "impulse line to PIT-180138A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "L4",
+   "from": "OPC6",
+   "to": "CND-HTR-166",
+   "path": [
+    "TCV-2502"
+   ],
+   "line_number": "SIZE-ESS-250136-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L4I",
+   "from": {
+    "line": "L4"
+   },
+   "to": "VIMP2",
+   "path": [],
+   "notes": "impulse line to PT-250135A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "L5",
+   "from": {
+    "line": "L4"
+   },
+   "to": "OPC7",
+   "path": [
+    "VH1",
+    "TRAP1",
+    "VH2"
+   ],
+   "line_number": "SIZE-HPSD-166140-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L5B",
+   "from": {
+    "line": "L5"
+   },
+   "to": {
+    "line": "L5",
+    "after": "VH2"
+   },
+   "path": [
+    "VHBP"
+   ],
+   "notes": "trap station bypass",
+   "flow_direction": "inferred",
+   "confidence": 0.85
+  },
+  {
+   "id": "L6",
+   "from": {
+    "line": "L4"
+   },
+   "to": "VD2",
+   "path": [
+    "FUN1",
+    "VD1"
+   ],
+   "notes": "drain branch at bottom of vertical header",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "L7",
+   "from": "OPC8",
+   "to": "FWS-HTR-161",
+   "path": [
+    "MOV-UNTAGGED"
+   ],
+   "line_number": "SIZE-ESS-250137-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L7I",
+   "from": {
+    "line": "L7"
+   },
+   "to": "VIMP3",
+   "path": [],
+   "notes": "impulse line to PT-250139A/B",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "L8",
+   "from": "FWS-HTR-161",
+   "to": "CND-HTR-166",
+   "path": [
+    "LVC-1615",
+    "FCV-16506"
+   ],
+   "line_number": "SIZE-ESS-161138-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L8D",
+   "from": {
+    "line": "L8"
+   },
+   "to": "VF2",
+   "path": [
+    "FUN2",
+    "VF1"
+   ],
+   "notes": "drain branch",
+   "flow_direction": "inferred",
+   "confidence": 0.75
+  },
+  {
+   "id": "L9",
+   "from": "OPC4",
+   "to": "CND-TK-165",
+   "path": [
+    "LCV-16509"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L10",
+   "from": "CND-TK-165",
+   "to": "OPC3",
+   "path": [
+    "LCV-16507"
+   ],
+   "line_number": "SIZE-PDS-165139-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L11",
+   "from": "OPC2",
+   "to": "CND-HTR-166",
+   "path": [
+    "FCV-16508"
+   ],
+   "line_number": "SIZE-CND-165117-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L12",
+   "from": "CND-HTR-166",
+   "to": "CND-TK-165",
+   "path": [],
+   "notes": "direct nozzle N7 to N3 connection",
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "LV1",
+   "from": "CND-HTR-166",
+   "to": "VNT1",
+   "path": [
+    "ORF-1661"
+   ],
+   "line_number": "SIZE-COND-166121-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LV1B",
+   "from": {
+    "line": "LV1"
+   },
+   "to": {
+    "line": "LV1",
+    "after": "ORF-1661"
+   },
+   "path": [
+    "VBP1"
+   ],
+   "notes": "orifice bypass",
+   "flow_direction": "inferred",
+   "confidence": 0.85
+  },
+  {
+   "id": "LV2",
+   "from": "CND-HTR-166",
+   "to": "VNT2",
+   "path": [
+    "ORF-1662"
+   ],
+   "line_number": "SIZE-COND-166122-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "LV2B",
+   "from": {
+    "line": "LV2"
+   },
+   "to": {
+    "line": "LV2",
+    "after": "ORF-1662"
+   },
+   "path": [
+    "VBP2"
+   ],
+   "notes": "orifice bypass",
+   "flow_direction": "inferred",
+   "confidence": 0.85
+  },
+  {
+   "id": "LV3",
+   "from": "CND-HTR-166",
+   "to": "VNT3",
+   "path": [
+    "PSV-1663"
+   ],
+   "line_number": "SIZE-COND-166123-SPEC-HC-X",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  }
+ ],
+ "signals": [
+  {
+   "from": "TCV-16013-B",
+   "to": "TCV-16013",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "FCV-18012-B",
+   "to": "FCV-18012",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "PCV-14011-B",
+   "to": "PCV-14011",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "TCV-2502-B",
+   "to": "TCV-2502",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "FCV-16508-B",
+   "to": "FCV-16508",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "FCV-16506-B",
+   "to": "FCV-16506",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "LCV-16507-B",
+   "to": "LCV-16507",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "LCV-16509-B",
+   "to": "LCV-16509",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  },
+  {
+   "from": "LVC-1615-B",
+   "to": "LVC-1615",
+   "type": "unknown",
+   "purpose": "control",
+   "confidence": 0.6
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "CND PID 160-1 (E-1) CONDENSATE SYSYTEM",
+   "bbox": [
+    0.0351,
+    0.0955,
+    0.104,
+    0.1184
+   ],
+   "other_drawing": "PID 160",
+   "line_number": "SIZE-CND-165117-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "CND PID 160-1 (E-1) CONDENSATE",
+   "bbox": [
+    0.0351,
+    0.3467,
+    0.104,
+    0.3696
+   ],
+   "other_drawing": "PID 160",
+   "line_number": "SIZE-CND-165117-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC3",
+   "direction": "out",
+   "name": "PDS PID 260-1 PLANT DRAIN SYSTEM",
+   "bbox": [
+    0.0351,
+    0.4508,
+    0.104,
+    0.4737
+   ],
+   "other_drawing": "PID 260",
+   "line_number": "SIZE-PDS-165139-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC4",
+   "direction": "in",
+   "name": "WTS PID 200-4 MAKE-UP WATER",
+   "bbox": [
+    0.0351,
+    0.5138,
+    0.104,
+    0.5368
+   ],
+   "other_drawing": "PID 200",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC5",
+   "direction": "in",
+   "name": "MSS PID 140-1 PEGGING STEAM",
+   "bbox": [
+    0.7653,
+    0.149,
+    0.8348,
+    0.1729
+   ],
+   "other_drawing": "PID 140",
+   "line_number": "SIZE-ESS-140083-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC6",
+   "direction": "in",
+   "name": "TBS PID 240-1 (E-1) LP EXTRACTION STEAM",
+   "bbox": [
+    0.7653,
+    0.4308,
+    0.8348,
+    0.4537
+   ],
+   "other_drawing": "PID 240",
+   "line_number": "SIZE-ESS-250136-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC7",
+   "direction": "out",
+   "name": "HPSD PID 190-1 HIGH PRESSURE STM DRAIN",
+   "bbox": [
+    0.7653,
+    0.5014,
+    0.8348,
+    0.5244
+   ],
+   "other_drawing": "PID 190",
+   "line_number": "SIZE-HPSD-166140-SPEC-HC-X",
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC8",
+   "direction": "in",
+   "name": "TBS PID 240-1 (D-1) HP EXTRACTION STEAM",
+   "bbox": [
+    0.7653,
+    0.6027,
+    0.8348,
+    0.6256
+   ],
+   "other_drawing": "PID 240",
+   "line_number": "SIZE-ESS-250137-SPEC-HC-X",
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "VNT1",
+   "direction": "sink",
+   "name": "Open vent end (line COND-166121)",
+   "bbox": [
+    0.2411,
+    0.2598,
+    0.2474,
+    0.2722
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "VNT2",
+   "direction": "sink",
+   "name": "Open vent end (line COND-166122)",
+   "bbox": [
+    0.2851,
+    0.2617,
+    0.2915,
+    0.2741
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "VNT3",
+   "direction": "sink",
+   "name": "Open vent end (line COND-166123)",
+   "bbox": [
+    0.3355,
+    0.2713,
+    0.3425,
+    0.2837
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "VNT4",
+   "direction": "sink",
+   "name": "Open vent end of PSV-14014 discharge (line MSS-140141)",
+   "bbox": [
+    0.6263,
+    0.0573,
+    0.6327,
+    0.0688
+   ],
+   "confidence": 0.8
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Line size and spec codes are printed as placeholders (SIZE-...-SPEC-HC-X)",
+  "Unconnected nozzle stubs on CND-HTR-166 (right) and CND-TK-165 (right) not modelled",
+  "TE-xxxB / LIT-xxxB bubbles drawn without a visible process connection; assumed same tap as the A instrument"
+ ]
+}

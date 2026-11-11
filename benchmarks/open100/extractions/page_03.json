@@ -1,0 +1,1371 @@
+{
+ "schema_version": "1.0",
+ "page": 3,
+ "sheet": {
+  "drawing_number": "PID 160",
+  "title": "CONDENSATE SYSTEM",
+  "revision": "A",
+  "drawing_type": "pid",
+  "issue_status": "INFORMATION ONLY - NOT FOR CONSTRUCTION (preliminary design, Energy Impact Center, OPEN 100, 09/01/2020)",
+  "legend_notes": [
+   "Line numbers printed with placeholder size 'SIZE' and spec 'SPEC-HC-X'.",
+   "Bubbles attached by a leader to a valve actuator tag that valve (tag shown in bubble).",
+   "Nozzle labels N1..N13 are not modelled.",
+   "CND-HTR-166 (deaerator) sits on CND-TK-165 (deaerator storage tank); the vertical double lines between them are supports and the short N6/N2 spool joins the two shells."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "CND-TK-160",
+   "kind": "tank",
+   "bbox": [
+    0.1033,
+    0.4162,
+    0.3482,
+    0.5219
+   ],
+   "confidence": 0.95,
+   "tag": "CND-TK-160",
+   "name": "CONDENSATE STORAGE TANK"
+  },
+  {
+   "id": "CND-HTR-161",
+   "kind": "heat_exchanger",
+   "bbox": [
+    0.6518,
+    0.4714,
+    0.7596,
+    0.5152
+   ],
+   "confidence": 0.95,
+   "tag": "CND-HTR-161",
+   "name": "CONDENSATE HEATER"
+  },
+  {
+   "id": "CND-PU-162",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.2985,
+    0.54,
+    0.3208,
+    0.6333
+   ],
+   "confidence": 0.9,
+   "tag": "CND-PU-162",
+   "name": "CONDENSATE PUMP",
+   "notes": "vertical can-type pump"
+  },
+  {
+   "id": "CND-PU-163",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.2468,
+    0.6448,
+    0.2679,
+    0.7371
+   ],
+   "confidence": 0.9,
+   "tag": "CND-PU-163",
+   "name": "CONDENSATE PUMP",
+   "notes": "vertical can-type pump"
+  },
+  {
+   "id": "CND-PU-164",
+   "kind": "centrifugal_pump",
+   "bbox": [
+    0.1939,
+    0.7486,
+    0.2156,
+    0.8429
+   ],
+   "confidence": 0.9,
+   "tag": "CND-PU-164",
+   "name": "CONDENSATE PUMP",
+   "notes": "vertical can-type pump"
+  },
+  {
+   "id": "CND-TK-165",
+   "kind": "tank",
+   "bbox": [
+    0.5376,
+    0.2286,
+    0.7825,
+    0.3333
+   ],
+   "confidence": 0.95,
+   "tag": "CND-TK-165",
+   "name": "DEAREATOR STORAGE TANK"
+  },
+  {
+   "id": "CND-HTR-166",
+   "kind": "pressure_vessel",
+   "bbox": [
+    0.5791,
+    0.1238,
+    0.7404,
+    0.1876
+   ],
+   "confidence": 0.9,
+   "tag": "CND-HTR-166",
+   "name": "DEAREATOR (ASME Section VIII Div 1)"
+  },
+  {
+   "id": "CND-FLT-167",
+   "kind": "filter",
+   "bbox": [
+    0.4598,
+    0.7962,
+    0.5026,
+    0.8381
+   ],
+   "confidence": 0.9,
+   "tag": "CND-FLT-167",
+   "name": "CONDENSATE POLISHER UNIT"
+  }
+ ],
+ "components": [
+  {
+   "id": "RO-1603",
+   "kind": "other",
+   "bbox": [
+    0.2976,
+    0.3752,
+    0.3066,
+    0.3867
+   ],
+   "confidence": 0.8,
+   "tag": "RO-1603",
+   "name": "restriction orifice on vent line"
+  },
+  {
+   "id": "PSV-1601",
+   "kind": "relief_valve",
+   "bbox": [
+    0.2013,
+    0.3686,
+    0.2115,
+    0.3838
+   ],
+   "confidence": 0.9,
+   "tag": "PSV-1601",
+   "actuator": "self"
+  },
+  {
+   "id": "RD-1602",
+   "kind": "vacuum_breaker",
+   "bbox": [
+    0.2468,
+    0.3962,
+    0.2583,
+    0.4095
+   ],
+   "confidence": 0.75,
+   "tag": "RD-1602",
+   "name": "VACUUM BREAKER (square with triangle on nozzle N11)"
+  },
+  {
+   "id": "VBR1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3533,
+    0.4305,
+    0.3635,
+    0.4438
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VBR2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3533,
+    0.4933,
+    0.3635,
+    0.5067
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V-RET",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3297,
+    0.3886,
+    0.3399,
+    0.4019
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VS162",
+   "kind": "gate_valve",
+   "bbox": [
+    0.273,
+    0.5952,
+    0.2832,
+    0.6086
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VS163",
+   "kind": "gate_valve",
+   "bbox": [
+    0.2207,
+    0.699,
+    0.2309,
+    0.7124
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VS164",
+   "kind": "gate_valve",
+   "bbox": [
+    0.1703,
+    0.8048,
+    0.1805,
+    0.8181
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "SP-01",
+   "kind": "other",
+   "bbox": [
+    0.3342,
+    0.5562,
+    0.3457,
+    0.5714
+   ],
+   "confidence": 0.6,
+   "tag": "SP-01",
+   "name": "slanted fitting between flanges on pump N2 line"
+  },
+  {
+   "id": "SP-02",
+   "kind": "other",
+   "bbox": [
+    0.2812,
+    0.661,
+    0.2927,
+    0.6762
+   ],
+   "confidence": 0.6,
+   "tag": "SP-02",
+   "name": "slanted fitting between flanges on pump N2 line"
+  },
+  {
+   "id": "SP-03",
+   "kind": "other",
+   "bbox": [
+    0.229,
+    0.7638,
+    0.2404,
+    0.779
+   ],
+   "confidence": 0.6,
+   "tag": "SP-03",
+   "name": "slanted fitting between flanges on pump N2 line"
+  },
+  {
+   "id": "VN162",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3489,
+    0.5771,
+    0.3565,
+    0.5943
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VN163",
+   "kind": "gate_valve",
+   "bbox": [
+    0.2966,
+    0.6838,
+    0.3042,
+    0.701
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VN164",
+   "kind": "gate_valve",
+   "bbox": [
+    0.2443,
+    0.7876,
+    0.2519,
+    0.8048
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FO-1621",
+   "kind": "other",
+   "bbox": [
+    0.4145,
+    0.5943,
+    0.4235,
+    0.6095
+   ],
+   "confidence": 0.8,
+   "tag": "FO-1621",
+   "name": "flow orifice between flanges"
+  },
+  {
+   "id": "VWWS",
+   "kind": "gate_valve",
+   "bbox": [
+    0.3935,
+    0.6143,
+    0.4011,
+    0.6314
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FCV-1621",
+   "kind": "control_valve",
+   "bbox": [
+    0.4512,
+    0.7029,
+    0.4614,
+    0.7162
+   ],
+   "confidence": 0.9,
+   "tag": "FCV-1621",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "VPF1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.4483,
+    0.7562,
+    0.456,
+    0.7733
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VPF2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5121,
+    0.7605,
+    0.5198,
+    0.7776
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "FCV-XXX",
+   "kind": "control_valve",
+   "bbox": [
+    0.5357,
+    0.1286,
+    0.5459,
+    0.1419
+   ],
+   "confidence": 0.9,
+   "tag": "FCV-XXX",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "TCV-1622",
+   "kind": "control_valve",
+   "bbox": [
+    0.5364,
+    0.44,
+    0.5453,
+    0.4571
+   ],
+   "confidence": 0.9,
+   "tag": "TCV-1622",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "V161115",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6132,
+    0.4467,
+    0.6209,
+    0.4638
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "V167245",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5959,
+    0.4943,
+    0.6061,
+    0.5076
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "LCV-1611",
+   "kind": "control_valve",
+   "bbox": [
+    0.6107,
+    0.5419,
+    0.6209,
+    0.5552
+   ],
+   "confidence": 0.9,
+   "tag": "LCV-1611",
+   "actuator": "pneumatic"
+  },
+  {
+   "id": "CUP161",
+   "kind": "other",
+   "bbox": [
+    0.6656,
+    0.5571,
+    0.6745,
+    0.5686
+   ],
+   "confidence": 0.7,
+   "name": "cup-shaped drain pot symbol below N3"
+  },
+  {
+   "id": "VDR",
+   "kind": "gate_valve",
+   "bbox": [
+    0.6735,
+    0.5657,
+    0.6837,
+    0.579
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VQ1",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5472,
+    0.5833,
+    0.5574,
+    0.5967
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VQ2",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5472,
+    0.6238,
+    0.5574,
+    0.6371
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "VQ3",
+   "kind": "gate_valve",
+   "bbox": [
+    0.5472,
+    0.6638,
+    0.5574,
+    0.6771
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "instruments": [
+  {
+   "id": "I-PSV-1601",
+   "tag": "PSV-1601",
+   "location": "field",
+   "bbox": [
+    0.2062,
+    0.3436,
+    0.2216,
+    0.3665
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "PSV-1601"
+   },
+   "notes": "bubble tags the adjacent component"
+  },
+  {
+   "id": "I-RD-1602",
+   "tag": "RD-1602",
+   "location": "field",
+   "bbox": [
+    0.2447,
+    0.3643,
+    0.26,
+    0.3871
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "RD-1602"
+   },
+   "notes": "bubble tags the adjacent component"
+  },
+  {
+   "id": "I-RO-1603",
+   "tag": "RO-1603",
+   "location": "field",
+   "bbox": [
+    0.307,
+    0.3472,
+    0.3223,
+    0.3701
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "RO-1603"
+   },
+   "notes": "bubble tags the adjacent component"
+  },
+  {
+   "id": "I-FCV-1621",
+   "tag": "FCV-1621",
+   "location": "field",
+   "bbox": [
+    0.4626,
+    0.6786,
+    0.4779,
+    0.7014
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "FCV-1621"
+   },
+   "notes": "bubble tags the adjacent component"
+  },
+  {
+   "id": "I-FCV-XXX",
+   "tag": "FCV-XXX",
+   "location": "field",
+   "bbox": [
+    0.5456,
+    0.0995,
+    0.5609,
+    0.1224
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "FCV-XXX"
+   },
+   "notes": "bubble tags the adjacent component"
+  },
+  {
+   "id": "I-TCV-1622",
+   "tag": "TCV-1622",
+   "location": "field",
+   "bbox": [
+    0.5198,
+    0.4168,
+    0.5351,
+    0.4396
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "TCV-1622"
+   },
+   "notes": "bubble tags the adjacent component"
+  },
+  {
+   "id": "I-LCV-1611",
+   "tag": "LCV-1611",
+   "location": "field",
+   "bbox": [
+    0.6219,
+    0.5171,
+    0.6372,
+    0.54
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "LCV-1611"
+   },
+   "notes": "bubble tags the adjacent component"
+  },
+  {
+   "id": "I-FO-1621",
+   "tag": "FO-1621",
+   "location": "field",
+   "bbox": [
+    0.4112,
+    0.5594,
+    0.4265,
+    0.5823
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "FO-1621"
+   },
+   "notes": "bubble tags the adjacent component"
+  },
+  {
+   "id": "FT-XXX",
+   "tag": "FT-XXX",
+   "location": "field",
+   "bbox": [
+    0.425,
+    0.5594,
+    0.4403,
+    0.5823
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "FO-1621"
+   }
+  },
+  {
+   "id": "PIT-16095",
+   "tag": "PIT-16095",
+   "location": "field",
+   "bbox": [
+    0.274,
+    0.3733,
+    0.2893,
+    0.3962
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "CND-TK-160"
+   }
+  },
+  {
+   "id": "TE-16096B",
+   "tag": "TE-16096B",
+   "location": "field",
+   "bbox": [
+    0.0622,
+    0.4222,
+    0.0775,
+    0.445
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "item": "CND-TK-160"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "TE-16096A",
+   "tag": "TE-16096A",
+   "location": "field",
+   "bbox": [
+    0.0784,
+    0.4222,
+    0.0937,
+    0.445
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "CND-TK-160"
+   }
+  },
+  {
+   "id": "LIT-16097A",
+   "tag": "LIT-16097A",
+   "location": "field",
+   "bbox": [
+    0.3853,
+    0.4362,
+    0.4006,
+    0.459
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "LBR"
+   }
+  },
+  {
+   "id": "LIT-16097B",
+   "tag": "LIT-16097B",
+   "location": "field",
+   "bbox": [
+    0.4018,
+    0.4362,
+    0.4172,
+    0.459
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "LBR"
+   }
+  },
+  {
+   "id": "LIT-16098A",
+   "tag": "LIT-16098A",
+   "location": "field",
+   "bbox": [
+    0.3853,
+    0.4778,
+    0.4006,
+    0.5007
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "LBR"
+   }
+  },
+  {
+   "id": "LIT-16098B",
+   "tag": "LIT-16098B",
+   "location": "field",
+   "bbox": [
+    0.4018,
+    0.4778,
+    0.4172,
+    0.5007
+   ],
+   "confidence": 0.85,
+   "measures": {
+    "line": "LBR"
+   }
+  },
+  {
+   "id": "TE-162100B",
+   "tag": "TE-162100B",
+   "location": "field",
+   "bbox": [
+    0.3798,
+    0.5352,
+    0.3952,
+    0.5581
+   ],
+   "confidence": 0.8,
+   "measures": {
+    "line": "LHD62"
+   },
+   "notes": "twin bubble without its own tap line"
+  },
+  {
+   "id": "TE-162100A",
+   "tag": "TE-162100A",
+   "location": "field",
+   "bbox": [
+    0.3798,
+    0.5573,
+    0.3952,
+    0.5802
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LHD62"
+   }
+  },
+  {
+   "id": "FIT-16299",
+   "tag": "FIT-16299",
+   "location": "field",
+   "bbox": [
+    0.3627,
+    0.5579,
+    0.378,
+    0.5808
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LN62",
+    "after": "SP-01"
+   }
+  },
+  {
+   "id": "FIT-163101",
+   "tag": "FIT-163101",
+   "location": "field",
+   "bbox": [
+    0.3105,
+    0.667,
+    0.3258,
+    0.6899
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LN63",
+    "after": "SP-02"
+   }
+  },
+  {
+   "id": "FIT-164102",
+   "tag": "FIT-164102",
+   "location": "field",
+   "bbox": [
+    0.258,
+    0.7716,
+    0.2733,
+    0.7945
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LN64",
+    "after": "SP-03"
+   }
+  },
+  {
+   "id": "LIT-161103",
+   "tag": "LIT-161103",
+   "location": "field",
+   "bbox": [
+    0.6846,
+    0.5231,
+    0.6999,
+    0.546
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "line": "LDR"
+   }
+  }
+ ],
+ "lines": [
+  {
+   "id": "S1",
+   "from": "OPC-RET",
+   "to": "CND-TK-160",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-CND-150104-SPEC-HC-X"
+  },
+  {
+   "id": "S2",
+   "from": "OPC-WTS",
+   "to": "CND-TK-160",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-WTS-275235-SPEC-HC-X"
+  },
+  {
+   "id": "S3",
+   "from": "OPC-FWS",
+   "to": "CND-TK-160",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-FWS-175271-SPEC-HC-X"
+  },
+  {
+   "id": "S4",
+   "from": "CND-TK-160",
+   "to": "OPC-VAC",
+   "path": [
+    "RO-1603"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-ACC-160090-SPEC-HC-X"
+  },
+  {
+   "id": "S5",
+   "from": "CND-TK-160",
+   "to": "ATM",
+   "path": [
+    "PSV-1601"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "relief line, outlet turns up to open arrow"
+  },
+  {
+   "id": "S6",
+   "from": "AIR",
+   "to": "CND-TK-160",
+   "path": [
+    "RD-1602"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6
+  },
+  {
+   "id": "LBR",
+   "from": "CND-TK-160",
+   "to": "CND-TK-160",
+   "path": [
+    "VBR1",
+    "VBR2"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.7,
+   "notes": "level bridle: nozzles N3 and N4 joined by a vertical leg carrying the LIT taps"
+  },
+  {
+   "id": "LSUC",
+   "from": "CND-TK-160",
+   "to": "CND-PU-164",
+   "path": [
+    "VS164"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-160104-SPEC-HC-X"
+  },
+  {
+   "id": "LS162",
+   "from": {
+    "line": "LSUC"
+   },
+   "to": "CND-PU-162",
+   "path": [
+    "VS162"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-160107-SPEC-HC-X"
+  },
+  {
+   "id": "LS163",
+   "from": {
+    "line": "LSUC"
+   },
+   "to": "CND-PU-163",
+   "path": [
+    "VS163"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-160106-SPEC-HC-X"
+  },
+  {
+   "id": "LN62",
+   "from": "CND-PU-162",
+   "to": {
+    "line": "LHD62"
+   },
+   "path": [
+    "SP-01",
+    "VN162"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.7,
+   "notes": "pump N2 to discharge branch"
+  },
+  {
+   "id": "LN63",
+   "from": "CND-PU-163",
+   "to": {
+    "line": "LD163"
+   },
+   "path": [
+    "SP-02",
+    "VN163"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "LN64",
+   "from": "CND-PU-164",
+   "to": {
+    "line": "LD164"
+   },
+   "path": [
+    "SP-03",
+    "VN164"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.7
+  },
+  {
+   "id": "LHD62",
+   "from": "CND-PU-162",
+   "to": "CND-FLT-167",
+   "path": [
+    "FO-1621",
+    "VPF1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-162111-SPEC-HC-X",
+   "notes": "pump discharge header then 162111 down to the polisher"
+  },
+  {
+   "id": "LD164",
+   "from": "CND-PU-164",
+   "to": {
+    "line": "LHD62"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-164108-SPEC-HC-X"
+  },
+  {
+   "id": "LD163",
+   "from": "CND-PU-163",
+   "to": {
+    "line": "LD164"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-163110-SPEC-HC-X"
+  },
+  {
+   "id": "LWWS",
+   "from": {
+    "line": "LHD62"
+   },
+   "to": "OPC-WWS",
+   "path": [
+    "VWWS"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "LTR",
+   "from": {
+    "line": "LHD62",
+    "after": "FO-1621"
+   },
+   "to": "CND-HTR-166",
+   "path": [
+    "FCV-1621",
+    "TCV-1622",
+    "FCV-XXX"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-162109-SPEC-HC-X",
+   "notes": "FCV-1621 bypass of the polisher, then the trunk running up to the deaerator"
+  },
+  {
+   "id": "LPF2",
+   "from": "CND-FLT-167",
+   "to": {
+    "line": "LTR",
+    "after": "FCV-1621"
+   },
+   "path": [
+    "VPF2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-162112-SPEC-HC-X"
+  },
+  {
+   "id": "LPF3",
+   "from": "CND-FLT-167",
+   "to": "OPC-WPS",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.8
+  },
+  {
+   "id": "LQ3",
+   "from": {
+    "line": "LTR",
+    "after": "FCV-1621"
+   },
+   "to": "OPC-MSSQ",
+   "path": [
+    "VQ3"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-161114-SPEC-HC-X"
+  },
+  {
+   "id": "LQ2",
+   "from": {
+    "line": "LTR",
+    "after": "FCV-1621"
+   },
+   "to": "OPC-ESS",
+   "path": [
+    "VQ2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-ESS-165117-SPEC-HC-X"
+  },
+  {
+   "id": "LQ1",
+   "from": {
+    "line": "LTR",
+    "after": "FCV-1621"
+   },
+   "to": "OPC-WSS",
+   "path": [
+    "VQ1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-WSS-167118-SPEC-HC-X"
+  },
+  {
+   "id": "LHTRIN",
+   "from": {
+    "line": "LTR",
+    "after": "FCV-1621"
+   },
+   "to": "CND-HTR-161",
+   "path": [
+    "V167245"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-167245-SPEC-HC-X"
+  },
+  {
+   "id": "LHTRO",
+   "from": "CND-HTR-161",
+   "to": {
+    "line": "LTR",
+    "after": "TCV-1622"
+   },
+   "path": [
+    "V161115"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-161115-SPEC-HC-X"
+  },
+  {
+   "id": "LGS",
+   "from": "OPC-GLAND",
+   "to": "CND-HTR-161",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-ESS-165117-SPEC-HC-X"
+  },
+  {
+   "id": "LDR",
+   "from": "CND-HTR-161",
+   "to": "CND-TK-160",
+   "path": [
+    "LCV-1611",
+    "V-RET"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "line_number": "SIZE-COND-161114-SPEC-HC-X",
+   "notes": "heater drain to the tank, crossing behind the trunk"
+  },
+  {
+   "id": "LDR2",
+   "from": {
+    "line": "LDR"
+   },
+   "to": "DRN",
+   "path": [
+    "CUP161",
+    "VDR"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8
+  },
+  {
+   "id": "LDEA",
+   "from": "CND-HTR-166",
+   "to": "CND-TK-165",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "N6 to N2 spool between the two shells"
+  }
+ ],
+ "signals": [],
+ "off_page_connectors": [
+  {
+   "id": "OPC-VAC",
+   "direction": "out",
+   "name": "ACC PID 150-1 ACC VACUUM PMPS",
+   "other_drawing": "PID 150",
+   "bbox": [
+    0.0242,
+    0.1486,
+    0.0944,
+    0.1695
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-ACC-160090-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-FWS",
+   "direction": "in",
+   "name": "FWS PID 170-2 (E-1) FEEDWATER SYSTEM",
+   "other_drawing": "PID 170",
+   "bbox": [
+    0.0242,
+    0.2029,
+    0.0944,
+    0.2238
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-FWS-175271-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-WTS",
+   "direction": "in",
+   "name": "WTS PID 200-4 MAKE-UP WATER",
+   "other_drawing": "PID 200",
+   "bbox": [
+    0.0242,
+    0.2562,
+    0.0944,
+    0.2781
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-WTS-275235-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-RET",
+   "direction": "in",
+   "name": "ACC PID 150-1 (C-12) CONDENSATE RETURN",
+   "other_drawing": "PID 150",
+   "bbox": [
+    0.0242,
+    0.3124,
+    0.0944,
+    0.3333
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-CND-150104-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-WWS",
+   "direction": "out",
+   "name": "WWS PID 290-1 WATER SAMPLE SYSTEM",
+   "other_drawing": "PID 290",
+   "bbox": [
+    0.0242,
+    0.8581,
+    0.0944,
+    0.879
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-GLAND",
+   "direction": "in",
+   "name": "PID 240-1 (E-12) GLAND STEAM LEAKOFF",
+   "other_drawing": "PID 240",
+   "bbox": [
+    0.7781,
+    0.4067,
+    0.8482,
+    0.4276
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-ESS-165117-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-WSS",
+   "direction": "out",
+   "name": "WSS PID 290-1 WATER SAMPLE SYSTEM",
+   "other_drawing": "PID 290",
+   "bbox": [
+    0.7781,
+    0.6181,
+    0.8482,
+    0.639
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-WSS-167118-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-ESS",
+   "direction": "out",
+   "name": "ESS PID 180-1 QUENCH TO DESUPERHEATER",
+   "other_drawing": "PID 180",
+   "bbox": [
+    0.7781,
+    0.6743,
+    0.8482,
+    0.6952
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-ESS-165117-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-MSSQ",
+   "direction": "out",
+   "name": "MSS PID 240-1 GLAND STEAM QUENCH",
+   "other_drawing": "PID 240",
+   "bbox": [
+    0.7781,
+    0.7257,
+    0.8482,
+    0.7476
+   ],
+   "confidence": 0.9,
+   "line_number": "SIZE-COND-161114-SPEC-HC-X"
+  },
+  {
+   "id": "OPC-WPS",
+   "direction": "out",
+   "name": "WPS PID 270-1 WASTE PROCESS SYSTEM",
+   "other_drawing": "PID 270",
+   "bbox": [
+    0.7781,
+    0.8657,
+    0.8482,
+    0.8867
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "ATM",
+   "name": "OPEN DISCHARGE (arrow up, PSV-1601 outlet)",
+   "direction": "sink",
+   "bbox": [
+    0.2232,
+    0.3143,
+    0.2328,
+    0.3352
+   ]
+  },
+  {
+   "id": "AIR",
+   "name": "ATMOSPHERE (vacuum breaker air inlet)",
+   "direction": "source",
+   "bbox": [
+    0.2455,
+    0.3924,
+    0.2602,
+    0.4152
+   ]
+  },
+  {
+   "id": "DRN",
+   "name": "OPEN DRAIN (valve at end of drain leg)",
+   "direction": "sink",
+   "bbox": [
+    0.6747,
+    0.5657,
+    0.6837,
+    0.579
+   ]
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Meaning of 'SP-01/02/03' symbol not stated.",
+  "Pump N2 branch line numbers not printed.",
+  "Gap where LDR crosses the trunk (no connection assumed)."
+ ]
+}
