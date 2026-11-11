@@ -1,0 +1,34 @@
+page 1 dets 91
+page 2 dets 32
+page 3 dets 66
+page 4 dets 53
+page 5 dets 61
+page 6 dets 73
+page 7 dets 86
+page 8 dets 56
+page 9 dets 31
+page 10 dets 48
+page 11 dets 76
+page 12 dets 83
+detections kept by class: {'instrumentation': 293, 'valve': 394, 'tank': 35, 'pump': 34} | weights: v2_best.pt | scale 1.0 conf 0.25
+
+=== node match radius 1% of image width
+valve            GT  257 ours  394  P 0.60 R 0.92 F1 0.73
+instrumentation  GT  350 ours  293  P 0.95 R 0.79 F1 0.86
+tank             GT   35 ours   35  P 0.14 R 0.14 F1 0.14
+pump             GT   16 ours   34  P 0.09 R 0.19 F1 0.12
+ALL (4 classes)  GT  658 ours  756  P 0.69 R 0.79 F1 0.74
+
+=== node match radius 2% of image width
+valve            GT  257 ours  394  P 0.60 R 0.92 F1 0.73
+instrumentation  GT  350 ours  293  P 0.95 R 0.79 F1 0.86
+tank             GT   35 ours   35  P 0.14 R 0.14 F1 0.14
+pump             GT   16 ours   34  P 0.09 R 0.19 F1 0.12
+ALL (4 classes)  GT  658 ours  756  P 0.69 R 0.79 F1 0.74
+
+=== node match radius 4% of image width
+valve            GT  257 ours  394  P 0.61 R 0.93 F1 0.73
+instrumentation  GT  350 ours  293  P 0.95 R 0.79 F1 0.86
+tank             GT   35 ours   35  P 0.17 R 0.17 F1 0.17
+pump             GT   16 ours   34  P 0.09 R 0.19 F1 0.12
+ALL (4 classes)  GT  658 ours  756  P 0.69 R 0.80 F1 0.74

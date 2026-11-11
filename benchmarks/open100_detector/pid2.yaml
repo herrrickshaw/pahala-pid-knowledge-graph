@@ -1,0 +1,8 @@
+path: ./tiles2   # produced by make_tiles_v2.py
+train: images/train
+val: images/val
+names:
+  0: valve
+  1: instrument
+  2: tank
+  3: pump
