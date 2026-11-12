@@ -1,0 +1,8 @@
+path: /Users/umashankar/Library/Application Support/Claude/scratch-workspaces/dfc28b7c-e285-4b22-a8da-89659b0c0928/f3aec8ef-5b0e-4f7e-bcf5-f3d098a29e64/scratch-2026-11-10-7e59f8/detector/tiles4
+train: images/train
+val: images/val
+names:
+  0: valve
+  1: instrument
+  2: tank
+  3: pump

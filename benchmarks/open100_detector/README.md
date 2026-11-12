@@ -50,3 +50,16 @@ Initialised from v2 weights; the PID2Graph Synthetic sheets are tiled at two sca
 Valve and instrumentation improved; tank and pump did not (35 and 16 GT, so changes are within noise). Synthetic val mAP50 is 0.993, so the tank/pump failure is the synthetic-to-real gap, not under-training.
 Running inference at 0.5x is worse (ALL F1 0.42, `score_v3_s0.5.txt`) because valves/instruments shrink below their trained size; native scale is right.
 Files: `make_tiles_v3.py`, `pid3.yaml`, `score_v3_s1.0.txt`, `score_v3_s0.5.txt`, `train_results_v3.csv`.
+
+## v4 (fine-tuned from v3 on package/PSFS sheets + synthetic sheets)
+
+Data: 175 urea-package and PSFS sheets (labels from `pid_rec.py`), 240 randomised synthetic sheets, a slice of v3 data; 4,870 train / 550 val tiles. 8 epochs, MPS, 1.31 h. OPEN100 is held out and never trained on. Scripts: `render_all.py`, `make_tiles_v4.py`, `train_v4.py`; scores `score_v4_s*.txt`.
+
+OPEN100 (12 pages, node match radius 2%), all four classes:
+
+| scale | v3 F1 | v4 F1 | v4 valve / instr / tank / pump |
+|---|---|---|---|
+| 0.5 | 0.41 | 0.81 | 0.68 / 0.94 / 0.56 / 0.00 |
+| 1.0 | 0.83 | 0.84 | 0.86 / 0.93 / 0.27 / 0.06 |
+
+Caveats: in-training mAP50 0.994 is on our own generated tiles and says nothing about real scans. Pumps (16 GT) are not solved; tank precision at scale 1.0 is 0.22. Weights (`v4_best.pt`, 6.5 MB) not committed.

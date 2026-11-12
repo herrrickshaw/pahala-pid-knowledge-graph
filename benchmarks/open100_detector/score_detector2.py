@@ -6,7 +6,7 @@ v2 detector (classes valve/instrument/tank/pump). Original docstring follows.
   valve = C0-C13, C24 ; instrumentation = C25-C31 ; equipment-like = C14-C19, C21 ; ignored = C20, C22, C23
 The detector has no inlet/outlet class and produces no connectivity, so only node metrics are reported."""
 import sys, os, json, collections
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'open100'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'work', 'open100_score'))
 import score as S
 from PIL import Image
 from ultralytics import YOLO
