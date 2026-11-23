@@ -366,3 +366,82 @@ def test_main_missing_page_is_skipped_and_wrong_class_counts_as_error(tmp_path, 
     assert "valve          GT    1 ours    0  P 0.00 R 0.00 F1 0.00" in out
     assert "pump           GT    0 ours    1  P 0.00 R 0.00 F1 0.00" in out
     assert "tank           GT    1 ours    1  P 1.00 R 1.00 F1 1.00" in out
+
+
+# ---------------------------------------------------------------- tee edge cases (mutation follow-ups)
+def test_tee_with_unknown_after_uses_first_segment_of_a_longer_trunk(tmp_path):
+    f = write_ex(
+        tmp_path / "p.json",
+        equipment=[item("E1", "tank"), item("E2", "pump"), item("E3", "pump")],
+        components=[item("V1", "valve")],
+        lines=[
+            {"id": "L1", "from": "E1", "to": "E2", "path": ["V1"]},
+            {"id": "L3", "from": {"line": "L1", "after": "nope"}, "to": "E3", "path": []},
+        ],
+    )
+    _, edges = S.load_ours(f)
+    assert ("E1", "E3") in edges and ("E3", "V1") in edges
+    assert ("E2", "E3") not in edges
+
+
+def test_tee_after_the_last_trunk_element_clamps_to_the_last_segment(tmp_path):
+    f = write_ex(
+        tmp_path / "p.json",
+        equipment=[item("E1", "tank"), item("E3", "pump")],
+        components=[item("V1", "valve")],
+        lines=[
+            {"id": "L1", "from": "E1", "to": "V1", "path": []},
+            {"id": "L3", "from": {"line": "L1", "after": "V1"}, "to": "E3", "path": []},
+        ],
+    )
+    _, edges = S.load_ours(f)
+    assert {("E1", "V1"), ("E1", "E3"), ("E3", "V1")} <= edges
+
+
+def test_branch_ending_at_a_tee_contributes_its_last_segment_only(tmp_path):
+    f = write_ex(
+        tmp_path / "p.json",
+        equipment=[item("E1", "tank"), item("E2", "pump"), item("E3", "pump")],
+        components=[item("V1", "valve"), item("V2", "valve")],
+        lines=[
+            {"id": "L1", "from": "E1", "to": "V1", "path": []},
+            {"id": "L3", "from": "E3", "to": {"line": "L1", "after": "E1"}, "path": ["V2"]},
+        ],
+    )
+    _, edges = S.load_ours(f)
+    assert ("E1", "V2") in edges
+    assert ("E1", "E3") not in edges
+
+
+def test_match_coarse_maps_ground_truth_general_with_equipment():
+    gt = {"g": {"label": "general", "xmin": 95, "xmax": 105, "ymin": 95, "ymax": 105}}
+    ours = {"o": ours_at(0.1, 0.1, "tank")}
+    assert S.match(gt, ours, 1000, 1000, 0.01) == {}
+    assert S.match(gt, ours, 1000, 1000, 0.01, coarse=True) == {"o": "g"}
+
+
+def test_main_coarse_pass_drops_only_unmatched_general_nodes(tmp_path, monkeypatch, capsys):
+    gtd = tmp_path / "gt"
+    ex = tmp_path / "ex"
+    gtd.mkdir()
+    ex.mkdir()
+    Image.new("RGB", (1000, 1000), "white").save(gtd / "0.png")
+    write_gt(
+        gtd / "0.graphml",
+        [("t", "tank", 200, 200), ("g2", "general", 400, 200), ("g", "general", 200, 600), ("p", "pump", 600, 600)],
+        [("t", "g2"), ("t", "g"), ("g", "p")],
+    )
+    doc = {
+        "equipment": [item("E1", "tank", (0.195, 0.195, 0.205, 0.205)), item("E2", "pump", (0.595, 0.595, 0.605, 0.605))],
+        "components": [item("C1", "reducer", (0.395, 0.195, 0.405, 0.205))],
+        "lines": [
+            {"id": "L1", "from": "E1", "to": "C1", "path": []},
+            {"id": "L2", "from": "E1", "to": "E2", "path": []},
+        ],
+    }
+    (ex / "page_01.json").write_text(json.dumps(doc))
+    monkeypatch.setattr("sys.argv", ["score.py", str(ex), str(gtd), "1"])
+    S.main()
+    out = capsys.readouterr().out
+    # the unmatched general node g is a pass-through (so tank-pump is a GT edge); matched g2 stays a node
+    assert "edges[clique] among matched nodes: P 1.00 R 1.00 F1 1.00 (TP 2 FP 0 FN 0)" in out
