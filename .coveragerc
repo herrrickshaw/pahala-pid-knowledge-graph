@@ -1,0 +1,13 @@
+[run]
+source =
+    benchmarks/open100
+    audit
+omit =
+    */tests/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    # node_of() in score.load_ours is never called (dead code)
+    def node_of
